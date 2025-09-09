@@ -1,11 +1,10 @@
-// /components/CartillaFilter.tsx
+// /app/components/CartillaFilter.tsx
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import planesData from "../../data/planes.json";
-import prestadores from "../../data/prestadores.json";
+import prestadoresData from "../../data/prestadores.json";
 
-type Prestador = {
+export type Prestador = {
   id: number;
   nombre: string;
   tipo: string;
@@ -18,127 +17,154 @@ type Prestador = {
 };
 
 type Props = {
-  onResults: (list: Prestador[]) => void;
+  onResults: (items: Prestador[]) => void;
+};
+
+type Filters = {
+  plan: string;
+  especialidad: string;
+  provincia: string;
+  ciudad: string;
+  q: string;
 };
 
 export default function CartillaFilter({ onResults }: Props) {
-  const planes = useMemo(() => {
-    const arr =
-      Array.isArray(planesData)
-        ? planesData
-        : (planesData as any).Plan ?? [];
-    return arr.map((p: any) => p.nombre);
-  }, []);
+  const allPrestadores = prestadoresData as unknown as Prestador[];
 
-  const [plan, setPlan] = useState<string>("");
-  const [provincia, setProvincia] = useState<string>("");
-  const [ciudad, setCiudad] = useState<string>("");
-  const [especialidad, setEspecialidad] = useState<string>("");
-  const [q, setQ] = useState<string>("");
+  const [filters, setFilters] = useState<Filters>({
+    plan: "",
+    especialidad: "",
+    provincia: "",
+    ciudad: "",
+    q: "",
+  });
 
-  // Opciones dinámicas a partir del JSON de prestadores
-  const provincias = useMemo(
-    () => Array.from(new Set((prestadores as Prestador[]).map((p) => p.provincia))).sort(),
-    []
-  );
-  const ciudades = useMemo(
-    () =>
-      Array.from(
-        new Set(
-          (prestadores as Prestador[])
-            .filter((p) => !provincia || p.provincia === provincia)
-            .map((p) => p.ciudad)
-        )
-      ).sort(),
-    [provincia]
-  );
-  const especialidades = useMemo(
-    () =>
-      Array.from(
-        new Set(
-          (prestadores as Prestador[])
-            .flatMap((p) => p.especialidades)
-        )
-      ).sort(),
-    []
-  );
+  const uniquePlans = useMemo(() => {
+    const set = new Set<string>();
+    allPrestadores.forEach((p) => p.plan.forEach((pl) => set.add(pl)));
+    return Array.from(set).sort();
+  }, [allPrestadores]);
+
+  const uniqueEspecialidades = useMemo(() => {
+    const set = new Set<string>();
+    allPrestadores.forEach((p) => p.especialidades.forEach((e) => set.add(e)));
+    return Array.from(set).sort();
+  }, [allPrestadores]);
+
+  const uniqueProvincias = useMemo(() => {
+    const set = new Set<string>();
+    allPrestadores.forEach((p) => set.add(p.provincia));
+    return Array.from(set).sort();
+  }, [allPrestadores]);
+
+  const uniqueCiudades = useMemo(() => {
+    const set = new Set<string>();
+    allPrestadores.forEach((p) => set.add(p.ciudad));
+    return Array.from(set).sort();
+  }, [allPrestadores]);
+
+  function handleChange<K extends keyof Filters>(
+    key: K
+  ): (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void {
+    return (e) => setFilters((prev) => ({ ...prev, [key]: e.target.value }));
+  }
 
   useEffect(() => {
-    const res = (prestadores as Prestador[]).filter((p) => {
-      const matchPlan = !plan || p.plan.includes(plan);
-      const matchProv = !provincia || p.provincia === provincia;
-      const matchCiudad = !ciudad || p.ciudad === ciudad;
-      const matchEsp = !especialidad || p.especialidades.includes(especialidad);
-      const matchQ =
-        !q ||
-        p.nombre.toLowerCase().includes(q.toLowerCase()) ||
-        p.tipo.toLowerCase().includes(q.toLowerCase());
-      return matchPlan && matchProv && matchCiudad && matchEsp && matchQ;
-    });
-    onResults(res);
-  }, [plan, provincia, ciudad, especialidad, q, onResults]);
+    const q = filters.q.trim().toLowerCase();
 
-  // Geolocalización (opcional, setear provincia/ciudad rápido)
-  const usarMiUbicacion = () => {
-    if (!navigator.geolocation) return;
-    navigator.geolocation.getCurrentPosition(
-      () => {
-        // Placeholder: seteamos un default útil (Córdoba Capital)
-        setProvincia("Córdoba");
-        setCiudad("Córdoba Capital");
-      },
-      () => {
-        // ignorar errores por ahora
-      }
-    );
-  };
+    const filtered = allPrestadores.filter((p) => {
+      const okPlan =
+        !filters.plan ||
+        p.plan.some((pl) => pl.toLowerCase() === filters.plan.toLowerCase());
+      const okEsp =
+        !filters.especialidad ||
+        p.especialidades.some((e) => e.toLowerCase() === filters.especialidad.toLowerCase());
+      const okProv = !filters.provincia || p.provincia === filters.provincia;
+      const okCity = !filters.ciudad || p.ciudad === filters.ciudad;
+      const okQuery =
+        !q ||
+        p.nombre.toLowerCase().includes(q) ||
+        p.tipo.toLowerCase().includes(q) ||
+        p.direccion.toLowerCase().includes(q);
+
+      return okPlan && okEsp && okProv && okCity && okQuery;
+    });
+
+    onResults(filtered);
+  }, [filters, allPrestadores, onResults]);
 
   return (
-    <div className="rounded-2xl border border-black/5 bg-white p-4 md:p-6">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-6">
-        <select className="rounded-lg border px-3 py-2" value={plan} onChange={(e) => setPlan(e.target.value)}>
-          <option value="">Plan (todos)</option>
-          {planes.map((p: string) => (
-            <option key={p} value={p}>{p}</option>
-          ))}
-        </select>
+    <form
+      className="grid gap-4 md:grid-cols-5"
+      onSubmit={(e) => e.preventDefault()}
+      role="search"
+      aria-label="Filtrar cartilla médica"
+    >
+      <select
+        className="rounded-lg border border-black/10 px-3 py-2"
+        value={filters.plan}
+        onChange={handleChange("plan")}
+        aria-label="Plan"
+      >
+        <option value="">Plan (todos)</option>
+        {uniquePlans.map((pl) => (
+          <option key={pl} value={pl}>
+            {pl}
+          </option>
+        ))}
+      </select>
 
-        <select className="rounded-lg border px-3 py-2" value={provincia} onChange={(e) => setProvincia(e.target.value)}>
-          <option value="">Provincia</option>
-          {provincias.map((p) => (
-            <option key={p} value={p}>{p}</option>
-          ))}
-        </select>
+      <select
+        className="rounded-lg border border-black/10 px-3 py-2"
+        value={filters.especialidad}
+        onChange={handleChange("especialidad")}
+        aria-label="Especialidad"
+      >
+        <option value="">Especialidad (todas)</option>
+        {uniqueEspecialidades.map((esp) => (
+          <option key={esp} value={esp}>
+            {esp}
+          </option>
+        ))}
+      </select>
 
-        <select className="rounded-lg border px-3 py-2" value={ciudad} onChange={(e) => setCiudad(e.target.value)}>
-          <option value="">Ciudad</option>
-          {ciudades.map((c) => (
-            <option key={c} value={c}>{c}</option>
-          ))}
-        </select>
+      <select
+        className="rounded-lg border border-black/10 px-3 py-2"
+        value={filters.provincia}
+        onChange={handleChange("provincia")}
+        aria-label="Provincia"
+      >
+        <option value="">Provincia (todas)</option>
+        {uniqueProvincias.map((prov) => (
+          <option key={prov} value={prov}>
+            {prov}
+          </option>
+        ))}
+      </select>
 
-        <select className="rounded-lg border px-3 py-2" value={especialidad} onChange={(e) => setEspecialidad(e.target.value)}>
-          <option value="">Especialidad</option>
-          {especialidades.map((e) => (
-            <option key={e} value={e}>{e}</option>
-          ))}
-        </select>
+      <select
+        className="rounded-lg border border-black/10 px-3 py-2"
+        value={filters.ciudad}
+        onChange={handleChange("ciudad")}
+        aria-label="Ciudad"
+      >
+        <option value="">Ciudad (todas)</option>
+        {uniqueCiudades.map((c) => (
+          <option key={c} value={c}>
+            {c}
+          </option>
+        ))}
+      </select>
 
-        <input
-          className="col-span-2 md:col-span-1 rounded-lg border px-3 py-2"
-          placeholder="Clínica o profesional"
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-        />
-
-        <button
-          type="button"
-          onClick={usarMiUbicacion}
-          className="rounded-lg bg-[#33BAF0] px-3 py-2 text-white hover:opacity-95"
-        >
-          Usar mi ubicación
-        </button>
-      </div>
-    </div>
+      <input
+        type="search"
+        inputMode="search"
+        placeholder="Buscar por nombre, tipo o dirección"
+        className="rounded-lg border border-black/10 px-3 py-2 md:col-span-1"
+        value={filters.q}
+        onChange={handleChange("q")}
+        aria-label="Buscar"
+      />
+    </form>
   );
 }
