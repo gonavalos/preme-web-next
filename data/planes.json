@@ -1,0 +1,72 @@
+{
+  "Plan": [
+    {
+      "id": 1,
+      "headerImageSrc": "/assets/planes/plancoral.png",
+      "headerImageAlt": "Plan Joven",
+      "nombre": "Plan Joven",
+      "descripcion": "Ideal para menores de 30 años",
+      "beneficios": [
+        "Consultas médicas sin límite",
+        "Emergencias 24/7",
+        "Medicina deportiva incluida",
+        "Descuentos especiales",
+        "Salud mental incluida"
+      ],
+      "color": "#33BAF0",
+      "highlight": "Más popular entre jóvenes",
+      "buttonColor": "#33BAF0"
+    },
+    {
+      "id": 2,
+      "headerImageSrc": "/assets/planes/plancoralv2.png",
+      "headerImageAlt": "Plan Coral",
+      "nombre": "Plan Coral",
+      "descripcion": "Cobertura esencial completa",
+      "beneficios": [
+        "Consultas médicas ilimitadas",
+        "Red de prestadores nivel 1",
+        "Internación básica",
+        "Farmacia con descuentos",
+        "Estudios de diagnóstico"
+      ],
+      "color": "#F79630",
+      "highlight": "Mejor relación precio-calidad",
+      "buttonColor": "#F79630"
+    },
+    {
+      "id": 3,
+      "headerImageSrc": "/assets/planes/planintegral.png",
+      "headerImageAlt": "Plan Integral",
+      "nombre": "Plan Integral",
+      "descripcion": "El equilibrio perfecto",
+      "beneficios": [
+        "Cobertura amplia en consultas",
+        "Red amplia de prestadores",
+        "Internación intermedia",
+        "Farmacia con descuentos",
+        "20 sesiones de psicología"
+      ],
+      "color": "#68AE26",
+      "highlight": "Más elegido por familias",
+      "buttonColor": "#68AE26"
+    },
+    {
+      "id": 4,
+      "headerImageSrc": "/assets/planes/planmaximov3.png",
+      "headerImageAlt": "Plan Máximo",
+      "nombre": "Plan Máximo",
+      "descripcion": "La cobertura más completa",
+      "beneficios": [
+        "Cobertura 100% en internaciones",
+        "Red premium de prestadores",
+        "Farmacia 100%",
+        "Cobertura internacional",
+        "Psicología ilimitada"
+      ],
+      "color": "#864D8D",
+      "highlight": "Premium",
+      "buttonColor": "#864D8D"
+    }
+  ]
+}

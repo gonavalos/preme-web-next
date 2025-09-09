@@ -1,26 +1,56 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
+/* ===== Tokens base (light/dark) ===== */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+
+/* ===== Tailwind v4 theme tokens ===== */
+@theme {
+  /* Colores de marca */
+  --color-primary: #092f57;
+  --color-brand-blue: #33BAF0;
+  --color-brand-blue-hover: #63CCF4;
+  --color-bg-soft: #f5f8fa;
+
+  /* Mapear fondos/foreground globales a tokens Tailwind */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Tipografías (usa next/font y expone --font-geist-* en layout) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ===== Base ===== */
+html, body { height: 100%; }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
+
+/* ===== Utilidades ===== */
+/* Ocultar scrollbar (para sliders horizontales) */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Prose (blog) – opcional: estilos mínimos */
+.prose a { @apply text-brand-blue hover:underline; }
+
+/* Oculta scrollbar del carrusel en todos los navegadores */
+.blog-scroll {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.blog-scroll::-webkit-scrollbar {
+  display: none;             /* Chrome/Safari */
+}
+
+/* globals.css */
+.blog-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+.blog-scroll::-webkit-scrollbar { display: none; }

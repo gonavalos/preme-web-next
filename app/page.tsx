@@ -1,103 +1,114 @@
-import Image from "next/image";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import WhatsAppFab from "./components/WhatsAppFab";
+import PlanCard, { type PlanCardProps } from "./components/PlanCard";
+import planesData from "../data/planes.json";
+import Hero from "./components/Hero";
+import CTAStrip from "./components/CTAStrip";
+import AppBanner from "./components/AppBanner";
+import BlogCarousel from "./components/BlogCarousel";
+import BenefitCard from "./components/BenefitCard";
+import {
+  FaUserMd,
+  FaClock,
+  FaGlobeAmericas,
+  FaStethoscope,
+  FaShieldAlt,
+  FaHeartbeat,
+  FaUsers,
+  FaCertificate,
+} from "react-icons/fa";
+
+/* ---------- Tipado del JSON y adaptación a <PlanCard /> ---------- */
+type PlanJSON = {
+  id: number;
+  icon?: string;               // compatibilidad (no se usa en la card actual)
+  image?: string;              // compat: si existe, lo usamos como header
+  headerImageSrc?: string;     // preferido
+  headerImageAlt?: string;
+  imageAlt?: string;
+  nombre: string;
+  descripcion: string;
+  beneficios: string[];
+  color?: string;
+  highlight?: string;
+  buttonColor?: string;
+};
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  // Soporta array plano o { Plan: [...] }
+  const planesJson = (Array.isArray(planesData)
+    ? (planesData as PlanJSON[])
+    : ((planesData as { Plan?: PlanJSON[] }).Plan ?? [])) as PlanJSON[];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+  // Adaptamos al tipo que espera <PlanCard />
+  const planes: PlanCardProps[] = planesJson.map((p) => ({
+    headerImageSrc: p.headerImageSrc ?? p.image ?? undefined,
+    headerImageAlt: p.headerImageAlt ?? p.imageAlt ?? p.nombre,
+    title: p.nombre,
+    subtitle: p.descripcion,
+    benefits: p.beneficios,
+    color: p.color ?? "#33BAF0",
+    highlight: p.highlight,
+    buttonColor: p.buttonColor ?? p.color ?? "#33BAF0",
+  }));
+
+  const benefits = [
+    { icon: FaUserMd, title: "Red de Prestadores", description: "Más de 100 profesionales médicos de excelencia" },
+    { icon: FaClock, title: "Atención 24/7", description: "Emergencias médicas las 24 horas del día" },
+    { icon: FaGlobeAmericas, title: "Cobertura Nacional", description: "Atención médica en todo el país" },
+    { icon: FaStethoscope, title: "Telemedicina", description: "Consultas médicas virtuales desde tu hogar" },
+    { icon: FaShieldAlt, title: "Cobertura Integral", description: "Protección completa para tu familia" },
+    { icon: FaHeartbeat, title: "Medicina Preventiva", description: "Chequeos y controles para prevenir enfermedades" },
+    { icon: FaUsers, title: "Atención Familiar", description: "Planes especiales para grupos familiares" },
+    { icon: FaCertificate, title: "Calidad Certificada", description: "Altos estándares de calidad" },
+  ];
+
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <CTAStrip />
+
+        {/* Planes (lee del JSON, diseño validado) */}
+        <section className="py-14  max-w-8/10 mx-auto">
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center text-[#092f57]">Nuestros Planes</h2>
+          <div className="mx-auto mt-1 mb-10 h-1 w-20 bg-[#33BAF0]" />
+          </div>
+          <div className="py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            {planes.map((plan, idx) => (
+              <PlanCard key={idx} {...plan} />
+            ))}
+          </div>
+        </section>
+
+        <AppBanner />
+
+
+        <section className="py-1">
+          <BlogCarousel />
+       </section>
+        {/*
+        <section className="py-16 max-w-9xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4 text-primary">
+            Beneficios que nos distinguen
+          </h2>
+          <p className="text-center text-gray-600 mb-10">
+            Servicios de salud de primera calidad con atención personalizada
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {benefits.map((b, i) => (
+              <BenefitCard key={i} {...b} />
+            ))}
+          </div>
+        </section>*/}
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+      <WhatsAppFab />
+      <div className="py-10"></div>
+      <Footer />
+    </>
   );
 }

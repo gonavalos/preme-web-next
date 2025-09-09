@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "tecnologia-revoluciona-cirugias",
+    "title": "La tecnología revoluciona las cirugías",
+    "excerpt": "Innovaciones que mejoran la seguridad y la precisión quirúrgica.",
+    "image": "/assets/blog/blog1.png",
+    "datePublished": "2025-08-01",
+    "dateModified": "2025-08-01",
+    "author": "Equipo PREME",
+    "tags": ["innovación", "cirugía", "tecnología"],
+    "contentHtml": "<p>Los avances en robótica, IA y visualización 3D están transformando la cirugía moderna, mejorando resultados y tiempos de recuperación.</p>"
+  },
+  {
+    "slug": "nuevo-centro-diagnostico",
+    "title": "Nuevo centro de diagnóstico de alta complejidad",
+    "excerpt": "Más acceso a estudios avanzados con turnos ágiles.",
+    "image": "/assets/blog/blog2.png",
+    "datePublished": "2025-08-05",
+    "author": "PREME Noticias",
+    "tags": ["diagnóstico", "alta complejidad"],
+    "contentHtml": "<p>Incorporamos equipamiento de última generación para brindar diagnósticos más rápidos y precisos.</p>"
+  },
+  {
+    "slug": "record-donaciones-organos",
+    "title": "Récord en donaciones de órganos en el último año",
+    "excerpt": "Creció la conciencia y coordinación entre instituciones.",
+    "image": "/assets/blog/blog3.png",
+    "datePublished": "2025-08-10",
+    "author": "Salud Pública",
+    "tags": ["donación", "trasplante"],
+    "contentHtml": "<p>El aumento sostenido de donaciones permite salvar más vidas y reducir listas de espera.</p>"
+  }
+]

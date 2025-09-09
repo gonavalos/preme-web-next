@@ -1,0 +1,50 @@
+
+[
+
+    {
+
+    
+    "id": 1,
+    "nombre": "Clinica Romagosa",
+    "tipo": "Clínica",
+    "especialidades": ["Clínica Médica", "Pediatría", "Cardiología"],
+    "plan": ["Plan Joven", "Plan Coral", "Plan Integral", "Plan Máximo"],
+    "provincia": "Córdoba",
+    "ciudad": "Córdoba Capital",
+    "direccion": "Dean Funes 429",
+    "telefono": "0810-333-2244"
+  },
+  {
+    "id": 2,
+    "nombre": "Sanatorio Central Córdoba",
+    "tipo": "Clínica",
+    "especialidades": ["Clínica Médica", "Pediatría", "Cardiología"],
+    "plan": ["Plan Joven", "Plan Coral", "Plan Integral", "Plan Máximo"],
+    "provincia": "Córdoba",
+    "ciudad": "Córdoba Capital",
+    "direccion": "Av. Colón 1234",
+    "telefono": "0810-333-2244"
+  },
+  {
+    "id": 3,
+    "nombre": "Centro Diagnóstico Norte",
+    "tipo": "Diagnóstico",
+    "especialidades": ["Imágenes", "Laboratorio"],
+    "plan": ["Plan Coral", "Plan Integral", "Plan Máximo"],
+    "provincia": "Buenos Aires",
+    "ciudad": "Vicente López",
+    "direccion": "Av. Maipú 1500",
+    "telefono": "0810-555-7000"
+  },
+  {
+    "id": 4,
+    "nombre": "Consultorios Parque Sarmiento",
+    "tipo": "Consultorios",
+    "especialidades": ["Dermatología", "Nutrición", "Ginecología"],
+    "plan": ["Plan Integral", "Plan Máximo"],
+    "provincia": "Córdoba",
+    "ciudad": "Córdoba Capital",
+    "direccion": "Bv. Chacabuco 550",
+    "telefono": "351-2006002"
+  }
+]
