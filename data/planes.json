@@ -7,32 +7,38 @@
       "nombre": "Plan Joven",
       "descripcion": "Ideal para menores de 30 años",
       "beneficios": [
-        "Consultas médicas sin límite",
-        "Emergencias 24/7",
-        "Medicina deportiva incluida",
-        "Descuentos especiales",
-        "Salud mental incluida"
+        "Solo con tu recibo de Sueldo y sin pagar de más",
+        "Tu cobertura en el acto",
+        "Consultas médicas sin límite y médico a domicilio",
+        "100% en anticonceptivos",
+        "Sesiones en psicología, fisioterapia y mucho más",
+        "Cobertura en ortodoncia y prótesis",
+        "Descuentos especiales en ópticas y farmacias"
       ],
-      "color": "#33BAF0",
+      "color": "#F79630",
       "highlight": "Más popular entre jóvenes",
-      "buttonColor": "#33BAF0"
+      "buttonColor": "#F79630"
     },
     {
       "id": 2,
       "headerImageSrc": "/assets/planes/plancoralv2.png",
       "headerImageAlt": "Plan Coral",
       "nombre": "Plan Coral",
-      "descripcion": "Cobertura esencial completa",
+      "descripcion": "Cobertura completa a un costo muy accesible",
       "beneficios": [
-        "Consultas médicas ilimitadas",
         "Red de prestadores nivel 1",
-        "Internación básica",
-        "Farmacia con descuentos",
-        "Estudios de diagnóstico"
+        "100% en internaciones",
+        "100% en prótesis nacionales",
+        "Consultas médicas ilimitadas y médico a domicilio",
+        "Farmacias con descuentos desde el 50%",
+        "Descuentos especiales en ortodoncia y prótesis",
+        "Emergencias 24/7",
+        "Co-seguros en ambulatorio",
+        "Sin co-seguro en prestador específico"
       ],
-      "color": "#F79630",
+      "color": "#33BAF0",
       "highlight": "Mejor relación precio-calidad",
-      "buttonColor": "#F79630"
+      "buttonColor": "#33BAF0"
     },
     {
       "id": 3,
@@ -41,11 +47,14 @@
       "nombre": "Plan Integral",
       "descripcion": "El equilibrio perfecto",
       "beneficios": [
-        "Cobertura amplia en consultas",
-        "Red amplia de prestadores",
-        "Internación intermedia",
-        "Farmacia con descuentos",
-        "20 sesiones de psicología"
+        "TODO lo del plan Coral y mucho más!",
+        "Más prestadores en tu cartilla",
+        "Libre acceso a todos los prestadores",
+        "Sin órdenes y sin derivación",
+        "SIN COSEGUROS",
+        "50 % de descuento en prótesis y ortodoncia",
+        "Descuentos en implantes odontológicos",
+        "Descuentos especiales en óptica"
       ],
       "color": "#68AE26",
       "highlight": "Más elegido por familias",
@@ -58,11 +67,13 @@
       "nombre": "Plan Máximo",
       "descripcion": "La cobertura más completa",
       "beneficios": [
-        "Cobertura 100% en internaciones",
-        "Red premium de prestadores",
-        "Farmacia 100%",
-        "Cobertura internacional",
-        "Psicología ilimitada"
+        "TODO lo del plan Coral, plan Integral y mucho más!",
+        "Red premium de prestadores incluye el Sanatorio Allende",
+        "Libre acceso a todos los prestadores",
+        "Plan Abierto con reintegros fuera de cartilla",
+        "Sin órdenes y sin derivación",
+        "SIN COSEGUROS",
+        "Ecografía 4D en embarazos"
       ],
       "color": "#864D8D",
       "highlight": "Premium",

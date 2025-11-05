@@ -1,3 +1,4 @@
+// app/(marketing)/components/AppBanner.tsx
 import Image from "next/image";
 
 export default function AppBanner() {
@@ -10,12 +11,12 @@ export default function AppBanner() {
         {/* IZQUIERDA: mockup (debajo en mobile) */}
         <div className="order-2 flex justify-center md:order-1 md:justify-start md:-mt-10 md:-mb-10">
           <Image
-            src="/assets/credencialpreme.png"
+            src="/assets/credencialpremev22.png"
             alt="App PREME con credencial digital"
             width={560}
             height={880}
             priority
-            className="h-auto w-[78%] max-w-[420px] drop-shadow-2xl md:w-full md:max-w-[520px]"
+            className="h-auto w-[81%] max-w-[420px] drop-shadow-2xl md:w-full md:max-w-[520px]"
           />
         </div>
 
@@ -32,8 +33,9 @@ export default function AppBanner() {
             {[
               "Práctica, rápida y segura.",
               "Amigable con el medioambiente.",
-              "Funciona sin conexión.",
-              "Cartilla, turnos y credencial al instante.",
+              "Prestadores con geolocalización.",
+              "Consulta de autorizaciones y cuenta corriente.",
+              "Enlaces e información con teléfonos útiles.",
               "Compartila con tu grupo familiar.",
             ].map((t, i) => (
               <li key={i} className="flex justify-center gap-3 md:justify-start">
@@ -43,21 +45,38 @@ export default function AppBanner() {
                 {t}
               </li>
             ))}
+
+            {/* Badges de descarga con links */}
             <li className="mt-4 flex items-center justify-center gap-3 md:justify-start">
-              <Image
-                src="/assets/downloadappstore.svg"
-                alt="Descargar en App Store"
-                width={150}
-                height={46}
-                className="h-auto w-[150px]"
-              />
-              <Image
-                src="/assets/downloadgooglechrome.svg"
-                alt="Descargar en Google Play"
-                width={170}
-                height={50}
-                className="h-auto w-[170px]"
-              />
+              <a
+                href="https://apps.apple.com/ar/app/preme/id1546369328"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Descargar Preme en App Store"
+              >
+                <Image
+                  src="/assets/downloadappstore.svg"
+                  alt="Descargar en App Store"
+                  width={150}
+                  height={46}
+                  className="h-auto w-[150px]"
+                />
+              </a>
+
+              <a
+                href="https://play.google.com/store/apps/details?id=ar.com.gloui.gecros_mobile_preme"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Descargar Preme en Google Play"
+              >
+                <Image
+                  src="/assets/downloadgooglechrome.svg"
+                  alt="Descargar en Google Play"
+                  width={170}
+                  height={50}
+                  className="h-auto w-[170px]"
+                />
+              </a>
             </li>
           </ul>
         </div>

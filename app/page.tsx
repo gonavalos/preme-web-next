@@ -8,6 +8,11 @@ import CTAStrip from "./components/CTAStrip";
 import AppBanner from "./components/AppBanner";
 import BlogCarousel from "./components/BlogCarousel";
 import BenefitCard from "./components/BenefitCard";
+import TickerBar from "./components/Ticketsbar";
+import CTAStrip2 from "./components/CTAStrip2";
+import BenefitsSlider from "./components/BenefitsSlider";
+
+
 import {
   FaUserMd,
   FaClock,
@@ -66,10 +71,13 @@ export default function Home() {
 
   return (
     <>
+
       <Navbar />
       <main>
         <Hero />
-        <CTAStrip />
+         {/*    <TickerBar 
+        <CTAStrip />/>*/}
+        <CTAStrip2 />
 
         {/* Planes (lee del JSON, diseño validado) */}
         <section className="py-14  max-w-8/10 mx-auto">
@@ -77,7 +85,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-[#092f57]">Nuestros Planes</h2>
           <div className="mx-auto mt-1 mb-10 h-1 w-20 bg-[#33BAF0]" />
           </div>
-          <div className="py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          <BenefitsSlider />
+
+          <div className="py-6 grid grid-cols-1 mt-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {planes.map((plan, idx) => (
               <PlanCard key={idx} {...plan} />
             ))}

@@ -1,22 +1,19 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 
 export type PlanCardProps = {
-  /** Imagen del header (ocupa todo el ancho de la card) */
   headerImageSrc?: string;
   headerImageAlt?: string;
-
-  /** Contenido */
   title: string;
   subtitle: string;
   benefits: string[];
-
-  /** Estilos de marca */
-  color: string;        // ej: "#33BAF0"
-  highlight?: string;   // badge (opcional)
-  buttonColor?: string; // CTA (si no viene, usa color)
+  color: string;
+  highlight?: string;
+  buttonColor?: string;
+  href?: string;
 };
 
 function hexToRgb(hex: string) {
@@ -35,11 +32,11 @@ export default function PlanCard({
   color,
   highlight,
   buttonColor,
+  href,
 }: PlanCardProps) {
   const cta = buttonColor ?? color;
   const rgb = hexToRgb(color) ?? { r: 51, g: 186, b: 240 };
 
-  // Degradado SOLO para el cuerpo de la card
   const bodyGradient = `linear-gradient(
     180deg,
     rgba(${rgb.r},${rgb.g},${rgb.b},0.12) 0%,
@@ -48,9 +45,9 @@ export default function PlanCard({
   )`;
 
   return (
-    <article className="rounded-2xl overflow-hidden bg-white shadow-md ring-1 ring-black/5 hover:shadow-lg hover:ring-black/10 transition">
-      {/* Header con imagen completa */}
-      <div className="relative h-46 sm:h-50 md:h-54">
+    <article className="flex flex-col h-full rounded-2xl overflow-hidden bg-white shadow-md ring-1 ring-black/5 hover:shadow-lg hover:ring-black/10 transition">
+      {/* Header con altura fija para todas las cards */}
+      <div className="relative h-44 sm:h-48 md:h-52">
         {headerImageSrc ? (
           <Image
             src={headerImageSrc}
@@ -62,11 +59,7 @@ export default function PlanCard({
         ) : (
           <div className="h-full w-full" style={{ background: bodyGradient }} />
         )}
-
-        {/* Veladura sutil para legibilidad */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/0 to-black/0" />
-
-        {/* Badge */}
         {highlight && (
           <span
             className="absolute top-3 left-3 text-[11px] font-semibold text-white px-3 py-1 rounded-full"
@@ -77,36 +70,44 @@ export default function PlanCard({
         )}
       </div>
 
-      {/* Cuerpo con degradado de color del plan */}
-      <div className="px-6 pt-5 pb-6 text-center" style={{ background: bodyGradient }}>
+      {/* Cuerpo: flex-col con el CTA forzado al fondo */}
+      <div
+        className="flex flex-col flex-1 px-6 pt-5 pb-6 text-center"
+        style={{ background: bodyGradient }}
+      >
         <h3 className="pt-3 text-xl font-extrabold mb-1" style={{ color }}>
           {title}
         </h3>
         <p className="pt-3 text-gray-700 text-sm mb-4">{subtitle}</p>
 
-        <ul className="pt-3 text-sm text-gray-800 space-y-2 text-left mb-5">
+        {/* Lista crece y ocupa el espacio disponible; CTA queda abajo */}
+        <ul className="pt-3 text-sm text-gray-800 space-y-2 text-left mb-6 flex-1 overflow-hidden">
           {benefits?.map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <FaCheck className="mt-0.5 text-green-500 shrink-0" />
-              <span>{b}</span>
+              <span className="leading-snug">{b}</span>
             </li>
           ))}
         </ul>
-        <div className="pt-2">
-        <button
-          className="w-full py-2.5 rounded-lg text-white font-semibold shadow-sm hover:opacity-95 transition"
-          style={{ backgroundColor: cta }}
-        >
-          Elegir Plan
-        </button>
-        <div className="pt-3"></div>
-        <button
-          className="w-full mt-2 py-2.5 rounded-lg bg-white/90 backdrop-blur border border-gray-300 text-gray-700 hover:bg-white transition"
-          type="button"
-        >
-          Ver detalles
-        </button>
-        </div>
+
+        {/* CTA siempre al final */}
+        {href ? (
+          <Link
+            href={href}
+            className="mt-auto inline-flex w-full justify-center py-2.5 rounded-lg text-white font-semibold shadow-sm hover:opacity-95 transition"
+            style={{ backgroundColor: cta }}
+          >
+            Ver detalles
+          </Link>
+        ) : (
+          <button
+            className="mt-auto w-full py-2.5 rounded-lg text-white font-semibold shadow-sm hover:opacity-95 transition"
+            style={{ backgroundColor: cta }}
+            type="button"
+          >
+            Ver detalles
+          </button>
+        )}
       </div>
     </article>
   );

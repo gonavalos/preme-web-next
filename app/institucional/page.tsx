@@ -6,7 +6,12 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import JobForm from "../components/JobForm";
 import {
-  FaUserMd, FaHeartbeat, FaShieldAlt, FaClock, FaStethoscope, FaGlobeAmericas,
+  FaUserMd,
+  FaClock,
+  FaShieldAlt,
+  FaHeartbeat,
+  FaHandsHelping,
+  FaAward,
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
@@ -25,17 +30,40 @@ export const metadata: Metadata = {
 
 const values = [
   { title: "Misión", text: "Brindar servicios de salud de calidad con foco en prevención y acompañamiento integral." },
-  { title: "Visión", text: "Ser la cobertura preferida por las familias argentinas por innovación y cercanía." },
+  { title: "Visión", text: "Ser la cobertura preferida por las familias cordobesas por innovación, calidad y compromiso en la atención personalizada. " },
   { title: "Valores", text: "Ética, calidez humana, excelencia clínica, accesibilidad y transparencia." },
 ];
-
 const diferenciales = [
-  { icon: FaUserMd, title: "Equipo de excelencia", text: "Profesionales de primer nivel en múltiples especialidades." },
-  { icon: FaClock, title: "24/7", text: "Urgencias y telemedicina disponibles todo el día." },
-  { icon: FaStethoscope, title: "Telemedicina", text: "Consultas virtuales seguras y simples." },
-  { icon: FaShieldAlt, title: "Cobertura integral", text: "Ambulatorio, internación, farmacia y más." },
-  { icon: FaGlobeAmericas, title: "Cobertura nacional", text: "Red de prestadores en varias provincias." },
-  { icon: FaHeartbeat, title: "Prevención", text: "Programas y chequeos para cada etapa de la vida." },
+  {
+    icon: FaUserMd,
+    title: "Equipo de excelencia",
+    text: "Profesionales de primer nivel en múltiples especialidades.",
+  },
+  {
+    icon: FaClock,
+    title: "24/7",
+    text: "Urgencias y telemedicina disponibles todo el día.",
+  },
+  {
+    icon: FaShieldAlt,
+    title: "Cobertura integral",
+    text: "Ambulatorio, internación, farmacia y más.",
+  },
+  {
+    icon: FaHandsHelping,
+    title: "Atención personalizada",
+    text: "Con calidad humana y acompañamiento constante.",
+  },
+  {
+    icon: FaAward,
+    title: "Primera prepaga de Córdoba",
+    text: "Más de 40 años de trayectoria en el cuidado de la salud.",
+  },
+  {
+    icon: FaHeartbeat,
+    title: "Prevención",
+    text: "Programas y chequeos para cada etapa de la vida.",
+  },
 ];
 
 export default function InstitucionalPage() {
@@ -69,11 +97,13 @@ export default function InstitucionalPage() {
       {/* HERO */}
       <section className="relative w-full h-[52vh] md:h-[60vh]">
         <Image
-          src="/assets/hero/insti5.png"
+          src="/assets/hero/institucional/v2.png"
           alt="Equipo médico de PREME"
           fill
-          className="object-cover"
-          priority
+  priority
+  className="object-cover object-bottom"
+  style={{ objectPosition: "top 88% !important" }}
+          
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/0" />
         <div className="absolute inset-0 flex items-center">
@@ -86,7 +116,7 @@ export default function InstitucionalPage() {
                 Cuidamos tu salud
               </h1>
               <p className="mt-3 text-white/90">
-                Más de 35 años acompañando a las familias.
+                Más de 40 años acompañando a las familias.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link href="/prestadores" className="rounded-lg bg-[#33BAF0] px-5 py-3 font-semibold text-white">
@@ -106,15 +136,19 @@ export default function InstitucionalPage() {
         <div className="grid gap-10 md:grid-cols-2 items-center">
           <div>
             <h2 className="text-3xl font-bold text-[#092f57]">Nuestra empresa</h2>
-            <div className="mt-2 mb-6 h-1 w-20 bg-[#33BAF0]" />
-            <p className="text-gray-700">
-              Nacimos con el propósito de ofrecer una cobertura médica confiable, moderna y humana.
-              Invertimos en innovación, prevención y una red federal de prestadores para estar donde nos necesites.
-            </p>
-            <p className="mt-3 text-gray-700">
-              Nuestro modelo pone a la persona en el centro: trabajamos junto a pacientes y familias para
-              acompañarlos en cada etapa de la vida.
-            </p>
+              <div className="mt-2 mb-6 h-1 w-20 bg-[#33BAF0]" />
+              <p className="text-gray-700">
+                Nacimos con el propósito de brindar una cobertura médica confiable, moderna y profundamente humana.
+              </p>
+              <p className="text-gray-700 mt-3">
+                A lo largo de los años construimos una sólida red de prestadores y centros, con una cobertura integral pensada para acompañar a cada integrante de la familia.
+              </p>
+              <p className="text-gray-700 mt-3">
+                Nuestro modelo pone a la persona en el centro. Trabajamos junto a pacientes y familias para acompañarlos en cada etapa de la vida, priorizando el bienestar, la cercanía y la atención personalizada.
+              </p>
+              <p className="text-gray-700 mt-3">
+                Nos impulsa un compromiso permanente con la calidad médica, la calidez humana y la respuesta rápida y eficiente que cada afiliado merece.
+              </p>
           </div>
 
           <div className="relative h-[260px] sm:h-[320px] md:h-[360px] overflow-hidden rounded-2xl ring-1 ring-black/5">

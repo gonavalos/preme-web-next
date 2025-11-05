@@ -1,28 +1,35 @@
 // /components/CTAStrip.tsx
-import { FaPhoneAlt, FaWhatsapp, FaInfoCircle, FaRegHandshake } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaInfoCircle, FaAmbulance } from "react-icons/fa";
 
 export default function CTAStrip() {
   return (
     <section className="bg-[#01c8ff] text-white py-8 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+      {/* URGENCIAS Y EMERGENCIAS */}
       <div className="flex flex-col items-center">
-        <FaPhoneAlt className="text-3xl mb-2" />
-        <p className="font-bold">URGENCIAS Y EMERGENCIAS</p>
-        <p>0800-777-7800</p>
+        <FaAmbulance className="text-4xl mb-2" />
+        <p className="font-bold text-lg">URGENCIAS Y EMERGENCIAS</p>
+        <p className="text-[15px] font-semibold">ECCO · 0810 888 3226</p>
       </div>
+
+      {/* ATENCIÓN A AFILIADOS */}
       <div className="flex flex-col items-center">
-        <FaWhatsapp className="text-3xl mb-2" />
-        <p className="font-bold">ASISTENTE EN WHATSAPP</p>
-        <p>351-2006002</p>
+        <FaWhatsapp className="text-4xl mb-2" />
+        <p className="font-bold text-lg">ATENCIÓN A AFILIADOS</p>
+        <p className="text-[15px] font-semibold">351 704 0891</p>
       </div>
+
+      {/* INFORMACIÓN */}
       <div className="flex flex-col items-center">
-        <FaInfoCircle className="text-3xl mb-2" />
-        <p className="font-bold">INFORMACIÓN 24 H</p>
-        <p>0800-555-7000</p>
+        <FaInfoCircle className="text-4xl mb-2" />
+        <p className="font-bold text-lg">INFORMACIÓN</p>
+        <p className="text-[15px] font-semibold">0810 777 7997</p>
       </div>
+
+      {/* ASESOR COMERCIAL */}
       <div className="flex flex-col items-center">
-        <FaRegHandshake className="text-3xl mb-2" />
-        <p className="font-bold">ATENCIÓN DE VENTAS</p>
-        <p>0810-333-2244</p>
+        <FaWhatsapp className="text-4xl mb-2" />
+        <p className="font-bold text-lg">ASESOR COMERCIAL</p>
+        <p className="text-[15px] font-semibold">351 200 6002</p>
       </div>
     </section>
   );

@@ -1,50 +1,7825 @@
-
 [
-
-    {
-
-    
+  {
     "id": 1,
-    "nombre": "Clinica Romagosa",
-    "tipo": "Clínica",
-    "especialidades": ["Clínica Médica", "Pediatría", "Cardiología"],
-    "plan": ["Plan Joven", "Plan Coral", "Plan Integral", "Plan Máximo"],
-    "provincia": "Córdoba",
-    "ciudad": "Córdoba Capital",
-    "direccion": "Dean Funes 429",
-    "telefono": "0810-333-2244"
+    "nombre": "Centro Privado de Ojos ROMAGOSA",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Deán Funes 473 B° Centro",
+    "telefono": "0351 5701241 5701242 5701243"
   },
   {
     "id": 2,
-    "nombre": "Sanatorio Central Córdoba",
-    "tipo": "Clínica",
-    "especialidades": ["Clínica Médica", "Pediatría", "Cardiología"],
-    "plan": ["Plan Joven", "Plan Coral", "Plan Integral", "Plan Máximo"],
-    "provincia": "Córdoba",
-    "ciudad": "Córdoba Capital",
-    "direccion": "Av. Colón 1234",
-    "telefono": "0810-333-2244"
+    "nombre": "Centro de Radioterapia Dean Funes",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 2869 B° Alberdi",
+    "telefono": "0351 442 4700"
   },
   {
     "id": 3,
-    "nombre": "Centro Diagnóstico Norte",
-    "tipo": "Diagnóstico",
-    "especialidades": ["Imágenes", "Laboratorio"],
-    "plan": ["Plan Coral", "Plan Integral", "Plan Máximo"],
-    "provincia": "Buenos Aires",
-    "ciudad": "Vicente López",
-    "direccion": "Av. Maipú 1500",
-    "telefono": "0810-555-7000"
+    "nombre": "Instituto Privado de Radioterapia Oncologica sa",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Duarte Quiros 5244 B° Alberdi",
+    "telefono": "0351 4843999 4424600"
   },
   {
     "id": 4,
-    "nombre": "Consultorios Parque Sarmiento",
-    "tipo": "Consultorios",
-    "especialidades": ["Dermatología", "Nutrición", "Ginecología"],
-    "plan": ["Plan Integral", "Plan Máximo"],
-    "provincia": "Córdoba",
-    "ciudad": "Córdoba Capital",
-    "direccion": "Bv. Chacabuco 550",
-    "telefono": "351-2006002"
+    "nombre": "Centro Urologico Prof Bengio",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Urquiza 358 1er piso B° Centro",
+    "telefono": "351 531 1978 / 0351 4262699"
+  },
+  {
+    "id": 5,
+    "nombre": "Instituto Medico Damic",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Colon 2057",
+    "telefono": "0351 4888200"
+  },
+  {
+    "id": 6,
+    "nombre": "Clinica de Ojos Reyes Giobellina",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Humberto Primo 546",
+    "telefono": "0351 4235128 /351 3416010"
+  },
+  {
+    "id": 7,
+    "nombre": "Instituto Oftalmologico de Cordoba",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Chacabuco 879 B° Nueva Córdoba",
+    "telefono": "0351 5707090"
+  },
+  {
+    "id": 8,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Rafael Nuñez 4141 PB",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 9,
+    "nombre": "Clinica Romagosa",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 429 / 432",
+    "telefono": "351 563 1491"
+  },
+  {
+    "id": 10,
+    "nombre": "Centro de Resonandia Magnetica GAUSS",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Gauss 5639 B° Villa Belgrano",
+    "telefono": "03543-442374"
+  },
+  {
+    "id": 11,
+    "nombre": "Conci Carpinella",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 748 B° Centro",
+    "telefono": "0810 444 2242 351 303 6166"
+  },
+  {
+    "id": 12,
+    "nombre": "Sanatorio Allende",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Hipolito Yrigoyen 384 B° Nueva Cordoba",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 13,
+    "nombre": "Sanatorio Allende Cerro de las Rosas",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Pedro Simon Laplace 5749 B° Villa Belgrano",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 14,
+    "nombre": "Sanatorio Del Salvador",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Gral. Deheza 542 B° Gral Paz",
+    "telefono": "351 200 2323 / 0351 4529600"
+  },
+  {
+    "id": 15,
+    "nombre": "Clinica Privada Velez Sarsfield consultorios",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Naciones Unidas 984 B° Colinas de Velez Sarsfield",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 16,
+    "nombre": "Clinica Privada Velez Sarsfield",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Fuerza Aérea 2745 B° Rosedal",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 17,
+    "nombre": "Clinica Privada Velez Sarsfield Norte",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Caraffa 2532 B° Villa Cabrera",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 18,
+    "nombre": "Clinica Privada Velez Sarsfield Este",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Fray Mamerto Esquiú 111 B° Gral Paz",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 19,
+    "nombre": "Centro Medico Coinsa",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 1070 B° Centro",
+    "telefono": "0351 4229647 4252447 / 351 511 5919"
+  },
+  {
+    "id": 20,
+    "nombre": "Consultorios de La Recta",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Juan Nepper 6079 B° Villa Belgrano",
+    "telefono": "0351 620-7090"
+  },
+  {
+    "id": 21,
+    "nombre": "Hospital Italiano",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Roma 550 B° Gral Paz",
+    "telefono": "0351 4106540"
+  },
+  {
+    "id": 22,
+    "nombre": "Hospital Italiano Cerro",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rafael Nuñez 3672 B° Cerro de las Rosas",
+    "telefono": "351 653 1793"
+  },
+  {
+    "id": 23,
+    "nombre": "Clinica y Maternidad Del Sol",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Chacabuco 705 / Obispo Oro 344",
+    "telefono": "0810 555 2765"
+  },
+  {
+    "id": 24,
+    "nombre": "Instituto Oulton",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Vélez Sarsfield 562 B° Colinas de Velez Sarsfield",
+    "telefono": "0351 4267700"
+  },
+  {
+    "id": 25,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rondeau 455 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 26,
+    "nombre": "Instituto Medico Damic",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Colon 2057",
+    "telefono": "0351 4888200"
+  },
+  {
+    "id": 27,
+    "nombre": "Cordoba Medical Center",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rodríguez del Busto 3219 B° Alto Verde",
+    "telefono": "4825940 wsp 351 6335938"
+  },
+  {
+    "id": 28,
+    "nombre": "Centro Arguello Privado",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Donato Alvarez 7610",
+    "telefono": "351 210 9979"
+  },
+  {
+    "id": 29,
+    "nombre": "Sanatorio Allende",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Hipolito Yrigoyen 384 B° Nueva Cordoba",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 30,
+    "nombre": "Sanatorio Allende Cerro de las Rosas",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Pedro Simon Laplace 5749 B° Villa Belgrano",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 31,
+    "nombre": "Hospital Italiano",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Roma 550 B° Gral Paz",
+    "telefono": "0351 4106540"
+  },
+  {
+    "id": 32,
+    "nombre": "Hospital Italiano Cerro",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rafael Nuñez 3672 B° Cerro de las Rosas",
+    "telefono": "351 653 1793"
+  },
+  {
+    "id": 33,
+    "nombre": "Sanatorio Del Salvador",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Gral. Deheza 542 B° Gral Paz",
+    "telefono": "351 200 2323 / 0351 4529600"
+  },
+  {
+    "id": 34,
+    "nombre": "Clinica Privada Velez Sarsfield consultorios",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Naciones Unidas 984 B° Colinas de Velez Sarsfield",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 35,
+    "nombre": "Clinica Privada Velez Sarsfield",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Fuerza Aérea 2745 B° Rosedal",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 36,
+    "nombre": "Clinica Privada Velez Sarsfield Norte",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Caraffa 2532 B° Villa Cabrera",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 37,
+    "nombre": "Clinica Privada Velez Sarsfield Este",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Fray Mamerto Esquiú 111 B° Gral Paz",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 38,
+    "nombre": "Conci Carpinella",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 748 B° Centro",
+    "telefono": "0810 444 2242 351 303 6166"
+  },
+  {
+    "id": 39,
+    "nombre": "Centro Medico Privado San Andres",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Avellaneda 464 B° Centro",
+    "telefono": "351 384 9912 / 0351 4256464"
+  },
+  {
+    "id": 40,
+    "nombre": "Centro Medico Coinsa",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 1070 B° Centro",
+    "telefono": "0351 4229647 4252447 / 351 511 5919"
+  },
+  {
+    "id": 41,
+    "nombre": "Clinica y Maternidad Del Sol",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Chacabuco 705 / Obispo Oro 344",
+    "telefono": "351 755 5444 / 351 734 2939"
+  },
+  {
+    "id": 42,
+    "nombre": "Consultorios de La Recta",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Juan Nepper 6079 B° Villa Belgrano",
+    "telefono": "351 620-7090"
+  },
+  {
+    "id": 43,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rondeau 455 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 44,
+    "nombre": "Sanatorio Aconcagua guardia",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Caseros 899 B°Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 45,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Chacabuco 566 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 46,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Paraná 560 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 47,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rondeau 467 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 48,
+    "nombre": "Instituto Traumatologico Cordoba",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Gauss 5639 Bº Villa Belgrano",
+    "telefono": "351 345 5853 / 03543 424544 / 443443 / 424448"
+  },
+  {
+    "id": 49,
+    "nombre": "Instituto Medico Damic",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Colon 2057",
+    "telefono": "0351 4888200 / 351 3460800"
+  },
+  {
+    "id": 50,
+    "nombre": "Cordoba Medical Center",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rodríguez del Busto 3219 B° Alto Verde",
+    "telefono": "4825940 wsp 351 6335938"
+  },
+  {
+    "id": 51,
+    "nombre": "Clinica Romagosa",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 429 / 432",
+    "telefono": "351 563 1491"
+  },
+  {
+    "id": 52,
+    "nombre": "Lic. SARDOY Romina",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Duarte Quiros 2686 B° Alberdi",
+    "telefono": "351 254 0904"
+  },
+  {
+    "id": 53,
+    "nombre": "Lic. SARDOY Romina",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 672 PB B° Centro",
+    "telefono": "351 254 0904"
+  },
+  {
+    "id": 54,
+    "nombre": "Centro Medico Coinsa",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 1070 B° Centro",
+    "telefono": "0351 4229647 4252447 / 351 511 5919"
+  },
+  {
+    "id": 55,
+    "nombre": "Centro Medico Privado San Andres",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Avellaneda 464 B° Centro",
+    "telefono": "351 384 9912 / 0351 4256464"
+  },
+  {
+    "id": 56,
+    "nombre": "Clinica Privada Velez Sarsfield consultorios",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Naciones Unidas 984 B° Colinas de Velez Sarsfield",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 57,
+    "nombre": "Clinica Privada Velez Sarsfield",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Fuerza Aérea 2745 B° Rosedal",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 58,
+    "nombre": "Hospital Italiano",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Roma 550 B° Gral Paz",
+    "telefono": "0351 4106540"
+  },
+  {
+    "id": 59,
+    "nombre": "Sanatorio Del Salvador",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Gral. Deheza 542 B° Gral Paz",
+    "telefono": "351 200 2323 / 0351 4529600"
+  },
+  {
+    "id": 60,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rondeau 455 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 61,
+    "nombre": "Clinica Romagosa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 429 / 432",
+    "telefono": "351 563 1491"
+  },
+  {
+    "id": 62,
+    "nombre": "Biocon sa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "San José de Calasanz 258 B° Centro",
+    "telefono": "351 507 6517 / 552 4307"
+  },
+  {
+    "id": 63,
+    "nombre": "Biocon sa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Tristan Narvaja 2303 B° Colon",
+    "telefono": "0351 4550335 / 351 507 6517"
+  },
+  {
+    "id": 64,
+    "nombre": "Centro Medico Coinsa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 1070 B° Centro",
+    "telefono": "0351 4229647 4252447 / 351 511 5919"
+  },
+  {
+    "id": 65,
+    "nombre": "Centro Medico Privado San Andres",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Avellaneda 464 B° Centro",
+    "telefono": "351 384 9912 / 0351 4256464"
+  },
+  {
+    "id": 66,
+    "nombre": "Clinica Privada Velez Sarsfield consultorios",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Naciones Unidas 984 B° Colinas de Velez Sarsfield",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 67,
+    "nombre": "Clinica Privada Velez Sarsfield",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Fuerza Aérea 2745 B° Rosedal",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 68,
+    "nombre": "Conci Carpinella",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 748 B° Centro",
+    "telefono": "0810 444 2242 351 303 6166"
+  },
+  {
+    "id": 69,
+    "nombre": "Fundacion para el Progreso de la Medicina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "9 de Julio 941 B° Centro",
+    "telefono": "0351 3030 722"
+  },
+  {
+    "id": 70,
+    "nombre": "Fundacion para el Progreso de la Medicina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Velez Sarsfield 562 4to piso Inst Oulton",
+    "telefono": "0351 3030 722"
+  },
+  {
+    "id": 71,
+    "nombre": "Fundacion para el Progreso de la Medicina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Evangelista Torricelli 5615 B°Villa Belgrano",
+    "telefono": "0351 3030 722"
+  },
+  {
+    "id": 72,
+    "nombre": "Hospital Italiano",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Roma 550 B° Gral Paz",
+    "telefono": "0351 4106540"
+  },
+  {
+    "id": 73,
+    "nombre": "Hospital Italiano Cerro",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rafael Nuñez 3672 B° Cerro de las Rosas",
+    "telefono": "351 653 1793"
+  },
+  {
+    "id": 74,
+    "nombre": "Biocor Salud srl",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Figueroa Alcorta 44",
+    "telefono": "351 751 3091"
+  },
+  {
+    "id": 75,
+    "nombre": "Biocor Salud srl",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Rosario",
+    "direccion": "Hipólito Yrigoyen 635",
+    "telefono": "351 751 3091"
+  },
+  {
+    "id": 76,
+    "nombre": "Laboratorio CASTILLO CHIDIAK",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bv Guzman 65",
+    "telefono": "351 589 0589 / 351 560 7605"
+  },
+  {
+    "id": 77,
+    "nombre": "Laboratorio CASTILLO CHIDIAK",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Juan B. Justo 3651",
+    "telefono": "351 589 0589 / 351 560 7605"
+  },
+  {
+    "id": 78,
+    "nombre": "Laboratorio CASTILLO CHIDIAK",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 266",
+    "telefono": "351 589 0589 / 351 560 7605"
+  },
+  {
+    "id": 79,
+    "nombre": "Sanatorio Allende",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Hipolito Yrigoyen 384 B° Nueva Cordoba",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 80,
+    "nombre": "Sanatorio Allende Cerro de las Rosas",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Pedro Simon Laplace 5749 B° Villa Belgrano",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 81,
+    "nombre": "Sanatorio Del Salvador",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Gral. Deheza 542 B° Gral Paz",
+    "telefono": "351 200 2323 / 0351 4529600"
+  },
+  {
+    "id": 82,
+    "nombre": "Sanatorio Aconcagua",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rondeau 455 B° Nueva Córdoba",
+    "telefono": "0351 442 6300 / 351 201 7666"
+  },
+  {
+    "id": 83,
+    "nombre": "Instituto Medico Damic",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Colon 2057",
+    "telefono": "0351 4888200"
+  },
+  {
+    "id": 84,
+    "nombre": "Bioq. VICENTE Maria Paula",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Colón 2133",
+    "telefono": "4802495 int 102 / 2302 521065"
+  },
+  {
+    "id": 85,
+    "nombre": "Centro Medico Privado San Andres",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Avellaneda 464 B° Centro",
+    "telefono": "351 384 9912 / 0351 4256464"
+  },
+  {
+    "id": 86,
+    "nombre": "Conci Carpinella",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Santa Rosa 748 B° Centro",
+    "telefono": "0810 444 2242 351 303 6166"
+  },
+  {
+    "id": 87,
+    "nombre": "Lic. FALCON Noelia",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Nazaret 3335 B° Bajo Palermo",
+    "telefono": "351 7058301"
+  },
+  {
+    "id": 88,
+    "nombre": "Lic. OCHOVA Roxana",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Sarachaga 34 B°Alta Cordoba",
+    "telefono": "351 327 2768"
+  },
+  {
+    "id": 89,
+    "nombre": "Lic.RODRIGUEZ Constanza",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Sarachaga 34 B°Alta Cordoba",
+    "telefono": "3516 65-9126"
+  },
+  {
+    "id": 90,
+    "nombre": "General Paz Colon",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Av. Colón 745",
+    "telefono": "0351 4243808 4243814 351 5413231"
+  },
+  {
+    "id": 91,
+    "nombre": "General Paz Humberto Primo",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Tucumán 496 PB esq. Humberto Primo",
+    "telefono": "0351 4243807 / 351 542 5474"
+  },
+  {
+    "id": 92,
+    "nombre": "HP Farma Santa Rosa",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Santa Ros 794",
+    "telefono": ""
+  },
+  {
+    "id": 93,
+    "nombre": "HP Farma Patio Olmos",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Av. Vélez Sarsfield 361 Patio Olmos loc. 319",
+    "telefono": "0351 4261070"
+  },
+  {
+    "id": 94,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Av Colon 820",
+    "telefono": "0810 888 1414 / 351 672 2244"
+  },
+  {
+    "id": 95,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Belgrano 66",
+    "telefono": "0810 888 1414 / 351 402 9924"
+  },
+  {
+    "id": 96,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Gral Paz 258",
+    "telefono": "0810 888 1414 / 351 540 0181"
+  },
+  {
+    "id": 97,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Jujuy 520",
+    "telefono": "0810 888 1414 / 351 611 2178"
+  },
+  {
+    "id": 98,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Av Colon 1027",
+    "telefono": "0810 888 1414 / 351 402 7227"
+  },
+  {
+    "id": 99,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Humberto Primo 208",
+    "telefono": "0810 888 1414/ 351 403 1285"
+  },
+  {
+    "id": 100,
+    "nombre": "Moderna V",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Bv Chacabuco 502",
+    "telefono": "351 568 0181 / 351 508 7603"
+  },
+  {
+    "id": 101,
+    "nombre": "Red General Paz Nvo Centro",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Nvo Ctro Shopping Duarte Quirós 1400",
+    "telefono": "0351 4828101"
+  },
+  {
+    "id": 102,
+    "nombre": "Sanchez Antoniolli 14",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Bvd Illia N° 417",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 103,
+    "nombre": "Sutiaga",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Centro - Deán Funes 444",
+    "telefono": "0351 4238354 4254681"
+  },
+  {
+    "id": 104,
+    "nombre": "Argentina III",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Nueva Córdoba - Ituzaingó 602",
+    "telefono": "0351 4605184"
+  },
+  {
+    "id": 105,
+    "nombre": "General Paz Nueva Cordoba",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Nueva Córdoba - Chacabuco 787",
+    "telefono": "0351 4488331 / 351 542 5512"
+  },
+  {
+    "id": 106,
+    "nombre": "HP Farma del Instituto",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Nueva Córdoba - Av. Vélez Sarsfield 566",
+    "telefono": "0351 4261071 / 72"
+  },
+  {
+    "id": 107,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Nueva Córdoba - Laprida 41",
+    "telefono": "0810 888 1414 / 351 611 4312"
+  },
+  {
+    "id": 108,
+    "nombre": "Sanchez Antoniolli 25",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Nueva Córdoba - Bv San Juan 590",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 109,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Alberdi - Santa Rosa 1565",
+    "telefono": "0810 888 1414 / 351 611 4350"
+  },
+  {
+    "id": 110,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Gral Paz - Oncativo 1366",
+    "telefono": "0810 888 1414 / 351 611 3307"
+  },
+  {
+    "id": 111,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cofico - Juan del Campillo 600",
+    "telefono": "0810 888 1414 / 351 542 9978"
+  },
+  {
+    "id": 112,
+    "nombre": "Mundial",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Alta Córdoba - Baigorri 747",
+    "telefono": "0351 4409063 4409063"
+  },
+  {
+    "id": 113,
+    "nombre": "Mundial",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Alta Córdoba - Fragueiro 2400",
+    "telefono": "0351 4718155 4409062"
+  },
+  {
+    "id": 114,
+    "nombre": "Sanchez Antoniolli 21",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cofico - Bedoya N° 695",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 115,
+    "nombre": "General Paz 24 Septiembre",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Gral Paz - 24 de Septiembre 802",
+    "telefono": "0351 4210039 4245565 / 351 542 5470"
+  },
+  {
+    "id": 116,
+    "nombre": "General Paz Hospital Córdoba",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Pueyrredon - Libertad 2077 y E. Loza",
+    "telefono": "0351 4339390 / 351 289 3136"
+  },
+  {
+    "id": 117,
+    "nombre": "General Paz Roma",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Gral Paz - Roma 557",
+    "telefono": "0351 4510293 / 351 542 5472"
+  },
+  {
+    "id": 118,
+    "nombre": "HP Farma 24 de Septiembre",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Gral Paz - Av. 24 de Septiembre 1006",
+    "telefono": "0351 4261108"
+  },
+  {
+    "id": 119,
+    "nombre": "HP Farma San Vicente",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° San Vicente - Sargento Cabral 1374",
+    "telefono": "0351 4119294"
+  },
+  {
+    "id": 120,
+    "nombre": "Plaza Lavalle",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° San Vicente - San Jerónimo 3163",
+    "telefono": "0351 4558830"
+  },
+  {
+    "id": 121,
+    "nombre": "Sanchez Antoniolli 9",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Leandro Alem - Av. Leandro Alem 1570",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 122,
+    "nombre": "García",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Ayacucho - Toledo 1812",
+    "telefono": "0351 4701539"
+  },
+  {
+    "id": 123,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Jardin Empalme - Av Sabattini 4281",
+    "telefono": "0810 888 1414 / 351 542 9978"
+  },
+  {
+    "id": 124,
+    "nombre": "Sanchez Antoniolli 12",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº Primero de Mayo - Rosales 5395 esq Boedo",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 125,
+    "nombre": "HP Farma Hospital Privado",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Colina de Velez Sarsfield - Naciones Unidas 346",
+    "telefono": "0351 4688281 / 4683515"
+  },
+  {
+    "id": 126,
+    "nombre": "HP Farma Paseo del Jockey",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Jardin Espinosa - Elías Yofre 1050 loc. 7 y 8 Paseo del Jockey",
+    "telefono": "0351 4334311"
+  },
+  {
+    "id": 127,
+    "nombre": "HP Farma Raúl Ferreyra",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Rogelio Martinez - Av. Richieri 2200",
+    "telefono": "0351 4476500 int 303"
+  },
+  {
+    "id": 128,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Jardin Espinosa - Pablo Richieri 3310",
+    "telefono": "0810 888 1414 / 351 542 9978"
+  },
+  {
+    "id": 129,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Rogelio Martinez - Mateo Luque 1296",
+    "telefono": "0810 888 1414 / 351 542 9978"
+  },
+  {
+    "id": 130,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Ejercito Argentino - Jose Javier Diaz 16",
+    "telefono": "0810 888 1414/ 351 403 1285"
+  },
+  {
+    "id": 131,
+    "nombre": "Octubre",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° San Fernando - Coronel JJ Díaz 387",
+    "telefono": "0351 4610849"
+  },
+  {
+    "id": 132,
+    "nombre": "San Carlos Sud",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° San Carlos - O'Higgins 2645",
+    "telefono": "0351 4641006"
+  },
+  {
+    "id": 133,
+    "nombre": "Sanchez Antoniolli 10",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº Corral de Palos - Leartes 2484",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 134,
+    "nombre": "Sanchez Antoniolli 19",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Jardín - Av. Valparaiso N° 4301",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 135,
+    "nombre": "Sanchez Antoniolli 6",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº Parque Vélez Sarsfield - Naciones Unidas 927",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 136,
+    "nombre": "Clinica Odontologica Odontomed",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 438",
+    "telefono": "0351 4258742 / 351 600 8849"
+  },
+  {
+    "id": 137,
+    "nombre": "Consultorio odontologico AMESTEGUI Paula>CON derivacion de OdontoMed",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Recta Martinolli 8102 B° Arguello",
+    "telefono": "351 574 8532"
+  },
+  {
+    "id": 138,
+    "nombre": "Consultorio odontologico RAMIREZ Juan Pablo>CON derivacion de OdontoMed",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Monseñor Pablo Cabrera 2626",
+    "telefono": "353 419 6421"
+  },
+  {
+    "id": 139,
+    "nombre": "Optica AMERICO",
+    "tipo": "OPTICAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Duarte Quirós 231 B° Centro",
+    "telefono": "0351 4282904 / 351 235 6440"
+  },
+  {
+    "id": 140,
+    "nombre": "Optica SANTA CARA",
+    "tipo": "OPTICAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "La Rioja 289 B° Centro",
+    "telefono": "4402847 / 351 538 5135"
+  },
+  {
+    "id": 141,
+    "nombre": "Optica SOLER",
+    "tipo": "OPTICAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Deán Funes 517 B° Centro",
+    "telefono": "351 421 5581"
+  },
+  {
+    "id": 142,
+    "nombre": "Optica SOLER",
+    "tipo": "OPTICAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Deán Funes 280 B° Centro",
+    "telefono": "0351 4461452"
+  },
+  {
+    "id": 143,
+    "nombre": "Optica SOLER",
+    "tipo": "OPTICAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av Gral Paz 272 B° Centro",
+    "telefono": "351 425 6021"
+  },
+  {
+    "id": 144,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 145,
+    "nombre": "Clinica Privada Santa Maria",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 40",
+    "telefono": "03547 421093"
+  },
+  {
+    "id": 146,
+    "nombre": "consultorios Clinica Privada Santa Maria",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Dr Jorge Nahal 331",
+    "telefono": "03547 432002"
+  },
+  {
+    "id": 147,
+    "nombre": "Centro Medico Modelo Privado",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 71",
+    "telefono": "03547 430235"
+  },
+  {
+    "id": 148,
+    "nombre": "Consultorios Medicos Privado Alta Gracia",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Carignani 133 (ex Chile)",
+    "telefono": "03547 422411 421821"
+  },
+  {
+    "id": 149,
+    "nombre": "Clinica Privada Santa Maria",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 40",
+    "telefono": "03547 421093"
+  },
+  {
+    "id": 150,
+    "nombre": "Consultorios Medicos Privado Alta Gracia",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Carignani 133 (ex Chile)",
+    "telefono": "3547 478078 / 3547 457258"
+  },
+  {
+    "id": 151,
+    "nombre": "Clinica Privada Santa Maria",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 40",
+    "telefono": "03547 421093"
+  },
+  {
+    "id": 152,
+    "nombre": "Terapias Integrales",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Dean Funes 56",
+    "telefono": "3515318080"
+  },
+  {
+    "id": 153,
+    "nombre": "Terapias Integrales",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Dean Funes 56",
+    "telefono": "3515318080"
+  },
+  {
+    "id": 154,
+    "nombre": "Lic. BERGESIO Ana",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Jorge Nahal 427",
+    "telefono": "3547 636699"
+  },
+  {
+    "id": 155,
+    "nombre": "Centro Medico Modelo Privado",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 71",
+    "telefono": "03547 430235"
+  },
+  {
+    "id": 156,
+    "nombre": "Del Pueblo",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "España esq. Rafael Lozada",
+    "telefono": "03547 430195"
+  },
+  {
+    "id": 157,
+    "nombre": "Olsina",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belgrano 199 esq. Olmos",
+    "telefono": "03547 421031"
+  },
+  {
+    "id": 158,
+    "nombre": "Centro Odontologico Unident CP",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Arruabarrena 150 Carlos Paz",
+    "telefono": "3541 220 493"
+  },
+  {
+    "id": 159,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 160,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 161,
+    "nombre": "consultorio medico Arroyito",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Mitre 129",
+    "telefono": "03576 454770"
+  },
+  {
+    "id": 162,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 163,
+    "nombre": "Clinica Regional Arroyito SRL",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Fulvio Pagani 622",
+    "telefono": "03576 450931 / 425981"
+  },
+  {
+    "id": 164,
+    "nombre": "Centro Privado de Diagnostico Lescano",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Castro Barros 179",
+    "telefono": "03576 423880"
+  },
+  {
+    "id": 165,
+    "nombre": "Consultorios Especializados",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "25 de May 1257",
+    "telefono": "03576 452313"
+  },
+  {
+    "id": 166,
+    "nombre": "Centro Privado de Diagnostico Lescano",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Castro Barros 179",
+    "telefono": "03576 423880"
+  },
+  {
+    "id": 167,
+    "nombre": "Centro Privado de Diagnostico por Imagenes Arroyito",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "General Paz 1044",
+    "telefono": "03576 452861"
+  },
+  {
+    "id": 168,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 169,
+    "nombre": "Clinica Regional Arroyito SRL",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Fulvio Pagani 622",
+    "telefono": "03576 450931 / 425981"
+  },
+  {
+    "id": 170,
+    "nombre": "Bioq. AUBAN Claudia Marcela",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Sarmiento 940",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 171,
+    "nombre": "Bioq. ANDRAWOS Patricia",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Sarmiento 798",
+    "telefono": "03576 451166"
+  },
+  {
+    "id": 172,
+    "nombre": "Bioq. BADINO Vanesa Soledad",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Belgrano 1311",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 173,
+    "nombre": "Bioq. BROWNLESS Natalia Lys",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 174,
+    "nombre": "Bioq. BURZIO Ana Paula",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 175,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 176,
+    "nombre": "Clinica Regional Arroyito SRL",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Fulvio Pagani 622",
+    "telefono": "03576 450931 / 425981"
+  },
+  {
+    "id": 177,
+    "nombre": "Bioq. CORTESE Fabiana Beatriz",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "J. A. Vocos 149",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 178,
+    "nombre": "Bioq. FERNANDEZ Luciano",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 118",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 179,
+    "nombre": "Bioq. GRANERO ZORRILLA Sebastian",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 118",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 180,
+    "nombre": "Bioq. HEVIA Mirta Luisa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 118",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 181,
+    "nombre": "Bioq. NAVARRETE Sofía",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Sarmiento 798",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 182,
+    "nombre": "Bioq. OLOCCO Maria Ines",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Sarmiento 798",
+    "telefono": "03576 425136"
+  },
+  {
+    "id": 183,
+    "nombre": "Centro Privado de Kinesiologia y Fisioterapia",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "José A. Vocos 117",
+    "telefono": "03576 425069 / 3576 522 058"
+  },
+  {
+    "id": 184,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 185,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 186,
+    "nombre": "Ciancia",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Bartolomé Mitre 230",
+    "telefono": "03576 423083"
+  },
+  {
+    "id": 187,
+    "nombre": "Garrone II",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Sarmiento 971",
+    "telefono": "03576 421355"
+  },
+  {
+    "id": 188,
+    "nombre": "Olocco",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Mariano Moreno 742",
+    "telefono": "03576 453077 / 423077"
+  },
+  {
+    "id": 189,
+    "nombre": "Viviana Romero I",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Dalle Murua 1230",
+    "telefono": "03576 452327"
+  },
+  {
+    "id": 190,
+    "nombre": "Viviana Romero II",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "25 de May 1102",
+    "telefono": "03576 451180"
+  },
+  {
+    "id": 191,
+    "nombre": "Centro Odontologico Unident CP",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Arruabarrena 150 Carlos Paz",
+    "telefono": "3541 220 493 / 03541 433886"
+  },
+  {
+    "id": 192,
+    "nombre": "Sanatorio Privado Caroya",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Av. San Martín 1998",
+    "telefono": "03525 466208 / 466557"
+  },
+  {
+    "id": 193,
+    "nombre": "Sanatorio Privado Caroya",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Av. San Martín 1998",
+    "telefono": "03525 466208 / 466557"
+  },
+  {
+    "id": 194,
+    "nombre": "Sanatorio Privado Caroya",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Av. San Martín 1998",
+    "telefono": "03525 466208 / 466557"
+  },
+  {
+    "id": 195,
+    "nombre": "Lab MALDONADO Graciela",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Av. San Martín 3317",
+    "telefono": "03525 466455"
+  },
+  {
+    "id": 196,
+    "nombre": "Sanatorio Privado Caroya",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Av. San Martín 1998",
+    "telefono": "03525 466208 / 466557"
+  },
+  {
+    "id": 197,
+    "nombre": "Sanatorio Privado Caroya",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Av. San Martín 1998",
+    "telefono": "03525 466208 / 466557"
+  },
+  {
+    "id": 198,
+    "nombre": "Centro Odontologico Unident CP",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Arruabarrena 150 Carlos Paz",
+    "telefono": "3541 - 220493"
+  },
+  {
+    "id": 199,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 200,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 201,
+    "nombre": "Kinesis",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Tirolesa",
+    "direccion": "Illia Sur 2649",
+    "telefono": "351 341 4066 / 351 641 2705"
+  },
+  {
+    "id": 202,
+    "nombre": "Kinesis",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Colonia Tirolesa",
+    "direccion": "Illia Sur 2649",
+    "telefono": "351 341 4066 / 351 641 2705"
+  },
+  {
+    "id": 203,
+    "nombre": "Kinesis",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Colonia Tirolesa",
+    "direccion": "Illia Sur 2649",
+    "telefono": "351 341 4066 / 351 641 2705"
+  },
+  {
+    "id": 204,
+    "nombre": "Veronica Gil Lopez",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cosquin",
+    "direccion": "Presidente Perón 937",
+    "telefono": "03541 458856"
+  },
+  {
+    "id": 205,
+    "nombre": "Clinica Privada Dean Funes srl",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Saenz Peña 261",
+    "telefono": "03521 420018 / 426213"
+  },
+  {
+    "id": 206,
+    "nombre": "Centro Medico Privado Dr Cantoni",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Rivadavia 233",
+    "telefono": "03521 420988"
+  },
+  {
+    "id": 207,
+    "nombre": "Centro Medico Privado Dr Cantoni",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Rivadavia 233",
+    "telefono": "03521 420988"
+  },
+  {
+    "id": 208,
+    "nombre": "Clinica Privada Dean Funes srl",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Saenz Peña 261",
+    "telefono": "03521 420018 / 426213"
+  },
+  {
+    "id": 209,
+    "nombre": "Centro Medico Privado Dr Cantoni",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Rivadavia 233",
+    "telefono": "03521 420988"
+  },
+  {
+    "id": 210,
+    "nombre": "Clinica Privada Dean Funes srl",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Saenz Peña 261",
+    "telefono": "03521 420018 / 426213"
+  },
+  {
+    "id": 211,
+    "nombre": "Centro Medico Privado Dr Cantoni",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Rivadavia 233",
+    "telefono": "03521 420988"
+  },
+  {
+    "id": 212,
+    "nombre": "Clinica Privada Dean Funes srl",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Saenz Peña 261",
+    "telefono": "03521 420018 / 426213"
+  },
+  {
+    "id": 213,
+    "nombre": "Clinica Privada Dean Funes srl",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "Saenz Peña 261",
+    "telefono": "03521 420018 / 426213"
+  },
+  {
+    "id": 214,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 215,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Dean Funes",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 216,
+    "nombre": "Bioq. CASTILLO Elsa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Despeñaderos",
+    "direccion": "Arenales 670",
+    "telefono": "03547 492364"
+  },
+  {
+    "id": 217,
+    "nombre": "Consultorios Svriz Adolfo Santos",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "El Tio",
+    "direccion": "25 de May 0766",
+    "telefono": "03576 491080"
+  },
+  {
+    "id": 218,
+    "nombre": "Consultorios Garrudo Pablo Andres",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "El Tio",
+    "direccion": "17 de Agosto Nº 355",
+    "telefono": "3576 523 087"
+  },
+  {
+    "id": 219,
+    "nombre": "Garrone I",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "El Tio",
+    "direccion": "Independencia 354",
+    "telefono": "03576 491124"
+  },
+  {
+    "id": 220,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "El Tio",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 221,
+    "nombre": "Del Rio",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Embalse de Río Tercero",
+    "direccion": "Cabo Primero Huanca 107",
+    "telefono": "03571 485620"
+  },
+  {
+    "id": 222,
+    "nombre": "Clinica Privada San Isidro",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Italia 639",
+    "telefono": "03525 421204 / 421701"
+  },
+  {
+    "id": 223,
+    "nombre": "Centro de Atención Jesus María - Sanatorio Caroya",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Tucumán 243",
+    "telefono": "03525 400999 401950"
+  },
+  {
+    "id": 224,
+    "nombre": "Clinica Privada San Isidro",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Italia 639",
+    "telefono": "03525 421204 / 421701"
+  },
+  {
+    "id": 225,
+    "nombre": "Laboratorio Furlan Monica",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Italia 963",
+    "telefono": "03525 420309"
+  },
+  {
+    "id": 226,
+    "nombre": "Consultorios Medicos Dra. Viel",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Int. Cespedes 40",
+    "telefono": "03525 444305"
+  },
+  {
+    "id": 227,
+    "nombre": "Clinica Privada Jesus Maria Dr. Anibal Viale",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Dr. Aníbal Viale 790",
+    "telefono": "03525 420302 425800"
+  },
+  {
+    "id": 228,
+    "nombre": "Clinica Privada San Isidro",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Italia 639",
+    "telefono": "03525 421204 / 421701"
+  },
+  {
+    "id": 229,
+    "nombre": "Centro Privado de Ojos Dr Bulacio",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "J. Kennedy 229",
+    "telefono": "03525 421222"
+  },
+  {
+    "id": 230,
+    "nombre": "Centro de Atención Jesus María - Sanatorio Caroya",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Tucumán 243",
+    "telefono": "03525 400999 401950"
+  },
+  {
+    "id": 231,
+    "nombre": "Clinica Privada Jesus Maria Dr. Anibal Viale",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Dr. Aníbal Viale 790",
+    "telefono": "03525 420302 425800"
+  },
+  {
+    "id": 232,
+    "nombre": "Daniotti",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Vicente Agüero 336",
+    "telefono": "03525 400200 400601 / 3525 648 302"
+  },
+  {
+    "id": 233,
+    "nombre": "Daniotti III",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Italia 339",
+    "telefono": "03525 400603 / 3525 645 000"
+  },
+  {
+    "id": 234,
+    "nombre": "Daniotti VI",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Tucumán 533",
+    "telefono": "03525 400606 / 3525 642 851"
+  },
+  {
+    "id": 235,
+    "nombre": "consultorio Dra Carolina Anderson",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Uruguay 358",
+    "telefono": "3547 614600"
+  },
+  {
+    "id": 236,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 237,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 238,
+    "nombre": "Centro de Ojos Calera",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Gral. Cabrera 372",
+    "telefono": "351 698 5555"
+  },
+  {
+    "id": 239,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 240,
+    "nombre": "Centro Medico Privado Emerco",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Saul Moyano 247",
+    "telefono": "03543 466077"
+  },
+  {
+    "id": 241,
+    "nombre": "Instituto de Especialidades Medicas",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Velez Sarsfield 345",
+    "telefono": "03543 466048 466435"
+  },
+  {
+    "id": 242,
+    "nombre": "Gervilla",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Av. Velez Sarsfield 570",
+    "telefono": "03543 466494"
+  },
+  {
+    "id": 243,
+    "nombre": "Ghiggia de Ghiggia",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "B° Industrial - Eva Perón 121",
+    "telefono": "03543 468065"
+  },
+  {
+    "id": 244,
+    "nombre": "Centro Medico de la Familia",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Julio A. Roca 337",
+    "telefono": "03543 467536 466913 / 351 318 2912"
+  },
+  {
+    "id": 245,
+    "nombre": "Centro Medico Privado Emerco",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Saul Moyano 247",
+    "telefono": "03543 466077"
+  },
+  {
+    "id": 246,
+    "nombre": "Instituto de Especialidades Medicas",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Velez Sarsfield 345",
+    "telefono": "03543 466048 466435"
+  },
+  {
+    "id": 247,
+    "nombre": "CENIC",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Olcese 326 - B° Centro",
+    "telefono": "351 241 2477"
+  },
+  {
+    "id": 248,
+    "nombre": "Centro Medico de la Familia",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Julio A. Roca 337",
+    "telefono": "03543 467536 466913 / 351 318 2912"
+  },
+  {
+    "id": 249,
+    "nombre": "Centro Medico Privado Emerco",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Saul Moyano 247",
+    "telefono": "03543 466077"
+  },
+  {
+    "id": 250,
+    "nombre": "Instituto de Especialidades Medicas",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Velez Sarsfield 345",
+    "telefono": "03543 466048 466435"
+  },
+  {
+    "id": 251,
+    "nombre": "CENIC",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Olcese 326 - B° Centro",
+    "telefono": "351 241 2477"
+  },
+  {
+    "id": 252,
+    "nombre": "Centro Medico Privado Emerco",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Saul Moyano 247",
+    "telefono": "03543 466077"
+  },
+  {
+    "id": 253,
+    "nombre": "Instituto de Especialidades Medicas",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Velez Sarsfield 345",
+    "telefono": "03543 466048 466435"
+  },
+  {
+    "id": 254,
+    "nombre": "consultorio Dra Carolina Anderson",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Despeñaderos",
+    "direccion": "Uruguay 358",
+    "telefono": "3547 614600"
+  },
+  {
+    "id": 255,
+    "nombre": "Consultorio odontologico MORESI Maria",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Dean Funes 833 Villa Allende",
+    "telefono": "03543 433992 / 351 770 3012"
+  },
+  {
+    "id": 256,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Falda",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 257,
+    "nombre": "General Paz La Falda",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Falda",
+    "direccion": "Sarmiento 436",
+    "telefono": "03548 423795 / 423816 / 351 5411999"
+  },
+  {
+    "id": 258,
+    "nombre": "consultorio Dra Carolina Anderson",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "San Agustin",
+    "direccion": "Uruguay 358",
+    "telefono": "03547 435390"
+  },
+  {
+    "id": 259,
+    "nombre": "Centro Odontologico Unident JM",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Colonia Caroya",
+    "direccion": "Cordoba 1388 Jesus Maria",
+    "telefono": "3525 564 627"
+  },
+  {
+    "id": 260,
+    "nombre": "Clinica Privada Cordoba",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "Velez Sarsfield 145",
+    "telefono": "03564 471625"
+  },
+  {
+    "id": 261,
+    "nombre": "Clinica Privada Cordoba",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "Velez Sarsfield 145",
+    "telefono": "03564 471625"
+  },
+  {
+    "id": 262,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 263,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 264,
+    "nombre": "Sanatorio Privado Bruera",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "Cr Pablo Bossio 424",
+    "telefono": "03575 491052 / 491339"
+  },
+  {
+    "id": 265,
+    "nombre": "Clinica Privada del Norte",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "Leon Barrionuevo 675",
+    "telefono": "03575 491409"
+  },
+  {
+    "id": 266,
+    "nombre": "Sanatorio Privado Bruera",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "Cr Pablo Bossio 424",
+    "telefono": "03575 491052 / 491339"
+  },
+  {
+    "id": 267,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 268,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Para",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 269,
+    "nombre": "Consultorio Privado del Sagrado Corazon",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Tordilla",
+    "direccion": "Av Libertador 1004",
+    "telefono": "03576 496118"
+  },
+  {
+    "id": 270,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Tordilla",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 271,
+    "nombre": "Arrieta Bazan",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Almirante Brown 310",
+    "telefono": "0351 4983201"
+  },
+  {
+    "id": 272,
+    "nombre": "Mazzola",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Belgrano 514",
+    "telefono": "0351 4981281"
+  },
+  {
+    "id": 273,
+    "nombre": "Centro Odontologico Unident JM",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Cordoba 1388 Jesus Maria",
+    "telefono": "3525 564 627"
+  },
+  {
+    "id": 274,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 275,
+    "nombre": "Centro Medico El Talar",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Av. Tissera 2060",
+    "telefono": "03543 645771"
+  },
+  {
+    "id": 276,
+    "nombre": "Salvus Centro Medico Privado",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Ruta Intermunicipal Mendiolaza Mall",
+    "telefono": "03543 435467 / 3543 310 666"
+  },
+  {
+    "id": 277,
+    "nombre": "Centro Medico El Talar",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Av. Tissera 2060",
+    "telefono": "03543 645771"
+  },
+  {
+    "id": 278,
+    "nombre": "Centro Medico El Talar",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Av. Tissera 2060",
+    "telefono": "03543 645771"
+  },
+  {
+    "id": 279,
+    "nombre": "Salvus Centro Medico Privado",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Ruta Intermunicipal Mendiolaza Mall",
+    "telefono": "03543 435467 / 3543 310 666"
+  },
+  {
+    "id": 280,
+    "nombre": "Centro Medico El Talar",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Av. Tissera 2060",
+    "telefono": "03543 645771"
+  },
+  {
+    "id": 281,
+    "nombre": "Salvus Centro Medico Privado",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Ruta Intermunicipal Mendiolaza Mall",
+    "telefono": "03543 435467 / 3543 310 666"
+  },
+  {
+    "id": 282,
+    "nombre": "Centro Medico El Talar",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Av. Tissera 2060",
+    "telefono": "03543 645771"
+  },
+  {
+    "id": 283,
+    "nombre": "Salvus Centro Medico Privado",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Ruta Intermunicipal Mendiolaza Mall",
+    "telefono": "03543 435467 / 3543 310 666"
+  },
+  {
+    "id": 284,
+    "nombre": "Lider Mendiolaza",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Ruta E53 Km 12 local 1y2 complejo Altos del Talar",
+    "telefono": "351 611 1230"
+  },
+  {
+    "id": 285,
+    "nombre": "Gramigna",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "El Talar - Av Tissera 3997",
+    "telefono": "03543 645731 / 351 514 3834"
+  },
+  {
+    "id": 286,
+    "nombre": "Centro Odontologico Unident JM",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Cordoba 1388 Jesus Maria",
+    "telefono": "3525 564 627"
+  },
+  {
+    "id": 287,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 288,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 289,
+    "nombre": "Bioq. URIZA Luciana Veronica",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "Luis F. Tagle 246",
+    "telefono": "351 240 5068"
+  },
+  {
+    "id": 290,
+    "nombre": "CV Farma",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "San Martin 564",
+    "telefono": "351 696 9060"
+  },
+  {
+    "id": 291,
+    "nombre": "Lopez Blangino 1",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "Sarmiento 375",
+    "telefono": "0351 4917359 / 351 232 4864"
+  },
+  {
+    "id": 292,
+    "nombre": "Lopez Blangino 2",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "David Linares 35",
+    "telefono": "0351 4917229 / 351 232 4864"
+  },
+  {
+    "id": 293,
+    "nombre": "Consultorio odontologico LUCHINI Mariana",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cosquin",
+    "direccion": "Corrientes 837 Cosquin",
+    "telefono": "351 754 7591"
+  },
+  {
+    "id": 294,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 295,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 296,
+    "nombre": "Biocor Salud srl",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Oliva",
+    "direccion": "Sarmiento 250",
+    "telefono": "03532 422723 / 351 751 3091"
+  },
+  {
+    "id": 297,
+    "nombre": "Consultorio Privado Pasco",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pasco",
+    "direccion": "Av. General Paz 958",
+    "telefono": "0353 4885110"
+  },
+  {
+    "id": 298,
+    "nombre": "Consultorio Privado Pasco",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pasco",
+    "direccion": "Av. General Paz 958",
+    "telefono": "0353 4885110"
+  },
+  {
+    "id": 299,
+    "nombre": "Fernandez",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pasco",
+    "direccion": "General Paz 657",
+    "telefono": "0353 4885021 / 351 207 6722"
+  },
+  {
+    "id": 300,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Pasco",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 301,
+    "nombre": "Clinica Privada Pasteur",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "25 de May 0646",
+    "telefono": "03572 470155 479986"
+  },
+  {
+    "id": 302,
+    "nombre": "Clinica Privada Pasteur",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "25 de May 0646",
+    "telefono": "03572 470155 479986"
+  },
+  {
+    "id": 303,
+    "nombre": "Clinica Privada Pasteur",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "25 de May 0646",
+    "telefono": "03572 470155 479986"
+  },
+  {
+    "id": 304,
+    "nombre": "Clinica Privada Pasteur",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "25 de May 0646",
+    "telefono": "03572 470155 479986"
+  },
+  {
+    "id": 305,
+    "nombre": "Zanello",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "25 de May 0618",
+    "telefono": "03572 470306"
+  },
+  {
+    "id": 306,
+    "nombre": "Consultorio odontologico BARROS Laura",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cosquin",
+    "direccion": "Corrientes 837 Cosquin",
+    "telefono": "351 531 7647"
+  },
+  {
+    "id": 307,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 308,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 309,
+    "nombre": "Sanatorio Privado del Interior (Ex Alpa)",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Figueroa Alcorta 37",
+    "telefono": "03543 459050 451634 451791"
+  },
+  {
+    "id": 310,
+    "nombre": "Consultorios de la Merced",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Av. Sarmiento 101",
+    "telefono": "03543 451441"
+  },
+  {
+    "id": 311,
+    "nombre": "Sanatorio Privado del Interior (Ex Alpa)",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Figueroa Alcorta 37",
+    "telefono": "03543 459050 451634 451791"
+  },
+  {
+    "id": 312,
+    "nombre": "Consultorios de la Merced",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Av. Sarmiento 101",
+    "telefono": "03543 451441"
+  },
+  {
+    "id": 313,
+    "nombre": "Consultorios de la Merced",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Av. Sarmiento 101",
+    "telefono": "03543 451441"
+  },
+  {
+    "id": 314,
+    "nombre": "Sanatorio Privado del Interior (Ex Alpa)",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Figueroa Alcorta 37",
+    "telefono": "03543 459050 451634 451791"
+  },
+  {
+    "id": 315,
+    "nombre": "Centro Integral de Kinesiologia",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Pje. Santa Cecilia 64 esq Oncativo",
+    "telefono": "3543 588221"
+  },
+  {
+    "id": 316,
+    "nombre": "Consultorios de la Merced",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Av. Sarmiento 101",
+    "telefono": "03543 451441"
+  },
+  {
+    "id": 317,
+    "nombre": "Estevan & Ergueta",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "San Martin 4426",
+    "telefono": "03543 451445"
+  },
+  {
+    "id": 318,
+    "nombre": "Marchetti",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Remedio de Escalada 1230",
+    "telefono": "03543 453472"
+  },
+  {
+    "id": 319,
+    "nombre": "Centro Medico de la Familia",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Julio A. Roca 337",
+    "telefono": "03543 467536 466913 / 351 318 2912"
+  },
+  {
+    "id": 320,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 321,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 322,
+    "nombre": "Chialva",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "Sarmiento 354",
+    "telefono": "03574 421964 436321"
+  },
+  {
+    "id": 323,
+    "nombre": "Centro Medico Santo Domingo",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "San Martín 303",
+    "telefono": "03574 420183"
+  },
+  {
+    "id": 324,
+    "nombre": "Centro Medico Santo Domingo",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "San Martín 303",
+    "telefono": "03574 420183"
+  },
+  {
+    "id": 325,
+    "nombre": "Consultorio odontologico MORESI Maria",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Mendiolaza",
+    "direccion": "Dean Funes 833 Villa Allende",
+    "telefono": "03543 433992 / 351 770 3012"
+  },
+  {
+    "id": 326,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 327,
+    "nombre": "Centro Medico Saldan",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Saldan",
+    "direccion": "9 de July 0167",
+    "telefono": "351 573 3288"
+  },
+  {
+    "id": 328,
+    "nombre": "Centro Medico Saldan",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Saldan",
+    "direccion": "9 de July 0167",
+    "telefono": "351 573 3288"
+  },
+  {
+    "id": 329,
+    "nombre": "Consultorio odontologico MORESI Maria",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Saldan",
+    "direccion": "Dean Funes 833 Villa Allende",
+    "telefono": "03543 433992 / 351 770 3012"
+  },
+  {
+    "id": 330,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Saldan",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 331,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Saldan",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 332,
+    "nombre": "Centro Medico Salsipuedes",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Ruta E53 Super Mami",
+    "telefono": "03543 477123"
+  },
+  {
+    "id": 333,
+    "nombre": "Omed Medicina Privada",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Av Sarmiento 73",
+    "telefono": "03543 472020"
+  },
+  {
+    "id": 334,
+    "nombre": "Omed Medicina Privada",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Av Sarmiento 73",
+    "telefono": "03543 472020"
+  },
+  {
+    "id": 335,
+    "nombre": "Omed Medicina Privada",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Av Sarmiento 73",
+    "telefono": "03543 472020"
+  },
+  {
+    "id": 336,
+    "nombre": "Omed Medicina Privada",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Av Sarmiento 73",
+    "telefono": "03543 472020"
+  },
+  {
+    "id": 337,
+    "nombre": "Omed Medicina Privada",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Av Sarmiento 73",
+    "telefono": "03543 472020"
+  },
+  {
+    "id": 338,
+    "nombre": "Centro Medico Salsipuedes",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Ruta E53 Super Mami",
+    "telefono": "03543 477123"
+  },
+  {
+    "id": 339,
+    "nombre": "Centro Medico Salsipuedes",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Ruta E53 Super Mami",
+    "telefono": "03543 477123"
+  },
+  {
+    "id": 340,
+    "nombre": "Centro Medico Salsipuedes",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Ruta E53 Super Mami",
+    "telefono": "03543 477123"
+  },
+  {
+    "id": 341,
+    "nombre": "Centro Medico Salsipuedes",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Ruta E53 Super Mami",
+    "telefono": "03543 477123"
+  },
+  {
+    "id": 342,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Unquillo",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 343,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 344,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 345,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 346,
+    "nombre": "Consultorio odontologico GRASSO Agata",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Entre Rios 525",
+    "telefono": "353 441 9983"
+  },
+  {
+    "id": 347,
+    "nombre": "Centro Medico Dr Roberto Bruno",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "San Martin 1040",
+    "telefono": "03574 480241"
+  },
+  {
+    "id": 348,
+    "nombre": "CEDIP Consultorio Dra Ruatta Melisa",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Rivadavia 949",
+    "telefono": "03574 480133"
+  },
+  {
+    "id": 349,
+    "nombre": "Consultorio Medico Dra Mabel Alvarez",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Luis R. García 589",
+    "telefono": "03574 480842"
+  },
+  {
+    "id": 350,
+    "nombre": "Aceto de Navarro",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Caseros 759",
+    "telefono": "03574 480292"
+  },
+  {
+    "id": 351,
+    "nombre": "Consultorio odontologico RODRIGUEZ Luciana",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Remedio de Escalada 157 p 1 Rio Ceballos",
+    "telefono": "351 204 5598"
+  },
+  {
+    "id": 352,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 353,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 354,
+    "nombre": "Viviana Romero III",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santiago Temple",
+    "direccion": "Ingeniero G. Cid 498",
+    "telefono": "3574 404 715"
+  },
+  {
+    "id": 355,
+    "nombre": "Clinica Privada Cruz del Sur",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Ticino",
+    "direccion": "Hipólito Irigoyen 155",
+    "telefono": "0353 4886096"
+  },
+  {
+    "id": 356,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Ticino",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 357,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Ticino",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 358,
+    "nombre": "Centro Med de Esp y Diag Priv Cemedi",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Unquillo",
+    "direccion": "Av. San Martín 1870",
+    "telefono": "03543 488304 487635"
+  },
+  {
+    "id": 359,
+    "nombre": "Centro Med de Esp y Diag Priv Cemedi",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Unquillo",
+    "direccion": "Av. San Martín 1870",
+    "telefono": "03543 488304 487635"
+  },
+  {
+    "id": 360,
+    "nombre": "Centro Med de Esp y Diag Priv Cemedi",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Unquillo",
+    "direccion": "Av. San Martín 1870",
+    "telefono": "03543 488304 487635"
+  },
+  {
+    "id": 361,
+    "nombre": "Centro Privado de Salud srl",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Unquillo",
+    "direccion": "12 de October 0158",
+    "telefono": "03543 488107"
+  },
+  {
+    "id": 362,
+    "nombre": "Consultorio odontologico RODRIGUEZ Luciana",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Salsipuedes",
+    "direccion": "Remedio de Escalada 157 p 1 Rio Ceballos",
+    "telefono": "351 204 5598"
+  },
+  {
+    "id": 363,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Unquillo",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 364,
+    "nombre": "Centro Modelo de Especialidades Medicas",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Mendoza 1752",
+    "telefono": "03543 437953 435508"
+  },
+  {
+    "id": 365,
+    "nombre": "Centro Privado Consultorios Medicos Villa Allende",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 847",
+    "telefono": "03543 430157"
+  },
+  {
+    "id": 366,
+    "nombre": "Clinica de la Ciudad de Villa Allende",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Saavedra 362",
+    "telefono": "03543 433388 432233 434377"
+  },
+  {
+    "id": 367,
+    "nombre": "Gentium Centro Medico Privado",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Río de Janeiro 771",
+    "telefono": "03543 433366 436937"
+  },
+  {
+    "id": 368,
+    "nombre": "Beneficios VII",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Goycoechea 184",
+    "telefono": "3543 693929"
+  },
+  {
+    "id": 369,
+    "nombre": "Estevan & Ergueta",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Goycoechea 615",
+    "telefono": "03543 435333 431552"
+  },
+  {
+    "id": 370,
+    "nombre": "Hp Farma Villa Allende",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 1725 loc 129",
+    "telefono": "351 644 2261 int.3"
+  },
+  {
+    "id": 371,
+    "nombre": "Milovich",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Goycoechea 557",
+    "telefono": "03543 431407"
+  },
+  {
+    "id": 372,
+    "nombre": "Red Real",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Goycoechea 1168",
+    "telefono": "03543 433500 / 3543 694192"
+  },
+  {
+    "id": 373,
+    "nombre": "Centro Medico Villa Allende Dr. Nievas",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Alsina 147",
+    "telefono": "03543 431758"
+  },
+  {
+    "id": 374,
+    "nombre": "Centro Privado Consultorios Medicos Villa Allende",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 847",
+    "telefono": "03543 430157"
+  },
+  {
+    "id": 375,
+    "nombre": "Consultorios Medicos Ateneo",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Pellegrini 27",
+    "telefono": "03543 434494"
+  },
+  {
+    "id": 376,
+    "nombre": "Centro Medico Villa Allende Dr. Nievas",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Alsina 147",
+    "telefono": "03543 431758"
+  },
+  {
+    "id": 377,
+    "nombre": "Centro Modelo de Especialidades Medicas",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Mendoza 1752",
+    "telefono": "03543 437953 435508"
+  },
+  {
+    "id": 378,
+    "nombre": "Centro Privado Consultorios Medicos Villa Allende",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 847",
+    "telefono": "03543 430157"
+  },
+  {
+    "id": 379,
+    "nombre": "Clinica de la Ciudad de Villa Allende",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Saavedra 362",
+    "telefono": "03543 433388 432233 434377"
+  },
+  {
+    "id": 380,
+    "nombre": "Clinica de Ojos Reyes Giobellina",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 137",
+    "telefono": "0810 555 0034 / 03543 401113"
+  },
+  {
+    "id": 381,
+    "nombre": "Consultorio Medico Privado Tablada",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Saavedra 107 esq. Rivadavia",
+    "telefono": "03543 433864"
+  },
+  {
+    "id": 382,
+    "nombre": "Consultorios Medicos Ateneo",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Pellegrini 27",
+    "telefono": "03543 434494"
+  },
+  {
+    "id": 383,
+    "nombre": "Gentium Centro Medico Privado",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Río de Janeiro 771",
+    "telefono": "03543 433366 436937"
+  },
+  {
+    "id": 384,
+    "nombre": "Centro Medico Villa Allende Dr. Nievas",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Alsina 147",
+    "telefono": "03543 431758"
+  },
+  {
+    "id": 385,
+    "nombre": "Centro Privado Consultorios Medicos Villa Allende",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 847",
+    "telefono": "03543 430157"
+  },
+  {
+    "id": 386,
+    "nombre": "Clinica de la Ciudad de Villa Allende",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Saavedra 362",
+    "telefono": "03543 433388 432233 434377"
+  },
+  {
+    "id": 387,
+    "nombre": "Consultorio Medico Privado Tablada",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Saavedra 107 esq. Rivadavia",
+    "telefono": "03543 433864"
+  },
+  {
+    "id": 388,
+    "nombre": "Consultorios Medicos Ateneo",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Pellegrini 27",
+    "telefono": "03543 434494"
+  },
+  {
+    "id": 389,
+    "nombre": "Gentium Centro Medico Privado",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Río de Janeiro 771",
+    "telefono": "03543 433366 436937"
+  },
+  {
+    "id": 390,
+    "nombre": "Centro Modelo de Especialidades Medicas",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Mendoza 1752",
+    "telefono": "03543 437953 435508"
+  },
+  {
+    "id": 391,
+    "nombre": "Consultorio odontologico MORESI Maria",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Dean Funes 833 Villa Allende",
+    "telefono": "03543 433992 / 351 770 3012"
+  },
+  {
+    "id": 392,
+    "nombre": "Centro Medico Villa Allende Dr. Nievas",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Alsina 147",
+    "telefono": "03543 431758"
+  },
+  {
+    "id": 393,
+    "nombre": "Centro Privado Consultorios Medicos Villa Allende",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Rio de Janeiro 847",
+    "telefono": "03543 430157"
+  },
+  {
+    "id": 394,
+    "nombre": "Clinica Central Privada Stia Dra NAZER Paola",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Rivadavia 339",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 395,
+    "nombre": "Consultorio Medico Privado Tablada",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Saavedra 107 esq. Rivadavia",
+    "telefono": "03543 433864"
+  },
+  {
+    "id": 396,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 397,
+    "nombre": "Sanatorio Privado Punilla",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Av Uruguay 850",
+    "telefono": "0810 222 40420 /03541 421001"
+  },
+  {
+    "id": 398,
+    "nombre": "Sanatorio Privado Punilla consultorio II",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Uruguay y Almafuerte",
+    "telefono": "03541 422360"
+  },
+  {
+    "id": 399,
+    "nombre": "Sanatorio Privado Punilla",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Av Uruguay 850",
+    "telefono": "03541 421001"
+  },
+  {
+    "id": 400,
+    "nombre": "Sanatorio Privado Punilla",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Av Uruguay 850",
+    "telefono": "03541 421001"
+  },
+  {
+    "id": 401,
+    "nombre": "Sanatorio Privado Punilla consultorio I",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Solis 76",
+    "telefono": "03541 421126"
+  },
+  {
+    "id": 402,
+    "nombre": "Fundacion para el Progreso de la Medicina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Bv Sarmiento 838 / Tucuman 98",
+    "telefono": ""
+  },
+  {
+    "id": 403,
+    "nombre": "Bioq. DIPIERI Silvia",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Punilla 64",
+    "telefono": "03541 420891"
+  },
+  {
+    "id": 404,
+    "nombre": "Sanatorio Privado Punilla",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Av Uruguay 850",
+    "telefono": "03541 421001"
+  },
+  {
+    "id": 405,
+    "nombre": "Sanatorio Privado Punilla consultorio II",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Uruguay y Almafuerte",
+    "telefono": "03541 422360"
+  },
+  {
+    "id": 406,
+    "nombre": "Boschetti",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Lisandro de la Torre 96",
+    "telefono": "03541 433724 / 423103"
+  },
+  {
+    "id": 407,
+    "nombre": "Fiolone",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Av. Cárcano 227",
+    "telefono": "03541 421427"
+  },
+  {
+    "id": 408,
+    "nombre": "Consultorio odontologico FERNANDEZ ARTICO Roberto",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "Sarmiento 375 Montecristo",
+    "telefono": "351 385 7163"
+  },
+  {
+    "id": 409,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 410,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 411,
+    "nombre": "Daniotti IV",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Presidente Perón 265",
+    "telefono": "03524-470998 / 3525 648302"
+  },
+  {
+    "id": 412,
+    "nombre": "Clinica Privada Cavisacate",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Pte. Perón 970",
+    "telefono": "03524 470259 470059"
+  },
+  {
+    "id": 413,
+    "nombre": "Centro Medico Santa Teresita",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Roberto Noble 149",
+    "telefono": "03524 470190"
+  },
+  {
+    "id": 414,
+    "nombre": "Centro Medico Santa Teresita",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Roberto Noble 149",
+    "telefono": "03524 470190"
+  },
+  {
+    "id": 415,
+    "nombre": "Clinica Privada Cavisacate",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Pte. Perón 970",
+    "telefono": "03524 470259 470059"
+  },
+  {
+    "id": 416,
+    "nombre": "Centro Medico Santa Teresita",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Roberto Noble 149",
+    "telefono": "03524 470190"
+  },
+  {
+    "id": 417,
+    "nombre": "Clinica Privada Cavisacate",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Pte. Perón 970",
+    "telefono": "03524 470259 470059"
+  },
+  {
+    "id": 418,
+    "nombre": "Clinica Privada Cavisacate",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Pte. Perón 970",
+    "telefono": "03524 470259 470059"
+  },
+  {
+    "id": 419,
+    "nombre": "Consultorio odontologico FERNANDEZ ARTICO Roberto",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "Sarmiento 375 Montecristo",
+    "telefono": "351 385 7163"
+  },
+  {
+    "id": 420,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 421,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 422,
+    "nombre": "Clinica Fusavim Privada SRL",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Chile 67",
+    "telefono": "0353 4520228"
+  },
+  {
+    "id": 423,
+    "nombre": "Clinica de Especialidades Villa Maria",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Corrientes 744",
+    "telefono": "0353 4646500"
+  },
+  {
+    "id": 424,
+    "nombre": "Sanatorio Cruz Azul",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "San Juan 1255",
+    "telefono": "0353 4521349 / 4527174 / 353 408 6870"
+  },
+  {
+    "id": 425,
+    "nombre": "Clinica Fusavim Privada SRL",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Chile 67",
+    "telefono": "0353 4520228"
+  },
+  {
+    "id": 426,
+    "nombre": "Imagenes Privada Villa María",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Corrientes 733",
+    "telefono": "0353 4646500"
+  },
+  {
+    "id": 427,
+    "nombre": "Sanatorio Cruz Azul",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "San Juan 1255",
+    "telefono": "0353 4521349 / 4527174 / 353 408 6870"
+  },
+  {
+    "id": 428,
+    "nombre": "Clinica Fusavim Privada SRL",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Chile 67",
+    "telefono": "0353 4520228"
+  },
+  {
+    "id": 429,
+    "nombre": "Clinica de Especialidades Villa Maria",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Corrientes 744",
+    "telefono": "0353 4646500"
+  },
+  {
+    "id": 430,
+    "nombre": "Bioq. MATTALIA Mariela",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "José Ingenieros 223",
+    "telefono": "0353 4526925 4223240"
+  },
+  {
+    "id": 431,
+    "nombre": "Laboratorio OGSTON srl",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "San Juan 1273",
+    "telefono": "353 4236614"
+  },
+  {
+    "id": 432,
+    "nombre": "Clinica de Especialidades Villa Maria",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Corrientes 744",
+    "telefono": "0353 4646500"
+  },
+  {
+    "id": 433,
+    "nombre": "Sanatorio Cruz Azul",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "San Juan 1255",
+    "telefono": "0353 4521349 / 4527174 / 353 408 6870"
+  },
+  {
+    "id": 434,
+    "nombre": "Centro Privado de Ojos ROMAGOSA VM",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "9 de July 0283",
+    "telefono": "0353 4530970 4530971"
+  },
+  {
+    "id": 435,
+    "nombre": "Centro Medico Lisandro de la Torre (oftalmologia)",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Lisandro de la Torre 368",
+    "telefono": "0353 4528062"
+  },
+  {
+    "id": 436,
+    "nombre": "Azul",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "San Juan 1255",
+    "telefono": "0353 4537774 / 353 6578990"
+  },
+  {
+    "id": 437,
+    "nombre": "Centro Mutualista H. Yrigoyen",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "General Paz 365",
+    "telefono": "0353 4521295 / 353 657 8947"
+  },
+  {
+    "id": 438,
+    "nombre": "de la Clinica",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Corrientes 738",
+    "telefono": "0353 4535663 / 353 417 5407"
+  },
+  {
+    "id": 439,
+    "nombre": "Del Condor",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Entre Ríos 737",
+    "telefono": "0353 4520213 / 4521007"
+  },
+  {
+    "id": 440,
+    "nombre": "del Subnivel",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Av. Mitre 54",
+    "telefono": "0353 4610236 / 353 417 5404"
+  },
+  {
+    "id": 441,
+    "nombre": "Marañon",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Catamarca 1376",
+    "telefono": "0353 4523551 / 353 657 8977"
+  },
+  {
+    "id": 442,
+    "nombre": "Marcellino",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Av. Vélez Sarsfield 388",
+    "telefono": "0353 4537682 / 353 417 5401"
+  },
+  {
+    "id": 443,
+    "nombre": "Moderna I",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "San Martin 13",
+    "telefono": "0353 4533815 / 353 418 6375"
+  },
+  {
+    "id": 444,
+    "nombre": "Moderna II",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Buenos Aires 1301",
+    "telefono": "0353 4527890 / 353 657 8967"
+  },
+  {
+    "id": 445,
+    "nombre": "Moderna VII",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "Marcos Juárez 1900, Villa Nueva",
+    "telefono": "0353 4914486 / 353 491 4486"
+  },
+  {
+    "id": 446,
+    "nombre": "ModernaVIII",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "9 de July 0155",
+    "telefono": "0353 4611010 / 353 508 7592"
+  },
+  {
+    "id": 447,
+    "nombre": "Consultorio odontologico FERNANDEZ ARTICO Roberto",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Sarmiento 375 Montecristo",
+    "telefono": "351 385 7163"
+  },
+  {
+    "id": 448,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 449,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa Maria",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 450,
+    "nombre": "Clinica Privada Cavizacate Villa M. Rio Seco",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa de Maria del Rio Seco",
+    "direccion": "Jeronimo L Cabrera 730",
+    "telefono": "03522 422354"
+  },
+  {
+    "id": 451,
+    "nombre": "Clinica Privada Cavizacate Villa M. Rio Seco",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa de Maria del Rio Seco",
+    "direccion": "Jeronimo L Cabrera 730",
+    "telefono": "03522 422354"
+  },
+  {
+    "id": 452,
+    "nombre": "Vitalis- Preparación Para La Maternidad",
+    "tipo": "CENTROS ESPECIALIZADOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa de Maria del Rio Seco",
+    "direccion": "atencion virtual",
+    "telefono": "351 359 8250"
+  },
+  {
+    "id": 453,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Villa de Maria del Rio Seco",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 454,
+    "nombre": "Consultorio odontologico CANOVAS Maria Andrea",
+    "tipo": "ODONTOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Pilar",
+    "direccion": "Zenon Lopez 929 Pilar",
+    "telefono": "03572 470208"
+  },
+  {
+    "id": 455,
+    "nombre": "Bioq. ULLA Jorge Daniel",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "Pagliano 327",
+    "telefono": "03564 474 681"
+  },
+  {
+    "id": 456,
+    "nombre": "Bioq. BALLATORE de Caula Carina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "Bv Cordoba 384",
+    "telefono": "03564 471350"
+  },
+  {
+    "id": 457,
+    "nombre": "Bioq. MARITANO Natalia Rocio",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Francia",
+    "direccion": "P. Lencinas 223",
+    "telefono": "3564 646 149"
+  },
+  {
+    "id": 458,
+    "nombre": "Bioq. MININO Elena del Carmen",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "Libertad 570",
+    "telefono": "03575 491126"
+  },
+  {
+    "id": 459,
+    "nombre": "Bioq. BRUNO Viviana del Valle",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "Belgrano 856",
+    "telefono": "03575 491604"
+  },
+  {
+    "id": 460,
+    "nombre": "Bioq. BOSSIO Nicola Eduardo",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Para",
+    "direccion": "P. Bossio 764",
+    "telefono": "03575 491033"
+  },
+  {
+    "id": 461,
+    "nombre": "Bioq. CIOCCATTO Ivana",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Puerta",
+    "direccion": "O. Trejo 746",
+    "telefono": "03575 401180"
+  },
+  {
+    "id": 462,
+    "nombre": "Bioq. MARCELINO Estela Maris",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Tordilla",
+    "direccion": "Av. Libertador 983",
+    "telefono": "03576 496216"
+  },
+  {
+    "id": 463,
+    "nombre": "Bioq. LOPEZ Edgar Omar",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "San Martin 117",
+    "telefono": "03574 420215"
+  },
+  {
+    "id": 464,
+    "nombre": "Bioq. SANCHEZ Monica Mabel",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Luis Garcia 794",
+    "telefono": "03574 480269"
+  },
+  {
+    "id": 465,
+    "nombre": "Bioq. PIEDRA, Viviana",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Caseros 841",
+    "telefono": "03574 480842"
+  },
+  {
+    "id": 466,
+    "nombre": "Bioq. MERLINO Gustavo Fabián",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Transito",
+    "direccion": "San Martin 87",
+    "telefono": "03576 492142"
+  },
+  {
+    "id": 467,
+    "nombre": "Bioq. RIVAROLA Maria Natalia",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa C. del Tio",
+    "direccion": "Belgrano 643",
+    "telefono": "3576 528756"
+  },
+  {
+    "id": 468,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa San Carlos - O´Higgins 5845",
+    "telefono": "0810 888 1414 / 351 403 7281"
+  },
+  {
+    "id": 469,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Las Cañuelas - B. O'Higgins 5591",
+    "telefono": "0810 888 1414/ 351 403 1285"
+  },
+  {
+    "id": 470,
+    "nombre": "Sanchez Antoniolli 1",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa El Libertador - Congreso 5476",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 471,
+    "nombre": "Sanchez Antoniolli 11",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Las Flores - Av. Vélez Sarsfield 3426 -",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 472,
+    "nombre": "Sanchez Antoniolli 2",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Santa Isabel - Av. Renault 1916",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 473,
+    "nombre": "Sanchez Antoniolli 5",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº Villa El Libertador - Defensa 1753",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 474,
+    "nombre": "Sanchez Antoniolli 8",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº Artigas - Av. Vélez Sarsfield 4101",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 475,
+    "nombre": "HP Farma Ruta 20",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Rosedal - Av. Fuerza Aérea 2944",
+    "telefono": "0351 4651515"
+  },
+  {
+    "id": 476,
+    "nombre": "Sanchez Antoniolli 15",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº San Roque - Av. Fuerza Aérea 4730",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 477,
+    "nombre": "Sanchez Antoniolli 20",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Bº Los Naranjos - Av. Fuerza Aérea 2804",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 478,
+    "nombre": "Sanchez Antoniolli 4",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Matienzo - Av. Fuerza Aérea 3735",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 479,
+    "nombre": "Sanchez Antoniolli 24",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Don Bosco - Av. Gandhi N° 193",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 480,
+    "nombre": "HP Farma Cerro de las Rosas",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cerro de las Rosas - Hugo Wast 1803 esq. Luis de Tejeda",
+    "telefono": "0351 4338183"
+  },
+  {
+    "id": 481,
+    "nombre": "Jacobo",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cerro de las Rosas - Tristan Malbran 4224",
+    "telefono": "0351 4818094 / 351 211 9378"
+  },
+  {
+    "id": 482,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cerro de las Rosas - Rafael Nuñez 4220",
+    "telefono": "0810 888 1414 / 351 695 8586"
+  },
+  {
+    "id": 483,
+    "nombre": "Sanchez Antoniolli 17",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "Justo José de Urquiza 381",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 484,
+    "nombre": "Sanchez Antoniolli 18",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Ruta C 45 Km 1 - Centro Comercial Shell",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 485,
+    "nombre": "Mundial",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cerro de las Rosas - Av. Rafael Núñez 4406",
+    "telefono": "0351 4338290"
+  },
+  {
+    "id": 486,
+    "nombre": "Red General Paz Cerro",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Cerro de las Rosas - Av. Rafael Núñez 3686",
+    "telefono": "0351 4818380 4825358"
+  },
+  {
+    "id": 487,
+    "nombre": "Red General Paz Urbana",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa Belgrano - Av. Laplace 5890 loc. 4 Complejo Village",
+    "telefono": "0810 444 4729 / 03543 448882 83"
+  },
+  {
+    "id": 488,
+    "nombre": "Sanchez Carestía",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa Carlos Paz",
+    "direccion": "Av. Cárcano N° 427",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 489,
+    "nombre": "Red General Paz Urca",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Urca - Emilio Lamarca 4135",
+    "telefono": "0351 5425478"
+  },
+  {
+    "id": 490,
+    "nombre": "Red General Paz Villa Belgrano",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa Belgrano - Recta Martinoli 6137",
+    "telefono": "03543 448880 448881"
+  },
+  {
+    "id": 491,
+    "nombre": "Regional Urgencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Arroyito",
+    "direccion": "03576 450931",
+    "telefono": ""
+  },
+  {
+    "id": 492,
+    "nombre": "Centro Medico CANO Salud",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Calamuchita",
+    "direccion": "1971-07-09 00:00:00",
+    "telefono": "03546 422187 / 420128 / 3546 451400"
+  },
+  {
+    "id": 493,
+    "nombre": "Sanatorio Allende",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Hipolito Yrigoyen 384 B° Nueva Cordoba",
+    "telefono": "351 426 9200"
+  },
+  {
+    "id": 494,
+    "nombre": "Sanchez Antoniolli 16",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa Belgrano - Av. Carlos Gauss 5904",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 495,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa Warcalde - Jose Maria E. Zanon 9107 loc 2",
+    "telefono": "0351 8529455"
+  },
+  {
+    "id": 496,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Arguello - Recta Martinolli 7670 loc 2",
+    "telefono": "0810 888 1414/ 351 403 1285"
+  },
+  {
+    "id": 497,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Rivadavia 339 -Arroyito",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 498,
+    "nombre": "Clinica Regional Arroyito SRL",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Fulvio Pagani 622 -Arroyito",
+    "telefono": "03576 450931 / 425981"
+  },
+  {
+    "id": 499,
+    "nombre": "Clinica Central Privada Stia",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Rivadavia 339 -Arroyito",
+    "telefono": "03576 453605"
+  },
+  {
+    "id": 500,
+    "nombre": "Clinica Regional Arroyito SRL",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Rosa de Rio Primero",
+    "direccion": "Fulvio Pagani 622 -Arroyito",
+    "telefono": "03576 450931 / 425981"
+  },
+  {
+    "id": 501,
+    "nombre": "Centro Arguello Privado",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Donato Alvarez 7610",
+    "telefono": "351 210 9979"
+  },
+  {
+    "id": 502,
+    "nombre": "Cordoba Medical Center",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rodríguez del Busto 3219 B° Alto Verde",
+    "telefono": "4825940 wsp 351 6335938"
+  },
+  {
+    "id": 503,
+    "nombre": "Sanatorio Morra",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Nazaret y Sagrada Familia B° Bajo Palermo",
+    "telefono": "351 570 4429 / 351 246 0340"
+  },
+  {
+    "id": 504,
+    "nombre": "Laboratorio Lauret-Peruffo",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Domingo Barbieri 269",
+    "telefono": "03525-15410607 / 0351-155519076"
+  },
+  {
+    "id": 505,
+    "nombre": "Laboratorio Lauret-Peruffo",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Villa del Totoral",
+    "direccion": "Domingo Barbieri 269",
+    "telefono": "03525-15410607 / 0351-155519076"
+  },
+  {
+    "id": 506,
+    "nombre": "Consultorios Medicos Urca",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Menendez Pidal 4008 B° Urca",
+    "telefono": "482 3372 / 351 314 9462"
+  },
+  {
+    "id": 507,
+    "nombre": "Centro Asistencial Privado Arguello",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Donato Alvarez 7610",
+    "telefono": "351 210 9979"
+  },
+  {
+    "id": 508,
+    "nombre": "Sanatorio Morra",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "27 de Abril 664 1ro B B° Centro",
+    "telefono": "351 570 4429 / 351 246 0340"
+  },
+  {
+    "id": 509,
+    "nombre": "Instituto Mosse",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Colón 237",
+    "telefono": "03525 443644"
+  },
+  {
+    "id": 510,
+    "nombre": "Instituto Mosse",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Colón 237",
+    "telefono": "03525 443644"
+  },
+  {
+    "id": 511,
+    "nombre": "Centro Ecográfico Dr. Boscacci CEDIAN",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "España 475",
+    "telefono": "03525 607800"
+  },
+  {
+    "id": 512,
+    "nombre": "Centro Ecográfico Dr. Boscacci",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "España 475",
+    "telefono": "03525 607800"
+  },
+  {
+    "id": 513,
+    "nombre": "Ctro Med Priv Dr Ricardo García",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Sarmiento 251",
+    "telefono": "03525 606001"
+  },
+  {
+    "id": 514,
+    "nombre": "Ctro Med Priv Dr Ricardo García",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Sarmiento 251",
+    "telefono": "03525 606001"
+  },
+  {
+    "id": 515,
+    "nombre": "Ctro Med Priv Dr Ricardo García",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Sarmiento 251",
+    "telefono": "03525 606001"
+  },
+  {
+    "id": 516,
+    "nombre": "Ctro Med Priv Dr Ricardo García",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Jesus Maria",
+    "direccion": "Sarmiento 251",
+    "telefono": "03525 606001"
+  },
+  {
+    "id": 517,
+    "nombre": "Instituto de Especialidades Medicas",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "Velez Sarsfield 345",
+    "telefono": "03543 466048 466435"
+  },
+  {
+    "id": 518,
+    "nombre": "ECCO Emergencias",
+    "tipo": "Urgencias y Emergencias",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "La Calera",
+    "direccion": "0810 888 3226",
+    "telefono": "0800 444 3226"
+  },
+  {
+    "id": 519,
+    "nombre": "Clinica y Maternidad Del Sol",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Chacabuco 705 / Obispo Oro 344",
+    "telefono": "0810 555 2765"
+  },
+  {
+    "id": 520,
+    "nombre": "Clinica y Maternidad Del Sol",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Chacabuco 705 / Obispo Oro 344",
+    "telefono": "0810 555 2765"
+  },
+  {
+    "id": 521,
+    "nombre": "Cordoba Medical Center",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rodríguez del Busto 3219 B° Alto Verde",
+    "telefono": "4825940 wsp 351 6335938"
+  },
+  {
+    "id": 522,
+    "nombre": "Clinica Romagosa",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Dean Funes 429 / 432",
+    "telefono": "351 563 1491"
+  },
+  {
+    "id": 523,
+    "nombre": "Cordoba Medical Center",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Rodríguez del Busto 3219 B° Alto Verde",
+    "telefono": "4825940 wsp 351 6335938"
+  },
+  {
+    "id": 524,
+    "nombre": "Consultorios Medicos Urca",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Menendez Pidal 4008 B° Urca",
+    "telefono": "482 3372 / 351 314 9462"
+  },
+  {
+    "id": 525,
+    "nombre": "Lic RINERO Noelia",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "Int Nemiroswky 134",
+    "telefono": "351 203 0210"
+  },
+  {
+    "id": 526,
+    "nombre": "Sativa - Salud Activa",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Montecristo",
+    "direccion": "Padre Quiroga 35",
+    "telefono": "351 353 8216"
+  },
+  {
+    "id": 527,
+    "nombre": "Lic. EZCURRA Marcos",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Olmos 60",
+    "telefono": "3547 303203 / 590663 / 351 613 0849"
+  },
+  {
+    "id": 528,
+    "nombre": "Chaparro Stefani Dahyana",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Paraguay 86",
+    "telefono": "3547 32 3880"
+  },
+  {
+    "id": 529,
+    "nombre": "Cuello Victor Pablo",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Paraguay 86",
+    "telefono": "3547 32 3880"
+  },
+  {
+    "id": 530,
+    "nombre": "Bioq. EVANGELISTA Marcos",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Uruguay 358",
+    "telefono": "3547 641391"
+  },
+  {
+    "id": 531,
+    "nombre": "Olsina",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Despeñaderos",
+    "direccion": "Hipolito Yrigoyen 1051 esq. Defensa",
+    "telefono": "03547 492949"
+  },
+  {
+    "id": 532,
+    "nombre": "Centro Medico Modelo Privado",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 71",
+    "telefono": "03547 430235"
+  },
+  {
+    "id": 533,
+    "nombre": "Sanchez Antoniolli 7",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Arguello - Av. Donato Alvarez 7914",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 534,
+    "nombre": "HP Farma Hiper Libertad Rodríguez del Busto",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Poeta Lugones -Hiperconstruc loc 435",
+    "telefono": "0351 4779505"
+  },
+  {
+    "id": 535,
+    "nombre": "Magna",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Poeta Lugones - Fray Luis Beltán 2657",
+    "telefono": "4760555 / 351 7362626"
+  },
+  {
+    "id": 536,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Saldan",
+    "direccion": "Enrique Bodereau 9852 Local 1",
+    "telefono": "0810 888 1414/ 351 403 1285"
+  },
+  {
+    "id": 537,
+    "nombre": "Sanchez Antoniolli 23",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Villa Cabrera - Av. Caraffa N° 2392",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 538,
+    "nombre": "Graciela",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Primero",
+    "direccion": "Av. Mitre 397",
+    "telefono": "03574 421127 / 3574 400165"
+  },
+  {
+    "id": 539,
+    "nombre": "Clinica Privada Velez Sarsfield Norte",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Caraffa 2532 B° Villa Cabrera",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 540,
+    "nombre": "Clinica Privada Velez Sarsfield Este",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Fray Mamerto Esquiú 111 B° Gral Paz",
+    "telefono": "0810 122 9898 / 351 305 9484"
+  },
+  {
+    "id": 541,
+    "nombre": "Sanchez Antoniolli 3",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Marqués de Sobremonte - Av. Mons.P.Cabrera 4650",
+    "telefono": "0800 888 4552 / 351 328 4848"
+  },
+  {
+    "id": 542,
+    "nombre": "Centro Medico Arandu",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Ruta C 45 Km 1",
+    "telefono": "351 7677360"
+  },
+  {
+    "id": 543,
+    "nombre": "Centro Medico Arandu",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Malagueño",
+    "direccion": "Ruta C 45 Km 1",
+    "telefono": "351 7677360"
+  },
+  {
+    "id": 544,
+    "nombre": "Salud Pediatrica",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Remedios de Escalada 335",
+    "telefono": "351 5210016 / 3543 572177"
+  },
+  {
+    "id": 545,
+    "nombre": "Centro Arguello Privado",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Donato Alvarez 7610 B° Arguello",
+    "telefono": "351 210 9979"
+  },
+  {
+    "id": 546,
+    "nombre": "C.I.R Centro de Rehabilitacion",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Juan XXIII 57. P.B",
+    "telefono": "3543 641340"
+  },
+  {
+    "id": 547,
+    "nombre": "C.I.R Centro de Rehabilitacion",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "Juan XXIII 57. P.B",
+    "telefono": "3543 641340"
+  },
+  {
+    "id": 548,
+    "nombre": "Hologramas Centro Integral de Psicologia",
+    "tipo": "SALUD MENTAL",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Belgrano 66 PB B° Centro",
+    "telefono": "3515728931"
+  },
+  {
+    "id": 549,
+    "nombre": "Bioq. SOSA Alejandro - BENEGAS Alejandra",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Olmos 220",
+    "telefono": "3547 595 727"
+  },
+  {
+    "id": 550,
+    "nombre": "Hospital Municipal Noetinger",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Noetinger",
+    "direccion": "Cupertino Salinos esq. Intend Marangon",
+    "telefono": "03472 470036 / 47001"
+  },
+  {
+    "id": 551,
+    "nombre": "Hospital Municipal Noetinger",
+    "tipo": "FISIOTERAPIA y KINESIOLOGIA",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Noetinger",
+    "direccion": "Cupertino Salinos esq. Intend Marangon",
+    "telefono": "03472 470036 / 47001"
+  },
+  {
+    "id": 552,
+    "nombre": "Hospital Municipal Noetinger",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Noetinger",
+    "direccion": "Cupertino Salinos esq. Intend Marangon",
+    "telefono": "03472 470036 / 47001"
+  },
+  {
+    "id": 553,
+    "nombre": "Lider",
+    "tipo": "FARMACIAS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "B° Lomas de Manantiales - Av Agustin Tosco 2598",
+    "telefono": "0810 888 1414/ 351 403 1285"
+  },
+  {
+    "id": 554,
+    "nombre": "Bioq. ALEMANNO Maria Belen",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Av Dalinger 288",
+    "telefono": "3547-508584"
+  },
+  {
+    "id": 555,
+    "nombre": "Bioq. CABAL Maria Elisa",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 53",
+    "telefono": "3547-463147"
+  },
+  {
+    "id": 556,
+    "nombre": "Bioq. CARRANZA Nestor",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "D. Carignani 180",
+    "telefono": "3547-522798"
+  },
+  {
+    "id": 557,
+    "nombre": "Bioq. CASSUTTI Gonzalo",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Belisario Roldan 567",
+    "telefono": "3547-423349"
+  },
+  {
+    "id": 558,
+    "nombre": "Bioq. MARTINEZ Maria Luz",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Olmos 203",
+    "telefono": "3547-450056"
+  },
+  {
+    "id": 559,
+    "nombre": "Bioq. RIVOLTA Susana",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "D. Carignani 180",
+    "telefono": "3547-522798"
+  },
+  {
+    "id": 560,
+    "nombre": "Bioq. ROLDÁN Adriana",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Lepri 336",
+    "telefono": "3547-576586"
+  },
+  {
+    "id": 561,
+    "nombre": "Bioq. VIANO Paula",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Alta Gracia",
+    "direccion": "Paraguay 239",
+    "telefono": "3547-541316 / 3547-608678"
+  },
+  {
+    "id": 562,
+    "nombre": "Bioq. BONCIOLINI Karina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Santa Ana",
+    "direccion": "Av.Brochero esq.14 - Santa Ana",
+    "telefono": "3547-481156 / 3547-451600"
+  },
+  {
+    "id": 563,
+    "nombre": "Bioq. BUTASSI Andrea",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Despeñaderos",
+    "direccion": "Arenales 468 - Despeñaderos",
+    "telefono": "3547-467068 / 351-7522401"
+  },
+  {
+    "id": 564,
+    "nombre": "Bioq. REARTE German",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Despeñaderos",
+    "direccion": "V.Sarsfield 949 - Despeñaderos",
+    "telefono": "3547-631868 / 3547-492763"
+  },
+  {
+    "id": 565,
+    "nombre": "Consultorios de La Recta",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Juan Nepper 6079 B° Villa Belgrano",
+    "telefono": "0351 620-7090"
+  },
+  {
+    "id": 566,
+    "nombre": "Centro Medico 25 de Mayo",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Cumbre",
+    "direccion": "25 de May 0272",
+    "telefono": "3453-652584 3548-572467"
+  },
+  {
+    "id": 567,
+    "nombre": "Centro Medico 25 de Mayo",
+    "tipo": "DIAGNOSTICO POR IMÁGENES",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "La Cumbre",
+    "direccion": "25 de May 0272",
+    "telefono": "3453-652584 3548-572467"
+  },
+  {
+    "id": 568,
+    "nombre": "Centro de Ojos Río Ceballos",
+    "tipo": "INSTITUCIONES y CENTROS MEDICOS",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Rio Ceballos",
+    "direccion": "3 de February 0146",
+    "telefono": "03543-454977"
+  },
+  {
+    "id": 569,
+    "nombre": "Laboratorio CASTILLO CHIDIAK",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Rogelio Martinez 2649",
+    "telefono": "351 589 0589 / 351 560 7605"
+  },
+  {
+    "id": 570,
+    "nombre": "Laboratorio CASTILLO CHIDIAK",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo",
+      "Plan Integral",
+      "Plan Coral",
+      "Plan Joven"
+    ],
+    "ciudad": "Cordoba",
+    "direccion": "Av. Valparaíso 4301:",
+    "telefono": "351 589 0589 / 351 560 7605"
+  },
+  {
+    "id": 571,
+    "nombre": "Fundacion para el Progreso de la Medicina",
+    "tipo": "LABORATORIO",
+    "plan": [
+      "Plan Máximo"
+    ],
+    "ciudad": "Villa Allende",
+    "direccion": "Derqui 236, complejo 190 Yardas",
+    "telefono": "354 361 3740"
   }
 ]

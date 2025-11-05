@@ -9,23 +9,23 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="sticky justify-between top-0 z-50 bg-white backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-sm">
-      <div className=" mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo: archivo en /public/logoPreme.png */}
+    <header className="sticky top-0 z-50 bg-white backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-sm">
+      <div className="max-w-[95%] mx-auto px-12 py-3 flex items-center justify-between">
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-  <Image
-    src="/logoPreme.png"      // poné un archivo grande (ej: 320×320)
-    alt="PREME"
-    width={520}               // tamaño intrínseco grande
-    height={520}
-    className="h-17 w-auto"   // tamaño visible (40px alto)
-    priority
-    quality={100}
-  />
-  
+          <Image
+            src="/logoPreme.png"
+            alt="PREME"
+            width={520}
+            height={520}
+            className="h-17 w-auto"
+            priority
+            quality={100}
+          />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-13 text-lg text-gray-700">
+        {/* NAV LINKS desktop */}
+        <nav className="hidden md:flex items-center gap-10 text-base lg:text-lg text-gray-700">
           <Link href="/" className="hover:text-[#33BAF0]">Inicio</Link>
           <Link href="/planes" className="hover:text-[#33BAF0]">Planes</Link>
           <Link href="/prestadores" className="hover:text-[#33BAF0]">Prestadores</Link>
@@ -33,13 +33,31 @@ export default function Navbar() {
           <Link href="/contacto" className="hover:text-[#33BAF0]">Contacto</Link>
         </nav>
 
-        <Link
-          href="/contacto"
-          className="hidden md:inline-block bg-brand-blue text-white px-4 py-2 rounded-lg hover:bg-brand-blue-hover"
-        >
-          Afiliate ahora
-        </Link>
+{/* BOTONES derechos (alineados en altura y proporción) */}
+<div className="hidden md:flex items-stretch gap-8 lg:gap-4">
+  {/* AUTORIZACIONES */}
+  <Link
+    href="/autorizaciones"
+    className="flex flex-col justify-center items-center rounded-xl bg-[#FF914D] text-white px-5 py-2.5 lg:px-6 lg:py-2 shadow-md hover:bg-[#ff7a26] transition-all min-w-[190px]"
+  >
+    <span className="leading-none font-extrabold tracking-wide text-[14px] lg:text-[15px]">
+      AUTORIZACIONES
+    </span>
+    <span className="leading-tight text-[11px] lg:text-[11px] mt-1 opacity-95 -mt-0.5">
+      Trámite de Prestadores
+    </span>
+  </Link>
 
+  {/* AFILIATE AHORA */}
+  <Link
+    href="https://formularios.fidelitytools.net?f=OTQ3MA"
+    className="flex items-center justify-center rounded-xl bg-brand-blue text-white px-5 py-2.5 lg:px-6 lg:py-3 text-[19px] font-semibold hover:bg-brand-blue-hover shadow-md transition-all min-w-[190px]"
+  >
+    Afiliate ahora
+  </Link>
+</div>
+
+        {/* BOTÓN HAMBURGUESA */}
         <button
           type="button"
           onClick={() => setMenuOpen((v) => !v)}
@@ -52,26 +70,45 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* MENÚ MOBILE */}
       {menuOpen && (
         <div className="md:hidden border-t border-gray-200 bg-white shadow-sm">
-          <div className="px-4 py-4 flex flex-col gap-4 text-gray-700">
+          <div className="px-4 py-4 flex flex-col gap-4 text-gray-700 text-base">
             {[
-              ["Inicio","/"],
-              ["Planes","/planes"],
-              ["Prestadores","/prestadores"],
-              ["Institucional","/institucional"],
-              ["Contacto","/contacto"],
+              ["Inicio", "/"],
+              ["Planes", "/planes"],
+              ["Prestadores", "/prestadores"],
+              ["Institucional", "/institucional"],
+              ["Contacto", "/contacto"],
             ].map(([label, href]) => (
-              <Link key={href} href={href} onClick={() => setMenuOpen(false)} className="hover:text-primary">
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-primary"
+              >
                 {label}
               </Link>
             ))}
+
+            {/* CTA móvil destacada para Autorizaciones */}
             <Link
-              href="/contacto"
+              href="http://autorizaciones.preme.com.ar/Account/Login?ReturnUrl=%2f"
               onClick={() => setMenuOpen(false)}
-              className="mt-2 bg-brand-blue text-white px-4 py-2 rounded-lg text-center hover:bg-brand-blue-hover"
+              className="rounded-lg bg-[#FF914D] text-white px-4 py-2 text-center font-bold"
             >
-              Afiliate ahora
+              AUTORIZACIONES
+              <span className="block text-[12px] font-medium leading-tight opacity-95">
+                Trámite de Prestadores
+              </span>
+            </Link>
+
+            <Link
+              href="https://formularios.fidelitytools.net?f=OTQ3MA"
+              onClick={() => setMenuOpen(false)}
+              className="bg-brand-blue text-white px-4 py-2 rounded-lg text-center font-semibold hover:bg-brand-blue-hover"
+            >
+              AFILIATE ahora
             </Link>
           </div>
         </div>
