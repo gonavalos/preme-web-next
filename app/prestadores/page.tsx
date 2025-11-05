@@ -6,6 +6,7 @@ import useSWR from "swr";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CartillaFilter, { Filters } from "../components/CartillaFilter";
 
 type Prestador = {
   id: number;
@@ -20,44 +21,88 @@ type Prestador = {
 const HERO_SRC = "/assets/hero/cartillav2.png";
 const PAGE_SIZE = 24;
 
-const fetcher = (url: string) => fetch(url).then(r => r.json());
+const fetcher = (url: string) => fetch(url).then((r) => r.json());
+
+type MetaResp = {
+  planes: { value: string; label: string }[];
+  tipos: { value: string; label: string }[];
+  ciudades: { value: string; label: string }[];
+};
+
+// 🎨 Mapeo de colores por plan
+const PLAN_COLORS: Record<string, string> = {
+  "Plan Joven":     "bg-[#F79630]/12 text-[#F79630] ring-1 ring-[#F79630]/25",
+  "Plan Coral":     "bg-[#33BAF0]/12 text-[#33BAF0] ring-1 ring-[#33BAF0]/25",
+  "Plan Integral":  "bg-[#68AE26]/12 text-[#68AE26] ring-1 ring-[#68AE26]/25",
+  "Plan Máximo":    "bg-[#864D8D]/12 text-[#864D8D] ring-1 ring-[#864D8D]/25",
+};
 
 export default function PrestadoresPage() {
-  // Filtros mínimos (según tu nueva estructura)
-  const [plan, setPlan] = useState("");
-  const [tipo, setTipo] = useState("");
-  const [ciudad, setCiudad] = useState("");
-  const [q, setQ] = useState("");
+  const [filters, setFilters] = useState<Filters>({
+    plan: "",
+    tipo: "",
+    ciudad: "",
+    q: "",
+  });
   const [page, setPage] = useState(1);
 
+  const { data: meta } = useSWR<MetaResp>("/api/prestadores/meta", fetcher);
+
+  // Mapeos label→value
+  const planLabelToValue = useMemo(() => {
+    const m = new Map<string, string>();
+    meta?.planes.forEach((p) => m.set(p.label, p.value));
+    return m;
+  }, [meta]);
+
+  const tipoLabelToValue = useMemo(() => {
+    const m = new Map<string, string>();
+    meta?.tipos.forEach((t) => m.set(t.label, t.value));
+    return m;
+  }, [meta]);
+
+  const ciudadLabelToValue = useMemo(() => {
+    const m = new Map<string, string>();
+    meta?.ciudades.forEach((c) => m.set(c.label, c.value));
+    return m;
+  }, [meta]);
+
+  // QS
   const qs = useMemo(() => {
     const p = new URLSearchParams();
-    if (plan) p.set("plan", plan);
-    if (tipo) p.set("tipo", tipo);
-    if (ciudad) p.set("ciudad", ciudad);
-    if (q) p.set("q", q);
+    const planValue = filters.plan ? planLabelToValue.get(filters.plan) ?? "" : "";
+    const tipoValue = filters.tipo ? tipoLabelToValue.get(filters.tipo) ?? "" : "";
+    const ciudadValue = filters.ciudad ? ciudadLabelToValue.get(filters.ciudad) ?? "" : "";
+    if (planValue) p.set("plan", planValue);
+    if (tipoValue) p.set("tipo", tipoValue);
+    if (ciudadValue) p.set("ciudad", ciudadValue);
+    if (filters.q) p.set("q", filters.q);
     p.set("page", String(page));
     p.set("pageSize", String(PAGE_SIZE));
     return p.toString();
-  }, [plan, tipo, ciudad, q, page]);
+  }, [filters, page, planLabelToValue, tipoLabelToValue, ciudadLabelToValue]);
 
-  const { data, isLoading } = useSWR<{ items: Prestador[]; total: number; page: number; pageSize: number }>(
-    `/api/prestadores?${qs}`,
-    fetcher,
-    { keepPreviousData: true }
-  );
+  const { data, isLoading } = useSWR<{
+    items: Prestador[];
+    total: number;
+    page: number;
+    pageSize: number;
+  }>(`/api/prestadores?${qs}`, fetcher, { keepPreviousData: true });
 
   const items = data?.items ?? [];
   const total = data?.total ?? 0;
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
-  // Reset page al cambiar filtros
-  useEffect(() => { setPage(1); }, [plan, tipo, ciudad, q]);
+  useEffect(() => setPage(1), [filters]);
 
-  // (Opcional) combos estáticos para demo rápida
-  const plans = ["Plan Joven", "Plan Coral", "Plan Integral", "Plan Máximo"];
-  const tipos = ["Clínica", "Consultorios", "Diagnóstico", "Laboratorio", "Farmacia"];
-  const ciudades = ["Córdoba Capital", "Río Cuarto", "Villa María", "Alta Gracia"];
+  const options = useMemo(
+    () => ({
+      plans: meta?.planes.map((p) => p.label) ?? [],
+      tipos: meta?.tipos.map((t) => t.label) ?? [],
+      ciudades: meta?.ciudades.map((c) => c.label) ?? [],
+    }),
+    [meta]
+  );
 
   return (
     <>
@@ -84,52 +129,23 @@ export default function PrestadoresPage() {
         </div>
       </section>
 
-      {/* FILTROS */}
+      {/* FILTROS + RESULTADOS */}
       <main className="mx-auto max-w-7xl px-4 py-10">
-        <form
-          className="grid gap-4 md:grid-cols-5"
-          onSubmit={(e) => e.preventDefault()}
-          role="search"
-          aria-label="Filtrar cartilla médica"
-        >
-          <select className="rounded-lg border border-black/10 px-3 py-2" value={plan} onChange={(e) => setPlan(e.target.value)}>
-            <option value="">Plan (todos)</option>
-            {plans.map(pl => <option key={pl} value={pl}>{pl}</option>)}
-          </select>
-
-          <select className="rounded-lg border border-black/10 px-3 py-2" value={tipo} onChange={(e) => setTipo(e.target.value)}>
-            <option value="">Tipo (todos)</option>
-            {tipos.map(t => <option key={t} value={t}>{t}</option>)}
-          </select>
-
-          <select className="rounded-lg border border-black/10 px-3 py-2" value={ciudad} onChange={(e) => setCiudad(e.target.value)}>
-            <option value="">Ciudad (todas)</option>
-            {ciudades.map(c => <option key={c} value={c}>{c}</option>)}
-          </select>
-
-          <input
-            type="search"
-            placeholder="Buscar por nombre o dirección"
-            className="rounded-lg border border-black/10 px-3 py-2 md:col-span-2"
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-          />
-        </form>
+        <CartillaFilter value={filters} onChange={setFilters} options={options} />
 
         {/* RESULTADOS */}
         <section className="mt-8">
-          {isLoading && (
+          {isLoading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {Array.from({ length: 9 }).map((_, i) => (
                 <div key={i} className="h-32 rounded-2xl bg-gray-100 animate-pulse" />
               ))}
             </div>
-          )}
-
-          {!isLoading && (
+          ) : (
             <>
               <div className="mb-4 text-sm text-gray-600">
-                {total} resultado{total !== 1 ? "s" : ""}{plan || tipo || ciudad || q ? " (filtrado)" : ""}
+                {total} resultado{total !== 1 ? "s" : ""}
+                {filters.plan || filters.tipo || filters.ciudad || filters.q ? " (filtrado)" : ""}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -140,13 +156,21 @@ export default function PrestadoresPage() {
                     <p className="mt-2 text-sm text-gray-700">{p.direccion}</p>
                     <p className="text-sm text-gray-700">{p.ciudad}, Córdoba</p>
                     <p className="mt-1 text-sm text-gray-700">Tel: {p.telefono}</p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {p.plan.map((pl) => (
-                        <span key={pl} className="rounded-full bg-[#f1f5f9] px-3 py-1 text-xs text-[#092f57] ring-1 ring-black/5">
-                          {pl}
-                        </span>
-                      ))}
-                    </div>
+
+                    {/* Etiquetas de planes con color */}
+<div className="mt-3 flex flex-wrap gap-2">
+  {p.plan.map((pl) => {
+    const cls = PLAN_COLORS[pl] ?? "bg-slate-100 text-[#092f57] ring-1 ring-slate-200";
+    return (
+      <span
+        key={pl}
+        className={`rounded-full px-2 py-1 text-xs font-medium ${cls}`}
+      >
+        {pl}
+      </span>
+    );
+  })}
+</div>
                   </article>
                 ))}
               </div>
