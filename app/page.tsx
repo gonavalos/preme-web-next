@@ -88,11 +88,21 @@ export default function Home() {
 
           <BenefitsSlider />
 
-          <div className="py-6 grid grid-cols-1 mt-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            {planes.map((plan, idx) => (
-              <PlanCard key={idx} {...plan} />
-            ))}
-          </div>
+<div
+  className="
+    py-6 mt-2
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-2
+    xl:grid-cols-4
+    gap-6 md:gap-8 lg:gap-8 xl:gap-10
+  "
+>
+  {planes.map((plan, idx) => (
+    <PlanCard key={idx} {...plan} />
+  ))}
+</div>
         </section>
 
         <AppBanner />

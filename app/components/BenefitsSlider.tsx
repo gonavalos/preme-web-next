@@ -9,15 +9,15 @@ const BENEFITS = [
   },
   {
     title: "Acceso directo a todas las prestaciones",
-    desc: "Usá tu credencial digital y accedé sin órdenes ni papeleo.",
+    desc: "Usá tu credencial digital y accedé sin órdenes.",
   },
   {
     title: "Estudios sin autorización",
     desc: "Los estudios de baja complejidad se realizan sin autorización previa.",
   },
   {
-    title: "Autorizaciones online y asesoramiento",
-    desc: "Nuestros prestadores y asesores te acompañan en cada gestión.",
+    title: "Autorizaciones online a cargo de prestadores",
+    desc: "Cada autorización la realiza tu prestador, y nuestro equipo de asesores está disponible para orientarte en todo momento.",
   },
   {
     title: "App Preme",

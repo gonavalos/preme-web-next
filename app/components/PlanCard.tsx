@@ -1,3 +1,4 @@
+// /components/PlanCard.tsx
 "use client";
 
 import Image from "next/image";
@@ -10,9 +11,9 @@ export type PlanCardProps = {
   title: string;
   subtitle: string;
   benefits: string[];
-  color: string;
-  highlight?: string;
-  buttonColor?: string;
+  color: string;        // hex #33BAF0
+  highlight?: string;   // chip del header
+  buttonColor?: string; // opcional, sino usa "color"
   href?: string;
 };
 
@@ -45,24 +46,37 @@ export default function PlanCard({
   )`;
 
   return (
-    <article className="flex flex-col h-full rounded-2xl overflow-hidden bg-white shadow-md ring-1 ring-black/5 hover:shadow-lg hover:ring-black/10 transition">
-      {/* Header con altura fija para todas las cards */}
-      <div className="relative h-44 sm:h-48 md:h-52">
+    <article
+      className="
+        flex flex-col h-full rounded-2xl overflow-hidden bg-white
+        shadow-md ring-1 ring-black/5
+        hover:shadow-lg hover:ring-black/10 transition
+      "
+    >
+      {/* Header — compactado en lg (iPad), grande en xl */}
+      <div className="relative h-40 sm:h-44 lg:h-44 xl:h-52">
         {headerImageSrc ? (
           <Image
             src={headerImageSrc}
             alt={headerImageAlt || title}
             fill
             className="object-cover"
-            sizes="(min-width:1024px) 320px, 100vw"
+            sizes="(min-width:1280px) 320px, 100vw"
+            priority={false}
           />
         ) : (
           <div className="h-full w-full" style={{ background: bodyGradient }} />
         )}
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/0 to-black/0" />
+
         {highlight && (
           <span
-            className="absolute top-3 left-3 text-[11px] font-semibold text-white px-3 py-1 rounded-full"
+            className="
+              absolute top-3 left-3
+              text-[10px] xl:text-[11px]
+              font-semibold text-white
+              px-2.5 py-1 rounded-full
+            "
             style={{ backgroundColor: cta }}
           >
             {highlight}
@@ -70,18 +84,48 @@ export default function PlanCard({
         )}
       </div>
 
-      {/* Cuerpo: flex-col con el CTA forzado al fondo */}
+      {/* Body — menos padding y tipografías más contenidas en lg */}
       <div
-        className="flex flex-col flex-1 px-6 pt-5 pb-6 text-center"
+        className="
+          flex flex-col flex-1
+          px-5 pt-4 pb-5
+          xl:px-6 xl:pt-5 xl:pb-6
+          text-center
+        "
         style={{ background: bodyGradient }}
       >
-        <h3 className="pt-3 text-xl font-extrabold mb-1" style={{ color }}>
+        <h3
+          className="
+            pt-2
+            text-lg sm:text-xl lg:text-xl xl:text-2xl
+            font-extrabold mb-1
+          "
+          style={{ color }}
+        >
           {title}
         </h3>
-        <p className="pt-3 text-gray-700 text-sm mb-4">{subtitle}</p>
 
-        {/* Lista crece y ocupa el espacio disponible; CTA queda abajo */}
-        <ul className="pt-3 text-sm text-gray-800 space-y-2 text-left mb-6 flex-1 overflow-hidden">
+        <p
+          className="
+            pt-2
+            text-[13px] sm:text-sm lg:text-sm xl:text-base
+            text-gray-700 mb-3 lg:mb-3 xl:mb-4
+          "
+        >
+          {subtitle}
+        </p>
+
+        {/* Lista — compactada en lg */}
+        <ul
+          className="
+            pt-2
+            text-[13px] sm:text-sm lg:text-[13.5px] xl:text-sm
+            text-gray-800
+            space-y-2 lg:space-y-1.5
+            text-left mb-5 lg:mb-5 xl:mb-6
+            flex-1 overflow-hidden
+          "
+        >
           {benefits?.map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <FaCheck className="mt-0.5 text-green-500 shrink-0" />
@@ -90,20 +134,32 @@ export default function PlanCard({
           ))}
         </ul>
 
-        {/* CTA siempre al final */}
+        {/* CTA — misma altura/estética, más corto en lg por contención de ancho global */}
         {href ? (
           <Link
             href={href}
-            className="mt-auto inline-flex w-full justify-center py-2.5 rounded-lg text-white font-semibold shadow-sm hover:opacity-95 transition"
+            className="
+              mt-auto inline-flex w-full justify-center
+              rounded-lg text-white font-semibold shadow-sm
+              hover:opacity-95 transition
+              h-10 lg:h-10 xl:h-11
+              text-[14px] xl:text-[15px]
+            "
             style={{ backgroundColor: cta }}
           >
             Ver detalles
           </Link>
         ) : (
           <button
-            className="mt-auto w-full py-2.5 rounded-lg text-white font-semibold shadow-sm hover:opacity-95 transition"
-            style={{ backgroundColor: cta }}
             type="button"
+            className="
+              mt-auto w-full
+              rounded-lg text-white font-semibold shadow-sm
+              hover:opacity-95 transition
+              h-10 lg:h-10 xl:h-11
+              text-[14px] xl:text-[15px]
+            "
+            style={{ backgroundColor: cta }}
           >
             Ver detalles
           </button>

@@ -125,7 +125,7 @@ export default function CartillaFilter({ value, onChange, options }: Props) {
           <input
             type="search"
             inputMode="search"
-            placeholder="Nombre, tipo o dirección"
+            placeholder="Institución, tipo o dirección"
             className="rounded-xl border border-black/10 bg-white px-3 py-2.5 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#33BAF0] focus:border-transparent hover:border-[#33BAF0]/50 transition"
             value={value.q}
             onChange={(e) => set("q", e.target.value)}

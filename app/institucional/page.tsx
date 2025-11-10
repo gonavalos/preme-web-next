@@ -42,7 +42,7 @@ const diferenciales = [
   {
     icon: FaClock,
     title: "24/7",
-    text: "Urgencias y telemedicina disponibles todo el día.",
+    text: "Urgencias y telemedicina a través de ECCO, disponibles todo el día.",
   },
   {
     icon: FaShieldAlt,
