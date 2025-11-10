@@ -17,46 +17,46 @@ type Channel = {
   badge?: string;
   icon: React.ComponentType<{ className?: string }>;
   external?: boolean;
-  color: string; // <-- color del botón
+  color: string;
 };
 
 const channels: Channel[] = [
   {
-    title: "Ventas / Asesoramiento",
-    desc: "Línea nacional con asesores.",
+    title: "Atención Afiliados",
+    desc: "Consultas generales y orientación personalizada.",
     action: "Llamar",
-    href: "tel:08103332244",
-    badge: "0810-333-2244",
+    href: "tel:3517040891",
+    badge: "(351) 7040891",
     icon: FaPhone,
-    color: "#33BAF0", // brand blue
+    color: "#33BAF0", // azul institucional
   },
   {
     title: "WhatsApp",
-    desc: "Respuesta rápida de 9 a 18 h.",
-    action: "Escribir",
+    desc: "Contactanos directamente por mensaje.",
+    action: "Abrir chat",
     href: "https://wa.me/5493512006002?text=Hola%20PREME%2C%20quisiera%20hacer%20una%20consulta",
     badge: "+54 9 351 2006002",
     icon: FaWhatsapp,
     external: true,
-    color: "#25D366", // WhatsApp green
+    color: "#25D366", // verde WhatsApp
   },
   {
     title: "Email",
-    desc: "Consultas generales.",
+    desc: "Consultas, trámites y convenios.",
     action: "Enviar email",
-    href: "mailto:info@preme.com.ar",
-    badge: "info@preme.com.ar",
+    href: "mailto:preme@preme.com.ar",
+    badge: "preme@preme.com.ar",
     icon: FaEnvelope,
     color: "#0D2A53", // azul profundo institucional
   },
   {
-    title: "Oficina central",
-    desc: "Av. Colón 795, Córdoba.",
-    action: "Cómo llegar",
+    title: "Oficina Central",
+    desc: "Av. Colón 795 (esq. Urquiza) – Córdoba.",
+    action: "Ver mapa",
     href: "#mapa",
-    badge: "Ver mapa",
+    badge: "Cómo llegar",
     icon: FaMapMarkerAlt,
-    color: "#6B7280", // slate (gris)
+    color: "#6B7280", // gris neutro
   },
 ];
 
@@ -87,7 +87,7 @@ export default function ContactChannels() {
                 </div>
               )}
 
-              {/* CTA alineado abajo + color por canal */}
+              {/* Botón inferior */}
               <div className="mt-auto pt-4">
                 <Link
                   href={c.href}
