@@ -16,6 +16,8 @@ type Prestador = {
   ciudad: string;
   direccion: string;
   telefono: string;
+  orden1?: number;
+  orden2?: number;
 };
 
 const HERO_SRC = "/assets/hero/cartillav2.png";
@@ -89,7 +91,6 @@ export default function PrestadoresPage() {
     pageSize: number;
   }>(`/api/prestadores?${qs}`, fetcher, { keepPreviousData: true });
 
-  const items = data?.items ?? [];
   const total = data?.total ?? 0;
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
@@ -103,6 +104,23 @@ export default function PrestadoresPage() {
     }),
     [meta]
   );
+
+  // 🔢 ORDEN POR PRIORIDAD (orden1, orden2, nombre)
+  const items = useMemo(() => {
+    const raw = data?.items ?? [];
+    const safeOrder = (v?: number) =>
+      typeof v === "number" && !Number.isNaN(v) ? v : 9999;
+
+    return [...raw].sort((a, b) => {
+      const o1 = safeOrder(a.orden1) - safeOrder(b.orden1);
+      if (o1 !== 0) return o1;
+
+      const o2 = safeOrder(a.orden2) - safeOrder(b.orden2);
+      if (o2 !== 0) return o2;
+
+      return a.nombre.localeCompare(b.nombre, "es", { sensitivity: "base" });
+    });
+  }, [data]);
 
   return (
     <>
@@ -158,19 +176,21 @@ export default function PrestadoresPage() {
                     <p className="mt-1 text-sm text-gray-700">Tel: {p.telefono}</p>
 
                     {/* Etiquetas de planes con color */}
-<div className="mt-3 flex flex-wrap gap-2">
-  {p.plan.map((pl) => {
-    const cls = PLAN_COLORS[pl] ?? "bg-slate-100 text-[#092f57] ring-1 ring-slate-200";
-    return (
-      <span
-        key={pl}
-        className={`rounded-full px-2 py-1 text-xs font-medium ${cls}`}
-      >
-        {pl}
-      </span>
-    );
-  })}
-</div>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {p.plan.map((pl) => {
+                        const cls =
+                          PLAN_COLORS[pl] ??
+                          "bg-slate-100 text-[#092f57] ring-1 ring-slate-200";
+                        return (
+                          <span
+                            key={pl}
+                            className={`rounded-full px-2 py-1 text-xs font-medium ${cls}`}
+                          >
+                            {pl}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </article>
                 ))}
               </div>
