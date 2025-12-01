@@ -1,8 +1,9 @@
-// app/planes-landing/page.tsx
+// app/formulario-landing/page.tsx
 "use client";
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type PlanName = "Plan Joven" | "Plan Coral" | "Plan Integral" | "Plan Máximo";
 
@@ -10,6 +11,24 @@ type PlanSection = {
   title: string;
   items: string[];
 };
+
+type PlanVariant = {
+  key: string;
+  label: string;
+  sections: PlanSection[];
+};
+
+type PlanDetail =
+  | {
+      kind: "young";
+      intro: string;
+      variants: PlanVariant[];
+    }
+  | {
+      kind: "simple";
+      intro: string;
+      sections: PlanSection[];
+    };
 
 const PLAN_TONES: Record<
   PlanName,
@@ -23,7 +42,6 @@ const PLAN_TONES: Record<
   }
 > = {
   "Plan Joven": {
-    // Naranja más vivo
     card: "bg-white border-[#F79630]/40",
     selectedRing: "ring-[#F79630]",
     pill: "bg-[#F79630]/10 text-[#A25400] border-[#F79630]/40",
@@ -32,7 +50,6 @@ const PLAN_TONES: Record<
     detailAccentText: "text-[#A25400]",
   },
   "Plan Coral": {
-    // Celeste corporativo más intenso
     card: "bg-white border-[#33BAF0]/40",
     selectedRing: "ring-[#33BAF0]",
     pill: "bg-[#33BAF0]/10 text-[#075985] border-[#33BAF0]/40",
@@ -41,7 +58,6 @@ const PLAN_TONES: Record<
     detailAccentText: "text-[#075985]",
   },
   "Plan Integral": {
-    // Verde más vivo
     card: "bg-white border-[#68AE26]/40",
     selectedRing: "ring-[#68AE26]",
     pill: "bg-[#68AE26]/10 text-[#166534] border-[#68AE26]/40",
@@ -50,7 +66,6 @@ const PLAN_TONES: Record<
     detailAccentText: "text-[#166534]",
   },
   "Plan Máximo": {
-    // Violeta premium más intenso
     card: "bg-white border-[#864D8D]/40",
     selectedRing: "ring-[#864D8D]",
     pill: "bg-[#864D8D]/10 text-[#4C1D95] border-[#864D8D]/40",
@@ -60,7 +75,7 @@ const PLAN_TONES: Record<
   },
 };
 
-const PLAN_DETAILS: Record<PlanName, any> = {
+const PLAN_DETAILS: Record<PlanName, PlanDetail> = {
   "Plan Joven": {
     kind: "young",
     intro:
@@ -430,7 +445,7 @@ export default function PlanesContactoPage() {
 
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || "Error al enviar el formulario");
+        throw new Error((data as { error?: string }).error || "Error al enviar el formulario");
       }
 
       setSuccessMsg("¡Gracias! Un asesor de PREME se contactará con vos en breve.");
@@ -446,8 +461,12 @@ export default function PlanesContactoPage() {
         afiliado: "",
       });
       setSelectedPlan(null);
-    } catch (err: any) {
-      setErrorMsg(err.message || "Ocurrió un error, intentá nuevamente.");
+    } catch (err) {
+      const message =
+        err instanceof Error
+          ? err.message
+          : "Ocurrió un error, intentá nuevamente.";
+      setErrorMsg(message);
     } finally {
       setLoading(false);
     }
@@ -474,7 +493,7 @@ export default function PlanesContactoPage() {
         {/* Header con logo */}
         <header className="relative z-30 bg-white/95 backdrop-blur">
           <div className="max-w-6xl mx-auto px-4 lg:px-6 py-4 flex items-center">
-            <a href="/" className="inline-flex items-center">
+            <Link href="/" className="inline-flex items-center">
               <Image
                 src="/logoPreme.png"
                 alt="PREME"
@@ -482,7 +501,7 @@ export default function PlanesContactoPage() {
                 height={80}
                 className="h-16 w-auto"
               />
-            </a>
+            </Link>
           </div>
         </header>
 
@@ -532,7 +551,7 @@ export default function PlanesContactoPage() {
       </section>
 
       {/* SECCIÓN PLANES + FORMULARIO */}
-      <section className="bg-slate-50 py-10 lg:py-14">
+      <section className="bg-[#F5F5F7] py-4 lg:py-14">
         <div className="max-w-6xl mx-auto px-4 lg:px-6 grid gap-8 lg:grid-cols-[1.05fr,1.1fr] items-start">
           {/* Columna izquierda: planes */}
           <div>
@@ -674,7 +693,7 @@ export default function PlanesContactoPage() {
                 (() => {
                   const details = PLAN_DETAILS[selectedPlan];
                   const upgrades = PLAN_UPGRADES[selectedPlan] || [];
-                  const planMeta = planes.find((p) => p.id === selectedPlan);
+                  const planMeta = planes.find((p) => p.id === selectedPlan)!;
                   const tone = PLAN_TONES[selectedPlan];
 
                   return (
@@ -695,21 +714,21 @@ export default function PlanesContactoPage() {
                             {planMeta.highlight}
                           </p>
                         )}
-                        {details?.intro && (
+                        {details.intro && (
                           <p className="mt-1.5 text-[11px] md:text-[12px] leading-relaxed text-slate-700">
                             {details.intro}
                           </p>
                         )}
                       </div>
 
-                      {details?.variants ? (
+                      {"variants" in details ? (
                         <div className="grid gap-3 md:grid-cols-2">
-                          {details.variants.map((variant: any) => (
+                          {details.variants.map((variant) => (
                             <div
                               key={variant.key}
                               className="rounded-2xl bg-white border border-slate-200 px-3.5 py-3 shadow-sm"
                               style={{
-                                borderLeftColor: planMeta?.color || "#0EA5E9",
+                                borderLeftColor: planMeta.color,
                                 borderLeftWidth: 4,
                                 borderLeftStyle: "solid",
                               }}
@@ -718,75 +737,64 @@ export default function PlanesContactoPage() {
                                 {variant.label}
                               </p>
                               <ul className="space-y-1 text-[11px] text-slate-700">
-                                {(
-                                  (variant.sections?.[0]?.items as string[]) ||
-                                  []
-                                )
-                                  .slice(0, 5)
-                                  .map((item) => (
-                                    <li
-                                      key={item}
-                                      className="flex items-start gap-1.5"
-                                    >
-                                      <span
-                                        className="mt-1 h-1.5 w-1.5 rounded-full flex-shrink-0"
-                                        style={{
-                                          backgroundColor:
-                                            planMeta?.color || "#0EA5E9",
-                                        }}
-                                      />
-                                      <span>{item}</span>
-                                    </li>
-                                  ))}
+                                {variant.sections[0]?.items.slice(0, 5).map((item) => (
+                                  <li
+                                    key={item}
+                                    className="flex items-start gap-1.5"
+                                  >
+                                    <span
+                                      className="mt-1 h-1.5 w-1.5 rounded-full flex-shrink-0"
+                                      style={{
+                                        backgroundColor: planMeta.color,
+                                      }}
+                                    />
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
                               </ul>
                             </div>
                           ))}
                         </div>
                       ) : (
-                        details?.sections && (
-                          <div className="grid gap-3 md:grid-cols-2">
-                            {details.sections.slice(0, 2).map((section: any) => (
-                              <div
-                                key={section.title}
-                                className="rounded-2xl bg-white border border-slate-200 px-3.5 py-3 shadow-sm"
-                                style={{
-                                  borderLeftColor: planMeta?.color || "#0EA5E9",
-                                  borderLeftWidth: 4,
-                                  borderLeftStyle: "solid",
-                                }}
-                              >
-                                <p className="text-[12px] font-semibold text-slate-900 mb-1.5">
-                                  {section.title}
-                                </p>
-                                <ul className="space-y-1 text-[11px] text-slate-700">
-                                  {(section.items as string[])
-                                    .slice(0, 5)
-                                    .map((item) => (
-                                      <li
-                                        key={item}
-                                        className="flex items-start gap-1.5"
-                                      >
-                                        <span
-                                          className="mt-1 h-1.5 w-1.5 rounded-full flex-shrink-0"
-                                          style={{
-                                            backgroundColor:
-                                              planMeta?.color || "#0EA5E9",
-                                          }}
-                                        />
-                                        <span>{item}</span>
-                                      </li>
-                                    ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                        )
+                        <div className="grid gap-3 md:grid-cols-2">
+                          {details.sections.slice(0, 2).map((section) => (
+                            <div
+                              key={section.title}
+                              className="rounded-2xl bg-white border border-slate-200 px-3.5 py-3 shadow-sm"
+                              style={{
+                                borderLeftColor: planMeta.color,
+                                borderLeftWidth: 4,
+                                borderLeftStyle: "solid",
+                              }}
+                            >
+                              <p className="text-[12px] font-semibold text-slate-900 mb-1.5">
+                                {section.title}
+                              </p>
+                              <ul className="space-y-1 text-[11px] text-slate-700">
+                                {section.items.slice(0, 5).map((item) => (
+                                  <li
+                                    key={item}
+                                    className="flex items-start gap-1.5"
+                                  >
+                                    <span
+                                      className="mt-1 h-1.5 w-1.5 rounded-full flex-shrink-0"
+                                      style={{
+                                        backgroundColor: planMeta.color,
+                                      }}
+                                    />
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
                       )}
 
                       {upgrades.length > 0 && (
                         <div
                           className="mt-4 rounded-2xl border px-3.5 py-3 bg-white/80 space-y-2"
-                          style={{ borderColor: planMeta?.color || "#CBD5F5" }}
+                          style={{ borderColor: planMeta.color }}
                         >
                           <p className="text-[11px] font-semibold text-slate-900">
                             Instituciones y centros médicos destacados en este plan:
@@ -797,15 +805,12 @@ export default function PlanesContactoPage() {
                                 key={name}
                                 className="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[10px] font-medium border bg-slate-50"
                                 style={{
-                                  borderColor: planMeta?.color || "#0EA5E9",
+                                  borderColor: planMeta.color,
                                 }}
                               >
                                 <span
-                                  className={`h-1.5 w-1.5 rounded-full ${tone.detailAccentText}`}
-                                  style={{
-                                    backgroundColor:
-                                      planMeta?.color || "#0EA5E9",
-                                  }}
+                                  className="h-1.5 w-1.5 rounded-full"
+                                  style={{ backgroundColor: planMeta.color }}
                                 />
                                 <span className="text-slate-800">{name}</span>
                               </span>
