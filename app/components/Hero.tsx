@@ -26,7 +26,7 @@ const slides: Slide[] = [
     highlight: "Preme?",
     subtitle:
       "Tenemos un plan para vos y tu familia, con cobertura integral y acompañamiento personalizado.",
-    cta: { label: "Afiliate ahora", href: "https://formularios.fidelitytools.net?f=OTQ3MA" },
+    cta: { label: "Afiliate ahora", href: "/formulario-landing" },
     image: "/assets/hero/herov1.png",
     blur: "/assets/hero/herov1.png",
     objectPos: "object-[50%_25%]",
@@ -36,7 +36,7 @@ const slides: Slide[] = [
   {
     title: "¡Adherite con débito automático!",
     subtitle: "Y obtené beneficios exclusivos durante el primer año.",
-    cta: { label: "Adherirme ahora", href: "https://formularios.fidelitytools.net?f=OTQ3MA" },
+    cta: { label: "Adherirme ahora", href: "/formulario-landing" },
     image: "/assets/hero/home/promo.png",
     promo: true,
     objectPos: "object-[55%_25%]",

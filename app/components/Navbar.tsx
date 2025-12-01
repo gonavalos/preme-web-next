@@ -89,7 +89,7 @@ export default function Navbar() {
 
           {/* Afiliate ahora (sin subtítulo, mismo tamaño) */}
           <Link
-            href="https://formularios.fidelitytools.net?f=OTQ3MA"
+            href="/formulario-landing"
             className="
               inline-flex items-center justify-center rounded-xl bg-brand-blue text-white
               md:h-10 lg:h-11 xl:h-12
@@ -159,7 +159,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="https://formularios.fidelitytools.net?f=OTQ3MA"
+              href="/formulario-landing"
               onClick={() => setMenuOpen(false)}
               className="bg-brand-blue text-white px-4 py-2 rounded-lg text-center font-semibold hover:bg-brand-blue-hover"
             >
