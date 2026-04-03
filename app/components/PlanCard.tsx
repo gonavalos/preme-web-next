@@ -3,7 +3,22 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaCheck } from "react-icons/fa";
+import {
+  Stethoscope,
+  ShieldCheck,
+  Pill,
+  Siren,
+  BadgeCheck,
+  Heart,
+  Eye,
+  Check,
+  BriefcaseMedical,
+  CreditCard,
+  UserRound,
+  Smile,
+  Bone,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export type PlanCardProps = {
   headerImageSrc?: string;
@@ -11,10 +26,11 @@ export type PlanCardProps = {
   title: string;
   subtitle: string;
   benefits: string[];
-  color: string;        // hex #33BAF0
-  highlight?: string;   // chip del header
-  buttonColor?: string; // opcional, sino usa "color"
+  color: string;
+  highlight?: string;
+  buttonColor?: string;
   href?: string;
+  featured?: boolean;
 };
 
 function hexToRgb(hex: string) {
@@ -22,6 +38,29 @@ function hexToRgb(hex: string) {
   if (!m) return null;
   const int = parseInt(m[1], 16);
   return { r: (int >> 16) & 255, g: (int >> 8) & 255, b: int & 255 };
+}
+
+// Keyword → icon mapping for benefits
+const BENEFIT_ICON_MAP: [RegExp, LucideIcon][] = [
+  [/consult/i, Stethoscope],
+  [/cobertura\s*100|100\s*%/i, ShieldCheck],
+  [/farmacia|medicamento/i, Pill],
+  [/emergencia|urgencia|24\s*h/i, Siren],
+  [/sin\s*co-?seguro|sin\s*coseguro/i, BadgeCheck],
+  [/anticonceptivo|materno|parto|embarazo|ecograf/i, Heart],
+  [/óptic/i, Eye],
+  [/internaci/i, BriefcaseMedical],
+  [/credencial|acto/i, CreditCard],
+  [/recibo|sueldo/i, UserRound],
+  [/psicolog|psiquiat/i, Smile],
+  [/ortodoncia|prótesis|implante|odonto/i, Bone],
+];
+
+function getBenefitIcon(text: string): LucideIcon {
+  for (const [pattern, icon] of BENEFIT_ICON_MAP) {
+    if (pattern.test(text)) return icon;
+  }
+  return Check;
 }
 
 export default function PlanCard({
@@ -34,6 +73,7 @@ export default function PlanCard({
   highlight,
   buttonColor,
   href,
+  featured,
 }: PlanCardProps) {
   const cta = buttonColor ?? color;
   const rgb = hexToRgb(color) ?? { r: 51, g: 186, b: 240 };
@@ -45,22 +85,45 @@ export default function PlanCard({
     rgba(255,255,255,1) 100%
   )`;
 
+  const hoverGlow = `0 8px 30px rgba(${rgb.r},${rgb.g},${rgb.b},0.18)`;
+
   return (
     <article
-      className="
-        flex flex-col h-full rounded-2xl overflow-hidden bg-white
-        shadow-md ring-1 ring-black/5
-        hover:shadow-lg hover:ring-black/10 transition
-      "
+      className={`
+        group relative flex flex-col h-full rounded-2xl overflow-hidden bg-white
+        shadow-md ring-1
+        transition-all duration-300 ease-out
+        hover:-translate-y-1.5 hover:shadow-xl
+        ${featured
+          ? "ring-2 ring-brandBlue shadow-lg scale-[1.02] xl:scale-105"
+          : "ring-black/5 hover:ring-black/10"
+        }
+      `}
+      style={{
+        // @ts-expect-error CSS custom property for hover glow
+        "--plan-glow": hoverGlow,
+      }}
+      onMouseEnter={(e) => {
+        (e.currentTarget as HTMLElement).style.boxShadow = hoverGlow;
+      }}
+      onMouseLeave={(e) => {
+        (e.currentTarget as HTMLElement).style.boxShadow = "";
+      }}
     >
-      {/* Header — compactado en lg (iPad), grande en xl */}
+      {featured && (
+        <div className="absolute -top-0 left-1/2 -translate-x-1/2 z-10 bg-brandBlue text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1 rounded-b-lg shadow-sm">
+          Recomendado
+        </div>
+      )}
+
+      {/* Header */}
       <div className="relative h-40 sm:h-44 lg:h-44 xl:h-52">
         {headerImageSrc ? (
           <Image
             src={headerImageSrc}
             alt={headerImageAlt || title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             sizes="(min-width:1280px) 320px, 100vw"
             priority={false}
           />
@@ -72,6 +135,7 @@ export default function PlanCard({
         {highlight && (
           <span
             className="
+              badge-shimmer
               absolute top-3 left-3
               text-[10px] xl:text-[11px]
               font-semibold text-white
@@ -84,7 +148,7 @@ export default function PlanCard({
         )}
       </div>
 
-      {/* Body — menos padding y tipografías más contenidas en lg */}
+      {/* Body */}
       <div
         className="
           flex flex-col flex-1
@@ -115,7 +179,7 @@ export default function PlanCard({
           {subtitle}
         </p>
 
-        {/* Lista — compactada en lg */}
+        {/* Benefits list with contextual icons */}
         <ul
           className="
             pt-2
@@ -126,22 +190,29 @@ export default function PlanCard({
             flex-1 overflow-hidden
           "
         >
-          {benefits?.map((b, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <FaCheck className="mt-0.5 text-green-500 shrink-0" />
-              <span className="leading-snug">{b}</span>
-            </li>
-          ))}
+          {benefits?.map((b, i) => {
+            const Icon = getBenefitIcon(b);
+            return (
+              <li key={i} className="flex items-start gap-2">
+                <Icon
+                  className="mt-0.5 shrink-0 h-4 w-4"
+                  style={{ color }}
+                  strokeWidth={2}
+                />
+                <span className="leading-snug">{b}</span>
+              </li>
+            );
+          })}
         </ul>
 
-        {/* CTA — misma altura/estética, más corto en lg por contención de ancho global */}
+        {/* CTA */}
         {href ? (
           <Link
             href={href}
             className="
-              mt-auto inline-flex w-full justify-center
+              mt-auto inline-flex w-full justify-center items-center
               rounded-lg text-white font-semibold shadow-sm
-              hover:opacity-95 transition
+              hover:brightness-110 hover:shadow-md transition-all duration-200
               h-10 lg:h-10 xl:h-11
               text-[14px] xl:text-[15px]
             "
@@ -155,7 +226,7 @@ export default function PlanCard({
             className="
               mt-auto w-full
               rounded-lg text-white font-semibold shadow-sm
-              hover:opacity-95 transition
+              hover:brightness-110 hover:shadow-md transition-all duration-200
               h-10 lg:h-10 xl:h-11
               text-[14px] xl:text-[15px]
             "

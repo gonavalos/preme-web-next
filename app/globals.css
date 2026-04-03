@@ -44,13 +44,32 @@ body {
 
 /* Oculta scrollbar del carrusel en todos los navegadores */
 .blog-scroll {
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .blog-scroll::-webkit-scrollbar {
-  display: none;             /* Chrome/Safari */
+  display: none;
 }
 
-/* globals.css */
-.blog-scroll { -ms-overflow-style: none; scrollbar-width: none; }
-.blog-scroll::-webkit-scrollbar { display: none; }
+/* Badge shimmer effect */
+.badge-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.badge-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

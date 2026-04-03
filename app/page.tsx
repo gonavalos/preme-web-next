@@ -13,6 +13,7 @@ import CTAStrip2 from "./components/CTAStrip2";
 import BenefitsSlider from "./components/BenefitsSlider";
 import FadeIn from "./components/FadeIn";
 import StatsBar from "./components/StatsBar";
+import StaggerReveal from "./components/StaggerReveal";
 // import FAQ from "./components/FAQ";
 
 
@@ -94,7 +95,7 @@ export default function Home() {
 
           <BenefitsSlider />
 
-          <div
+          <StaggerReveal
             className="
               py-6 mt-2
               grid
@@ -104,11 +105,15 @@ export default function Home() {
               xl:grid-cols-4
               gap-6 md:gap-8 lg:gap-8 xl:gap-10
             "
+            stagger={0.12}
+            distance={40}
+            duration={0.7}
+            start="top 80%"
           >
             {planes.map((plan, idx) => (
               <PlanCard key={idx} {...plan} />
             ))}
-          </div>
+          </StaggerReveal>
         </section>
 
         <AppBanner />
