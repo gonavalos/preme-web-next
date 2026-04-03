@@ -1,102 +1,257 @@
 // /components/Navbar.tsx
 "use client";
 
-import { useState } from "react";
+import { useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaUserMd } from "react-icons/fa";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+const NAV_LINKS = [
+  ["Inicio", "/"],
+  ["Planes", "/planes"],
+  ["Prestadores", "/prestadores"],
+  ["Institucional", "/institucional"],
+  ["Blog", "/blog"],
+  ["Contacto", "/contacto"],
+];
+
+const SCROLL_THRESHOLD = 60;
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+  const logoRef = useRef<HTMLImageElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const mobileTimelineRef = useRef<gsap.core.Timeline | null>(null);
+
+  // Hamburger line refs
+  const line1Ref = useRef<HTMLSpanElement>(null);
+  const line2Ref = useRef<HTMLSpanElement>(null);
+  const line3Ref = useRef<HTMLSpanElement>(null);
+
+  // Glassmorphism on scroll
+  useGSAP(
+    () => {
+      const header = headerRef.current;
+      const logo = logoRef.current;
+      if (!header || !logo) return;
+
+      const mm = gsap.matchMedia();
+
+      mm.add("(prefers-reduced-motion: no-preference)", () => {
+        ScrollTrigger.create({
+          trigger: document.body,
+          start: `${SCROLL_THRESHOLD}px top`,
+          onEnter: () => {
+            gsap.to(header, {
+              backgroundColor: "rgba(255, 255, 255, 0.88)",
+              backdropFilter: "blur(12px)",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+              duration: 0.3,
+              ease: "power2.out",
+            });
+            gsap.to(logo, {
+              scale: 0.88,
+              duration: 0.3,
+              ease: "power2.out",
+            });
+          },
+          onLeaveBack: () => {
+            gsap.to(header, {
+              backgroundColor: "rgba(255, 255, 255, 0)",
+              backdropFilter: "blur(0px)",
+              boxShadow: "0 0 0 rgba(0,0,0,0)",
+              duration: 0.3,
+              ease: "power2.out",
+            });
+            gsap.to(logo, {
+              scale: 1,
+              duration: 0.3,
+              ease: "power2.out",
+            });
+          },
+        });
+      });
+
+      mm.add("(prefers-reduced-motion: reduce)", () => {
+        ScrollTrigger.create({
+          trigger: document.body,
+          start: `${SCROLL_THRESHOLD}px top`,
+          onEnter: () => {
+            gsap.set(header, {
+              backgroundColor: "rgba(255, 255, 255, 0.88)",
+              backdropFilter: "blur(12px)",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+            });
+          },
+          onLeaveBack: () => {
+            gsap.set(header, {
+              backgroundColor: "rgba(255, 255, 255, 0)",
+              backdropFilter: "blur(0px)",
+              boxShadow: "0 0 0 rgba(0,0,0,0)",
+            });
+          },
+        });
+      });
+    },
+    { scope: headerRef }
+  );
+
+  // Mobile menu animation
+  const openMenu = useCallback(() => {
+    setMenuOpen(true);
+
+    requestAnimationFrame(() => {
+      const panel = mobileMenuRef.current;
+      const l1 = line1Ref.current;
+      const l2 = line2Ref.current;
+      const l3 = line3Ref.current;
+      if (!panel || !l1 || !l2 || !l3) return;
+
+      const links = panel.querySelectorAll("[data-nav-link]");
+      const ctas = panel.querySelectorAll("[data-nav-cta]");
+
+      const tl = gsap.timeline();
+
+      // Hamburger → X
+      tl.to(l1, { rotation: 45, y: 7, duration: 0.25, ease: "power2.inOut" }, 0)
+        .to(l2, { autoAlpha: 0, duration: 0.15, ease: "power2.in" }, 0)
+        .to(l3, { rotation: -45, y: -7, duration: 0.25, ease: "power2.inOut" }, 0);
+
+      // Panel slide
+      tl.fromTo(
+        panel,
+        { autoAlpha: 0, y: -10 },
+        { autoAlpha: 1, y: 0, duration: 0.3, ease: "power2.out" },
+        0.1
+      );
+
+      // Links stagger
+      tl.fromTo(
+        links,
+        { autoAlpha: 0, x: -15 },
+        { autoAlpha: 1, x: 0, duration: 0.3, ease: "power2.out", stagger: 0.05 },
+        0.15
+      );
+
+      // CTAs stagger
+      tl.fromTo(
+        ctas,
+        { autoAlpha: 0, y: 10 },
+        { autoAlpha: 1, y: 0, duration: 0.3, ease: "power2.out", stagger: 0.05 },
+        0.3
+      );
+
+      mobileTimelineRef.current = tl;
+    });
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    const tl = mobileTimelineRef.current;
+    const l1 = line1Ref.current;
+    const l2 = line2Ref.current;
+    const l3 = line3Ref.current;
+
+    if (tl) {
+      tl.reverse();
+      tl.eventCallback("onReverseComplete", () => {
+        setMenuOpen(false);
+        mobileTimelineRef.current = null;
+      });
+    } else {
+      setMenuOpen(false);
+    }
+
+    // Reset hamburger lines
+    if (l1 && l2 && l3) {
+      gsap.to(l1, { rotation: 0, y: 0, duration: 0.25, ease: "power2.inOut" });
+      gsap.to(l2, { autoAlpha: 1, duration: 0.15, ease: "power2.out", delay: 0.1 });
+      gsap.to(l3, { rotation: 0, y: 0, duration: 0.25, ease: "power2.inOut" });
+    }
+  }, []);
+
+  const toggleMenu = useCallback(() => {
+    if (menuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }, [menuOpen, openMenu, closeMenu]);
+
+  const handleLinkClick = useCallback(() => {
+    if (menuOpen) closeMenu();
+  }, [menuOpen, closeMenu]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-sm">
-      <div
-        className="
-          mx-auto max-w-[95%]
-          flex items-center justify-between flex-nowrap overflow-hidden
-          px-4 sm:px-6 lg:px-6 xl:px-10
-          py-2 sm:py-2.5 lg:py-2.5 xl:py-3
-        "
-      >
+    <header
+      ref={headerRef}
+      className="sticky top-0 z-50"
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0)",
+        backdropFilter: "blur(0px)",
+      }}
+    >
+      <div className="mx-auto max-w-[95%] flex items-center justify-between px-4 sm:px-6 lg:px-6 xl:px-10 py-2 sm:py-2.5 xl:py-3">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
+        <Link href="/" className="flex items-center shrink-0">
           <Image
+            ref={logoRef}
             src="/logoPreme.png"
             alt="PREME"
             width={520}
             height={520}
-            className="h-11 w-auto sm:h-12 lg:h-12 xl:h-14"
+            className="h-11 w-auto sm:h-12 xl:h-14 origin-left will-change-transform"
             priority
             quality={100}
           />
         </Link>
 
-        {/* Links (tablet/desktop) */}
-        <nav
-          className="
-            hidden md:flex items-center
-            md:gap-6 lg:gap-6 xl:gap-8
-            text-gray-700
-          "
-        >
-          {[
-            ["Inicio", "/"],
-            ["Planes", "/planes"],
-            ["Prestadores", "/prestadores"],
-            ["Institucional", "/institucional"],
-            ["Contacto", "/contacto"],
-          ].map(([label, href]) => (
+        {/* Nav links (desktop) */}
+        <nav className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-8 text-gray-700">
+          {NAV_LINKS.map(([label, href]) => (
             <Link
               key={href}
               href={href}
-              className="
-                hover:text-[#33BAF0]
-                md:text-[14px] lg:text-[15px] xl:text-[17px]
-                md:leading-6 lg:leading-[1.15]
-              "
+              className="text-sm lg:text-[15px] xl:text-base font-medium hover:text-brandBlue transition-colors"
             >
               {label}
             </Link>
           ))}
         </nav>
 
-        {/* CTAs (derecha) */}
-        <div
-          className="
-            hidden md:flex items-center
-            md:gap-4 lg:gap-4 xl:gap-6
-          "
-        >
-          {/* Autorizaciones */}
-          <Link
-            href="/autorizaciones"
+        {/* CTAs (desktop) */}
+        <div className="hidden md:flex items-center gap-3 xl:gap-4">
+          <a
+            href="https://premeprepaga-consultas.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              flex flex-col justify-center items-center
-              rounded-xl bg-[#FF914D] text-white
-              md:h-10 lg:h-11 xl:h-12
-              md:min-w-[150px] lg:min-w-[145px] xl:min-w-[175px]
-              md:px-3 lg:px-3 xl:px-5
-              shadow-md hover:bg-[#ff7a26] transition-all
+              inline-flex items-center justify-center gap-2 rounded-xl
+              bg-white text-[#0D2A53] ring-1 ring-[#0D2A53]/15
+              h-10 xl:h-11 px-4 xl:px-5
+              text-sm xl:text-[15px] font-semibold
+              hover:bg-gray-50 hover:ring-[#0D2A53]/25 transition-all
             "
           >
-            <span className="font-extrabold tracking-wide leading-none md:text-[13px] lg:text-[12px] xl:text-[15px]">
-              AUTORIZACIONES
-            </span>
-            <span className="hidden lg:block leading-tight lg:text-[10px] text-[11px] mt-0.5 opacity-95">
-              Trámite de Prestadores
-            </span>
-          </Link>
+            <FaUserMd className="text-[#FF914D] text-base" />
+            <span>Portal Prestadores</span>
+          </a>
 
-          {/* Afiliate ahora (sin subtítulo, mismo tamaño) */}
           <Link
             href="/formulario-landing"
             className="
-              inline-flex items-center justify-center rounded-xl bg-brand-blue text-white
-              md:h-10 lg:h-11 xl:h-12
-              md:min-w-[150px] lg:min-w-[145px] xl:min-w-[175px]
-              md:px-3 lg:px-3 xl:px-5
-              md:text-[14px] lg:text-[15px] xl:text-[15px]
-              font-semibold hover:bg-brand-blue-hover shadow-md transition-all
+              nav-cta-primary
+              inline-flex items-center justify-center rounded-xl
+              bg-brandBlue text-white
+              h-10 xl:h-11 px-5 xl:px-6
+              text-sm xl:text-[15px] font-semibold
+              shadow-md transition-all duration-200
+              hover:bg-[#25A6DC] hover:shadow-lg hover:scale-[1.03]
             "
           >
             Afiliate ahora
@@ -106,65 +261,68 @@ export default function Navbar() {
         {/* Hamburguesa (mobile) */}
         <button
           type="button"
-          onClick={() => setMenuOpen((v) => !v)}
+          onClick={toggleMenu}
           aria-expanded={menuOpen}
-          className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+          aria-label="Menú"
+          className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition flex flex-col items-center justify-center gap-[5px] w-10 h-10"
         >
-          <svg
-            className="h-6 w-6"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            {menuOpen ? (
-              <path d="M18 6L6 18M6 6l12 12" />
-            ) : (
-              <path d="M3 6h18M3 12h18M3 18h18" />
-            )}
-          </svg>
+          <span
+            ref={line1Ref}
+            className="block h-[2px] w-5 bg-current rounded-full origin-center will-change-transform"
+          />
+          <span
+            ref={line2Ref}
+            className="block h-[2px] w-5 bg-current rounded-full origin-center"
+          />
+          <span
+            ref={line3Ref}
+            className="block h-[2px] w-5 bg-current rounded-full origin-center will-change-transform"
+          />
         </button>
       </div>
 
       {/* Menú mobile */}
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white shadow-sm">
-          <div className="px-4 py-4 flex flex-col gap-4 text-gray-700 text-base">
-            {[
-              ["Inicio", "/"],
-              ["Planes", "/planes"],
-              ["Prestadores", "/prestadores"],
-              ["Institucional", "/institucional"],
-              ["Contacto", "/contacto"],
-            ].map(([label, href]) => (
+        <div
+          ref={mobileMenuRef}
+          className="md:hidden border-t border-gray-100 bg-white shadow-lg"
+          style={{ visibility: "hidden" }}
+        >
+          <div className="px-4 py-5 flex flex-col gap-3 text-gray-700">
+            {NAV_LINKS.map(([label, href]) => (
               <Link
                 key={href}
                 href={href}
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-[#33BAF0]"
+                data-nav-link
+                onClick={handleLinkClick}
+                className="py-1.5 text-base font-medium hover:text-brandBlue transition-colors"
               >
                 {label}
               </Link>
             ))}
 
-            <Link
-              href="/autorizaciones"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg bg-[#FF914D] text-white px-4 py-2 text-center font-bold"
-            >
-              AUTORIZACIONES
-              <span className="block text-[12px] font-medium leading-tight opacity-95">
-                Trámite de Prestadores
-              </span>
-            </Link>
+            <div className="mt-2 pt-3 border-t border-gray-100 flex flex-col gap-3">
+              <a
+                href="https://premeprepaga-consultas.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-nav-cta
+                onClick={handleLinkClick}
+                className="flex items-center justify-center gap-2 rounded-xl bg-white text-[#0D2A53] ring-1 ring-[#0D2A53]/15 px-4 py-2.5 font-semibold"
+              >
+                <FaUserMd className="text-[#FF914D]" />
+                Portal Prestadores
+              </a>
 
-            <Link
-              href="/formulario-landing"
-              onClick={() => setMenuOpen(false)}
-              className="bg-brand-blue text-white px-4 py-2 rounded-lg text-center font-semibold hover:bg-brand-blue-hover"
-            >
-              AFILIATE ahora
-            </Link>
+              <Link
+                href="/formulario-landing"
+                data-nav-cta
+                onClick={handleLinkClick}
+                className="rounded-xl bg-brandBlue text-white px-4 py-2.5 text-center font-semibold hover:bg-[#25A6DC] shadow-md"
+              >
+                Afiliate ahora
+              </Link>
+            </div>
           </div>
         </div>
       )}
