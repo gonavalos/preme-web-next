@@ -11,6 +11,9 @@ import BenefitCard from "./components/BenefitCard";
 import TickerBar from "./components/Ticketsbar";
 import CTAStrip2 from "./components/CTAStrip2";
 import BenefitsSlider from "./components/BenefitsSlider";
+import FadeIn from "./components/FadeIn";
+import StatsBar from "./components/StatsBar";
+// import FAQ from "./components/FAQ";
 
 
 import {
@@ -56,6 +59,7 @@ export default function Home() {
     color: p.color ?? "#33BAF0",
     highlight: p.highlight,
     buttonColor: p.buttonColor ?? p.color ?? "#33BAF0",
+    // featured: p.nombre === "Plan Coral",
   }));
 
   const benefits = [
@@ -78,39 +82,40 @@ export default function Home() {
          {/*    <TickerBar 
         <CTAStrip />/>*/}
         <CTAStrip2 />
+        <StatsBar />
 
-        {/* Planes (lee del JSON, diseño validado) */}
-        <section className="py-14  max-w-8/10 mx-auto">
-        <div className="mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#092f57]">Nuestros Planes</h2>
-          <div className="mx-auto mt-1 mb-10 h-1 w-20 bg-[#33BAF0]" />
+        {/* Planes */}
+        <section className="py-16 lg:py-20 max-w-8/10 mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold tracking-wider uppercase text-[#33BAF0] mb-2">Cobertura a tu medida</p>
+            <h2 className="text-3xl lg:text-[42px] font-extrabold text-[#092f57] leading-tight">Nuestros Planes</h2>
+            <p className="mt-3 text-gray-500 max-w-xl mx-auto">Elegí el plan que mejor se adapte a vos y tu familia. Cobertura integral desde el primer día.</p>
           </div>
 
           <BenefitsSlider />
 
-<div
-  className="
-    py-6 mt-2
-    grid
-    grid-cols-1
-    md:grid-cols-2
-    lg:grid-cols-2
-    xl:grid-cols-4
-    gap-6 md:gap-8 lg:gap-8 xl:gap-10
-  "
->
-  {planes.map((plan, idx) => (
-    <PlanCard key={idx} {...plan} />
-  ))}
-</div>
+          <div
+            className="
+              py-6 mt-2
+              grid
+              grid-cols-1
+              md:grid-cols-2
+              lg:grid-cols-2
+              xl:grid-cols-4
+              gap-6 md:gap-8 lg:gap-8 xl:gap-10
+            "
+          >
+            {planes.map((plan, idx) => (
+              <PlanCard key={idx} {...plan} />
+            ))}
+          </div>
         </section>
 
         <AppBanner />
 
-
-        <section className="py-1">
+        <section className="py-14 lg:py-16">
           <BlogCarousel />
-       </section>
+        </section>
         {/*
         <section className="py-16 max-w-9xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4 text-primary">
@@ -128,7 +133,6 @@ export default function Home() {
       </main>
 
       <WhatsAppFab />
-      <div className="py-10"></div>
       <Footer />
     </>
   );
