@@ -79,8 +79,8 @@ export default function InflamacionEstomacal() {
       {/* ===== FRASE DESTACADA ===== */}
       <section className="py-24 bg-gradient-to-r from-[#FDE8E8] to-[#FFF5F5] text-center relative overflow-hidden">
         <p className="max-w-3xl mx-auto text-2xl sm:text-3xl font-semibold text-[#D94B4B] leading-snug">
-          "Escuchar a tu cuerpo es el primer paso para cuidar tu digestión.
-          Comé despacio, disfrutá cada bocado."
+          &ldquo;Escuchar a tu cuerpo es el primer paso para cuidar tu digestión.
+          Comé despacio, disfrutá cada bocado.&rdquo;
         </p>
         <p className="text-[#0D2A53]/60 mt-3 text-sm">— Equipo de Gastroenterología PREME</p>
       </section>

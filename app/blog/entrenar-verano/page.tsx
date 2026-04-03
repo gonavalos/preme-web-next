@@ -80,7 +80,7 @@ export default function EntrenarVerano() {
       {/* ===== FRASE DESTACADA ===== */}
       <section className="py-24 bg-gradient-to-r from-[#EAF8EE] to-[#F8FBF9] text-center relative overflow-hidden">
         <p className="max-w-3xl mx-auto text-2xl sm:text-3xl font-semibold text-[#2E9B71] leading-snug">
-          "Entrenar bien en verano no es hacer más, es hacer con cabeza."
+          &ldquo;Entrenar bien en verano no es hacer más, es hacer con cabeza.&rdquo;
         </p>
         <p className="text-[#0D2A53]/60 mt-3 text-sm">— Equipo de Bienestar PREME</p>
       </section>

@@ -80,8 +80,8 @@ export default function DescuentosFarmacias() {
       {/* ===== FRASE DESTACADA ===== */}
       <section className="py-24 bg-gradient-to-r from-[#E8F4FD] to-[#F5FAFF] text-center relative overflow-hidden">
         <p className="max-w-3xl mx-auto text-2xl sm:text-3xl font-semibold text-[#238AD4] leading-snug">
-          "Cuidar tu salud no tiene que ser caro. Con Preme, tus medicamentos
-          cuestan menos o directamente no cuestan nada."
+          &ldquo;Cuidar tu salud no tiene que ser caro. Con Preme, tus medicamentos
+          cuestan menos o directamente no cuestan nada.&rdquo;
         </p>
         <p className="text-[#0D2A53]/60 mt-3 text-sm">— Equipo PREME</p>
       </section>
@@ -111,7 +111,7 @@ export default function DescuentosFarmacias() {
             <ul className="list-disc pl-6 text-[#0D2A53]/80 space-y-2">
               <li>Consultá en la app el listado actualizado de farmacias adheridas.</li>
               <li>Buscá farmacias cercanas usando el mapa interactivo.</li>
-              <li>Verificá el porcentaje de descuento antes de ir, desde la sección "Mis beneficios".</li>
+              <li>Verificá el porcentaje de descuento antes de ir, desde la sección &ldquo;Mis beneficios&rdquo;.</li>
               <li>Si tu plan incluye cobertura al 100%, no pagás nada por medicamentos esenciales.</li>
             </ul>
           </div>

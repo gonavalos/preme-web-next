@@ -80,8 +80,8 @@ export default function ChequeosPreventivos() {
       {/* ===== FRASE DESTACADA ===== */}
       <section className="py-24 bg-gradient-to-r from-[#FDE8E8] to-[#FFF5F5] text-center relative overflow-hidden">
         <p className="max-w-3xl mx-auto text-2xl sm:text-3xl font-semibold text-[#D94B4B] leading-snug">
-          "La mejor medicina es la que se aplica antes de que la necesites.
-          Prevenir es cuidarte de verdad."
+          &ldquo;La mejor medicina es la que se aplica antes de que la necesites.
+          Prevenir es cuidarte de verdad.&rdquo;
         </p>
         <p className="text-[#0D2A53]/60 mt-3 text-sm">— Equipo Médico PREME</p>
       </section>

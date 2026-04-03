@@ -79,7 +79,7 @@ export default function Deshidratacion() {
       {/* ===== FRASE DESTACADA ===== */}
       <section className="py-24 bg-gradient-to-r from-[#FDEAEA] to-[#FBF5F5] text-center relative overflow-hidden">
         <p className="max-w-3xl mx-auto text-2xl sm:text-3xl font-semibold text-[#D94B4B] leading-snug">
-          "Cuando sentís sed, tu cuerpo ya lleva rato pidiéndote agua."
+          &ldquo;Cuando sentís sed, tu cuerpo ya lleva rato pidiéndote agua.&rdquo;
         </p>
         <p className="text-[#0D2A53]/60 mt-3 text-sm">— Equipo Médico PREME</p>
       </section>

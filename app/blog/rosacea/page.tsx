@@ -78,7 +78,7 @@ export default function Rosacea() {
       {/* ===== FRASE DESTACADA ===== */}
       <section className="py-24 bg-gradient-to-r from-[#FDE8E8] to-[#FFF5F5] text-center relative overflow-hidden">
         <p className="max-w-3xl mx-auto text-2xl sm:text-3xl font-semibold text-[#D94B4B] leading-snug">
-          "La piel habla. Escucharla y cuidarla es el mejor tratamiento que existe."
+          &ldquo;La piel habla. Escucharla y cuidarla es el mejor tratamiento que existe.&rdquo;
         </p>
         <p className="text-[#0D2A53]/60 mt-3 text-sm">— Equipo de Dermatología PREME</p>
       </section>
