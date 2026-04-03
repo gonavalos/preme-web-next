@@ -551,8 +551,8 @@ export default function PlanesContactoPage() {
       </section>
 
       {/* SECCIÓN PLANES + FORMULARIO */}
-      <section className="bg-[#F5F5F7] py-4 lg:py-14">
-        <div className="max-w-6xl mx-auto px-4 lg:px-6 grid gap-8 lg:grid-cols-[1.05fr,1.1fr] items-start">
+        <section className="bg-[#F5F5F7] py-10 lg:py-14">
+          <div className="max-w-6xl mx-auto px-4 lg:px-6 grid gap-8 lg:grid-cols-[1.05fr,1.1fr] items-start">
           {/* Columna izquierda: planes */}
           <div>
             {/* Barra de título */}

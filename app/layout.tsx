@@ -27,7 +27,7 @@ const orgJsonLd = {
   logo: "https://www.preme.com.ar/LogoPreme2.png",
   image: "https://www.preme.com.ar/banner.png",
   telephone: "+54-351-421-7997",
-  sameAs: ["https://www.facebook.com/Preme.medicina"],
+  sameAs: ["https://www.facebook.com/Preme.medicina", "https://www.instagram.com/preme.salud/"],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Av. Colón 795 (esq. Urquiza)",
@@ -50,11 +50,6 @@ const websiteJsonLd = {
   "@type": "WebSite",
   name: "PREME Salud",
   url: "https://www.preme.com.ar",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.preme.com.ar/buscar?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
