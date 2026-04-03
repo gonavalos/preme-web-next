@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 type Props = {
   children: ReactNode;
   className?: string;
-  /** CSS selector for the direct children to stagger. Default "> *" */
+  /** CSS selector for the direct children to stagger. Default ":scope > *" */
   selector?: string;
   /** Stagger delay between items in seconds. Default 0.12 */
   stagger?: number;
@@ -25,7 +25,7 @@ type Props = {
 export default function StaggerReveal({
   children,
   className = "",
-  selector = "> *",
+  selector = ":scope > *",
   stagger = 0.12,
   duration = 0.7,
   distance = 40,
