@@ -16,11 +16,38 @@ type Props = {
   stagger?: number;
   /** Animation duration in seconds. Default 0.7 */
   duration?: number;
-  /** Y offset in px. Default 40 */
+  /** Distance in px for the translate. Default 40 */
   distance?: number;
   /** ScrollTrigger start. Default "top 80%" */
   start?: string;
+  /** Direction of entrance animation */
+  from?: "bottom" | "left" | "right" | "scale";
 };
+
+function getFromVars(from: string, distance: number): gsap.TweenVars {
+  switch (from) {
+    case "left":
+      return { x: -distance, autoAlpha: 0 };
+    case "right":
+      return { x: distance, autoAlpha: 0 };
+    case "scale":
+      return { scale: 0.9, autoAlpha: 0 };
+    default: // bottom
+      return { y: distance, autoAlpha: 0 };
+  }
+}
+
+function getToVars(from: string): gsap.TweenVars {
+  switch (from) {
+    case "left":
+    case "right":
+      return { x: 0, autoAlpha: 1 };
+    case "scale":
+      return { scale: 1, autoAlpha: 1 };
+    default:
+      return { y: 0, autoAlpha: 1 };
+  }
+}
 
 export default function StaggerReveal({
   children,
@@ -30,6 +57,7 @@ export default function StaggerReveal({
   duration = 0.7,
   distance = 40,
   start = "top 80%",
+  from = "bottom",
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -56,7 +84,7 @@ export default function StaggerReveal({
             return;
           }
 
-          gsap.set(items, { autoAlpha: 0, y: distance });
+          gsap.set(items, getFromVars(from, distance));
 
           ScrollTrigger.create({
             trigger: container,
@@ -64,8 +92,7 @@ export default function StaggerReveal({
             once: true,
             onEnter: () => {
               gsap.to(items, {
-                autoAlpha: 1,
-                y: 0,
+                ...getToVars(from),
                 duration,
                 ease: "power2.out",
                 stagger,
