@@ -4,7 +4,7 @@
 import { useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaUserMd } from "react-icons/fa";
+import { UserCircle } from "@phosphor-icons/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -15,7 +15,7 @@ const NAV_LINKS = [
   ["Inicio", "/"],
   ["Planes", "/planes"],
   ["Prestadores", "/prestadores"],
-  ["Institucional", "/institucional"],
+  ["Afiliados", "/afiliados"],
   ["Blog", "/blog"],
   ["Contacto", "/contacto"],
 ];
@@ -238,7 +238,7 @@ export default function Navbar() {
               hover:bg-gray-50 hover:ring-[#0D2A53]/25 transition-all
             "
           >
-            <FaUserMd className="text-[#FF914D] text-base" />
+            <UserCircle size={20} weight="duotone" className="text-[#FF914D]" />
             <span>Portal Prestadores</span>
           </a>
 
@@ -310,7 +310,7 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className="flex items-center justify-center gap-2 rounded-xl bg-white text-[#0D2A53] ring-1 ring-[#0D2A53]/15 px-4 py-2.5 font-semibold"
               >
-                <FaUserMd className="text-[#FF914D]" />
+                <UserCircle size={20} weight="duotone" className="text-[#FF914D]" />
                 Portal Prestadores
               </a>
 

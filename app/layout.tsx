@@ -2,6 +2,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-jakarta",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.preme.com.ar"),
@@ -54,8 +62,8 @@ const websiteJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      <body className="text-gray-900">
+    <html lang="es" className={jakarta.variable}>
+      <body className="font-sans text-gray-900 antialiased">
         {children}
         <Script id="jsonld-org" type="application/ld+json" strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />

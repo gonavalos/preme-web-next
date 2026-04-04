@@ -4,8 +4,13 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Calendar, Stethoscope, Users, LayoutGrid } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import {
+  CalendarBlank,
+  Stethoscope,
+  Users,
+  SquaresFour,
+} from "@phosphor-icons/react";
+import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -13,14 +18,14 @@ type Stat = {
   value: number;
   suffix: string;
   label: string;
-  icon: LucideIcon;
+  icon: PhosphorIcon;
 };
 
 const STATS: Stat[] = [
-  { value: 45, suffix: "+", label: "Años cuidando Córdoba", icon: Calendar },
+  { value: 45, suffix: "+", label: "Años cuidando Córdoba", icon: CalendarBlank },
   { value: 2800, suffix: "+", label: "Prestadores en cartilla", icon: Stethoscope },
   { value: 13000, suffix: "+", label: "Afiliados activos", icon: Users },
-  { value: 4, suffix: "", label: "Planes a tu medida", icon: LayoutGrid },
+  { value: 4, suffix: "", label: "Planes a tu medida", icon: SquaresFour },
 ];
 
 export default function StatsBar() {
@@ -41,12 +46,9 @@ export default function StatsBar() {
         },
         (context) => {
           const { reduced } = context.conditions!;
-
-          // Counter objects for GSAP to animate
           const counters = STATS.map(() => ({ val: 0 }));
 
           if (reduced) {
-            // Just show final values immediately
             STATS.forEach((stat, i) => {
               const el = numberRefs.current[i];
               if (el) el.textContent = stat.value.toLocaleString("es-AR") + stat.suffix;
@@ -54,7 +56,6 @@ export default function StatsBar() {
             return;
           }
 
-          // Fade in icons + labels
           const items = container.querySelectorAll("[data-stat-item]");
           gsap.set(items, { autoAlpha: 0, y: 20 });
 
@@ -63,7 +64,6 @@ export default function StatsBar() {
             start: "top 85%",
             once: true,
             onEnter: () => {
-              // Stagger reveal of items
               gsap.to(items, {
                 autoAlpha: 1,
                 y: 0,
@@ -72,7 +72,6 @@ export default function StatsBar() {
                 stagger: 0.2,
               });
 
-              // Count up numbers
               STATS.forEach((stat, i) => {
                 gsap.to(counters[i], {
                   val: stat.value,
@@ -100,9 +99,8 @@ export default function StatsBar() {
   return (
     <section
       ref={containerRef}
-      className="relative overflow-hidden bg-gradient-to-br from-[#092f57] via-[#0D2A53] to-[#0a1f3d]"
+      className="relative overflow-hidden bg-gradient-to-br from-brand-primary via-[#0D2A53] to-[#0a1f3d]"
     >
-      {/* Subtle decorative glow */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_rgba(51,186,240,0.3)_0%,_transparent_70%)]" />
 
       <div className="relative mx-auto max-w-6xl grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x md:divide-white/10 py-10 md:py-12 px-4 md:px-6">
@@ -116,7 +114,7 @@ export default function StatsBar() {
               style={{ visibility: "hidden" }}
             >
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm">
-                <Icon className="h-6 w-6 text-brandBlue" strokeWidth={1.8} />
+                <Icon size={24} weight="duotone" className="text-brand-secondary" />
               </div>
               <span
                 ref={(el) => { numberRefs.current[i] = el; }}

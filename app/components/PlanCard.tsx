@@ -8,17 +8,16 @@ import {
   ShieldCheck,
   Pill,
   Siren,
-  BadgeCheck,
-  Heart,
+  CheckCircle,
+  HeartStraight,
   Eye,
-  Check,
-  BriefcaseMedical,
+  FirstAidKit,
   CreditCard,
-  UserRound,
-  Smile,
+  UserCircle,
+  SmileyMeh,
   Bone,
-} from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+} from "@phosphor-icons/react";
+import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
 export type PlanCardProps = {
   headerImageSrc?: string;
@@ -40,27 +39,26 @@ function hexToRgb(hex: string) {
   return { r: (int >> 16) & 255, g: (int >> 8) & 255, b: int & 255 };
 }
 
-// Keyword → icon mapping for benefits
-const BENEFIT_ICON_MAP: [RegExp, LucideIcon][] = [
+const BENEFIT_ICON_MAP: [RegExp, PhosphorIcon][] = [
   [/consult/i, Stethoscope],
   [/cobertura\s*100|100\s*%/i, ShieldCheck],
   [/farmacia|medicamento/i, Pill],
   [/emergencia|urgencia|24\s*h/i, Siren],
-  [/sin\s*co-?seguro|sin\s*coseguro/i, BadgeCheck],
-  [/anticonceptivo|materno|parto|embarazo|ecograf/i, Heart],
+  [/sin\s*co-?seguro|sin\s*coseguro/i, CheckCircle],
+  [/anticonceptivo|materno|parto|embarazo|ecograf/i, HeartStraight],
   [/óptic/i, Eye],
-  [/internaci/i, BriefcaseMedical],
+  [/internaci/i, FirstAidKit],
   [/credencial|acto/i, CreditCard],
-  [/recibo|sueldo/i, UserRound],
-  [/psicolog|psiquiat/i, Smile],
+  [/recibo|sueldo/i, UserCircle],
+  [/psicolog|psiquiat/i, SmileyMeh],
   [/ortodoncia|prótesis|implante|odonto/i, Bone],
 ];
 
-function getBenefitIcon(text: string): LucideIcon {
+function getBenefitIcon(text: string): PhosphorIcon {
   for (const [pattern, icon] of BENEFIT_ICON_MAP) {
     if (pattern.test(text)) return icon;
   }
-  return Check;
+  return CheckCircle;
 }
 
 export default function PlanCard({
@@ -90,19 +88,15 @@ export default function PlanCard({
   return (
     <article
       className={`
-        group relative flex flex-col h-full rounded-2xl overflow-hidden bg-white
-        shadow-md ring-1
+        group relative flex flex-col h-full rounded-[var(--radius-card)] overflow-hidden bg-white
+        shadow-rest ring-1
         transition-all duration-300 ease-out
-        hover:-translate-y-1.5 hover:shadow-xl
+        hover:-translate-y-1.5 hover:shadow-hover
         ${featured
-          ? "ring-2 ring-brandBlue shadow-lg scale-[1.02] xl:scale-105"
+          ? "ring-2 ring-brand-secondary shadow-lg scale-[1.02] xl:scale-105"
           : "ring-black/5 hover:ring-black/10"
         }
       `}
-      style={{
-        // @ts-expect-error CSS custom property for hover glow
-        "--plan-glow": hoverGlow,
-      }}
       onMouseEnter={(e) => {
         (e.currentTarget as HTMLElement).style.boxShadow = hoverGlow;
       }}
@@ -111,7 +105,7 @@ export default function PlanCard({
       }}
     >
       {featured && (
-        <div className="absolute -top-0 left-1/2 -translate-x-1/2 z-10 bg-brandBlue text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1 rounded-b-lg shadow-sm">
+        <div className="absolute -top-0 left-1/2 -translate-x-1/2 z-10 bg-brand-secondary text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1 rounded-b-lg shadow-sm">
           Recomendado
         </div>
       )}
@@ -150,54 +144,27 @@ export default function PlanCard({
 
       {/* Body */}
       <div
-        className="
-          flex flex-col flex-1
-          px-5 pt-4 pb-5
-          xl:px-6 xl:pt-5 xl:pb-6
-          text-center
-        "
+        className="flex flex-col flex-1 px-5 pt-4 pb-5 xl:px-6 xl:pt-5 xl:pb-6 text-center"
         style={{ background: bodyGradient }}
       >
-        <h3
-          className="
-            pt-2
-            text-lg sm:text-xl lg:text-xl xl:text-2xl
-            font-extrabold mb-1
-          "
-          style={{ color }}
-        >
+        <h3 className="pt-2 text-lg sm:text-xl lg:text-xl xl:text-2xl font-extrabold mb-1" style={{ color }}>
           {title}
         </h3>
 
-        <p
-          className="
-            pt-2
-            text-[13px] sm:text-sm lg:text-sm xl:text-base
-            text-gray-700 mb-3 lg:mb-3 xl:mb-4
-          "
-        >
+        <p className="pt-2 text-[13px] sm:text-sm lg:text-sm xl:text-base text-gray-700 mb-3 lg:mb-3 xl:mb-4">
           {subtitle}
         </p>
 
-        {/* Benefits list with contextual icons */}
-        <ul
-          className="
-            pt-2
-            text-[13px] sm:text-sm lg:text-[13.5px] xl:text-sm
-            text-gray-800
-            space-y-2 lg:space-y-1.5
-            text-left mb-5 lg:mb-5 xl:mb-6
-            flex-1 overflow-hidden
-          "
-        >
+        <ul className="pt-2 text-[13px] sm:text-sm lg:text-[13.5px] xl:text-sm text-gray-800 space-y-2 lg:space-y-1.5 text-left mb-5 lg:mb-5 xl:mb-6 flex-1 overflow-hidden">
           {benefits?.map((b, i) => {
             const Icon = getBenefitIcon(b);
             return (
               <li key={i} className="flex items-start gap-2">
                 <Icon
-                  className="mt-0.5 shrink-0 h-4 w-4"
+                  size={16}
+                  weight="duotone"
+                  className="mt-0.5 shrink-0"
                   style={{ color }}
-                  strokeWidth={2}
                 />
                 <span className="leading-snug">{b}</span>
               </li>
@@ -205,17 +172,10 @@ export default function PlanCard({
           })}
         </ul>
 
-        {/* CTA */}
         {href ? (
           <Link
             href={href}
-            className="
-              mt-auto inline-flex w-full justify-center items-center
-              rounded-lg text-white font-semibold shadow-sm
-              hover:brightness-110 hover:shadow-md transition-all duration-200
-              h-10 lg:h-10 xl:h-11
-              text-[14px] xl:text-[15px]
-            "
+            className="mt-auto inline-flex w-full justify-center items-center rounded-xl text-white font-semibold shadow-sm hover:brightness-110 hover:shadow-md transition-all duration-200 h-10 lg:h-10 xl:h-11 text-[14px] xl:text-[15px]"
             style={{ backgroundColor: cta }}
           >
             Ver detalles
@@ -223,13 +183,7 @@ export default function PlanCard({
         ) : (
           <button
             type="button"
-            className="
-              mt-auto w-full
-              rounded-lg text-white font-semibold shadow-sm
-              hover:brightness-110 hover:shadow-md transition-all duration-200
-              h-10 lg:h-10 xl:h-11
-              text-[14px] xl:text-[15px]
-            "
+            className="mt-auto w-full rounded-xl text-white font-semibold shadow-sm hover:brightness-110 hover:shadow-md transition-all duration-200 h-10 lg:h-10 xl:h-11 text-[14px] xl:text-[15px]"
             style={{ backgroundColor: cta }}
           >
             Ver detalles
