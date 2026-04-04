@@ -3,6 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import SmoothScroll from "./components/SmoothScroll";
+import PageTransition from "./components/PageTransition";
+import ScrollProgress from "./components/ui/ScrollProgress";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -64,7 +67,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={jakarta.variable}>
       <body className="font-sans text-gray-900 antialiased">
-        {children}
+        <SmoothScroll>
+          <ScrollProgress />
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </SmoothScroll>
         <Script id="jsonld-org" type="application/ld+json" strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
         <Script id="jsonld-website" type="application/ld+json" strategy="afterInteractive"
