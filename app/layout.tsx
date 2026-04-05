@@ -2,17 +2,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Plus_Jakarta_Sans } from "next/font/google";
-import SmoothScroll from "./components/SmoothScroll";
-import PageTransition from "./components/PageTransition";
-import ScrollProgress from "./components/ui/ScrollProgress";
-
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-jakarta",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.preme.com.ar"),
@@ -38,7 +27,7 @@ const orgJsonLd = {
   logo: "https://www.preme.com.ar/LogoPreme2.png",
   image: "https://www.preme.com.ar/banner.png",
   telephone: "+54-351-421-7997",
-  sameAs: ["https://www.facebook.com/Preme.medicina", "https://www.instagram.com/preme.salud/"],
+  sameAs: ["https://www.facebook.com/Preme.medicina"],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Av. Colón 795 (esq. Urquiza)",
@@ -61,18 +50,18 @@ const websiteJsonLd = {
   "@type": "WebSite",
   name: "PREME Salud",
   url: "https://www.preme.com.ar",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.preme.com.ar/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={jakarta.variable}>
-      <body className="font-sans text-gray-900 antialiased">
-        <SmoothScroll>
-          <ScrollProgress />
-          <PageTransition>
-            {children}
-          </PageTransition>
-        </SmoothScroll>
+    <html lang="es">
+      <body className="text-gray-900">
+        {children}
         <Script id="jsonld-org" type="application/ld+json" strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
         <Script id="jsonld-website" type="application/ld+json" strategy="afterInteractive"

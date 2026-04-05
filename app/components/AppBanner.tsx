@@ -22,11 +22,10 @@ export default function AppBanner() {
 
         {/* DERECHA: texto (arriba en mobile) */}
         <div className="order-1 rounded-2xl bg-[#f5f5f5] p-6 text-center md:order-2 md:bg-transparent md:p-0 md:text-left">
-          <p className="text-sm font-semibold tracking-wider uppercase text-[#33BAF0] mb-2">App Preme</p>
-          <h2 className="text-3xl font-extrabold text-primary md:text-4xl lg:text-[42px] leading-tight">
+          <h2 className="text-3xl font-bold text-primary md:text-4xl">
             Tené siempre a mano
           </h2>
-          <h3 className="mt-1 text-3xl font-extrabold text-[#33BAF0] md:text-4xl lg:text-[42px] leading-tight">
+          <h3 className="mt-1 text-3xl font-bold text-[#33BAF0] md:text-4xl">
             tu Credencial Digital
           </h3>
 

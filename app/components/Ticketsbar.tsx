@@ -2,10 +2,9 @@
 "use client";
 
 const tickerItems = [
-  "1ª prepaga de CBA · +40 años de trayectoria",
-  "Atención Afiliados: (351) 704-0891 · Autorizaciones: (351) 550-3660",
+  "1ª prepaga de CBA · 35 años de trayectoria",
+  "Urgencias 24/7: 0810-123-4567 · Línea de Atención: 0800-000-PREME",
   "Adhesión online en minutos · Cobertura nacional",
-  "Atención Prestadores: (351) 594-7628 · Comercialización: (351) 200-6002",
 ];
 
 export default function TickerBar() {

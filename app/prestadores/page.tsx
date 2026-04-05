@@ -168,12 +168,12 @@ export default function PrestadoresPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {items.map((p) => (
-                  <article key={p.id} className="rounded-2xl border border-black/5 bg-white p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                  <article key={p.id} className="rounded-2xl border border-black/5 bg-white p-5">
                     <h3 className="text-lg font-bold text-[#092f57]">{p.nombre}</h3>
                     <p className="text-sm text-gray-600">{p.tipo}</p>
                     <p className="mt-2 text-sm text-gray-700">{p.direccion}</p>
                     <p className="text-sm text-gray-700">{p.ciudad}, Córdoba</p>
-                    {p.telefono && <p className="mt-1 text-sm text-gray-700">Tel: {p.telefono}</p>}
+                    <p className="mt-1 text-sm text-gray-700">Tel: {p.telefono}</p>
 
                     {/* Etiquetas de planes con color */}
                     <div className="mt-3 flex flex-wrap gap-2">

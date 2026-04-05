@@ -1,61 +1,28 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* ===== Design System PREME 2026 ===== */
+/* ===== Tokens base (light/dark) ===== */
 :root {
-  --background: #F8FAFB;
-  --foreground: #1E293B;
-  --brand-primary: #092F57;
-  --brand-secondary: #33BAF0;
-  --brand-light: #E8F4FD;
-  --brand-gradient: linear-gradient(135deg, #092F57 0%, #1a5a8a 50%, #33BAF0 100%);
-  --plan-joven: #33BAF0;
-  --plan-coral: #FF6B35;
-  --plan-integral: #2ECC71;
-  --plan-maximo: #9B59B6;
-  --shadow-rest: 0 1px 3px rgba(9,47,87,0.06);
-  --shadow-hover: 0 8px 30px rgba(9,47,87,0.12);
-  --shadow-float: 0 20px 60px rgba(9,47,87,0.15);
-  --radius-card: 20px;
-  --radius-sm: 12px;
+  --background: #ffffff;
+  --foreground: #171717;
 }
+
 
 /* ===== Tailwind v4 theme tokens ===== */
 @theme {
   /* Colores de marca */
-  --color-brand-primary: #092F57;
-  --color-brand-secondary: #33BAF0;
-  --color-brand-light: #E8F4FD;
-
-  /* Colores de planes */
-  --color-plan-joven: #33BAF0;
-  --color-plan-coral: #FF6B35;
-  --color-plan-integral: #2ECC71;
-  --color-plan-maximo: #9B59B6;
-
-  /* Legacy aliases (backward compat) */
-  --color-primary: #092F57;
-  --color-brandBlue: #33BAF0;
+  --color-primary: #092f57;
   --color-brand-blue: #33BAF0;
   --color-brand-blue-hover: #63CCF4;
   --color-bg-soft: #f5f8fa;
 
-  /* Neutros */
+  /* Mapear fondos/foreground globales a tokens Tailwind */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* Tipografía */
-  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-  /* Shadows */
-  --shadow-rest: 0 1px 3px rgba(9,47,87,0.06);
-  --shadow-hover: 0 8px 30px rgba(9,47,87,0.12);
-  --shadow-float: 0 20px 60px rgba(9,47,87,0.15);
-
-  /* Border radius */
-  --radius-card: 20px;
-  --radius-sm: 12px;
+  /* Tipografías (usa next/font y expone --font-geist-* en layout) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* ===== Base ===== */
@@ -67,116 +34,23 @@ body {
   font-family: var(--font-sans);
 }
 
-/* ===== Typography classes ===== */
-.heading-hero {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-}
-@media (min-width: 768px) {
-  .heading-hero { font-size: 64px; }
-}
-
-.heading-section {
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-@media (min-width: 768px) {
-  .heading-section { font-size: 44px; }
-}
-
-.heading-card {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.text-lead {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #64748B;
-}
-@media (min-width: 768px) {
-  .text-lead { font-size: 20px; }
-}
-
-.text-caption {
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
 /* ===== Utilidades ===== */
+/* Ocultar scrollbar (para sliders horizontales) */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 
-.prose a { color: var(--brand-secondary); }
-.prose a:hover { text-decoration: underline; }
+/* Prose (blog) – opcional: estilos mínimos */
+.prose a { @apply text-brand-blue hover:underline; }
 
+/* Oculta scrollbar del carrusel en todos los navegadores */
 .blog-scroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
 }
 .blog-scroll::-webkit-scrollbar {
-  display: none;
+  display: none;             /* Chrome/Safari */
 }
 
-/* Badge shimmer effect */
-.badge-shimmer {
-  position: relative;
-  overflow: hidden;
-}
-.badge-shimmer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    105deg,
-    transparent 30%,
-    rgba(255, 255, 255, 0.3) 50%,
-    transparent 70%
-  );
-  transform: translateX(-100%);
-  animation: shimmer 3s ease-in-out infinite;
-}
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-/* Marquee scroll for logo ribbon */
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.animate-marquee {
-  animation: marquee 30s linear infinite;
-}
-@media (max-width: 767px) {
-  .animate-marquee {
-    animation: none;
-  }
-}
-
-/* Hover underline animation for nav/footer links */
-.hover-line {
-  position: relative;
-  display: inline-block;
-}
-.hover-line::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--brand-secondary);
-  transition: width 0.3s ease;
-}
-.hover-line:hover::after {
-  width: 100%;
-}
+/* globals.css */
+.blog-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+.blog-scroll::-webkit-scrollbar { display: none; }
