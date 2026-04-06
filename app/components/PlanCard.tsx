@@ -1,9 +1,8 @@
 // /components/PlanCard.tsx
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { FaCheck, FaWhatsapp, FaChevronDown } from "react-icons/fa";
+import { FaCheck, FaWhatsapp } from "react-icons/fa";
 
 const WA_LINK = "https://wa.me/5493512006002?text=Hola%2C%20quiero%20asesoramiento%20sobre%20el%20";
 
@@ -31,13 +30,9 @@ export default function PlanCard({
   buttonColor,
   dark,
 }: PlanCardProps) {
-  const [expanded, setExpanded] = useState(false);
   const cta = buttonColor ?? color;
   const isDark = dark || title.toLowerCase().includes("máximo");
-
-  const visibleBenefits = benefits?.slice(0, 6) ?? [];
-  const hiddenBenefits = benefits?.slice(6) ?? [];
-  const hasMore = hiddenBenefits.length > 0;
+  const allBenefits = benefits ?? [];
 
   return (
     <article
@@ -91,9 +86,9 @@ export default function PlanCard({
           {subtitle}
         </p>
 
-        {/* Top 3 benefits — always visible */}
+        {/* Benefits */}
         <ul className={`text-sm space-y-2.5 ${isDark ? "text-white/85" : "text-gray-700"}`}>
-          {visibleBenefits.map((b, i) => (
+          {allBenefits.map((b, i) => (
             <li key={i} className="flex items-start gap-2.5">
               <FaCheck
                 className={`mt-0.5 shrink-0 text-xs ${isDark ? "text-[#33BAF0]" : "text-emerald-500"}`}
@@ -102,45 +97,6 @@ export default function PlanCard({
             </li>
           ))}
         </ul>
-
-        {/* Expanded benefits — accordion */}
-        {hasMore && (
-          <>
-            <div
-              className={`overflow-hidden transition-all duration-300 ease-out ${
-                expanded ? "max-h-[500px] opacity-100 mt-2.5" : "max-h-0 opacity-0"
-              }`}
-            >
-              <ul className={`text-sm space-y-2.5 ${isDark ? "text-white/85" : "text-gray-700"}`}>
-                {hiddenBenefits.map((b, i) => (
-                  <li key={i} className="flex items-start gap-2.5">
-                    <FaCheck
-                      className={`mt-0.5 shrink-0 text-xs ${isDark ? "text-[#33BAF0]" : "text-emerald-500"}`}
-                    />
-                    <span className="leading-snug">{b}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setExpanded((v) => !v)}
-              className={`mt-3 inline-flex items-center gap-1.5 text-xs font-semibold transition-colors duration-200 ${
-                isDark
-                  ? "text-[#33BAF0] hover:text-white"
-                  : "text-[#33BAF0] hover:text-[#092f57]"
-              }`}
-            >
-              <FaChevronDown
-                className={`text-[10px] transition-transform duration-300 ${
-                  expanded ? "rotate-180" : ""
-                }`}
-              />
-              {expanded ? "Ver menos" : `Ver ${hiddenBenefits.length} beneficios más`}
-            </button>
-          </>
-        )}
 
         {/* Spacer */}
         <div className="flex-1 min-h-4" />
