@@ -1,90 +1,90 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-const BENEFITS = [
+const benefits = [
   {
-    title: "Libre elección de prestadores",
-    desc: "Elegí libremente dentro de la cartilla sin necesidad de derivación previa.",
+    tag: "Exclusivo",
+    title: "Asistencia al Viajero",
+    desc: "Cobertura médica global de primer nivel en cada destino.",
+    image: "/assets/hero/home/hero3.png",
+    href: "/planes",
   },
   {
-    title: "Acceso directo a todas las prestaciones",
-    desc: "Usá tu credencial digital y accedé sin órdenes.",
+    tag: "Emergencias",
+    title: "ECCO 24/7",
+    desc: "Atención inmediata domiciliaria y traslados las 24 horas.",
+    image: "/assets/hero/herov1.png",
+    href: "/planes",
   },
   {
-    title: "Estudios sin autorización",
-    desc: "Los estudios de baja complejidad se realizan sin autorización previa.",
+    tag: "Farmacias",
+    title: "Hasta 50% en farmacias",
+    desc: "Red de farmacias adheridas con descuentos exclusivos.",
+    image: "/assets/hero/insti5.png",
+    href: "/planes",
   },
   {
-    title: "Autorizaciones online a cargo de prestadores",
-    desc: "Cada autorización la realiza tu prestador, y nuestro equipo de asesores está disponible para orientarte en todo momento.",
-  },
-  {
-    title: "App Preme",
-    desc: "Descargá la app y gestioná tus turnos, autorizaciones y beneficios.",
-  },
-  {
-    title: "Atención personalizada",
-    desc: "Te acompañamos desde la adhesión hasta cada consulta.",
+    tag: "Digital",
+    title: "App PREME",
+    desc: "Turnos, autorizaciones y credencial digital en tu celular.",
+    image: "/assets/hero/home/promo.png",
+    href: "#app-preme",
   },
 ];
 
 export default function BenefitsSlider() {
-  const [index, setIndex] = useState(0);
-  const visible = 2; // Mostrar 2 por vez
-  const totalSlides = Math.ceil(BENEFITS.length / visible);
-  const start = index * visible;
-  const shown = BENEFITS.slice(start, start + visible);
-
   return (
-    <section className="max-w-5xl mx-auto mt-10 relative">
-      {/* Contenedor de cards */}
-      <div
-        key={index}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 transition-all duration-500 ease-out"
-      >
-        {shown.map((item, i) => (
+    <div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-8 md:mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#092f57] max-w-md tracking-tight">
+          Beneficios diseñados para tu estilo de vida.
+        </h2>
+      </div>
+
+      {/* Horizontal scroll — compact */}
+      <div className="flex gap-4 md:gap-6 px-4 sm:px-6 md:px-8 overflow-x-auto scrollbar-hide snap-x pb-2">
+        {benefits.map((b) => (
           <div
-            key={i}
-            className="flex flex-col p-5 md:p-6 rounded-2xl bg-white border border-[#33BAF0]/10 
-                       shadow-sm hover:shadow-md hover:-translate-y-[2px] transition-all"
+            key={b.title}
+            className="flex-none w-[80%] sm:w-[60%] md:w-[45%] lg:w-[35%] snap-center rounded-xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(9,47,87,0.06)] flex flex-col sm:flex-row h-auto sm:h-[220px]"
           >
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-[#33BAF0]/10 border border-[#33BAF0]/20">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2.5}
-                  stroke="#33BAF0"
-                  className="w-5 h-5"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h4 className="text-[15px] md:text-[17px] font-semibold text-[#092f57]">
-                {item.title}
-              </h4>
+            {/* Image */}
+            <div className="sm:w-2/5 relative h-40 sm:h-full overflow-hidden shrink-0">
+              <Image
+                src={b.image}
+                alt={b.title}
+                fill
+                className="object-cover"
+                sizes="200px"
+              />
             </div>
-            <p className="text-gray-700 text-[14px] md:text-[15px] leading-snug">
-              {item.desc}
-            </p>
+
+            {/* Text */}
+            <div className="sm:w-3/5 p-5 sm:p-6 flex flex-col justify-center">
+              <span className="text-[#33BAF0] font-bold uppercase text-[10px] tracking-[0.2em] mb-1.5">
+                {b.tag}
+              </span>
+              <h3 className="text-base sm:text-lg font-bold text-[#092f57] mb-2 leading-snug">
+                {b.title}
+              </h3>
+              <p className="text-gray-500 leading-relaxed text-xs sm:text-sm mb-3 line-clamp-2">
+                {b.desc}
+              </p>
+              <Link
+                href={b.href}
+                className="text-[#092f57] font-semibold flex items-center gap-1.5 hover:gap-2.5 transition-all text-xs"
+              >
+                Leer más
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
-
-      {/* Líneas de navegación */}
-      <div className="flex justify-center items-center gap-6 mt-8">
-        {Array.from({ length: totalSlides }).map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setIndex(i)}
-            className={`h-[3.5px] w-18 rounded-full transition-all ${
-              i === index ? "bg-[#33BAF0]" : "bg-gray-300 hover:bg-gray-400"
-            }`}
-          />
-        ))}
-      </div>
-    </section>
+    </div>
   );
 }

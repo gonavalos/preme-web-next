@@ -4,32 +4,19 @@ import WhatsAppFab from "./components/WhatsAppFab";
 import PlanCard, { type PlanCardProps } from "./components/PlanCard";
 import planesData from "../data/planes.json";
 import Hero from "./components/Hero";
-import CTAStrip from "./components/CTAStrip";
+import QuickAccess from "./components/QuickAccess";
+import PrestadoresMarquee from "./components/PrestadoresMarquee";
+import PromoBanner from "./components/PromoBanner";
 import AppBanner from "./components/AppBanner";
 import BlogCarousel from "./components/BlogCarousel";
-import BenefitCard from "./components/BenefitCard";
-import TickerBar from "./components/Ticketsbar";
-import CTAStrip2 from "./components/CTAStrip2";
 import BenefitsSlider from "./components/BenefitsSlider";
-
-
-import {
-  FaUserMd,
-  FaClock,
-  FaGlobeAmericas,
-  FaStethoscope,
-  FaShieldAlt,
-  FaHeartbeat,
-  FaUsers,
-  FaCertificate,
-} from "react-icons/fa";
 
 /* ---------- Tipado del JSON y adaptación a <PlanCard /> ---------- */
 type PlanJSON = {
   id: number;
-  icon?: string;               // compatibilidad (no se usa en la card actual)
-  image?: string;              // compat: si existe, lo usamos como header
-  headerImageSrc?: string;     // preferido
+  icon?: string;
+  image?: string;
+  headerImageSrc?: string;
   headerImageAlt?: string;
   imageAlt?: string;
   nombre: string;
@@ -41,12 +28,10 @@ type PlanJSON = {
 };
 
 export default function Home() {
-  // Soporta array plano o { Plan: [...] }
   const planesJson = (Array.isArray(planesData)
     ? (planesData as PlanJSON[])
     : ((planesData as { Plan?: PlanJSON[] }).Plan ?? [])) as PlanJSON[];
 
-  // Adaptamos al tipo que espera <PlanCard />
   const planes: PlanCardProps[] = planesJson.map((p) => ({
     headerImageSrc: p.headerImageSrc ?? p.image ?? undefined,
     headerImageAlt: p.headerImageAlt ?? p.imageAlt ?? p.nombre,
@@ -58,77 +43,52 @@ export default function Home() {
     buttonColor: p.buttonColor ?? p.color ?? "#33BAF0",
   }));
 
-  const benefits = [
-    { icon: FaUserMd, title: "Red de Prestadores", description: "Más de 100 profesionales médicos de excelencia" },
-    { icon: FaClock, title: "Atención 24/7", description: "Emergencias médicas las 24 horas del día" },
-    { icon: FaGlobeAmericas, title: "Cobertura Nacional", description: "Atención médica en todo el país" },
-    { icon: FaStethoscope, title: "Telemedicina", description: "Consultas médicas virtuales desde tu hogar" },
-    { icon: FaShieldAlt, title: "Cobertura Integral", description: "Protección completa para tu familia" },
-    { icon: FaHeartbeat, title: "Medicina Preventiva", description: "Chequeos y controles para prevenir enfermedades" },
-    { icon: FaUsers, title: "Atención Familiar", description: "Planes especiales para grupos familiares" },
-    { icon: FaCertificate, title: "Calidad Certificada", description: "Altos estándares de calidad" },
-  ];
-
   return (
     <>
-
       <Navbar />
       <main>
+        {/* Hero */}
         <Hero />
-         {/*    <TickerBar 
-        <CTAStrip />/>*/}
-        <CTAStrip2 />
 
-        {/* Planes (lee del JSON, diseño validado) */}
-        <section className="py-14  max-w-8/10 mx-auto">
-        <div className="mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#092f57]">Nuestros Planes</h2>
-          <div className="mx-auto mt-1 mb-10 h-1 w-20 bg-[#33BAF0]" />
+        {/* Quick Access — barra horizontal */}
+        <QuickAccess />
+
+        {/* Prestadores marquee */}
+        <PrestadoresMarquee />
+
+        {/* Plan cards */}
+        <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#092f57] mb-3 tracking-tight">
+              Planes diseñados para tu vida
+            </h2>
+            <p className="text-gray-500 text-base sm:text-lg">
+              Elegí la cobertura que mejor se adapta a tus necesidades.
+            </p>
           </div>
-
-          <BenefitsSlider />
-
-<div
-  className="
-    py-6 mt-2
-    grid
-    grid-cols-1
-    md:grid-cols-2
-    lg:grid-cols-2
-    xl:grid-cols-4
-    gap-6 md:gap-8 lg:gap-8 xl:gap-10
-  "
->
-  {planes.map((plan, idx) => (
-    <PlanCard key={idx} {...plan} />
-  ))}
-</div>
-        </section>
-
-        <AppBanner />
-
-
-        <section className="py-1">
-          <BlogCarousel />
-       </section>
-        {/*
-        <section className="py-16 max-w-9xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4 text-primary">
-            Beneficios que nos distinguen
-          </h2>
-          <p className="text-center text-gray-600 mb-10">
-            Servicios de salud de primera calidad con atención personalizada
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {benefits.map((b, i) => (
-              <BenefitCard key={i} {...b} />
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+            {planes.map((plan, idx) => (
+              <PlanCard key={idx} {...plan} />
             ))}
           </div>
-        </section>*/}
+        </section>
+
+        {/* Promo banner — parallax */}
+        <PromoBanner />
+
+        {/* App showcase — credencial */}
+        <AppBanner />
+
+        {/* Benefits slider — debajo de credencial */}
+        <section className="py-14 md:py-20 bg-[#f5f8fa] overflow-hidden">
+          <BenefitsSlider />
+        </section>
+
+        {/* Blog editorial */}
+        <BlogCarousel />
       </main>
 
       <WhatsAppFab />
-      <div className="py-10"></div>
       <Footer />
     </>
   );

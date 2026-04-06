@@ -1,15 +1,30 @@
 // /components/Navbar.tsx
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaClipboardCheck, FaArrowRight } from "react-icons/fa";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-sm">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white shadow-md"
+          : "bg-white/70 backdrop-blur-xl"
+      }`}
+    >
       <div
         className="
           mx-auto max-w-[95%]
@@ -64,42 +79,50 @@ export default function Navbar() {
         <div
           className="
             hidden md:flex items-center
-            md:gap-4 lg:gap-4 xl:gap-6
+            md:gap-3 lg:gap-3 xl:gap-4
           "
         >
-          {/* Autorizaciones */}
+          {/* Autorizaciones — naranja con ícono y borde */}
           <Link
             href="/autorizaciones"
             className="
-              flex flex-col justify-center items-center
-              rounded-xl bg-[#FF914D] text-white
+              flex items-center gap-2
+              rounded-xl border-2 border-[#FF914D] text-[#FF914D]
               md:h-10 lg:h-11 xl:h-12
-              md:min-w-[150px] lg:min-w-[145px] xl:min-w-[175px]
-              md:px-3 lg:px-3 xl:px-5
-              shadow-md hover:bg-[#ff7a26] transition-all
+              md:px-3 lg:px-4 xl:px-5
+              hover:bg-[#FF914D] hover:text-white transition-all duration-300
+              group
             "
           >
-            <span className="font-extrabold tracking-wide leading-none md:text-[13px] lg:text-[12px] xl:text-[15px]">
-              AUTORIZACIONES
-            </span>
-            <span className="hidden lg:block leading-tight lg:text-[10px] text-[11px] mt-0.5 opacity-95">
-              Trámite de Prestadores
-            </span>
+            <FaClipboardCheck className="text-base lg:text-lg xl:text-xl" />
+            <div className="flex flex-col">
+              <span className="font-extrabold tracking-wide leading-none md:text-[12px] lg:text-[12px] xl:text-[14px]">
+                AUTORIZACIONES
+              </span>
+              <span className="hidden lg:block leading-tight lg:text-[9px] xl:text-[10px] mt-0.5 opacity-80">
+                Trámite de Prestadores
+              </span>
+            </div>
           </Link>
 
-          {/* Afiliate ahora (sin subtítulo, mismo tamaño) */}
+          {/* Quiero mi Plan — navy sólido con ícono */}
           <Link
             href="/formulario-landing"
             className="
-              inline-flex items-center justify-center rounded-xl bg-brand-blue text-white
+              inline-flex items-center justify-center gap-2
+              rounded-xl bg-[#092f57] text-white
               md:h-10 lg:h-11 xl:h-12
-              md:min-w-[150px] lg:min-w-[145px] xl:min-w-[175px]
-              md:px-3 lg:px-3 xl:px-5
-              md:text-[14px] lg:text-[15px] xl:text-[15px]
-              font-semibold hover:bg-brand-blue-hover shadow-md transition-all
+              md:min-w-[140px] lg:min-w-[155px] xl:min-w-[180px]
+              md:px-4 lg:px-5 xl:px-6
+              md:text-[13px] lg:text-[14px] xl:text-[15px]
+              font-bold hover:bg-[#0a3d6e] hover:shadow-lg hover:scale-[1.02] transition-all duration-300
             "
           >
-            Afiliate ahora
+            <svg className="w-4 h-4 lg:w-[18px] lg:h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            Quiero mi Plan
+            <FaArrowRight className="text-[10px] lg:text-xs" />
           </Link>
         </div>
 
@@ -150,20 +173,19 @@ export default function Navbar() {
             <Link
               href="/autorizaciones"
               onClick={() => setMenuOpen(false)}
-              className="rounded-lg bg-[#FF914D] text-white px-4 py-2 text-center font-bold"
+              className="rounded-lg border-2 border-[#FF914D] text-[#FF914D] px-4 py-2 text-center font-bold flex items-center justify-center gap-2"
             >
+              <FaClipboardCheck />
               AUTORIZACIONES
-              <span className="block text-[12px] font-medium leading-tight opacity-95">
-                Trámite de Prestadores
-              </span>
             </Link>
 
             <Link
               href="/formulario-landing"
               onClick={() => setMenuOpen(false)}
-              className="bg-brand-blue text-white px-4 py-2 rounded-lg text-center font-semibold hover:bg-brand-blue-hover"
+              className="bg-[#092f57] text-white px-4 py-2.5 rounded-lg text-center font-bold flex items-center justify-center gap-2"
             >
-              AFILIATE ahora
+              Quiero mi Plan
+              <FaArrowRight className="text-xs" />
             </Link>
           </div>
         </div>

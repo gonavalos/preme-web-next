@@ -11,7 +11,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D2A53] text-white">
+    <footer className="bg-[#061a33] text-white">
       {/* Menos padding lateral y altura contenida */}
       <div className="mx-auto max-w-9/10 px-3 py-8 xl:px-6">
         {/* LAYOUT 3 COLUMNAS */}
@@ -189,12 +189,12 @@ export default function Footer() {
 {/* Col 3: Medalla (solo visible en XL; oculta en lg y menores) */}
 <div className="hidden xl:flex flex-none w-[140px] items-center justify-self-center justify-center xl:relative xl:right-18 xl:bottom-15 flex-col xl:items-end">
   <Image
-    src="/assets/n22.png"
+    src="/assets/n11v2.png"
     alt="1° prepaga de CBA — +40 años de trayectoria"
-    width={90}
-    height={90}
+    width={120}
+    height={180}
     priority
-    className="h-auto w-[140px]"
+    className="h-auto w-[120px] drop-shadow-lg"
   />
 </div>
           

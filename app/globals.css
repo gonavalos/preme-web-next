@@ -54,3 +54,30 @@ body {
 /* globals.css */
 .blog-scroll { -ms-overflow-style: none; scrollbar-width: none; }
 .blog-scroll::-webkit-scrollbar { display: none; }
+
+/* Marquee animations */
+@keyframes marquee-slow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+@keyframes marquee-fast-reverse {
+  0% { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee-slow {
+  animation: marquee-slow 40s linear infinite;
+}
+.animate-marquee-fast-reverse {
+  animation: marquee-fast-reverse 25s linear infinite;
+}
+
+/* Editorial shadow */
+.editorial-shadow {
+  box-shadow: 0px 24px 48px rgba(9, 47, 87, 0.06);
+}
+
+/* Glassmorphism blur */
+.premium-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
