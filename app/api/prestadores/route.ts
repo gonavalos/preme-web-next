@@ -1,8 +1,9 @@
 // /app/api/prestadores/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import prestadoresData from "@/data/prestadores.json";
+import { fetchCartilla, type NormalizedPrestador } from "@/lib/gecros";
+import fallbackData from "@/data/prestadores.json";
 
-type Prestador = {
+type FallbackPrestador = {
   id: number;
   nombre: string;
   tipo: string;
@@ -14,8 +15,21 @@ type Prestador = {
   orden2?: number;
 };
 
-function safeOrder(v?: number) {
-  return typeof v === "number" && !Number.isNaN(v) ? v : 9999;
+function fallbackToNormalized(p: FallbackPrestador): NormalizedPrestador {
+  return {
+    id: p.id,
+    nombre: p.nombre,
+    tipo: p.tipo,
+    especialidades: [],
+    plan: p.plan,
+    ciudad: p.ciudad,
+    direccion: p.direccion,
+    telefono: p.telefono,
+    lat: null,
+    lng: null,
+    destacado: (p.orden1 ?? 9999) <= 1,
+    ordenPrioridad: p.orden1 ?? 9999,
+  };
 }
 
 export async function GET(req: NextRequest) {
@@ -25,53 +39,59 @@ export async function GET(req: NextRequest) {
   const tipo = searchParams.get("tipo") || "";
   const ciudad = searchParams.get("ciudad") || "";
   const q = (searchParams.get("q") || "").toLowerCase();
-
   const page = Number(searchParams.get("page") || "1");
   const pageSize = Number(searchParams.get("pageSize") || "24");
 
-  // 1) CAST a tipo Prestador
-  const all = (prestadoresData as Prestador[]).map((p) => p);
+  let all: NormalizedPrestador[];
+  let source: "gecros" | "fallback";
+  let fetchedAt: string;
 
-  // 2) ORDEN GLOBAL POR PRIORIDAD
-  const ordered = [...all].sort((a, b) => {
-    const o1 = safeOrder(a.orden1) - safeOrder(b.orden1);
-    if (o1 !== 0) return o1;
+  try {
+    const result = await fetchCartilla();
+    all = result.prestadores;
+    source = result.fromCache ? "gecros" : "gecros";
+    fetchedAt = result.fetchedAt;
+  } catch {
+    // Fallback to static JSON
+    all = (fallbackData as FallbackPrestador[]).map(fallbackToNormalized);
+    source = "fallback";
+    fetchedAt = "2025-10-01T00:00:00Z";
+  }
 
-    const o2 = safeOrder(a.orden2) - safeOrder(b.orden2);
-    if (o2 !== 0) return o2;
-
+  // Sort: destacados first, then by priority, then alphabetical
+  const sorted = [...all].sort((a, b) => {
+    if (a.destacado !== b.destacado) return a.destacado ? -1 : 1;
+    if (a.ordenPrioridad !== b.ordenPrioridad) return a.ordenPrioridad - b.ordenPrioridad;
     return a.nombre.localeCompare(b.nombre, "es", { sensitivity: "base" });
   });
 
-  // 3) FILTROS
-  const filtered = ordered.filter((p) => {
+  // Filter
+  const filtered = sorted.filter((p) => {
     if (plan && !p.plan.includes(plan)) return false;
     if (tipo && p.tipo !== tipo) return false;
     if (ciudad && p.ciudad !== ciudad) return false;
-
     if (q) {
-      const hayCoincidencia =
+      const match =
         p.nombre.toLowerCase().includes(q) ||
         p.tipo.toLowerCase().includes(q) ||
         p.direccion.toLowerCase().includes(q) ||
-        p.ciudad.toLowerCase().includes(q);
-      if (!hayCoincidencia) return false;
+        p.ciudad.toLowerCase().includes(q) ||
+        p.especialidades.some((e) => e.toLowerCase().includes(q));
+      if (!match) return false;
     }
-
     return true;
   });
 
   const total = filtered.length;
-
-  // 4) PAGINACIÓN SOBRE LA LISTA YA ORDENADA
   const start = (page - 1) * pageSize;
-  const end = start + pageSize;
-  const items = filtered.slice(start, end);
+  const items = filtered.slice(start, start + pageSize);
 
   return NextResponse.json({
     items,
     total,
     page,
     pageSize,
+    source,
+    fetchedAt,
   });
 }
