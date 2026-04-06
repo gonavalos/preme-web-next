@@ -2,8 +2,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaWhatsapp } from "react-icons/fa";
+
+const WA_LINK = "https://wa.me/5493512006002?text=Hola%2C%20quiero%20asesoramiento%20sobre%20el%20";
 
 export type PlanCardProps = {
   headerImageSrc?: string;
@@ -27,30 +28,31 @@ export default function PlanCard({
   color,
   highlight,
   buttonColor,
-  href,
   dark,
 }: PlanCardProps) {
   const cta = buttonColor ?? color;
   const isDark = dark || title.toLowerCase().includes("máximo");
+  // Show only top 3 benefits for conversion focus
+  const topBenefits = benefits?.slice(0, 3) ?? [];
 
   return (
     <article
       className={[
-        "group flex flex-col h-full rounded-2xl overflow-hidden transition-all duration-500",
-        "hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(9,47,87,0.15)]",
+        "group flex flex-col h-full rounded-2xl overflow-hidden transition-all duration-300",
+        "hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(9,47,87,0.12)]",
         isDark
-          ? "bg-[#092f57] text-white shadow-[0_16px_48px_rgba(9,47,87,0.25)]"
-          : "bg-white shadow-[0_8px_30px_rgba(9,47,87,0.08)] ring-1 ring-black/5",
+          ? "bg-[#092f57] text-white shadow-[0_12px_40px_rgba(9,47,87,0.2)]"
+          : "bg-white shadow-[0_4px_24px_rgba(9,47,87,0.06)] ring-1 ring-black/5",
       ].join(" ")}
     >
       {/* Image header */}
-      <div className="relative h-48 sm:h-52 lg:h-48 xl:h-56 overflow-hidden">
+      <div className="relative h-44 sm:h-48 overflow-hidden">
         {headerImageSrc ? (
           <Image
             src={headerImageSrc}
             alt={headerImageAlt || title}
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(min-width:1280px) 320px, (min-width:768px) 50vw, 100vw"
           />
         ) : (
@@ -62,7 +64,7 @@ export default function PlanCard({
         <div
           className={`absolute inset-0 ${
             isDark
-              ? "bg-gradient-to-b from-transparent via-transparent to-[#092f57]"
+              ? "bg-gradient-to-b from-transparent to-[#092f57]"
               : "bg-gradient-to-b from-black/5 to-black/0"
           }`}
         />
@@ -75,71 +77,45 @@ export default function PlanCard({
             {highlight}
           </span>
         )}
-
-        {/* Decorative accent on dark card — contained within overflow-hidden */}
       </div>
 
       {/* Body */}
-      <div className="flex flex-col flex-1 px-6 pt-5 pb-6 text-center">
+      <div className="flex flex-col flex-1 px-6 pt-5 pb-6">
         <h3
-          className={`text-xl sm:text-2xl font-extrabold mb-2 ${
-            isDark ? "text-white" : ""
-          }`}
+          className={`text-xl font-extrabold mb-1 ${isDark ? "text-white" : ""}`}
           style={isDark ? undefined : { color }}
         >
           {title}
         </h3>
 
-        <p
-          className={`text-sm mb-4 ${
-            isDark ? "text-white/70" : "text-gray-600"
-          }`}
-        >
+        <p className={`text-sm mb-5 ${isDark ? "text-white/60" : "text-gray-500"}`}>
           {subtitle}
         </p>
 
-        <ul
-          className={`text-sm text-left space-y-2 mb-6 flex-1 ${
-            isDark ? "text-white/85" : "text-gray-700"
-          }`}
-        >
-          {benefits?.map((b, i) => (
+        <ul className={`text-sm space-y-2.5 mb-6 flex-1 ${isDark ? "text-white/85" : "text-gray-700"}`}>
+          {topBenefits.map((b, i) => (
             <li key={i} className="flex items-start gap-2.5">
-              {isDark ? (
-                <span className="mt-0.5 shrink-0 text-xs" style={{ color }}>★</span>
-              ) : (
-                <FaCheck className="mt-0.5 text-emerald-500 shrink-0 text-xs" />
-              )}
+              <FaCheck
+                className={`mt-0.5 shrink-0 text-xs ${isDark ? "text-[#33BAF0]" : "text-emerald-500"}`}
+              />
               <span className="leading-snug">{b}</span>
             </li>
           ))}
         </ul>
 
-        {href ? (
-          <Link
-            href={href}
-            className={`mt-auto w-full py-3 rounded-full font-bold text-sm text-center transition-all duration-300 ${
-              isDark
-                ? "bg-white text-[#092f57] hover:opacity-90"
-                : "text-white hover:scale-[1.02] hover:shadow-md"
-            }`}
-            style={isDark ? undefined : { backgroundColor: cta }}
-          >
-            Conocer Plan
-          </Link>
-        ) : (
-          <button
-            type="button"
-            className={`mt-auto w-full py-3 rounded-full font-bold text-sm transition-all duration-300 ${
-              isDark
-                ? "bg-white text-[#092f57] hover:opacity-90"
-                : "text-white hover:scale-[1.02] hover:shadow-md"
-            }`}
-            style={isDark ? undefined : { backgroundColor: cta }}
-          >
-            Conocer Plan
-          </button>
-        )}
+        <a
+          href={`${WA_LINK}${encodeURIComponent(title)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mt-auto w-full py-3 rounded-xl font-bold text-sm text-center transition-all duration-200 flex items-center justify-center gap-2 ${
+            isDark
+              ? "bg-[#25D366] text-white hover:bg-[#20bd5a]"
+              : "bg-[#092f57] text-white hover:bg-[#0a3d6e]"
+          }`}
+        >
+          <FaWhatsapp className="text-base" />
+          Quiero asesoramiento
+        </a>
       </div>
     </article>
   );
