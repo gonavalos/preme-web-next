@@ -35,8 +35,8 @@ export default function PlanCard({
   const cta = buttonColor ?? color;
   const isDark = dark || title.toLowerCase().includes("máximo");
 
-  const visibleBenefits = benefits?.slice(0, 3) ?? [];
-  const hiddenBenefits = benefits?.slice(3) ?? [];
+  const visibleBenefits = benefits?.slice(0, 6) ?? [];
+  const hiddenBenefits = benefits?.slice(6) ?? [];
   const hasMore = hiddenBenefits.length > 0;
 
   return (
