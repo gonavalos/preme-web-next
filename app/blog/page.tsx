@@ -19,9 +19,9 @@ type Post = {
   category: Exclude<Category, "todos">;
   date?: string;
   reading?: string;
+  author?: string;
 };
 
-// Build POSTS from shared data source, sorted newest first
 const POSTS: Post[] = [...articles]
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   .map((a) => ({
@@ -33,230 +33,322 @@ const POSTS: Post[] = [...articles]
     category: a.category,
     date: a.date,
     reading: a.reading,
+    author: a.author,
   }));
 
-// Paletas por categoría
-const STYLES = {
-  salud: {
-    bg: "bg-gradient-to-b from-[#FFE1E1] via-[#FFF0F0] to-[#FFF7F7]",
-    badge: "bg-[#D94B4B] text-white",
-    btn: "bg-gradient-to-b from-[#F07171] to-[#D94B4B]",
-    label: "SALUD",
-    glow: "shadow-[0_0_0_3px_rgba(217,75,75,0.16)]",
-  },
-  bienestar: {
-    bg: "bg-gradient-to-b from-[#D9F2E2] via-[#EAF8EE] to-[#F5FBF8]",
-    badge: "bg-[#2E9B71] text-white",
-    btn: "bg-gradient-to-b from-[#3CB989] to-[#2E9B71]",
-    label: "BIENESTAR",
-    glow: "shadow-[0_0_0_3px_rgba(46,155,113,0.18)]",
-  },
-  consejos: {
-    bg: "bg-gradient-to-b from-[#FFE5D0] via-[#FFF2E5] to-[#FFF9F5]",
-    badge: "bg-[#DC6A2C] text-white",
-    btn: "bg-gradient-to-b from-[#F28B50] to-[#DC6A2C]",
-    label: "CONSEJOS",
-    glow: "shadow-[0_0_0_3px_rgba(220,106,44,0.18)]",
-  },
-  novedades: {
-    bg: "bg-gradient-to-b from-[#D6E8F3] via-[#E6F2FB] to-[#F8FBFD]",
-    badge: "bg-[#238AD4] text-white",
-    btn: "bg-gradient-to-b from-[#4A9FE5] to-[#238AD4]",
-    label: "NOVEDADES",
-    glow: "shadow-[0_0_0_3px_rgba(35,138,212,0.18)]",
-  },
-} as const;
+const CAT_LABEL: Record<string, string> = {
+  salud: "Salud",
+  bienestar: "Bienestar",
+  consejos: "Consejos",
+  novedades: "Novedades",
+};
 
-const CHIPS_ORDER: Category[] = ["todos", "salud", "bienestar", "consejos", "novedades"];
+const CAT_COLOR: Record<string, string> = {
+  salud: "text-[#D94B4B]",
+  bienestar: "text-[#2E9B71]",
+  consejos: "text-[#DC6A2C]",
+  novedades: "text-[#238AD4]",
+};
+
+const CHIP_ACTIVE: Record<string, string> = {
+  todos: "bg-[#092f57] text-white",
+  salud: "bg-[#D94B4B] text-white",
+  bienestar: "bg-[#2E9B71] text-white",
+  consejos: "bg-[#DC6A2C] text-white",
+  novedades: "bg-[#238AD4] text-white",
+};
+
+const CHIPS_ORDER: Category[] = [
+  "todos",
+  "salud",
+  "bienestar",
+  "consejos",
+  "novedades",
+];
 
 export default function BlogIndexPage() {
   const [activeCat, setActiveCat] = useState<Category>("todos");
-  const [visible, setVisible] = useState(8);
+  const [visible, setVisible] = useState(9);
 
-  useEffect(() => {
-    setVisible(8);
-  }, [activeCat]);
+  useEffect(() => setVisible(9), [activeCat]);
 
   const filtered = useMemo(
-    () => (activeCat === "todos" ? POSTS : POSTS.filter((p) => p.category === activeCat)),
+    () =>
+      activeCat === "todos"
+        ? POSTS
+        : POSTS.filter((p) => p.category === activeCat),
     [activeCat]
   );
 
+  const featured = filtered[0];
+  const sidebar = filtered.slice(1, 3);
+  const grid = filtered.slice(3, visible);
   const canLoadMore = visible < filtered.length;
 
   return (
     <>
       <Navbar />
 
-      {/* Hero del blog */}
-      <header className="relative">
-        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
-          <div className="relative mt-6 sm:mt-8 h-[360px] sm:h-[420px] lg:h-[520px] overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm">
-            <Image
-              src="/assets/blog/blogg1.png"
-              alt="Blog PREME"
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0D2A53]/70 via-[#0D2A53]/35 to-transparent" />
-            <div className="relative z-10 h-full grid grid-cols-1 lg:grid-cols-2">
-              <div className="flex flex-col justify-center gap-4 px-6 sm:px-10 py-10 lg:py-14">
-                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 text-white px-3 py-1 text-xs font-semibold ring-1 ring-white/25">
-                  <span className="h-2 w-2 rounded-full bg-[#33BAF0]" /> Blog PREME
-                </span>
-                <h1 className="text-3xl sm:text-4xl xl:text-5xl font-black text-white leading-tight">
-                  Salud, Bienestar, Consejos y Novedades
-                </h1>
-                <p className="text-base sm:text-lg text-white/85 max-w-[60ch]">
-                  Contenidos confiables y cercanos para acompañarte todos los días:
-                  prevención, hábitos, guías prácticas y lo último en atención digital.
-                </p>
-                <div className="mt-2 flex flex-wrap gap-3">
-                  <Link
-                    href="/"
-                    className="rounded-xl bg-[#33BAF0] text-[#0D2A53] px-5 py-2.5 text-sm font-semibold shadow-md hover:bg-[#25A6DC] transition"
-                  >
-                    Volver al inicio
-                  </Link>
-                  <a
-                    href="#listado"
-                    className="rounded-xl bg-white/90 text-[#0D2A53] px-5 py-2.5 text-sm font-semibold ring-1 ring-[#0D2A53]/10 hover:bg-white transition"
-                  >
-                    Ver artículos
-                  </a>
-                </div>
-              </div>
-              <div className="hidden lg:block" />
-            </div>
+      <main className="pt-8 pb-24">
+        {/* ─── Editorial Header ─── */}
+        <header className="max-w-7xl mx-auto px-6 sm:px-8 mb-10">
+          <nav className="flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-[#092f57]/50 mb-6 font-semibold">
+            <Link href="/" className="hover:text-[#092f57] transition-colors">
+              Inicio
+            </Link>
+            <span className="text-[10px]">/</span>
+            <span className="text-[#092f57]/80">Editorial</span>
+          </nav>
+          <div className="max-w-3xl">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-[#092f57] tracking-tight leading-[0.95] mb-5">
+              Viví con
+              <br />
+              <span className="text-[#33BAF0]">Bienestar</span>
+            </h1>
+            <p className="text-lg sm:text-xl text-[#092f57]/60 leading-relaxed font-light max-w-xl">
+              Contenido especializado para tu salud y bienestar. Prevención,
+              hábitos y guías prácticas con el respaldo de nuestros
+              profesionales.
+            </p>
           </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Chips categorías */}
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
-        <div className="mt-8 mb-6 flex justify-center gap-2 sm:gap-3 flex-wrap">
-          {CHIPS_ORDER.map((cat) => {
-            const active = activeCat === cat;
-            const st = cat !== "todos" ? STYLES[cat] : null;
-            const label =
-              cat === "todos" ? "Todos" : st ? st.label : cat.toUpperCase();
-            const btnColor =
-              cat === "todos"
-                ? "bg-gradient-to-b from-[#4A9FE5] to-[#238AD4]"
-                : st!.btn;
-            const glow =
-              cat === "todos"
-                ? "shadow-[0_0_0_3px_rgba(35,138,212,0.18)]"
-                : st!.glow;
+        {/* ─── Category Filter ─── */}
+        <section className="max-w-7xl mx-auto px-6 sm:px-8 mb-14 overflow-x-auto">
+          <div className="flex items-center gap-3 border-b border-[#092f57]/8 pb-4">
+            {CHIPS_ORDER.map((cat) => {
+              const active = activeCat === cat;
+              const label = cat === "todos" ? "Todas" : CAT_LABEL[cat];
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCat(cat)}
+                  className={[
+                    "px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200",
+                    active
+                      ? CHIP_ACTIVE[cat]
+                      : "text-[#092f57]/60 hover:bg-[#092f57]/5",
+                  ].join(" ")}
+                  aria-pressed={active}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+        </section>
 
-            return (
-              <button
-                key={cat}
-                onClick={() => setActiveCat(cat)}
-                className={[
-                  "rounded-full px-4 py-1.5 text-sm font-semibold ring-1 transition-all duration-200 will-change-transform",
-                  active
-                    ? `${btnColor} text-white shadow-md ${glow} scale-[1.04]`
-                    : "bg-white text-[#0D2A53] ring-[#0D2A53]/20 hover:bg-gray-50",
-                ].join(" ")}
-                aria-pressed={active}
+        {/* ─── Featured Article + Sidebar ─── */}
+        {featured && (
+          <section className="max-w-7xl mx-auto px-6 sm:px-8 mb-20">
+            <div className="grid grid-cols-12 gap-8">
+              {/* Large Featured */}
+              <Link
+                href={featured.href}
+                className="col-span-12 lg:col-span-8 group"
               >
-                {label}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl mb-5">
+                  <Image
+                    src={featured.image}
+                    alt={featured.title}
+                    fill
+                    priority
+                    sizes="(min-width:1024px) 66vw, 100vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                    <span
+                      className={`text-[10px] font-bold uppercase tracking-[0.15em] ${CAT_COLOR[featured.category]}`}
+                    >
+                      {CAT_LABEL[featured.category]}
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  {featured.reading && (
+                    <span className="text-xs text-[#092f57]/45 font-medium">
+                      {featured.reading} de lectura
+                    </span>
+                  )}
+                  {featured.date && (
+                    <>
+                      <span className="text-[#092f57]/20">·</span>
+                      <span className="text-xs text-[#092f57]/45 font-medium">
+                        {new Date(featured.date).toLocaleDateString("es-AR", {
+                          day: "numeric",
+                          month: "long",
+                        })}
+                      </span>
+                    </>
+                  )}
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#092f57] mb-3 leading-snug group-hover:text-[#33BAF0] transition-colors">
+                  {featured.title}
+                </h2>
+                <p className="text-[#092f57]/60 leading-relaxed line-clamp-2 max-w-2xl">
+                  {featured.excerpt}. {featured.more}
+                </p>
+                {featured.author && (
+                  <p className="mt-4 text-xs font-semibold text-[#092f57]/50">
+                    Por {featured.author}
+                  </p>
+                )}
+              </Link>
 
-      {/* Listado */}
-      <main id="listado" className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 pb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
-          {filtered.slice(0, visible).map((post, i) => (
-            <ArticleCard key={`${post.href}-${i}`} post={post} idx={i} />
-          ))}
-        </div>
+              {/* Sidebar Articles */}
+              <div className="col-span-12 lg:col-span-4 flex flex-col gap-8">
+                {sidebar.map((post) => (
+                  <Link
+                    key={post.href}
+                    href={post.href}
+                    className="group"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-4 h-48">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        sizes="(min-width:1024px) 33vw, 100vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                        <span
+                          className={`text-[9px] font-bold uppercase tracking-[0.15em] ${CAT_COLOR[post.category]}`}
+                        >
+                          {CAT_LABEL[post.category]}
+                        </span>
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-bold text-[#092f57] leading-snug group-hover:text-[#33BAF0] transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                    <p className="mt-1.5 text-sm text-[#092f57]/50 line-clamp-2">
+                      {post.excerpt}
+                    </p>
+                    {post.author && (
+                      <p className="mt-2 text-xs font-semibold text-[#092f57]/40">
+                        Por {post.author}
+                      </p>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
+        {/* ─── Article Grid ─── */}
+        {grid.length > 0 && (
+          <section
+            id="listado"
+            className="max-w-7xl mx-auto px-6 sm:px-8 mb-20"
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+              {grid.map((post, i) => (
+                <article key={`${post.href}-${i}`} className="group">
+                  <Link href={post.href}>
+                    <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-gray-100">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={600}
+                        height={450}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                      />
+                    </div>
+                    <span
+                      className={`text-[10px] font-black uppercase tracking-[0.2em] mb-2.5 block ${CAT_COLOR[post.category]}`}
+                    >
+                      {CAT_LABEL[post.category]}
+                    </span>
+                    <h3 className="text-xl font-bold text-[#092f57] mb-2 leading-snug group-hover:text-[#33BAF0] transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-[#092f57]/55 leading-relaxed line-clamp-3 mb-3">
+                      {post.excerpt}
+                    </p>
+                    <div className="flex items-center gap-3 text-xs text-[#092f57]/40 font-medium">
+                      {post.author && <span>Por {post.author}</span>}
+                      {post.reading && (
+                        <>
+                          <span className="text-[#092f57]/15">·</span>
+                          <span>{post.reading}</span>
+                        </>
+                      )}
+                    </div>
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ─── Load More ─── */}
         {canLoadMore && (
-          <div className="mt-10 flex justify-center">
+          <div className="flex justify-center mb-24">
             <button
-              onClick={() => setVisible((v) => v + 8)}
-              className="rounded-xl bg-[#33BAF0] text-[#0D2A53] px-6 py-3 text-sm font-semibold shadow-md hover:bg-[#25A6DC] transition"
+              onClick={() => setVisible((v) => v + 9)}
+              className="px-10 py-4 rounded-full bg-[#092f57]/5 text-[#092f57] font-bold hover:bg-[#092f57]/10 transition-all flex items-center gap-2"
             >
-              Cargar más
+              Cargar más artículos
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </button>
           </div>
         )}
+
+        {/* ─── Newsletter CTA ─── */}
+        <section className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="bg-[#092f57] rounded-[2rem] sm:rounded-[3rem] p-10 sm:p-16 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-10">
+            <div className="absolute inset-0 pointer-events-none opacity-20">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-[#33BAF0] blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#33BAF0] blur-[100px] rounded-full translate-y-1/3 -translate-x-1/4" />
+            </div>
+            <div className="relative z-10 flex-1">
+              <span className="text-[#33BAF0] text-[10px] font-black uppercase tracking-[0.25em] mb-4 block">
+                Newsletter PREME
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
+                Bienestar en tu bandeja de entrada.
+              </h2>
+              <p className="text-white/60 text-base sm:text-lg max-w-md">
+                Recibí nuestra selección mensual de artículos, guías prácticas y
+                consejos médicos.
+              </p>
+            </div>
+            <div className="relative z-10 w-full md:w-auto md:min-w-[340px]">
+              <div className="flex flex-col gap-3">
+                <input
+                  type="email"
+                  placeholder="tu@email.com"
+                  className="w-full bg-white/10 border border-white/15 rounded-full px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:bg-white/15 transition-all text-sm"
+                />
+                <button className="w-full bg-[#33BAF0] text-[#092f57] font-bold py-4 rounded-full hover:bg-[#5dc9f5] transition-all text-sm">
+                  Suscribirme
+                </button>
+                <p className="text-white/30 text-[10px] text-center px-4">
+                  Al suscribirte, aceptás nuestra Política de Privacidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
     </>
-  );
-}
-
-function ArticleCard({ post, idx }: { post: Post; idx: number }) {
-  const st = STYLES[post.category];
-  return (
-    <article
-      className={[
-        "group flex flex-col rounded-2xl overflow-hidden ring-1 ring-black/5 shadow-sm hover:shadow-md transition-all duration-300",
-        st.bg,
-      ].join(" ")}
-    >
-      <div className="relative aspect-[16/10] w-full">
-        <Image
-          src={post.image}
-          alt={post.title}
-          fill
-          sizes="(max-width: 1024px) 50vw, 25vw"
-          className="object-cover object-center"
-          priority={idx < 4}
-        />
-      </div>
-
-      <div className="flex flex-1 flex-col px-5 pt-4 pb-5">
-        <div className="flex items-center gap-2">
-          <span className={`text-[11px] font-semibold px-3 py-1 rounded-full ${st.badge}`}>
-            {st.label}
-          </span>
-          {(post.date || post.reading) && (
-            <span className="text-[11px] text-[#0D2A53]/60">
-              {post.date &&
-                new Date(post.date).toLocaleDateString("es-AR", {
-                  day: "2-digit",
-                  month: "short",
-                })}
-              {post.date && post.reading ? " · " : ""}
-              {post.reading}
-            </span>
-          )}
-        </div>
-
-        <h3 className="mt-3 text-[18px] font-bold text-[#0D2A53] leading-tight line-clamp-2">
-          {post.title}
-        </h3>
-        <p className="mt-2 text-[14px] text-[#0D2A53]/80 leading-snug line-clamp-2">
-          {post.excerpt}
-        </p>
-        <p className="mt-1 text-[13px] text-[#0D2A53]/70 leading-snug line-clamp-2">
-          {post.more}
-        </p>
-
-        <div className="mt-auto pt-5">
-          <Link
-            href={post.href}
-            className={[
-              "inline-flex h-10 items-center justify-center rounded-lg px-5 text-white text-[14px] font-semibold shadow-sm transition-all duration-200",
-              st.btn,
-              "hover:brightness-[1.02]",
-            ].join(" ")}
-            aria-label={`Leer: ${post.title}`}
-          >
-            Leer artículo
-          </Link>
-        </div>
-      </div>
-    </article>
   );
 }
