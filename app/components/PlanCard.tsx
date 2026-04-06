@@ -1,8 +1,9 @@
 // /components/PlanCard.tsx
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { FaCheck, FaWhatsapp } from "react-icons/fa";
+import { FaCheck, FaWhatsapp, FaChevronDown } from "react-icons/fa";
 
 const WA_LINK = "https://wa.me/5493512006002?text=Hola%2C%20quiero%20asesoramiento%20sobre%20el%20";
 
@@ -30,10 +31,13 @@ export default function PlanCard({
   buttonColor,
   dark,
 }: PlanCardProps) {
+  const [expanded, setExpanded] = useState(false);
   const cta = buttonColor ?? color;
   const isDark = dark || title.toLowerCase().includes("máximo");
-  // Show only top 3 benefits for conversion focus
-  const topBenefits = benefits?.slice(0, 3) ?? [];
+
+  const visibleBenefits = benefits?.slice(0, 3) ?? [];
+  const hiddenBenefits = benefits?.slice(3) ?? [];
+  const hasMore = hiddenBenefits.length > 0;
 
   return (
     <article
@@ -61,13 +65,8 @@ export default function PlanCard({
             style={{ backgroundColor: isDark ? "#0a1e36" : `${color}15` }}
           />
         )}
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-gradient-to-b from-transparent to-[#092f57]"
-              : "bg-gradient-to-b from-black/5 to-black/0"
-          }`}
-        />
+        {/* Overlay suave sin gradient */}
+        <div className={`absolute inset-0 ${isDark ? "bg-black/35" : "bg-black/5"}`} />
 
         {highlight && (
           <span
@@ -92,8 +91,9 @@ export default function PlanCard({
           {subtitle}
         </p>
 
-        <ul className={`text-sm space-y-2.5 mb-6 flex-1 ${isDark ? "text-white/85" : "text-gray-700"}`}>
-          {topBenefits.map((b, i) => (
+        {/* Top 3 benefits — always visible */}
+        <ul className={`text-sm space-y-2.5 ${isDark ? "text-white/85" : "text-gray-700"}`}>
+          {visibleBenefits.map((b, i) => (
             <li key={i} className="flex items-start gap-2.5">
               <FaCheck
                 className={`mt-0.5 shrink-0 text-xs ${isDark ? "text-[#33BAF0]" : "text-emerald-500"}`}
@@ -103,11 +103,54 @@ export default function PlanCard({
           ))}
         </ul>
 
+        {/* Expanded benefits — accordion */}
+        {hasMore && (
+          <>
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-out ${
+                expanded ? "max-h-[500px] opacity-100 mt-2.5" : "max-h-0 opacity-0"
+              }`}
+            >
+              <ul className={`text-sm space-y-2.5 ${isDark ? "text-white/85" : "text-gray-700"}`}>
+                {hiddenBenefits.map((b, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    <FaCheck
+                      className={`mt-0.5 shrink-0 text-xs ${isDark ? "text-[#33BAF0]" : "text-emerald-500"}`}
+                    />
+                    <span className="leading-snug">{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              className={`mt-3 inline-flex items-center gap-1.5 text-xs font-semibold transition-colors duration-200 ${
+                isDark
+                  ? "text-[#33BAF0] hover:text-white"
+                  : "text-[#33BAF0] hover:text-[#092f57]"
+              }`}
+            >
+              <FaChevronDown
+                className={`text-[10px] transition-transform duration-300 ${
+                  expanded ? "rotate-180" : ""
+                }`}
+              />
+              {expanded ? "Ver menos" : `Ver ${hiddenBenefits.length} beneficios más`}
+            </button>
+          </>
+        )}
+
+        {/* Spacer */}
+        <div className="flex-1 min-h-4" />
+
+        {/* CTA */}
         <a
           href={`${WA_LINK}${encodeURIComponent(title)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className={`mt-auto w-full py-3 rounded-xl font-bold text-sm text-center transition-all duration-200 flex items-center justify-center gap-2 ${
+          className={`mt-4 w-full py-3 rounded-xl font-bold text-sm text-center transition-all duration-200 flex items-center justify-center gap-2 ${
             isDark
               ? "bg-[#25D366] text-white hover:bg-[#20bd5a]"
               : "bg-[#092f57] text-white hover:bg-[#0a3d6e]"
