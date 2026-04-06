@@ -7,17 +7,21 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CartillaFilter, { Filters } from "../components/CartillaFilter";
+import { FaPhoneAlt, FaMapMarkerAlt, FaStar } from "react-icons/fa";
 
 type Prestador = {
   id: number;
   nombre: string;
   tipo: string;
+  especialidades: string[];
   plan: string[];
   ciudad: string;
   direccion: string;
   telefono: string;
-  orden1?: number;
-  orden2?: number;
+  lat: number | null;
+  lng: number | null;
+  destacado: boolean;
+  ordenPrioridad: number;
 };
 
 const HERO_SRC = "/assets/hero/cartillav2.png";
@@ -31,12 +35,11 @@ type MetaResp = {
   ciudades: { value: string; label: string }[];
 };
 
-// 🎨 Mapeo de colores por plan
 const PLAN_COLORS: Record<string, string> = {
-  "Plan Joven":     "bg-[#F79630]/12 text-[#F79630] ring-1 ring-[#F79630]/25",
-  "Plan Coral":     "bg-[#33BAF0]/12 text-[#33BAF0] ring-1 ring-[#33BAF0]/25",
-  "Plan Integral":  "bg-[#68AE26]/12 text-[#68AE26] ring-1 ring-[#68AE26]/25",
-  "Plan Máximo":    "bg-[#864D8D]/12 text-[#864D8D] ring-1 ring-[#864D8D]/25",
+  "Plan Joven": "bg-[#F79630]/12 text-[#F79630] ring-1 ring-[#F79630]/25",
+  "Plan Coral": "bg-[#33BAF0]/12 text-[#33BAF0] ring-1 ring-[#33BAF0]/25",
+  "Plan Integral": "bg-[#68AE26]/12 text-[#68AE26] ring-1 ring-[#68AE26]/25",
+  "Plan Máximo": "bg-[#864D8D]/12 text-[#864D8D] ring-1 ring-[#864D8D]/25",
 };
 
 export default function PrestadoresPage() {
@@ -50,7 +53,6 @@ export default function PrestadoresPage() {
 
   const { data: meta } = useSWR<MetaResp>("/api/prestadores/meta", fetcher);
 
-  // Mapeos label→value
   const planLabelToValue = useMemo(() => {
     const m = new Map<string, string>();
     meta?.planes.forEach((p) => m.set(p.label, p.value));
@@ -69,7 +71,6 @@ export default function PrestadoresPage() {
     return m;
   }, [meta]);
 
-  // QS
   const qs = useMemo(() => {
     const p = new URLSearchParams();
     const planValue = filters.plan ? planLabelToValue.get(filters.plan) ?? "" : "";
@@ -89,10 +90,13 @@ export default function PrestadoresPage() {
     total: number;
     page: number;
     pageSize: number;
+    source: "gecros" | "fallback";
+    fetchedAt: string;
   }>(`/api/prestadores?${qs}`, fetcher, { keepPreviousData: true });
 
   const total = data?.total ?? 0;
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const isFallback = data?.source === "fallback";
 
   useEffect(() => setPage(1), [filters]);
 
@@ -105,22 +109,7 @@ export default function PrestadoresPage() {
     [meta]
   );
 
-  // 🔢 ORDEN POR PRIORIDAD (orden1, orden2, nombre)
-  const items = useMemo(() => {
-    const raw = data?.items ?? [];
-    const safeOrder = (v?: number) =>
-      typeof v === "number" && !Number.isNaN(v) ? v : 9999;
-
-    return [...raw].sort((a, b) => {
-      const o1 = safeOrder(a.orden1) - safeOrder(b.orden1);
-      if (o1 !== 0) return o1;
-
-      const o2 = safeOrder(a.orden2) - safeOrder(b.orden2);
-      if (o2 !== 0) return o2;
-
-      return a.nombre.localeCompare(b.nombre, "es", { sensitivity: "base" });
-    });
-  }, [data]);
+  const items = data?.items ?? [];
 
   return (
     <>
@@ -139,7 +128,9 @@ export default function PrestadoresPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 md:px-6">
           <div className="max-w-2xl text-white">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Cartilla médica</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Cartilla médica
+            </h1>
             <p className="mt-3 text-base md:text-lg text-white/90">
               Buscá por plan, tipo y ciudad. Encontrá el profesional indicado.
             </p>
@@ -151,47 +142,42 @@ export default function PrestadoresPage() {
       <main className="mx-auto max-w-7xl px-4 py-10">
         <CartillaFilter value={filters} onChange={setFilters} options={options} />
 
+        {/* Fallback notice */}
+        {isFallback && (
+          <div className="mt-4 rounded-xl bg-amber-50 border border-amber-200 px-4 py-3 text-sm text-amber-800">
+            Datos actualizados al{" "}
+            {new Date(data?.fetchedAt ?? "").toLocaleDateString("es-AR", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
+            . Los datos en tiempo real no están disponibles en este momento.
+          </div>
+        )}
+
         {/* RESULTADOS */}
         <section className="mt-8">
           {isLoading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {Array.from({ length: 9 }).map((_, i) => (
-                <div key={i} className="h-32 rounded-2xl bg-gray-100 animate-pulse" />
+                <div
+                  key={i}
+                  className="h-44 rounded-2xl bg-gray-100 animate-pulse"
+                />
               ))}
             </div>
           ) : (
             <>
               <div className="mb-4 text-sm text-gray-600">
                 {total} resultado{total !== 1 ? "s" : ""}
-                {filters.plan || filters.tipo || filters.ciudad || filters.q ? " (filtrado)" : ""}
+                {filters.plan || filters.tipo || filters.ciudad || filters.q
+                  ? " (filtrado)"
+                  : ""}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {items.map((p) => (
-                  <article key={p.id} className="rounded-2xl border border-black/5 bg-white p-5">
-                    <h3 className="text-lg font-bold text-[#092f57]">{p.nombre}</h3>
-                    <p className="text-sm text-gray-600">{p.tipo}</p>
-                    <p className="mt-2 text-sm text-gray-700">{p.direccion}</p>
-                    <p className="text-sm text-gray-700">{p.ciudad}, Córdoba</p>
-                    <p className="mt-1 text-sm text-gray-700">Tel: {p.telefono}</p>
-
-                    {/* Etiquetas de planes con color */}
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {p.plan.map((pl) => {
-                        const cls =
-                          PLAN_COLORS[pl] ??
-                          "bg-slate-100 text-[#092f57] ring-1 ring-slate-200";
-                        return (
-                          <span
-                            key={pl}
-                            className={`rounded-full px-2 py-1 text-xs font-medium ${cls}`}
-                          >
-                            {pl}
-                          </span>
-                        );
-                      })}
-                    </div>
-                  </article>
+                  <PrestadorCard key={`${p.id}-${p.tipo}`} prestador={p} />
                 ))}
               </div>
 
@@ -200,7 +186,7 @@ export default function PrestadoresPage() {
                 <div className="mt-8 flex items-center justify-center gap-2">
                   <button
                     onClick={() => setPage((p) => Math.max(1, p - 1))}
-                    className="rounded-lg px-3 py-2 text-sm ring-1 ring-black/10 disabled:opacity-50"
+                    className="rounded-lg px-3 py-2 text-sm ring-1 ring-black/10 disabled:opacity-50 hover:bg-gray-50 transition"
                     disabled={page === 1}
                   >
                     ← Anterior
@@ -210,7 +196,7 @@ export default function PrestadoresPage() {
                   </span>
                   <button
                     onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-                    className="rounded-lg px-3 py-2 text-sm ring-1 ring-black/10 disabled:opacity-50"
+                    className="rounded-lg px-3 py-2 text-sm ring-1 ring-black/10 disabled:opacity-50 hover:bg-gray-50 transition"
                     disabled={page === totalPages}
                   >
                     Siguiente →
@@ -224,5 +210,91 @@ export default function PrestadoresPage() {
 
       <Footer />
     </>
+  );
+}
+
+function PrestadorCard({ prestador: p }: { prestador: Prestador }) {
+  const tel = p.telefono?.replace(/\D/g, "");
+
+  return (
+    <article
+      className={`rounded-2xl border bg-white p-5 transition-shadow hover:shadow-md ${
+        p.destacado
+          ? "border-[#33BAF0]/30 ring-1 ring-[#33BAF0]/10"
+          : "border-black/5"
+      }`}
+    >
+      {/* Header */}
+      <div className="flex items-start justify-between gap-2">
+        <h3 className="text-lg font-bold text-[#092f57] leading-tight">
+          {p.nombre}
+        </h3>
+        {p.destacado && (
+          <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-[#33BAF0]/10 text-[#33BAF0] px-2.5 py-1 text-[11px] font-bold">
+            <FaStar className="text-[10px]" />
+            Destacado
+          </span>
+        )}
+      </div>
+
+      {/* Tipo / Profesión */}
+      <p className="mt-1 text-sm text-gray-500">{p.tipo}</p>
+
+      {/* Especialidades (max 3) */}
+      {p.especialidades.length > 0 && (
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {p.especialidades.slice(0, 3).map((esp) => (
+            <span
+              key={esp}
+              className="rounded-md bg-gray-100 px-2 py-0.5 text-[11px] text-gray-600"
+            >
+              {esp}
+            </span>
+          ))}
+          {p.especialidades.length > 3 && (
+            <span className="text-[11px] text-gray-400">
+              +{p.especialidades.length - 3} más
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* Dirección */}
+      <div className="mt-3 flex items-start gap-2 text-sm text-gray-700">
+        <FaMapMarkerAlt className="shrink-0 mt-0.5 text-gray-400" />
+        <span>
+          {p.direccion}
+          {p.ciudad ? `, ${p.ciudad}` : ""}
+        </span>
+      </div>
+
+      {/* Teléfono */}
+      {tel && (
+        <a
+          href={`tel:${tel}`}
+          className="mt-2 flex items-center gap-2 text-sm text-[#33BAF0] hover:text-[#1a9fd8] font-medium transition-colors"
+        >
+          <FaPhoneAlt className="text-xs" />
+          {p.telefono}
+        </a>
+      )}
+
+      {/* Planes */}
+      <div className="mt-3 flex flex-wrap gap-1.5">
+        {p.plan.map((pl) => {
+          const cls =
+            PLAN_COLORS[pl] ??
+            "bg-slate-100 text-[#092f57] ring-1 ring-slate-200";
+          return (
+            <span
+              key={pl}
+              className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${cls}`}
+            >
+              {pl}
+            </span>
+          );
+        })}
+      </div>
+    </article>
   );
 }
