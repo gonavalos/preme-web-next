@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import WhatsAppFab from "../components/WhatsAppFab";
 import { articles } from "../../data/blog-articles";
 
 type Category = "todos" | "salud" | "bienestar" | "consejos" | "novedades";
@@ -50,6 +51,13 @@ const CAT_COLOR: Record<string, string> = {
   novedades: "text-[#238AD4]",
 };
 
+const CAT_BADGE_BG: Record<string, string> = {
+  salud: "bg-[#D94B4B]/10 text-[#D94B4B]",
+  bienestar: "bg-[#2E9B71]/10 text-[#2E9B71]",
+  consejos: "bg-[#DC6A2C]/10 text-[#DC6A2C]",
+  novedades: "bg-[#238AD4]/10 text-[#238AD4]",
+};
+
 const CHIP_ACTIVE: Record<string, string> = {
   todos: "bg-[#092f57] text-white",
   salud: "bg-[#D94B4B] text-white",
@@ -89,33 +97,38 @@ export default function BlogIndexPage() {
     <>
       <Navbar />
 
-      <main className="pt-8 pb-24">
-        {/* ─── Editorial Header ─── */}
-        <header className="max-w-7xl mx-auto px-6 sm:px-8 mb-10">
-          <nav className="flex items-center gap-2 text-xs uppercase tracking-[0.15em] text-[#092f57]/50 mb-6 font-semibold">
-            <Link href="/" className="hover:text-[#092f57] transition-colors">
-              Inicio
-            </Link>
-            <span className="text-[10px]">/</span>
-            <span className="text-[#092f57]/80">Editorial</span>
-          </nav>
-          <div className="max-w-3xl">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-[#092f57] tracking-tight leading-[0.95] mb-5">
-              Viví con
-              <br />
-              <span className="text-[#33BAF0]">Bienestar</span>
+      {/* ─── Hero — misma estructura que el resto de la web ─── */}
+      <section className="relative h-[50vh] md:h-[60vh] w-full overflow-hidden">
+        <Image
+          src="/assets/blog/blogg1.png"
+          alt="Blog PREME"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20" />
+        <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-6 sm:px-8 pb-14 md:pb-20">
+          <div className="max-w-2xl text-white">
+            <span className="inline-flex items-center gap-2 text-[#33BAF0] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#33BAF0]" />
+              Editorial PREME
+            </span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.05] tracking-tight mb-4">
+              Viví con Bienestar
             </h1>
-            <p className="text-lg sm:text-xl text-[#092f57]/60 leading-relaxed font-light max-w-xl">
-              Contenido especializado para tu salud y bienestar. Prevención,
-              hábitos y guías prácticas con el respaldo de nuestros
-              profesionales.
+            <p className="text-white/75 text-base sm:text-lg leading-relaxed max-w-lg">
+              Prevención, hábitos y guías prácticas con el respaldo de nuestros
+              profesionales. Contenido para acompañarte todos los días.
             </p>
           </div>
-        </header>
+        </div>
+      </section>
 
-        {/* ─── Category Filter ─── */}
-        <section className="max-w-7xl mx-auto px-6 sm:px-8 mb-14 overflow-x-auto">
-          <div className="flex items-center gap-3 border-b border-[#092f57]/8 pb-4">
+      {/* ─── Category Filter — sobre fondo suave ─── */}
+      <section className="bg-[#f5f8fa]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-6">
+          <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto pb-1 scrollbar-hide">
             {CHIPS_ORDER.map((cat) => {
               const active = activeCat === cat;
               const label = cat === "todos" ? "Todas" : CAT_LABEL[cat];
@@ -124,10 +137,10 @@ export default function BlogIndexPage() {
                   key={cat}
                   onClick={() => setActiveCat(cat)}
                   className={[
-                    "px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200",
+                    "px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap transition-all duration-200",
                     active
                       ? CHIP_ACTIVE[cat]
-                      : "text-[#092f57]/60 hover:bg-[#092f57]/5",
+                      : "bg-white text-[#092f57]/60 ring-1 ring-[#092f57]/8 hover:ring-[#092f57]/20",
                   ].join(" ")}
                   aria-pressed={active}
                 >
@@ -136,13 +149,15 @@ export default function BlogIndexPage() {
               );
             })}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ─── Featured Article + Sidebar ─── */}
-        {featured && (
-          <section className="max-w-7xl mx-auto px-6 sm:px-8 mb-20">
-            <div className="grid grid-cols-12 gap-8">
-              {/* Large Featured */}
+      {/* ─── Featured + Sidebar — fondo blanco ─── */}
+      {featured && (
+        <section className="py-14 md:py-20">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+            <div className="grid grid-cols-12 gap-6 lg:gap-10">
+              {/* Featured */}
               <Link
                 href={featured.href}
                 className="col-span-12 lg:col-span-8 group"
@@ -154,200 +169,211 @@ export default function BlogIndexPage() {
                     fill
                     priority
                     sizes="(min-width:1024px) 66vw, 100vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 left-5 flex items-center gap-3">
                     <span
-                      className={`text-[10px] font-bold uppercase tracking-[0.15em] ${CAT_COLOR[featured.category]}`}
+                      className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${CAT_BADGE_BG[featured.category]} backdrop-blur-sm bg-white/90`}
                     >
-                      {CAT_LABEL[featured.category]}
+                      <span className={CAT_COLOR[featured.category]}>
+                        {CAT_LABEL[featured.category]}
+                      </span>
                     </span>
+                    {featured.reading && (
+                      <span className="text-white/80 text-xs font-medium">
+                        {featured.reading} de lectura
+                      </span>
+                    )}
                   </div>
                 </div>
-                <div className="flex items-center gap-3 mb-3">
-                  {featured.reading && (
-                    <span className="text-xs text-[#092f57]/45 font-medium">
-                      {featured.reading} de lectura
-                    </span>
-                  )}
-                  {featured.date && (
-                    <>
-                      <span className="text-[#092f57]/20">·</span>
-                      <span className="text-xs text-[#092f57]/45 font-medium">
-                        {new Date(featured.date).toLocaleDateString("es-AR", {
-                          day: "numeric",
-                          month: "long",
-                        })}
-                      </span>
-                    </>
-                  )}
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#092f57] mb-3 leading-snug group-hover:text-[#33BAF0] transition-colors">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#092f57] mb-2 leading-snug group-hover:text-[#33BAF0] transition-colors">
                   {featured.title}
                 </h2>
-                <p className="text-[#092f57]/60 leading-relaxed line-clamp-2 max-w-2xl">
-                  {featured.excerpt}. {featured.more}
+                <p className="text-gray-500 leading-relaxed line-clamp-2 max-w-2xl text-sm sm:text-base">
+                  {featured.excerpt}
                 </p>
                 {featured.author && (
-                  <p className="mt-4 text-xs font-semibold text-[#092f57]/50">
-                    Por {featured.author}
+                  <p className="mt-3 text-xs font-semibold text-[#092f57]/40 uppercase tracking-wider">
+                    {featured.author}
                   </p>
                 )}
               </Link>
 
-              {/* Sidebar Articles */}
-              <div className="col-span-12 lg:col-span-4 flex flex-col gap-8">
+              {/* Sidebar */}
+              <div className="col-span-12 lg:col-span-4 flex flex-col gap-6 lg:gap-8">
                 {sidebar.map((post) => (
                   <Link
                     key={post.href}
                     href={post.href}
-                    className="group"
+                    className="group flex flex-col"
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-4 h-48">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-2xl mb-4">
                       <Image
                         src={post.image}
                         alt={post.title}
                         fill
                         sizes="(min-width:1024px) 33vw, 100vw"
-                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
                       />
-                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                        <span
-                          className={`text-[9px] font-bold uppercase tracking-[0.15em] ${CAT_COLOR[post.category]}`}
-                        >
-                          {CAT_LABEL[post.category]}
-                        </span>
-                      </div>
                     </div>
+                    <span
+                      className={`text-[10px] font-bold uppercase tracking-[0.2em] mb-1.5 ${CAT_COLOR[post.category]}`}
+                    >
+                      {CAT_LABEL[post.category]}
+                    </span>
                     <h3 className="text-lg font-bold text-[#092f57] leading-snug group-hover:text-[#33BAF0] transition-colors line-clamp-2">
                       {post.title}
                     </h3>
-                    <p className="mt-1.5 text-sm text-[#092f57]/50 line-clamp-2">
+                    <p className="mt-1 text-sm text-gray-500 line-clamp-2">
                       {post.excerpt}
                     </p>
-                    {post.author && (
-                      <p className="mt-2 text-xs font-semibold text-[#092f57]/40">
-                        Por {post.author}
-                      </p>
-                    )}
                   </Link>
                 ))}
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
+      )}
 
-        {/* ─── Article Grid ─── */}
-        {grid.length > 0 && (
-          <section
-            id="listado"
-            className="max-w-7xl mx-auto px-6 sm:px-8 mb-20"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+      {/* ─── Article Grid — fondo suave, misma paleta que planes ─── */}
+      {grid.length > 0 && (
+        <section id="listado" className="py-14 md:py-20 bg-[#f5f8fa]">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+            <div className="text-center mb-10 md:mb-14">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#092f57] mb-3 tracking-tight">
+                Más artículos
+              </h2>
+              <p className="text-gray-500 text-base sm:text-lg">
+                Explorá todas nuestras notas sobre salud y bienestar.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {grid.map((post, i) => (
-                <article key={`${post.href}-${i}`} className="group">
-                  <Link href={post.href}>
-                    <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-gray-100">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={600}
-                        height={450}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
-                      />
-                    </div>
-                    <span
-                      className={`text-[10px] font-black uppercase tracking-[0.2em] mb-2.5 block ${CAT_COLOR[post.category]}`}
-                    >
-                      {CAT_LABEL[post.category]}
-                    </span>
-                    <h3 className="text-xl font-bold text-[#092f57] mb-2 leading-snug group-hover:text-[#33BAF0] transition-colors line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-sm text-[#092f57]/55 leading-relaxed line-clamp-3 mb-3">
-                      {post.excerpt}
-                    </p>
-                    <div className="flex items-center gap-3 text-xs text-[#092f57]/40 font-medium">
-                      {post.author && <span>Por {post.author}</span>}
+                <Link
+                  key={`${post.href}-${i}`}
+                  href={post.href}
+                  className="group bg-white rounded-2xl overflow-hidden ring-1 ring-black/5 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="relative aspect-[16/10] w-full overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                      className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span
+                        className={`text-[10px] font-bold uppercase tracking-[0.15em] ${CAT_COLOR[post.category]}`}
+                      >
+                        {CAT_LABEL[post.category]}
+                      </span>
+                      {post.date && (
+                        <>
+                          <span className="text-gray-300">·</span>
+                          <span className="text-xs text-gray-400">
+                            {new Date(post.date).toLocaleDateString("es-AR", {
+                              day: "numeric",
+                              month: "short",
+                            })}
+                          </span>
+                        </>
+                      )}
                       {post.reading && (
                         <>
-                          <span className="text-[#092f57]/15">·</span>
-                          <span>{post.reading}</span>
+                          <span className="text-gray-300">·</span>
+                          <span className="text-xs text-gray-400">
+                            {post.reading}
+                          </span>
                         </>
                       )}
                     </div>
-                  </Link>
-                </article>
+                    <h3 className="text-lg font-bold text-[#092f57] leading-snug mb-2 group-hover:text-[#33BAF0] transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 leading-relaxed line-clamp-2">
+                      {post.excerpt}
+                    </p>
+                    {post.author && (
+                      <p className="mt-3 text-xs font-medium text-gray-400">
+                        {post.author}
+                      </p>
+                    )}
+                  </div>
+                </Link>
               ))}
             </div>
-          </section>
-        )}
-
-        {/* ─── Load More ─── */}
-        {canLoadMore && (
-          <div className="flex justify-center mb-24">
-            <button
-              onClick={() => setVisible((v) => v + 9)}
-              className="px-10 py-4 rounded-full bg-[#092f57]/5 text-[#092f57] font-bold hover:bg-[#092f57]/10 transition-all flex items-center gap-2"
-            >
-              Cargar más artículos
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
           </div>
-        )}
 
-        {/* ─── Newsletter CTA ─── */}
-        <section className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="bg-[#092f57] rounded-[2rem] sm:rounded-[3rem] p-10 sm:p-16 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-10">
-            <div className="absolute inset-0 pointer-events-none opacity-20">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-[#33BAF0] blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#33BAF0] blur-[100px] rounded-full translate-y-1/3 -translate-x-1/4" />
+          {/* Load more */}
+          {canLoadMore && (
+            <div className="flex justify-center mt-12">
+              <button
+                onClick={() => setVisible((v) => v + 9)}
+                className="inline-flex items-center gap-2 bg-[#092f57] text-white font-bold px-8 py-3.5 rounded-xl hover:bg-[#0a3d6e] transition-colors text-sm"
+              >
+                Cargar más artículos
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
             </div>
-            <div className="relative z-10 flex-1">
-              <span className="text-[#33BAF0] text-[10px] font-black uppercase tracking-[0.25em] mb-4 block">
-                Newsletter PREME
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
-                Bienestar en tu bandeja de entrada.
-              </h2>
-              <p className="text-white/60 text-base sm:text-lg max-w-md">
-                Recibí nuestra selección mensual de artículos, guías prácticas y
-                consejos médicos.
+          )}
+        </section>
+      )}
+
+      {/* ─── Newsletter CTA — misma estructura que PromoBanner ─── */}
+      <section className="py-12 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
+        <div className="relative rounded-[2rem] overflow-hidden flex flex-col md:flex-row items-center bg-[#051b33]">
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-[#33BAF0]/15 blur-[100px] rounded-full -translate-y-1/3 translate-x-1/4" />
+          </div>
+          <div className="relative z-10 flex-1 px-8 sm:px-12 md:px-16 py-12 md:py-16">
+            <span className="text-[#33BAF0] font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
+              Newsletter
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight">
+              Bienestar en tu{" "}
+              <span className="text-[#33BAF0]">bandeja de entrada</span>
+            </h2>
+            <p className="text-white/60 max-w-md text-base leading-relaxed">
+              Recibí nuestra selección mensual de artículos, guías prácticas y
+              consejos médicos exclusivos.
+            </p>
+          </div>
+          <div className="relative z-10 w-full md:w-auto md:min-w-[320px] px-8 sm:px-12 md:pr-16 pb-12 md:py-16">
+            <div className="flex flex-col gap-3">
+              <input
+                type="email"
+                placeholder="tu@email.com"
+                className="w-full bg-white/10 border border-white/15 rounded-xl px-5 py-3.5 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-[#33BAF0] transition-all text-sm"
+              />
+              <button className="w-full bg-[#33BAF0] text-white font-bold py-3.5 rounded-xl hover:bg-[#1a9fd8] transition-colors text-sm">
+                Suscribirme
+              </button>
+              <p className="text-white/25 text-[10px] text-center">
+                Al suscribirte, aceptás nuestra Política de Privacidad.
               </p>
             </div>
-            <div className="relative z-10 w-full md:w-auto md:min-w-[340px]">
-              <div className="flex flex-col gap-3">
-                <input
-                  type="email"
-                  placeholder="tu@email.com"
-                  className="w-full bg-white/10 border border-white/15 rounded-full px-6 py-4 text-white placeholder:text-white/30 focus:outline-none focus:bg-white/15 transition-all text-sm"
-                />
-                <button className="w-full bg-[#33BAF0] text-[#092f57] font-bold py-4 rounded-full hover:bg-[#5dc9f5] transition-all text-sm">
-                  Suscribirme
-                </button>
-                <p className="text-white/30 text-[10px] text-center px-4">
-                  Al suscribirte, aceptás nuestra Política de Privacidad.
-                </p>
-              </div>
-            </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
+      <WhatsAppFab />
       <Footer />
     </>
   );
