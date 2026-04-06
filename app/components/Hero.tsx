@@ -25,9 +25,9 @@ const slides: Slide[] = [
       "Primera prepaga de Córdoba. Cobertura integral, acompañamiento personalizado y una red médica líder.",
     cta: { label: "Conocé nuestros planes", href: "/planes" },
     ctaSecondary: { label: "Hablá con un asesor", href: "/contacto" },
-    image: "/assets/hero/home/familia-sofa.jpg",
-    objectPos: "object-[50%_35%]",
-    objectPosMobile: "object-[50%_45%]",
+    image: "/assets/hero/home/AdobeStock_203697873.jpeg",
+    objectPos: "object-[50%_30%]",
+    objectPosMobile: "object-[50%_40%]",
   },
   {
     headline: "¡Adherite con débito automático!",
@@ -47,9 +47,9 @@ const slides: Slide[] = [
       "Gestiones más simples, atención personalizada y acceso a una red médica líder en Córdoba.",
     cta: { label: "Ver beneficios", href: "/planes" },
     ctaSecondary: { label: "Conocé la App", href: "#app-preme" },
-    image: "/assets/hero/home/familia-cama.jpg",
-    objectPos: "object-[50%_40%]",
-    objectPosMobile: "object-[50%_50%]",
+    image: "/assets/hero/home/AdobeStock_602896949.jpeg",
+    objectPos: "object-[50%_35%]",
+    objectPosMobile: "object-[50%_40%]",
   },
 ];
 
@@ -115,8 +115,8 @@ export default function Hero() {
         </div>
       ))}
 
-      {/* Gradient fuerte en la zona de texto (abajo), sutil arriba para ver caras */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+      {/* Overlay oscuro para legibilidad del texto blanco */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/25" />
 
       {/* Content — anclado abajo izquierda para no tapar caras */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 pb-16 lg:pb-20">
@@ -189,12 +189,12 @@ export default function Hero() {
                 </div>
               )}
 
-              {/* CTAs — estilo premium con gradient y glass */}
-              <div className="flex flex-col sm:flex-row gap-3">
+              {/* CTAs */}
+              <div className="flex flex-wrap gap-3">
                 {s.cta && (
                   <Link
                     href={s.cta.href}
-                    className="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#33BAF0] to-[#1a8fd4] text-white font-bold px-7 py-3.5 rounded-xl text-sm sm:text-base hover:shadow-xl hover:shadow-[#33BAF0]/30 hover:scale-[1.03] transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 bg-[#33BAF0] text-white font-bold px-6 py-3 rounded-lg text-sm sm:text-base hover:bg-[#1a9fd8] transition-colors duration-200"
                   >
                     {s.cta.label}
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -205,7 +205,7 @@ export default function Hero() {
                 {s.ctaSecondary && (
                   <Link
                     href={s.ctaSecondary.href}
-                    className="inline-flex items-center justify-center gap-2 backdrop-blur-md bg-white/15 border border-white/25 text-white font-semibold px-7 py-3.5 rounded-xl text-sm sm:text-base hover:bg-white/25 transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 bg-white/20 border border-white/30 text-white font-semibold px-6 py-3 rounded-lg text-sm sm:text-base hover:bg-white/30 transition-colors duration-200"
                   >
                     {s.ctaSecondary.label}
                   </Link>

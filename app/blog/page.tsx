@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { articles } from "../../data/blog-articles";
 
 type Category = "todos" | "salud" | "bienestar" | "consejos" | "novedades";
 
@@ -20,60 +21,21 @@ type Post = {
   reading?: string;
 };
 
-const POSTS: Post[] = [
-  {
-    title: "Grasas saludables",
-    excerpt: "Las grasas buenas cuidan tu corazón y tu cerebro.",
-    more: "Dónde encontrarlas y cómo sumarlas a tu semana sin complicaciones.",
-    image: "/assets/blog/grasas-saludables/1.png",
-    href: "/blog/grasas-saludables",
-    category: "bienestar",
-    date: "2025-11-08",
-    reading: "4 min",
-  },
-  {
-    title: "Chequeos preventivos clave",
-    excerpt: "Detectar a tiempo reduce riesgos y mejora resultados.",
-    more: "Guía simple de estudios anuales según edad y antecedentes.",
-    image: "/assets/blog/blog1.png",
-    href: "/blog/chequeos-preventivos",
-    category: "salud",
-    date: "2025-10-22",
-    reading: "5 min",
-  },
-  {
-    title: "Cerebro joven y ágil",
-    excerpt: "Hábitos simples que mantienen tu mente activa.",
-    more: "Ejercicios, descanso y alimentación que favorecen la memoria.",
-    image: "/assets/blog/cerebro-joven-agil/1.png",
-    href: "/blog/cerebro-joven",
-    category: "consejos",
-    date: "2025-09-18",
-    reading: "3 min",
-  },
-  {
-    title: "Dormir mejor, vivir mejor",
-    excerpt: "El descanso de calidad impacta en energía y ánimo.",
-    more: "Rutina previa, temperatura, luz y horarios recomendados.",
-    image: "/assets/blog/blog2.png",
-    href: "/blog/descanso-saludable",
-    category: "consejos",
-    date: "2025-08-30",
-    reading: "4 min",
-  },
-  {
-    title: "Novedades en atención digital",
-    excerpt: "Turnos online y credencial digital en tu celular.",
-    more: "Tecnología que simplifica la experiencia en salud.",
-    image: "/assets/blog/blog1.png",
-    href: "/blog/atencion-digital",
-    category: "novedades",
-    date: "2025-08-02",
-    reading: "2 min",
-  },
-];
+// Build POSTS from shared data source, sorted newest first
+const POSTS: Post[] = [...articles]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .map((a) => ({
+    title: a.title,
+    excerpt: a.excerpt,
+    more: a.more,
+    image: a.image,
+    href: `/blog/${a.slug}`,
+    category: a.category,
+    date: a.date,
+    reading: a.reading,
+  }));
 
-// 🎨 Paletas (acordadas)
+// Paletas por categoría
 const STYLES = {
   salud: {
     bg: "bg-gradient-to-b from-[#FFE1E1] via-[#FFF0F0] to-[#FFF7F7]",
@@ -126,63 +88,51 @@ export default function BlogIndexPage() {
     <>
       <Navbar />
 
-{/* Hero del blog (full-bleed image) */}
-<header className="relative">
-  <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
-    {/* Lienzo del hero */}
-    <div className="relative mt-6 sm:mt-8 h-[360px] sm:h-[420px] lg:h-[520px] overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm">
-
-      {/* Imagen de fondo full-bleed */}
-      <Image
-        src="/assets/blog/blogg1.png"
-        alt="Blog PREME"
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-      />
-
-      {/* Degradado para mejorar contraste del texto */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0D2A53]/70 via-[#0D2A53]/35 to-transparent" />
-
-      {/* Contenido */}
-      <div className="relative z-10 h-full grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center gap-4 px-6 sm:px-10 py-10 lg:py-14">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 text-white px-3 py-1 text-xs font-semibold ring-1 ring-white/25">
-            <span className="h-2 w-2 rounded-full bg-[#33BAF0]" /> Blog PREME
-          </span>
-
-          <h1 className="text-3xl sm:text-4xl xl:text-5xl font-black text-white leading-tight">
-            Salud, Bienestar, Consejos y Novedades
-          </h1>
-
-          <p className="text-base sm:text-lg text-white/85 max-w-[60ch]">
-            Contenidos confiables y cercanos para acompañarte todos los días:
-            prevención, hábitos, guías prácticas y lo último en atención digital.
-          </p>
-
-          <div className="mt-2 flex flex-wrap gap-3">
-            <Link
-              href="/"
-              className="rounded-xl bg-[#33BAF0] text-[#0D2A53] px-5 py-2.5 text-sm font-semibold shadow-md hover:bg-[#25A6DC] transition"
-            >
-              Volver al inicio
-            </Link>
-            <a
-              href="#listado"
-              className="rounded-xl bg-white/90 text-[#0D2A53] px-5 py-2.5 text-sm font-semibold ring-1 ring-[#0D2A53]/10 hover:bg-white transition"
-            >
-              Ver artículos
-            </a>
+      {/* Hero del blog */}
+      <header className="relative">
+        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
+          <div className="relative mt-6 sm:mt-8 h-[360px] sm:h-[420px] lg:h-[520px] overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm">
+            <Image
+              src="/assets/blog/blogg1.png"
+              alt="Blog PREME"
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0D2A53]/70 via-[#0D2A53]/35 to-transparent" />
+            <div className="relative z-10 h-full grid grid-cols-1 lg:grid-cols-2">
+              <div className="flex flex-col justify-center gap-4 px-6 sm:px-10 py-10 lg:py-14">
+                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 text-white px-3 py-1 text-xs font-semibold ring-1 ring-white/25">
+                  <span className="h-2 w-2 rounded-full bg-[#33BAF0]" /> Blog PREME
+                </span>
+                <h1 className="text-3xl sm:text-4xl xl:text-5xl font-black text-white leading-tight">
+                  Salud, Bienestar, Consejos y Novedades
+                </h1>
+                <p className="text-base sm:text-lg text-white/85 max-w-[60ch]">
+                  Contenidos confiables y cercanos para acompañarte todos los días:
+                  prevención, hábitos, guías prácticas y lo último en atención digital.
+                </p>
+                <div className="mt-2 flex flex-wrap gap-3">
+                  <Link
+                    href="/"
+                    className="rounded-xl bg-[#33BAF0] text-[#0D2A53] px-5 py-2.5 text-sm font-semibold shadow-md hover:bg-[#25A6DC] transition"
+                  >
+                    Volver al inicio
+                  </Link>
+                  <a
+                    href="#listado"
+                    className="rounded-xl bg-white/90 text-[#0D2A53] px-5 py-2.5 text-sm font-semibold ring-1 ring-[#0D2A53]/10 hover:bg-white transition"
+                  >
+                    Ver artículos
+                  </a>
+                </div>
+              </div>
+              <div className="hidden lg:block" />
+            </div>
           </div>
         </div>
-
-        {/* Columna derecha vacía para dejar respirar la imagen en desktop */}
-        <div className="hidden lg:block" />
-      </div>
-    </div>
-  </div>
-</header>
+      </header>
 
       {/* Chips categorías */}
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
@@ -191,7 +141,7 @@ export default function BlogIndexPage() {
             const active = activeCat === cat;
             const st = cat !== "todos" ? STYLES[cat] : null;
             const label =
-              cat === "todos" ? "Todos" : st ? st.label : (cat.toUpperCase() as string);
+              cat === "todos" ? "Todos" : st ? st.label : cat.toUpperCase();
             const btnColor =
               cat === "todos"
                 ? "bg-gradient-to-b from-[#4A9FE5] to-[#238AD4]"
@@ -240,7 +190,6 @@ export default function BlogIndexPage() {
         )}
       </main>
 
-      {/* Footer institucional */}
       <Footer />
     </>
   );

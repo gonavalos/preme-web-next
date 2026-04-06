@@ -53,38 +53,40 @@ export default function Home() {
         {/* Quick Access — barra horizontal */}
         <QuickAccess />
 
-        {/* Prestadores marquee */}
+        {/* Prestadores marquee — blanco */}
         <PrestadoresMarquee />
 
-        {/* Plan cards */}
-        <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#092f57] mb-3 tracking-tight">
-              Planes diseñados para tu vida
-            </h2>
-            <p className="text-gray-500 text-base sm:text-lg">
-              Elegí la cobertura que mejor se adapta a tus necesidades.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
-            {planes.map((plan, idx) => (
-              <PlanCard key={idx} {...plan} />
-            ))}
+        {/* Plan cards — fondo suave */}
+        <section className="py-16 md:py-24 bg-[#f5f8fa]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#092f57] mb-3 tracking-tight">
+                Planes diseñados para tu vida
+              </h2>
+              <p className="text-gray-500 text-base sm:text-lg">
+                Elegí la cobertura que mejor se adapta a tus necesidades.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+              {planes.map((plan, idx) => (
+                <PlanCard key={idx} {...plan} />
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Promo banner — parallax */}
         <PromoBanner />
 
-        {/* App showcase — credencial */}
+        {/* App showcase — blanco */}
         <AppBanner />
 
-        {/* Benefits slider — debajo de credencial */}
+        {/* Benefits slider — fondo suave */}
         <section className="py-14 md:py-20 bg-[#f5f8fa] overflow-hidden">
           <BenefitsSlider />
         </section>
 
-        {/* Blog editorial */}
+        {/* Blog editorial — blanco */}
         <BlogCarousel />
       </main>
 

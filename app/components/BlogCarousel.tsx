@@ -53,7 +53,7 @@ function ImgWithFallback(props: React.ComponentProps<typeof Image>) {
 
 export default function BlogCarousel() {
   return (
-    <section className="py-20 md:py-28 bg-[#f5f8fa]">
+    <section className="py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 md:mb-16 gap-4">

@@ -65,9 +65,9 @@ export default function Navbar() {
               key={href}
               href={href}
               className="
-                hover:text-[#33BAF0]
-                md:text-[14px] lg:text-[15px] xl:text-[17px]
-                md:leading-6 lg:leading-[1.15]
+                font-medium text-[#092f57] hover:text-[#33BAF0] transition-colors
+                md:text-[13px] lg:text-[14px] xl:text-[15px]
+                tracking-wide uppercase
               "
             >
               {label}
@@ -121,7 +121,7 @@ export default function Navbar() {
             <svg className="w-4 h-4 lg:w-[18px] lg:h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            Quiero mi Plan
+            Quiero Afiliarme
             <FaArrowRight className="text-[10px] lg:text-xs" />
           </Link>
         </div>
@@ -184,7 +184,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="bg-[#092f57] text-white px-4 py-2.5 rounded-lg text-center font-bold flex items-center justify-center gap-2"
             >
-              Quiero mi Plan
+              Quiero Afiliarme
               <FaArrowRight className="text-xs" />
             </Link>
           </div>
