@@ -17,17 +17,17 @@ export default function Hero() {
     <section className="relative isolate w-full h-[80vh] lg:h-[88vh] flex items-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/assets/hero/home/AdobeStock_203697873.jpeg"
+        src="/assets/hero/home/promo.png"
         alt=""
         fill
         priority
         quality={90}
         sizes="100vw"
-        className="object-cover object-[50%_30%] lg:object-[50%_25%]"
+        className="object-cover object-[55%_25%] lg:object-[55%_20%]"
       />
 
-      {/* Overlay */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#092f57]/90 via-[#092f57]/60 to-[#092f57]/20 lg:to-transparent" />
+      {/* Overlay — opacidad uniforme, sin gradient */}
+      <div className="pointer-events-none absolute inset-0 bg-black/40" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8">
