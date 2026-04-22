@@ -82,7 +82,7 @@ export default function Home() {
         <AppBanner />
 
         {/* 7. Beneficios */}
-        <section className="py-14 md:py-20 bg-[#f5f8fa] overflow-hidden">
+        <section className="py-14 md:py-20 bg-white overflow-hidden">
           <BenefitsSlider />
         </section>
 

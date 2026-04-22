@@ -42,15 +42,15 @@ export default function AppBanner() {
         {/* DERECHA: texto */}
         <div className="order-1 md:order-2">
           {/* Kicker */}
-          <div className="inline-flex items-center gap-2.5 mb-5">
-            <span className="w-10 h-px bg-[#33BAF0]" />
-            <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
+          <div className="inline-flex items-center gap-2.5 mb-3">
+            <span className="w-8 h-px bg-[#33BAF0]" />
+            <span className="text-[10px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
               App PREME
             </span>
           </div>
 
           {/* Título multi-línea con italic accent */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#092f57] leading-[0.98] tracking-tight text-balance mb-5">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#092f57] leading-[1.05] tracking-tight text-balance mb-4">
             <span className="block">Tu salud.</span>
             <span className="block">
               En{" "}
@@ -66,7 +66,7 @@ export default function AppBanner() {
             </span>
           </h2>
 
-          <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
+          <p className="text-sm sm:text-base text-gray-500 leading-relaxed mb-8 max-w-md">
             Gestioná todo desde un solo lugar. Sin llamadas, sin papeles, sin
             esperas.
           </p>
