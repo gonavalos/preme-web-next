@@ -3,17 +3,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaMobileAlt } from "react-icons/fa";
-import SectionHeader from "./SectionHeader";
 
 export default function BenefitsSlider() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-      <SectionHeader
-        kicker="Beneficios"
-        title="Mucho más que"
-        titleItalic="cobertura médica."
-        align="left"
-      />
+      {/* Header editorial — tamaño grande como el Remix (clamp 36–64px) */}
+      <div className="mb-10 md:mb-14">
+        <div className="inline-flex items-center gap-3 mb-5">
+          <span className="w-10 h-px bg-[#33BAF0]" />
+          <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
+            Beneficios
+          </span>
+        </div>
+        <h2 className="font-extrabold text-[#092f57] tracking-tight leading-[0.98] text-balance text-[clamp(2.25rem,5.2vw,4rem)] max-w-[14ch]">
+          Mucho más que{" "}
+          <em className="font-medium italic text-[#33BAF0] [font-family:Georgia,serif]">
+            cobertura médica.
+          </em>
+        </h2>
+      </div>
 
       {/* Bento grid — 6 cols × 3 rows desktop / 2 cols mobile */}
       <div className="grid grid-cols-2 md:grid-cols-6 auto-rows-[200px] md:auto-rows-[180px] gap-3 md:gap-4">
