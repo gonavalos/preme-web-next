@@ -45,11 +45,11 @@ export default function PhoneMock() {
             <div className="ps-card-glow" />
             <div className="ps-card-top">
               <Image
-                src="/logoPreme.png"
+                src="/logoPreme3.png"
                 alt="PREME"
                 width={220}
                 height={56}
-                className="h-14 w-auto relative"
+                className="h-10 w-auto relative brightness-0 invert"
               />
               <div className="ps-card-chip">
                 <div /><div /><div /><div />
