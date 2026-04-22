@@ -6,15 +6,9 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WA_LINK = "https://wa.me/5493512006002?text=Hola%2C%20quiero%20asesoramiento%20sobre%20planes";
 
-const stats = [
-  { value: "45+", label: "Años de experiencia" },
-  { value: "2.800+", label: "Prestadores" },
-  { value: "13.000+", label: "Afiliados" },
-];
-
 export default function Hero() {
   return (
-    <section className="relative isolate w-full h-[80vh] lg:h-[88vh] flex items-center overflow-hidden">
+    <section className="relative isolate w-full h-[80vh] lg:h-[88vh] flex items-end overflow-hidden">
       {/* Background image */}
       <Image
         src="/assets/hero/home/promo.png"
@@ -29,11 +23,11 @@ export default function Hero() {
       {/* Overlay — opacidad uniforme, sin gradient */}
       <div className="pointer-events-none absolute inset-0 bg-black/40" />
 
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8">
+      {/* Content — anclado abajo */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 pb-16 md:pb-20">
         <div className="max-w-xl lg:max-w-2xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-5">
             <Image
               src="/assets/n11v2.png"
               alt=""
@@ -53,13 +47,13 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white/75 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
+          <p className="text-white/75 text-base sm:text-lg leading-relaxed mb-7 max-w-md">
             Un asesor te ayuda a elegir el plan ideal en menos de 2 minutos.
             Sin compromiso.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 mb-10">
+          <div className="flex flex-col sm:flex-row gap-3">
             <a
               href={WA_LINK}
               target="_blank"
@@ -75,20 +69,6 @@ export default function Hero() {
             >
               Ver planes
             </Link>
-          </div>
-
-          {/* Stats */}
-          <div className="flex gap-8 sm:gap-12">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                  {stat.value}
-                </div>
-                <div className="text-[11px] font-medium text-white/50 uppercase tracking-[0.12em] mt-0.5">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
