@@ -21,10 +21,9 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <SectionHeader
           kicker="Red de prestadores"
-          title="Confían en"
-          titleItalic="PREME."
+          title="Confían en PREME."
           description="Las instituciones de salud más prestigiosas de Córdoba."
-          align="split"
+          align="center"
         />
 
         {/* Logos */}
