@@ -2,6 +2,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Fraunces } from "next/font/google";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.preme.com.ar"),
@@ -59,7 +68,7 @@ const websiteJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="es" className={fraunces.variable}>
       <body className="text-gray-900">
         {children}
         <Script id="jsonld-org" type="application/ld+json" strategy="afterInteractive"

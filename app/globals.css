@@ -23,6 +23,12 @@
   /* Tipografías (usa next/font y expone --font-geist-* en layout) */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+/* Fraunces — editorial serif for magazine-style headings */
+.font-editorial {
+  font-family: var(--font-serif);
 }
 
 /* ===== Base ===== */
