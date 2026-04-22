@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-black/40" />
 
       {/* Content — anclado abajo */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 pb-16 md:pb-20">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-6 pb-28 md:pb-36">
         <div className="max-w-xl lg:max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-5">
