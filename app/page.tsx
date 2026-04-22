@@ -82,7 +82,7 @@ export default function Home() {
         </div>
 
         {/* 6. App credencial — gris */}
-        <div className="bg-[#f5f8fa]">
+        <div className="bg-white">
           <AppBanner />
         </div>
 

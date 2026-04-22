@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PREME | Medicina Privada Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600&amp;family=Inter:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#360b00",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#001e2b",
+                        "surface-bright": "#f9f9ff",
+                        "surface": "#f9f9ff",
+                        "inverse-primary": "#aac8f9",
+                        "on-secondary-container": "#00516d",
+                        "secondary-fixed": "#c1e8ff",
+                        "on-surface": "#001c3a",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-tertiary-fixed-variant": "#832600",
+                        "surface-container-highest": "#d4e3ff",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "outline": "#74777f",
+                        "inverse-surface": "#0c3159",
+                        "surface-dim": "#c6dbff",
+                        "surface-container": "#e7eeff",
+                        "secondary-fixed-dim": "#75d1ff",
+                        "on-primary-container": "#7a98c6",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dde9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#48c8ff",
+                        "surface-container-low": "#f0f3ff",
+                        "on-tertiary-container": "#fa6832",
+                        "on-secondary-fixed-variant": "#004d67",
+                        "outline-variant": "#c3c6cf",
+                        "primary-fixed-dim": "#aac8f9",
+                        "surface-tint": "#41608a",
+                        "primary-fixed": "#d4e3ff",
+                        "tertiary-container": "#591700",
+                        "background": "#f9f9ff",
+                        "primary-container": "#092f57",
+                        "on-primary": "#ffffff",
+                        "primary": "#001a37",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-background": "#001c3a",
+                        "on-tertiary-fixed": "#390c00",
+                        "secondary": "#006688",
+                        "on-primary-fixed-variant": "#284871",
+                        "surface-variant": "#d4e3ff",
+                        "on-surface-variant": "#43474e",
+                        "on-primary-fixed": "#001c3a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 24px 48px rgba(9, 47, 87, 0.06);
+        }
+        .premium-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0px_24px_48px_rgba(9,47,87,0.06)]">
+<nav class="flex justify-between items-center max-w-[1440px] mx-auto px-6 md:px-12 py-6">
+<div class="text-2xl font-extrabold tracking-tighter text-[#092F57] dark:text-white font-headline">PREME</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#33baf0] border-b-2 border-[#33baf0] pb-1 font-headline font-bold tracking-tight text-sm" href="#">Planes</a>
+<a class="text-[#092F57] dark:text-slate-300 hover:text-[#33baf0] transition-colors duration-300 font-headline font-bold tracking-tight text-sm" href="#">Cartilla</a>
+<a class="text-[#092F57] dark:text-slate-300 hover:text-[#33baf0] transition-colors duration-300 font-headline font-bold tracking-tight text-sm" href="#">Sucursales</a>
+<a class="text-[#092F57] dark:text-slate-300 hover:text-[#33baf0] transition-colors duration-300 font-headline font-bold tracking-tight text-sm" href="#">Beneficios</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden lg:block text-[#092F57] font-bold text-sm hover:text-[#33baf0] transition-colors" href="#">Member Login</a>
+<button class="bg-[#092F57] text-white px-6 py-2.5 rounded-full font-bold text-sm scale-102 hover:shadow-lg transition-all duration-500">Quiero afiliarme</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover scale-110" data-alt="Warm lifestyle portrait of a multi-generational family laughing together in a sunlit garden, soft golden hour lighting, cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApyEs_T_MwCKpuI42laTwjWTPPkxpI272IJ2lMXSdrzHRCnXB_2prWMG-zNA_0Unm2soLYY49SPrCYSKqv-AC5H4LINYQTfooM3d7mAzOq_SP5-JtqYQSCu0L9z6V4TZHwCUsFlsne_dhSm57BMMNE312Z1YWdm9CeyEmwO8isIYANFLKz_fTXxqE1gdQU6xGa0rJyl0ro_agamrO9iiHIWsliuK19D4rW5EN9DpAFOW84-jLNRZJfwOUsMWvddgo8Eux3xShz_DM"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 w-full">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-tight mb-8 tracking-tighter">
+                    45 años cuidando tu salud
+                </h1>
+<div class="flex flex-wrap gap-12 mb-12">
+<div class="text-white">
+<div class="text-4xl font-headline font-bold">45+</div>
+<div class="text-sm font-label opacity-80 uppercase tracking-widest">Años de Trayectoria</div>
+</div>
+<div class="text-white">
+<div class="text-4xl font-headline font-bold">2.8k+</div>
+<div class="text-sm font-label opacity-80 uppercase tracking-widest">Profesionales</div>
+</div>
+<div class="text-white">
+<div class="text-4xl font-headline font-bold">13k+</div>
+<div class="text-sm font-label opacity-80 uppercase tracking-widest">Prestadores</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-secondary-container text-primary font-bold px-8 py-4 rounded-full transition-transform hover:scale-105">Elegir mi Plan</button>
+<button class="border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-all">Ver Cartilla Médica</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Access Cards -->
+<section class="relative z-20 -mt-24 max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:scale-102 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">person_add</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Quiero asociarme</h3>
+<div class="flex items-center text-secondary font-bold text-sm gap-2">
+                    Comenzar ahora <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:scale-102 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">info</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Información de tu plan</h3>
+<div class="flex items-center text-secondary font-bold text-sm gap-2">
+                    Ver coberturas <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:scale-102 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">devices</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Gestiones Online</h3>
+<div class="flex items-center text-secondary font-bold text-sm gap-2">
+                    Acceder <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:scale-102 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">medical_services</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-2">Cartilla Médica</h3>
+<div class="flex items-center text-secondary font-bold text-sm gap-2">
+                    Buscar médicos <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+<p class="text-center text-on-surface-variant font-label text-sm uppercase tracking-widest mb-12">Nuestras Alianzas Estratégicas</p>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="text-xl font-bold font-headline text-primary-container">SANATORIO ALLENDE</span>
+<span class="text-xl font-bold font-headline text-primary-container">HOSPITAL ITALIANO</span>
+<span class="text-xl font-bold font-headline text-primary-container">CLÍNICA ROMAGOSA</span>
+<span class="text-xl font-bold font-headline text-primary-container">OULTON</span>
+<span class="text-xl font-bold font-headline text-primary-container">VÉLEZ SARSFIELD</span>
+</div>
+</section>
+<!-- Benefits Slider (Magazine Style) -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary max-w-xl">
+                Beneficios diseñados para tu estilo de vida.
+            </h2>
+</div>
+<div class="flex gap-8 px-6 md:px-12 overflow-x-auto no-scrollbar snap-x">
+<div class="flex-none w-[85%] md:w-[60%] snap-center rounded-xl overflow-hidden bg-white editorial-shadow flex flex-col md:flex-row h-[500px]">
+<div class="md:w-3/5 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Luxury travel scene with high-end luggage on a marble floor and a modern airport lounge background, high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQ0AdyAwyLAqzz5ruTNCP5f14QTcdZjSZ3HP-2NqTfENkuTb0Pia2WuYt9qWmg1Qv2cDd7nD153BCVgSvxpD2RGMmWzDTnnF-4GuPIIZHmINKPjE6FcoV_Aw61GsiB1MpzC5m-vKyFw39Ya2c_UuCzZWqUhI2POqZLmrtmGKB58qS1uOgJuE7KRJGhv-qPACkLn6WIvfvxxJxe46xuGoQ-nP8-qGTlinN3fRVNMB7M6Gurhbtj5Zk8wWdyi7Mwn4eu7I3_Je_abU"/>
+</div>
+<div class="md:w-2/5 p-12 flex flex-col justify-center">
+<span class="text-secondary font-bold uppercase text-xs tracking-widest mb-4">Exclusivo</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-6">Asistencia al Viajero Internacional</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Tranquilidad absoluta en cada destino con cobertura médica global de primer nivel.</p>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Leer más <span class="material-symbols-outlined">arrow_right_alt</span></button>
+</div>
+</div>
+<div class="flex-none w-[85%] md:w-[60%] snap-center rounded-xl overflow-hidden bg-white editorial-shadow flex flex-col md:flex-row h-[500px]">
+<div class="md:w-3/5 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Elegant wellness center interior with soft lighting, natural wood textures, and a person meditating in distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASxh91zUb2ua_H6h62MbDhnB7pH_abzg-Aa85UfPmblynlg8plpDLON719yvnKYpUz-_YuOmDMpomCWAGShXE02fHyySKO0BaGpJyw7TomKfo3_qvo31mJt3jYBIhBIjP3MKZQkys2nDAGqYSOz3jUMlK21_If19RMdifgjcdoJK8O5vY4nvJ2Fdwig04jo1b8rxh4sh4abYW70yuZ13PX9gyOEk7ovNa5411puZ3sIPwpeQNd0yO2SOGXOhcmDlzMlRs_dz5fhbI"/>
+</div>
+<div class="md:w-2/5 p-12 flex flex-col justify-center">
+<span class="text-secondary font-bold uppercase text-xs tracking-widest mb-4">Salud</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-6">Club de Bienestar PREME</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Descuentos exclusivos en gimnasios, spas y centros de nutrición de todo el país.</p>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Leer más <span class="material-symbols-outlined">arrow_right_alt</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Plan Cards -->
+<section class="py-32 max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary mb-4">Planes que evolucionan con vos</h2>
+<p class="text-on-surface-variant">Encontrá la cobertura perfecta para cada etapa de tu vida.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Plan Joven -->
+<div class="bg-surface p-1 rounded-2xl editorial-shadow hover:-translate-y-4 transition-all duration-500 group">
+<div class="bg-secondary-fixed rounded-xl p-8 h-full">
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Energetic young woman with headphones walking through a vibrant urban street, sunset lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzGURXEGux3fcWFscPTyDNPBRJ214r73D1XQEidKNWIBk3qVSPsMqfwo7FbK3X2zRwjDQ3VTogst3E42EtoPW_-mjMfaBsN44oc8oLP5TSjpBIA19XIf_lt20vTBuCLSATpKA-bX8yjBlwAa5fqJ0GhXNDFITR6g7gxoHBSf_ncVNG-KLlDad1TknyOL3PGkiQC3WJBBpPNtByoLrz-gW9ashQeK6BglZQxFbPPxHN2Ol165zoCMBWLRtqHhGjhSi0SBQb3_nJXE0"/>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Joven</h3>
+<p class="text-sm text-on-secondary-fixed-variant mb-6 leading-relaxed">Libertad y agilidad para tus primeros pasos independientes.</p>
+<ul class="space-y-3 mb-10">
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-secondary text-lg">check_circle</span> 100% digital</li>
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-secondary text-lg">check_circle</span> Consultas online 24/7</li>
+</ul>
+<button class="w-full py-4 bg-white text-primary font-bold rounded-full group-hover:bg-primary group-hover:text-white transition-colors">Conocer Plan</button>
+</div>
+</div>
+<!-- Plan Coral -->
+<div class="bg-surface p-1 rounded-2xl editorial-shadow hover:-translate-y-4 transition-all duration-500 group">
+<div class="bg-white rounded-xl p-8 h-full">
+<div class="h-48 mb-8 rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-on-tertiary-container/10"></div>
+<img class="w-full h-full object-cover" data-alt="Modern professional working in a minimalist home office with large windows and plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0ZCw1Iwq3hGVcB7NTPThlfZlY9gTRDOhEP6-I70gAXDu57n-c1tzyHgmjXXu3zqIg1VvTdDar4H84fECOcZzyK924gKfSt83dEp_Nvt6tV3SUwyisazRL3fWwwoUyQLWMIOCaBZNZ1p_1HxqsuAIB9GRypf2DqAuQ5HxUU3NfLAsr6hjMlJKtKYo1vmtcl6KiDlRMZ9yzEN4EUN0Dy9hlaN-2R5xpBK4XSp58zhalpTtn1RCt8fTumFdCWfQkrs4mnQlf3lgJ3BY"/>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Coral</h3>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">El equilibrio perfecto entre costo y prestadores de alta gama.</p>
+<ul class="space-y-3 mb-10">
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-on-tertiary-container text-lg">check_circle</span> Cartilla Seleccionada</li>
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-on-tertiary-container text-lg">check_circle</span> Odontología Integral</li>
+</ul>
+<button class="w-full py-4 bg-on-tertiary-container text-white font-bold rounded-full transition-transform hover:scale-105">Conocer Plan</button>
+</div>
+</div>
+<!-- Plan Integral -->
+<div class="bg-surface p-1 rounded-2xl editorial-shadow hover:-translate-y-4 transition-all duration-500 group">
+<div class="bg-white rounded-xl p-8 h-full border-2 border-emerald-500/20">
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A happy couple with their child in a modern, sunlit living room, playing and laughing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZB2h9YfbsdVA2WTMb1WmqUmntZkVAwYkzc_fDlvEWRfX9lUUQGW7WP7Y1MmcK1DKvGIsoapStyMZSfUd1Q_QGYi-QA2Agc90_wsrTkhp3i3HK0x_dO7j2BWaGZMoZPxIt--YxMrDn19GW4TopeNy5nH-CrAYQ_3M-YigpoKzGK2g6NpQER8qPgFaWaw9fEQhACQbH4iynhSpg8KfhM3SFjYf1vSWXl3sGq7oHs6bF22eeQwz5SC8YKsQe7OHCcDhuJQQpF41WwBA"/>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">Integral</h3>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Protección total para vos y toda tu familia sin copagos.</p>
+<ul class="space-y-3 mb-10">
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-emerald-600 text-lg">check_circle</span> Internación VIP</li>
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-emerald-600 text-lg">check_circle</span> Maternidad Extendida</li>
+</ul>
+<button class="w-full py-4 bg-emerald-600 text-white font-bold rounded-full transition-transform hover:scale-105">Conocer Plan</button>
+</div>
+</div>
+<!-- Plan Máximo -->
+<div class="bg-primary p-1 rounded-2xl editorial-shadow hover:-translate-y-4 transition-all duration-500 group">
+<div class="bg-primary text-white rounded-xl p-8 h-full relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-[#9B59B6]/20 blur-3xl"></div>
+<div class="h-48 mb-8 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of a luxury watch on a wrist with a dark suit, premium and elegant atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW_-FVyELcNcR2kyGn0nsHc72kW7VB2fkXGm4nIGeER9iIvQDcpAy8MpuuNDEkWZ2s-XoMDRDhz1Lrw9n0EOQmiAfcp4hT-SGuIlcKiJD7usLfswQHG6npke1qs5wY9fqE0xzeeghAN3_2zwwLGy1YgMW7SWyfr1PHAHMZX-Wpfe5ORExr06wG1NnAtTBX50VOxXPIOXMSDHQJBRDA2gZhT8-3EKagWSmYprkbj4IkQw58CKIotpcwm7_r4SnBkCDS8b83KwtYt0U"/>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2">Máximo</h3>
+<p class="text-sm opacity-70 mb-6 leading-relaxed">Nuestra propuesta más exclusiva. Sin límites ni fronteras.</p>
+<ul class="space-y-3 mb-10">
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-[#9B59B6] text-lg">stars</span> Reintegros Libres</li>
+<li class="flex items-center gap-2 text-sm font-medium"><span class="material-symbols-outlined text-[#9B59B6] text-lg">stars</span> Cobertura Médica Global</li>
+</ul>
+<button class="w-full py-4 bg-white text-primary font-bold rounded-full hover:bg-secondary-container hover:text-primary transition-colors">Conocer Plan Elite</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Promo Banner -->
+<section class="py-12 max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="relative rounded-[2rem] overflow-hidden bg-primary h-[400px] flex items-center">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Young man smiling warmly while looking at his smartphone, soft indoor lighting, relaxed premium lifestyle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1SCa55wAI-ByNacWcaNWLTfFxqLAP5NiONdj0b7InEXiQkZNN8tkUtNSm16IMjA5RbNrbFOH8VEAqxCfWSHMbr8Edf8SWgZyrZVnzoDakubUrjnkgM44qNwpOM1JpsdCnLlW-HxjhtmsVTEgofH8jpQAn-1CjNASlh6Y_jkXKuld6qKR0eN4fCrRuiuYxjHFVC7MQTprmmutquRufw5jqTxxLMoI_nwtE3-TPriL8cQjzI__q04U2ZLSp1VZQ19NKXBqmUKIajoQ"/>
+<div class="relative z-10 px-12 md:px-24">
+<span class="text-secondary-container font-bold tracking-widest uppercase text-sm mb-4 block">Oportunidad Única</span>
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold text-white mb-6 leading-tight">
+                    30% OFF <span class="font-normal italic text-secondary-fixed">en tu plan premium</span>
+</h2>
+<p class="text-white/80 max-w-md mb-8 text-lg">Durante los primeros 6 meses de tu afiliación online. Válido para Plan Coral e Integral.</p>
+<button class="bg-white text-primary font-bold px-10 py-4 rounded-full hover:bg-secondary-container transition-all">Solicitar Beneficio</button>
+</div>
+</div>
+</section>
+<!-- App Showcase (Revolut Style) -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2">
+<h2 class="text-5xl font-headline font-extrabold text-primary mb-8 leading-tight">Tu credencial, siempre con vos.</h2>
+<p class="text-lg text-on-surface-variant mb-12 leading-relaxed">Gestioná turnos, accedé a tu cartilla y presentá tu credencial digital desde una sola app. Diseñada para que tu salud fluya sin esperas.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-white p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4">qr_code</span>
+<h4 class="font-bold text-primary mb-2">Credencial Digital</h4>
+<p class="text-sm text-on-surface-variant">Validación instantánea con código QR en todos nuestros prestadores.</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4">video_chat</span>
+<h4 class="font-bold text-primary mb-2">Telemedicina</h4>
+<p class="text-sm text-on-surface-variant">Médico online por guardia o turnos programados en minutos.</p>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative flex justify-center">
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-[120px] scale-150"></div>
+<div class="relative z-10 w-full max-w-[320px] -rotate-6 transform hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-auto drop-shadow-[0_35px_60px_rgba(9,47,87,0.3)]" data-alt="High-end smartphone mockup showing a clean medical app interface with a blue digital credential and QR code" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNhRnIYvqUxNLThnjMjog71noeUlziiOMoWqKLgeiWZDwuIlCpjJ47aQxg4Gi8zf7hr4RPYYje1X9Rkl_4tZPqZabxXRez34Rmi4EbFwzCEBGC5yvToLB6VayKY0S_cLFqnBokMBOk2KyDrFKR7zEddC9zEFqyP4Za7lSd1z_H073QzUPcq4cLMq6_ZB0BFa9VzBElrVriXDtvBue-eehJPt6Iq390AUs8EKfKxyiy-VvcvTmFbaEtw1wXsEgBIMCIM4GwXqpUwpI"/>
+<!-- Glassmorphism Floating Cards -->
+<div class="absolute -right-20 top-1/4 premium-blur bg-white/60 p-4 rounded-xl editorial-shadow border border-white/20 w-48 hidden md:block">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="text-xs font-bold text-primary">Turno Confirmado</span>
+</div>
+<p class="text-[10px] text-on-surface-variant font-medium">Mañana, 09:30 AM en Sanatorio Allende</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section (Editorial) -->
+<section class="py-32 max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-secondary font-bold uppercase text-xs tracking-widest mb-2 block">Magazine</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-primary">Viví con Bienestar</h2>
+</div>
+<a class="hidden md:block font-bold text-primary underline underline-offset-8" href="#">Ver todos los artículos</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="relative h-[500px] rounded-2xl overflow-hidden mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of organic healthy food ingredients like avocados, greens, and grains on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6J-hn5g-875aJitGi_W44gwR8EdDb_BICGk62-oGavaQmueHO9uu05vv_HlDpqDetEUDmpik3dlKrvhVn1UTf_PLRZ1V9gXJSmex7U8KBE-nLUAhnZ3g0HJDCsH1QBMYfpvtqEntiQOkGhkDmUU9rbgqK8XOR-meD4O6_xsHlLJzQiHHfr6hs_K6drH6yToYvpf_MQXFofT3v9yKnSz1WSKKP7UGtlzmYGM5L75vBWHrJ1d7MROhxRI4B0Okz5vGFSOY-MuNSMIE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-12">
+<div>
+<span class="bg-secondary-container text-primary px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block">Nutrición</span>
+<h3 class="text-3xl md:text-4xl font-headline font-extrabold text-white mb-4">Los súper alimentos que transformarán tu energía diaria</h3>
+<p class="text-white/70 max-w-xl">Descubrí cómo pequeños cambios en tu dieta pueden generar un impacto masivo en tu rendimiento físico y mental.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 space-y-8">
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="h-48 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Person jogging through a misty forest at dawn, moody atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCia9CiFnupLyExFDjCwq5sz-ofVhi6CC86sCl3xNT2jU-SGZ7ki6Rz1GsMfTaWXWBhNvWl_VbpXXw09Tjtm8YXBU4zAsv61PJpqtf6TfpVA2hekVzozZydem4rKzDPGSaMqbi-oZX7NigeW6iugKIkG4aGwFv1W63oU38PHCJOwSS16KMU_vUkkzxnFD2KWfKWN336lPDmfGzjF-NNyh6OBiUhyJTvlJyMFPzSal-f9e0jCjNXaRZmH9NXCaM0_LOkYpE-g9QB91c"/>
+</div>
+<div>
+<span class="text-on-tertiary-container font-bold text-xs uppercase mb-2 block">Hábitos</span>
+<h4 class="text-xl font-headline font-bold text-primary group-hover:text-secondary transition-colors">La ciencia detrás de una rutina de sueño perfecta</h4>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer border-t border-outline-variant/20 pt-8">
+<div class="h-48 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Close up of human hands holding a warm mug of tea, cozy indoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC4m-CJ5NivEbV6myte3ajyNQb-I_WbRWu9bvsPc6NpKZo9yTWDx26pwYEatLtXkki9k6-1iVkODVslS49GimyqxDWJzX1q3q66-kEhO5DhUCGI-7725DbKkLn6wXADCSvnOrRA77T_R4Jk-5i5s4FE4ptgYDmyz8W3fjZmwcGTXFKv1gSS3GK7ETgat6Icj-VG9T8uE2g3mPyPa6ivbRz5sH9W-_-tEqeYjPnUodE-0lRawe75Ta3MUtjaZRxOjGNlHZZKDoQNGU"/>
+</div>
+<div>
+<span class="text-on-tertiary-container font-bold text-xs uppercase mb-2 block">Salud Mental</span>
+<h4 class="text-xl font-headline font-bold text-primary group-hover:text-secondary transition-colors">Mindfulness para reducir el estrés en la oficina</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#092F57] dark:bg-black w-full pt-24 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="col-span-1 md:col-span-1">
+<div class="text-3xl font-black text-white mb-8">PREME</div>
+<p class="text-slate-400 font-['Manrope'] text-sm leading-relaxed mb-6">Expertos en salud desde 1980. Brindando la mejor cobertura médica con la calidez de siempre.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">camera</span>
+</div>
+</div>
+</div>
+<div>
+<h5 class="text-white font-headline font-bold mb-6">Nuestra Red</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Cartilla Médica</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Sucursales</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Farmacias</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Emergencias</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-headline font-bold mb-6">Empresa</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Quiénes somos</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Prensa</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">RRHH / Sumate</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-headline font-bold mb-6">Soporte</h5>
+<ul class="space-y-4">
+<li><a class="text-[#33baf0] hover:text-white transition-colors font-['Manrope'] text-sm font-bold" href="#">Botón de Arrepentimiento</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Términos y Condiciones</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Defensa al Consumidor</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm" href="#">Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-slate-800 max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 font-['Manrope'] text-xs uppercase tracking-widest">© 2026 PREME Medicina Privada. Todos los derechos reservados.</p>
+<div class="flex items-center gap-6">
+<img class="h-8 opacity-40 grayscale" data-alt="Superintendencia de Servicios de Salud official logo, grayscale and subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyM72Lfzu3zj8C0Kr5Z_kR8rjnROJjzSVxLSDxHkC7rAuNm_45Le1lF0oClf9XLnTJ7cMp_gA099W_GcQvVdKQb_l8oHvs0qKAElz4c4tUzeEY2UxaL7klKz6bVfaJR4DMVz0Pg3hXO5Y601jlnqAWTGwQ_Y9SxoTXNYhuPFBtYkmcq-LDUH-mAVFo9XeQZDMkCn6binnzn-xDjwq2mXFVi2a1lnY32ejgWG2jh7gcGpxFC0myBaoq4lhsQqpxI4DnhQKCvRb2nfg"/>
+<span class="text-slate-500 text-[10px]">Superintendencia de Salud RNEMP 123456</span>
+</div>
+</div>
+</footer>
+</body></html>
