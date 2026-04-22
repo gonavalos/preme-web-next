@@ -49,7 +49,7 @@ export default function PhoneMock() {
                 alt="PREME"
                 width={220}
                 height={56}
-                className="h-10 w-auto relative brightness-0 invert"
+                className="h-7 w-auto relative brightness-0 invert"
               />
               <div className="ps-card-chip">
                 <div /><div /><div /><div />
