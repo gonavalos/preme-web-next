@@ -54,15 +54,14 @@ export default function Home() {
         {/* 2. Quick Access */}
         <QuickAccess />
 
-        {/* 3. Planes — lo más importante, arriba */}
-        <section className="py-16 md:py-24 bg-[#f5f8fa]">
+        {/* 3. Planes — white */}
+        <section className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
             <SectionHeader
               kicker="Nuestros planes"
-              title="Planes diseñados para"
-              titleItalic="tu vida."
+              title="Planes diseñados para tu vida."
               description="Elegí la cobertura que mejor se adapta. Un asesor te ayuda gratis."
-              align="split"
+              align="center"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
               {planes.map((plan, idx) => (
@@ -72,22 +71,30 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 4. Confianza — logos + stats */}
-        <TrustSection />
+        {/* 4. Confianza — gris */}
+        <div className="bg-[#f5f8fa]">
+          <TrustSection />
+        </div>
 
-        {/* 5. Promo banner */}
-        <PromoBanner />
+        {/* 5. Promo banner — white */}
+        <div className="bg-white">
+          <PromoBanner />
+        </div>
 
-        {/* 6. App credencial */}
-        <AppBanner />
+        {/* 6. App credencial — gris */}
+        <div className="bg-[#f5f8fa]">
+          <AppBanner />
+        </div>
 
-        {/* 7. Beneficios */}
+        {/* 7. Beneficios — white */}
         <section className="py-14 md:py-20 bg-white overflow-hidden">
           <BenefitsSlider />
         </section>
 
-        {/* 8. Blog — al final, menor protagonismo */}
-        <BlogCarousel />
+        {/* 8. Blog — gris */}
+        <div className="bg-[#f5f8fa]">
+          <BlogCarousel />
+        </div>
       </main>
 
       <WhatsAppFab />

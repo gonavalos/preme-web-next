@@ -73,19 +73,19 @@ export default function BenefitsSlider() {
           </h3>
         </Link>
 
-        {/* Color sky — Farmacias */}
+        {/* Color sky — Farmacias (más ancho) */}
         <Link
           href="/planes"
-          className="group col-span-1 md:col-span-2 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#33BAF0] text-white transition-transform duration-300 hover:-translate-y-1"
+          className="group col-span-2 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#33BAF0] text-white transition-transform duration-300 hover:-translate-y-1"
         >
-          <div className="text-[34px] font-medium leading-none tracking-tight [font-family:Georgia,serif] mb-auto opacity-95">
+          <div className="text-[40px] font-medium leading-none tracking-tight [font-family:Georgia,serif] mb-auto opacity-95">
             −50%
           </div>
           <span className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-85 mb-1.5">
             Farmacias
           </span>
           <h3 className="text-lg font-bold leading-tight tracking-tight">
-            Hasta 50% off
+            Hasta 50% off en farmacias
           </h3>
           <p className="mt-1.5 text-xs text-white/80 leading-snug line-clamp-2">
             Red adherida en toda Córdoba.
@@ -95,7 +95,7 @@ export default function BenefitsSlider() {
         {/* Light — App / Credencial */}
         <Link
           href="#app-preme"
-          className="group col-span-1 md:col-span-2 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#f5f8fa] text-[#092f57] border border-[#092f57]/[0.06] transition-transform duration-300 hover:-translate-y-1"
+          className="group col-span-1 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#f5f8fa] text-[#092f57] border border-[#092f57]/[0.06] transition-transform duration-300 hover:-translate-y-1"
         >
           <div className="w-10 h-10 rounded-xl bg-white text-[#33BAF0] grid place-items-center mb-auto shadow-[0_4px_10px_-4px_rgba(9,47,87,0.1)]">
             <FaMobileAlt className="text-[22px]" />
@@ -111,7 +111,7 @@ export default function BenefitsSlider() {
         {/* Color green — Odontología */}
         <Link
           href="/planes"
-          className="group col-span-1 md:col-span-2 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#2E9B71] text-white transition-transform duration-300 hover:-translate-y-1"
+          className="group col-span-1 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#2E9B71] text-white transition-transform duration-300 hover:-translate-y-1"
         >
           <div className="text-[34px] font-medium leading-none tracking-tight [font-family:Georgia,serif] mb-auto opacity-95">
             24/7
@@ -130,7 +130,7 @@ export default function BenefitsSlider() {
         {/* Color purple — Wellness */}
         <Link
           href="/planes"
-          className="group col-span-2 md:col-span-2 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#864D8D] text-white transition-transform duration-300 hover:-translate-y-1"
+          className="group col-span-2 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#864D8D] text-white transition-transform duration-300 hover:-translate-y-1"
         >
           <div className="text-[34px] font-medium leading-none tracking-tight [font-family:Georgia,serif] mb-auto opacity-95">
             +15
