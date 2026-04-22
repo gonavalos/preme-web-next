@@ -1,84 +1,149 @@
-// app/(marketing)/components/AppBanner.tsx
 import Image from "next/image";
+
+const feats = [
+  {
+    n: "01",
+    t: "Credencial digital en tu celular",
+    s: "Compartila con tu grupo familiar en segundos.",
+  },
+  {
+    n: "02",
+    t: "Cartilla con geolocalización",
+    s: "Encontrá el prestador más cercano en el mapa.",
+  },
+  {
+    n: "03",
+    t: "Autorizaciones al instante",
+    s: "Sin colas, sin papeles, sin esperas.",
+  },
+  {
+    n: "04",
+    t: "Turnos y cuenta corriente",
+    s: "Todo en un solo lugar, 24/7.",
+  },
+];
 
 export default function AppBanner() {
   return (
-    <section className="relative overflow-visible py-8 md:py-12">
-      {/* Franja gris detrás: sólo md+ para que el mockup “salga” por arriba/abajo */}
-      <div className="absolute inset-x-0 top-1/2 hidden h-[520px] -translate-y-1/2 bg-[#f5f5f5] md:block" />
-
-      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 md:grid-cols-2 md:px-6">
-        {/* IZQUIERDA: mockup (debajo en mobile) */}
-        <div className="order-2 flex justify-center md:order-1 md:justify-start md:-mt-10 md:-mb-10">
+    <section id="app-preme" className="py-20 md:py-28 bg-gradient-to-b from-white to-[#f5f8fa]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid gap-12 md:gap-16 md:grid-cols-2 items-center">
+        {/* IZQUIERDA: mockup */}
+        <div className="order-2 md:order-1 flex justify-center md:justify-start">
           <Image
             src="/assets/credencialpremev22.png"
             alt="App PREME con credencial digital"
             width={560}
             height={880}
             priority
-            className="h-auto w-[81%] max-w-[420px] drop-shadow-2xl md:w-full md:max-w-[520px]"
+            className="h-auto w-[85%] max-w-[420px] drop-shadow-2xl md:w-full md:max-w-[480px]"
           />
         </div>
 
-        {/* DERECHA: texto (arriba en mobile) */}
-        <div className="order-1 rounded-2xl bg-[#f5f5f5] p-6 text-center md:order-2 md:bg-transparent md:p-0 md:text-left">
-          <h2 className="text-3xl font-bold text-primary md:text-4xl">
-            Tené siempre a mano
+        {/* DERECHA: texto */}
+        <div className="order-1 md:order-2">
+          {/* Kicker */}
+          <div className="inline-flex items-center gap-2.5 mb-5">
+            <span className="w-10 h-px bg-[#33BAF0]" />
+            <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
+              App PREME
+            </span>
+          </div>
+
+          {/* Título multi-línea con italic accent */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#092f57] leading-[0.98] tracking-tight text-balance mb-5">
+            <span className="block">Tu salud.</span>
+            <span className="block">
+              En{" "}
+              <em className="font-medium italic text-[#33BAF0] [font-family:Georgia,serif]">
+                la palma
+              </em>
+            </span>
+            <span className="block">
+              de{" "}
+              <em className="font-medium italic text-[#33BAF0] [font-family:Georgia,serif]">
+                tu mano.
+              </em>
+            </span>
           </h2>
-          <h3 className="mt-1 text-3xl font-bold text-[#33BAF0] md:text-4xl">
-            tu Credencial Digital
-          </h3>
 
-          <ul className="mt-6 space-y-3 text-base text-gray-700 md:text-lg">
-            {[
-              "Práctica, rápida y segura.",
-              "Amigable con el medioambiente.",
-              "Prestadores con geolocalización.",
-              "Consulta de autorizaciones y cuenta corriente.",
-              "Enlaces e información con teléfonos útiles.",
-              "Compartila con tu grupo familiar.",
-            ].map((t, i) => (
-              <li key={i} className="flex justify-center gap-3 md:justify-start">
-                <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-600">
-                  ✓
-                </span>
-                {t}
-              </li>
+          <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
+            Gestioná todo desde un solo lugar. Sin llamadas, sin papeles, sin
+            esperas.
+          </p>
+
+          {/* Features list — row style */}
+          <div className="space-y-5 mb-8">
+            {feats.map((f) => (
+              <div key={f.n} className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-xl bg-white ring-1 ring-[#092f57]/8 text-[#33BAF0] grid place-items-center shadow-[0_4px_10px_-4px_rgba(9,47,87,0.1)]">
+                  <span className="text-[13px] font-bold [font-family:Georgia,serif]">
+                    {f.n}
+                  </span>
+                </div>
+                <div>
+                  <div className="text-[15px] font-bold text-[#092f57] leading-snug">
+                    {f.t}
+                  </div>
+                  <div className="text-sm text-gray-500 leading-snug mt-0.5">
+                    {f.s}
+                  </div>
+                </div>
+              </div>
             ))}
+          </div>
 
-            {/* Badges de descarga con links */}
-            <li className="mt-4 flex items-center justify-center gap-3 md:justify-start">
-              <a
-                href="https://apps.apple.com/ar/app/preme/id1546369328"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Descargar Preme en App Store"
+          {/* Store badges */}
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="https://apps.apple.com/ar/app/preme/id1546369328"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Descargar Preme en App Store"
+              className="inline-flex items-center gap-3 bg-[#092f57] text-white px-5 py-2.5 rounded-xl hover:bg-[#0a3d6e] transition-colors"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-7 h-7"
               >
-                <Image
-                  src="/assets/downloadappstore.svg"
-                  alt="Descargar en App Store"
-                  width={150}
-                  height={46}
-                  className="h-auto w-[150px]"
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              <div className="text-left leading-tight">
+                <div className="text-[10px] opacity-70">Descargá en</div>
+                <div className="text-sm font-bold">App Store</div>
+              </div>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=ar.com.gloui.gecros_mobile_preme"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Descargar Preme en Google Play"
+              className="inline-flex items-center gap-3 bg-[#092f57] text-white px-5 py-2.5 rounded-xl hover:bg-[#0a3d6e] transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-7 h-7">
+                <path
+                  fill="#EA4335"
+                  d="M3.09 20.5l9.5-9.5L3.5 2.5A1.5 1.5 0 0 0 3 3.5v17a1.5 1.5 0 0 0 .09.5z"
                 />
-              </a>
-
-              <a
-                href="https://play.google.com/store/apps/details?id=ar.com.gloui.gecros_mobile_preme"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Descargar Preme en Google Play"
-              >
-                <Image
-                  src="/assets/downloadgooglechrome.svg"
-                  alt="Descargar en Google Play"
-                  width={170}
-                  height={50}
-                  className="h-auto w-[170px]"
+                <path
+                  fill="#FBBC04"
+                  d="M17.5 12l-4.91-1-9.5 9.5c.14.15.39.25.69.25a.9.9 0 0 0 .43-.11l14-8z"
                 />
-              </a>
-            </li>
-          </ul>
+                <path
+                  fill="#34A853"
+                  d="M21.5 10.4l-4-2.4-4.91 4 4.91 4 4-2.4a1.5 1.5 0 0 0 0-2.7z"
+                />
+                <path
+                  fill="#4285F4"
+                  d="M13.09 12l-9.5-9.5a.9.9 0 0 0-.09-.01 1.5 1.5 0 0 0-.5.1l13 7.41-4.91 2z"
+                />
+              </svg>
+              <div className="text-left leading-tight">
+                <div className="text-[10px] opacity-70">Descargá en</div>
+                <div className="text-sm font-bold">Google Play</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>

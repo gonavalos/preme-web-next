@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 const logos = [
   { name: "Sanatorio Allende", src: "/assets/prestadores/sanatorio-allende.png" },
@@ -18,20 +19,21 @@ export default function TrustSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#092f57] mb-3 tracking-tight">
-            Confían en PREME
-          </h2>
-          <p className="text-gray-500 text-base sm:text-lg">
-            Las instituciones de salud más prestigiosas de Córdoba.
-          </p>
-        </div>
+        <SectionHeader
+          kicker="Red de prestadores"
+          title="Confían en"
+          titleItalic="PREME."
+          description="Las instituciones de salud más prestigiosas de Córdoba."
+          align="split"
+        />
 
         {/* Logos */}
         <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16 mb-14">
           {logos.map((logo) => (
-            <div key={logo.name} className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+            <div
+              key={logo.name}
+              className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+            >
               <Image
                 src={logo.src}
                 alt={logo.name}

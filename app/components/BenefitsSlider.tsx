@@ -3,31 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaMobileAlt } from "react-icons/fa";
+import SectionHeader from "./SectionHeader";
 
 export default function BenefitsSlider() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-      {/* Header — kicker + title + description */}
-      <div className="grid gap-8 md:gap-10 items-end mb-10 md:mb-14 md:grid-cols-[1.5fr_1fr]">
-        <div>
-          <div className="inline-flex items-center gap-2.5 mb-4">
-            <span className="w-10 h-px bg-[#33BAF0]" />
-            <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
-              Beneficios
-            </span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#092f57] leading-[0.98] tracking-tight text-balance">
-            Mucho más que{" "}
-            <em className="font-medium italic text-[#33BAF0] [font-family:Georgia,serif]">
-              cobertura médica.
-            </em>
-          </h2>
-        </div>
-        <p className="text-base sm:text-[17px] text-gray-500 leading-relaxed text-pretty">
-          Cada plan PREME suma beneficios en farmacia, viajes, wellness y
-          atención 24/7. Sin costo extra. Sin letra chica.
-        </p>
-      </div>
+      <SectionHeader
+        kicker="Beneficios"
+        title="Mucho más que"
+        titleItalic="cobertura médica."
+        description="Cada plan PREME suma beneficios en farmacia, viajes, wellness y atención 24/7. Sin costo extra. Sin letra chica."
+        align="split"
+      />
 
       {/* Bento grid */}
       <div className="grid grid-cols-2 md:grid-cols-6 auto-rows-[200px] md:auto-rows-[180px] gap-3 md:gap-4">
