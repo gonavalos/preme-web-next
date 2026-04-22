@@ -10,8 +10,8 @@ const feats = [
 
 export default function AppBanner() {
   return (
-    <section id="app-preme" className="py-20 md:py-28 overflow-hidden">
-      <div className="max-w-7xl bg-[#f5f8fa] mx-auto px-4 sm:px-6 md:px-8 grid gap-14 md:gap-20 lg:gap-28 md:grid-cols-[minmax(280px,340px)_1fr] items-center">
+    <section id="app-preme" className="py-20 bg-[#f5f8fa] md:py-28 overflow-hidden">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 md:px-8 grid gap-14 md:gap-20 lg:gap-28 md:grid-cols-[minmax(280px,340px)_1fr] items-center">
         {/* Texto — primero en mobile, segundo en desktop */}
         <div className="order-2 md:order-2 md:pl-4 lg:pl-8">
           {/* Kicker */}
