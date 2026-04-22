@@ -85,9 +85,12 @@ body {
 /* ═══════════ PHONE MOCKUP (App PREME) ═══════════ */
 .phone-mock {
   position: relative;
-  width: min(340px, 90vw);
+  width: min(280px, 85vw);
   aspect-ratio: 9 / 19;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .phone-mock { width: 300px; }
 }
 .phone-frame {
   position: relative;

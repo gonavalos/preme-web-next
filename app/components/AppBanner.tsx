@@ -11,36 +11,36 @@ const feats = [
 export default function AppBanner() {
   return (
     <section id="app-preme" className="py-20 md:py-28 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid gap-16 md:gap-12 md:grid-cols-[1.05fr_1fr] items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid gap-14 md:gap-10 md:grid-cols-[minmax(280px,360px)_1fr] items-center">
         {/* Texto — primero en mobile, segundo en desktop */}
         <div className="order-2 md:order-2">
           {/* Kicker */}
-          <div className="inline-flex items-center gap-2.5 mb-3">
-            <span className="w-8 h-px bg-[#33BAF0]" />
-            <span className="text-[10px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
+          <div className="inline-flex items-center gap-3 mb-4">
+            <span className="w-10 h-px bg-[#33BAF0]" />
+            <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#33BAF0]">
               App PREME
             </span>
           </div>
 
           {/* Título */}
-          <h2 className="font-extrabold text-[#092f57] leading-[1.05] tracking-tight text-balance mb-4 text-[clamp(1.75rem,4vw,2.75rem)]">
+          <h2 className="font-extrabold text-[#092f57] leading-[1.05] tracking-tight text-balance mb-5 text-[clamp(2.25rem,5vw,3.75rem)]">
             Tu salud en{" "}
             <em className="font-medium italic text-[#33BAF0] [font-family:Georgia,serif]">
               la palma de tu mano.
             </em>
           </h2>
 
-          <p className="text-sm sm:text-base text-gray-500 leading-relaxed mb-6 max-w-md">
+          <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
             Gestioná todo desde un solo lugar. Sin llamadas, sin papeles, sin
             esperas.
           </p>
 
           {/* Features list */}
-          <ul className="space-y-2.5 mb-7">
+          <ul className="space-y-3 mb-8">
             {feats.map((f) => (
               <li
                 key={f}
-                className="flex items-start gap-3 text-[15px] text-[#092f57]"
+                className="flex items-start gap-3 text-[16px] sm:text-[17px] text-[#092f57]"
               >
                 <FaCheck className="mt-1 shrink-0 text-xs text-emerald-500" />
                 <span>{f}</span>
