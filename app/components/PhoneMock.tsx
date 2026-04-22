@@ -45,7 +45,7 @@ export default function PhoneMock() {
             <div className="ps-card-glow" />
             <div className="ps-card-top">
               <Image
-                src="/logoPreme3.png"
+                src="/logoPreme.png"
                 alt="PREME"
                 width={220}
                 height={56}
