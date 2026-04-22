@@ -32,19 +32,6 @@ export default function PhoneMock() {
           {/* Header */}
           <div className="ps-hdr">
             <div className="ps-brand">
-              <div className="ps-brand-mark">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="2.4"
-                  strokeLinecap="round"
-                >
-                  <path d="M12 3v18M3 12h18" />
-                </svg>
-              </div>
               <div>
                 <div className="ps-hi">Hola, Lucía</div>
                 <div className="ps-name">PREME</div>
@@ -60,9 +47,9 @@ export default function PhoneMock() {
               <Image
                 src="/logoPreme3.png"
                 alt="PREME"
-                width={140}
-                height={36}
-                className="h-8 w-auto relative"
+                width={220}
+                height={56}
+                className="h-14 w-auto relative"
               />
               <div className="ps-card-chip">
                 <div /><div /><div /><div />

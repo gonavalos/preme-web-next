@@ -314,10 +314,10 @@ body {
   animation: floaty 4s ease-in-out infinite;
 }
 .phone-badge-1 { top: 14%; right: -12%; animation-delay: 0s; }
-.phone-badge-2 { bottom: 12%; left: -18%; animation-delay: 1.5s; }
+.phone-badge-2 { bottom: -4%; left: -18%; animation-delay: 1.5s; }
 @media (max-width: 900px) {
   .phone-badge-1 { right: -4%; }
-  .phone-badge-2 { left: -4%; }
+  .phone-badge-2 { left: -4%; bottom: -6%; }
 }
 @keyframes floaty {
   0%, 100% { transform: translateY(0); }
