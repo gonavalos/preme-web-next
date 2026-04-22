@@ -11,13 +11,13 @@ export default function Hero() {
     <section className="relative isolate w-full h-[80vh] lg:h-[88vh] flex items-end overflow-hidden">
       {/* Background image */}
       <Image
-        src="/assets/hero/home/promo.png"
+        src="/assets/nuevas/hero.png"
         alt=""
         fill
         priority
         quality={90}
         sizes="100vw"
-        className="object-cover object-[55%_25%] lg:object-[55%_20%]"
+        className="object-cover object-[60%_30%] lg:object-[60%_25%]"
       />
 
       {/* Overlay — opacidad uniforme, sin gradient */}

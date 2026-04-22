@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "headerImageSrc": "/assets/planes/plancoralv2.png",
+      "headerImageSrc": "/assets/nuevas/plancoral.png",
       "headerImageAlt": "Plan Coral",
       "nombre": "Plan Coral",
       "descripcion": "Cobertura completa a un costo muy accesible",
@@ -42,7 +42,7 @@
     },
     {
       "id": 3,
-      "headerImageSrc": "/assets/planes/planintegral.png",
+      "headerImageSrc": "/assets/nuevas/planintegral.png",
       "headerImageAlt": "Plan Integral",
       "nombre": "Plan Integral",
       "descripcion": "El equilibrio perfecto",
@@ -62,7 +62,7 @@
     },
     {
       "id": 4,
-      "headerImageSrc": "/assets/planes/planmaximov3.png",
+      "headerImageSrc": "/assets/nuevas/planmaximook.png",
       "headerImageAlt": "Plan Máximo",
       "nombre": "Plan Máximo",
       "descripcion": "La cobertura más completa",
