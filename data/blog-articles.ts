@@ -486,12 +486,11 @@ export const articles: BlogArticle[] = [
     title: "Comer bien sin complicarse: guía de alimentación consciente",
     excerpt: "Comer sano no requiere dietas extremas ni restricciones imposibles.",
     more: "Tips prácticos, plato saludable, hidratación y lectura de etiquetas.",
-    image: "/assets/blog/articles/AdobeStock_708541044.jpeg",
+    image: "/assets/nuevas/blog/alimentacion-consciente/image1.png",
     category: "bienestar",
     date: "2026-03-10",
     reading: "5 min",
     author: "Equipo PREME",
-    imageNeedsReplacement: true,
     content: `
 <h2>Alimentarse bien es más simple de lo que parece</h2>
 <p>Vivimos bombardeados por dietas milagrosas, superalimentos de moda y restricciones que parecen diseñadas para complicarnos la vida. Pero la alimentación saludable no necesita ser extrema ni costosa. Se trata de hacer mejores elecciones, de a poco, y sostenerlas en el tiempo.</p>
@@ -507,6 +506,8 @@ export const articles: BlogArticle[] = [
   <li><strong>Un chorrito de grasa buena:</strong> aceite de oliva, palta o frutos secos.</li>
   <li><strong>Agua como bebida principal.</strong></li>
 </ul>
+
+<img src="/assets/nuevas/blog/alimentacion-consciente/imagen2.png" alt="Alimentación saludable" style="width:100%;border-radius:12px;margin:24px 0;" />
 
 <h3>Hidratación: lo que muchos subestiman</h3>
 <p>El cuerpo necesita alrededor de 2 litros de agua por día, más si hacés ejercicio o estamos en verano cordobés. Las señales de deshidratación leve incluyen dolor de cabeza, cansancio, falta de concentración y piel seca.</p>
@@ -545,6 +546,8 @@ export const articles: BlogArticle[] = [
   <li><strong>No te saltees comidas.</strong> Comer regularmente ayuda a mantener estable el nivel de azúcar en sangre y evita atracones.</li>
 </ul>
 
+<img src="/assets/nuevas/blog/alimentacion-consciente/imagen3.png" alt="Snacks saludables" style="width:100%;border-radius:12px;margin:24px 0;" />
+
 <h3>No se trata de perfección</h3>
 <p>Una alimentación saludable no significa comer impecable el 100% del tiempo. Se trata de que la mayoría de tus elecciones sean buenas. Un asado con amigos, un helado en familia o unas empanadas un domingo no arruinan nada si tu base diaria es sólida.</p>
 
@@ -558,7 +561,7 @@ export const articles: BlogArticle[] = [
     title: "Salud mental: cuándo pedir ayuda y por qué no esperar",
     excerpt: "Pedir ayuda profesional es un acto de valentía, no de debilidad.",
     more: "Señales de alerta, desmitificar la terapia y cobertura en PREME.",
-    image: "/assets/blog/articles/AdobeStock_290859782.jpeg",
+    image: "/assets/nuevas/blog/salud-mental-cuando-consultar/imagen1.png",
     category: "bienestar",
     date: "2026-03-17",
     reading: "5 min",
@@ -583,6 +586,8 @@ export const articles: BlogArticle[] = [
   <li><strong>Consumo de sustancias</strong> para "aguantar" o "desconectar".</li>
 </ul>
 
+<img src="/assets/nuevas/blog/salud-mental-cuando-consultar/imagen2.png" alt="Salud mental" style="width:100%;border-radius:12px;margin:24px 0;" />
+
 <h3>Psicólogo vs. psiquiatra: ¿cuál necesito?</h3>
 <p>Es una duda muy común. Acá va la diferencia simplificada:</p>
 <ul>
@@ -598,6 +603,8 @@ export const articles: BlogArticle[] = [
   <li><strong>"Tomar medicación psiquiátrica es ser débil":</strong> nadie cuestiona tomar medicación para la presión o la diabetes. La medicación psiquiátrica, cuando está bien indicada, corrige desequilibrios químicos reales.</li>
   <li><strong>"La terapia dura para siempre":</strong> muchos tratamientos tienen duración acotada. Depende del motivo de consulta y del enfoque terapéutico.</li>
 </ul>
+
+<img src="/assets/nuevas/blog/salud-mental-cuando-consultar/imagen3.png" alt="Consulta profesional" style="width:100%;border-radius:12px;margin:24px 0;" />
 
 <h3>Primeros pasos si estás dudando</h3>
 <ul>
