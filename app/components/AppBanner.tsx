@@ -5,7 +5,7 @@ const feats = [
   "Credencial digital en tu celular",
   "Cartilla con geolocalización",
   "Autorizaciones al instante",
-  "Turnos y cuenta corriente 24/7",
+  "Guardia y urgencias 24/7",
 ];
 
 export default function AppBanner() {

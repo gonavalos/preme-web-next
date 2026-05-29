@@ -25,31 +25,28 @@ export default function BenefitsSlider() {
 
       {/* Bento grid — 6 cols × 3 rows desktop / 2 cols mobile */}
       <div className="grid grid-cols-2 md:grid-cols-6 auto-rows-[200px] md:auto-rows-[180px] gap-3 md:gap-4">
-        {/* Featured — Asistencia al Viajero (3x2) */}
+        {/* Featured — 50% en farmacias, el gancho principal (3x2) */}
         <Link
           href="/planes"
-          className="group relative isolate col-span-2 md:col-span-3 row-span-2 overflow-hidden rounded-[22px] p-7 md:p-9 flex flex-col text-white transition-transform duration-300 hover:-translate-y-1"
+          className="group relative isolate col-span-2 md:col-span-3 row-span-2 overflow-hidden rounded-[22px] p-7 md:p-9 flex flex-col bg-[#33BAF0] text-white transition-transform duration-300 hover:-translate-y-1"
         >
-          <Image
-            src="/assets/hero/home/promo.png"
-            alt=""
-            fill
-            className="-z-10 object-cover opacity-35"
-            sizes="(min-width:768px) 50vw, 100vw"
-          />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#092f57]/95 to-[#092f57]/70" />
+          {/* Glow decorativo sutil */}
+          <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/15 blur-3xl" />
 
-          <span className="self-start inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.15em] uppercase">
-            ★ Exclusivo PREME
+          <span className="self-start inline-flex items-center gap-1.5 bg-white/20 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.15em] uppercase">
+            ★ 10% más que otras obras sociales
           </span>
 
           <div className="mt-auto">
-            <h3 className="text-2xl sm:text-3xl md:text-[40px] font-extrabold leading-[1.05] tracking-tight mb-3 max-w-[380px] text-balance">
-              Asistencia al Viajero con cobertura global.
+            <div className="font-extrabold leading-[0.85] tracking-tighter text-[clamp(4.5rem,13vw,8rem)]">
+              50%
+            </div>
+            <h3 className="text-2xl sm:text-3xl md:text-[36px] font-extrabold leading-[1.05] tracking-tight mt-1 mb-3 max-w-[380px] text-balance">
+              de descuento en farmacias.
             </h3>
-            <p className="text-[15px] text-white/75 leading-relaxed mb-5 max-w-[360px]">
-              De Córdoba al mundo. Atención médica de primer nivel en cada
-              destino.
+            <p className="text-[15px] text-white/85 leading-relaxed mb-5 max-w-[360px]">
+              10 puntos más que cualquier otra obra social, en toda la red
+              adherida de Córdoba.
             </p>
             <span className="inline-flex items-center gap-2.5 text-sm font-bold transition-all duration-200 group-hover:gap-3.5">
               Conocer más
@@ -80,22 +77,24 @@ export default function BenefitsSlider() {
           </h3>
         </Link>
 
-        {/* Farmacias — sky (3x1) debajo de ECCO */}
+        {/* Asistencia al Viajero (3x1) — cobertura exclusiva */}
         <Link
           href="/planes"
-          className="group col-span-2 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#33BAF0] text-white transition-transform duration-300 hover:-translate-y-1"
+          className="group col-span-2 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#092f57] text-white transition-transform duration-300 hover:-translate-y-1"
         >
-          <div className="text-[40px] font-medium leading-none tracking-tight [font-family:Georgia,serif] mb-auto opacity-95">
-            −50%
+          <div className="w-10 h-10 rounded-xl bg-white/10 text-white grid place-items-center mb-auto">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3.5S18 3 16.5 4.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+            </svg>
           </div>
-          <span className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-85 mb-1.5">
-            Farmacias
+          <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#33BAF0] mb-1.5">
+            Cobertura exclusiva
           </span>
           <h3 className="text-lg font-bold leading-tight tracking-tight">
-            Hasta 50% off en farmacias
+            Cobertura en tu viaje nacional
           </h3>
-          <p className="mt-1.5 text-xs text-white/80 leading-snug line-clamp-2">
-            Red adherida en toda Córdoba.
+          <p className="mt-1.5 text-xs text-white/70 leading-snug line-clamp-2">
+            Con reintegro de urgencias en todo el país.
           </p>
         </Link>
 

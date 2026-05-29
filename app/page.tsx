@@ -12,6 +12,7 @@ import BlogCarousel from "./components/BlogCarousel";
 import BenefitsSlider from "./components/BenefitsSlider";
 import StickyCtaBar from "./components/StickyCtaBar";
 import SectionHeader from "./components/SectionHeader";
+import Reveal from "./components/Reveal";
 
 type PlanJSON = {
   id: number;
@@ -52,20 +53,26 @@ export default function Home() {
         <Hero />
 
         {/* 2. Quick Access */}
-        <QuickAccess />
+        <Reveal>
+          <QuickAccess />
+        </Reveal>
 
         {/* 3. Planes — white */}
         <section className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            <SectionHeader
-              kicker="Nuestros planes"
-              title="Planes diseñados para tu vida."
-              description="Elegí la cobertura que mejor se adapta. Un asesor te ayuda gratis."
-              align="center"
-            />
+            <Reveal>
+              <SectionHeader
+                kicker="Nuestros planes"
+                title="Planes diseñados para tu vida."
+                description="Elegí la cobertura que mejor se adapta. Un asesor te ayuda gratis."
+                align="center"
+              />
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
               {planes.map((plan, idx) => (
-                <PlanCard key={idx} {...plan} />
+                <Reveal key={idx} delay={idx * 90}>
+                  <PlanCard {...plan} />
+                </Reveal>
               ))}
             </div>
           </div>
@@ -73,27 +80,37 @@ export default function Home() {
 
         {/* 4. Confianza — gris */}
         <div className="bg-[#f5f8fa]">
-          <TrustSection />
+          <Reveal>
+            <TrustSection />
+          </Reveal>
         </div>
 
         {/* 5. Promo banner — white */}
         <div className="bg-white">
-          <PromoBanner />
+          <Reveal>
+            <PromoBanner />
+          </Reveal>
         </div>
 
         {/* 6. App credencial — gris */}
         <div className="bg-white">
-          <AppBanner />
+          <Reveal>
+            <AppBanner />
+          </Reveal>
         </div>
 
         {/* 7. Beneficios — white */}
         <section className="py-14 md:py-20 bg-white overflow-hidden">
-          <BenefitsSlider />
+          <Reveal>
+            <BenefitsSlider />
+          </Reveal>
         </section>
 
         {/* 8. Blog — gris */}
         <div className="bg-[#f5f8fa]">
-          <BlogCarousel />
+          <Reveal>
+            <BlogCarousel />
+          </Reveal>
         </div>
       </main>
 

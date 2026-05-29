@@ -1,4 +1,3 @@
-cat > .gitignore << 'EOF'
 # dependencias
 node_modules/
 
@@ -8,15 +7,23 @@ out/
 
 # local env
 .env
+.env.local
 .env.*.local
 
 # Vercel
 .vercel/
+
+# Claude / editor
+.claude/
+
+# macOS
+.DS_Store
+
+# archivos pesados / temporales
+*.zip
 
 # logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-EOF
-.vercel

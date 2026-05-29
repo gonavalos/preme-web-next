@@ -5,6 +5,7 @@ import { useMemo } from "react";
 export type Filters = {
   plan: string;
   tipo: string;
+  esp: string;
   ciudad: string;
   q: string;
 };
@@ -15,6 +16,7 @@ type Props = {
   options: {
     plans: string[];
     tipos: string[];
+    especialidades: string[];
     ciudades: string[];
   };
 };
@@ -28,17 +30,18 @@ const planClass: Record<string, string> = {
 };
 
 export default function CartillaFilter({ value, onChange, options }: Props) {
-  const { plans, tipos, ciudades } = options;
+  const { plans, tipos, especialidades, ciudades } = options;
 
   const set = <K extends keyof Filters>(k: K, v: Filters[K]) =>
     onChange({ ...value, [k]: v });
 
-  const reset = () => onChange({ plan: "", tipo: "", ciudad: "", q: "" });
+  const reset = () => onChange({ plan: "", tipo: "", esp: "", ciudad: "", q: "" });
 
   const chips = useMemo(() => {
-    const arr: { k: "Plan" | "Tipo" | "Ciudad" | "Buscar"; v: string; onClear: () => void }[] = [];
+    const arr: { k: "Plan" | "Tipo" | "Especialidad" | "Ciudad" | "Buscar"; v: string; onClear: () => void }[] = [];
     if (value.plan)   arr.push({ k: "Plan",   v: value.plan,   onClear: () => set("plan", "") });
     if (value.tipo)   arr.push({ k: "Tipo",   v: value.tipo,   onClear: () => set("tipo", "") });
+    if (value.esp)    arr.push({ k: "Especialidad", v: value.esp, onClear: () => set("esp", "") });
     if (value.ciudad) arr.push({ k: "Ciudad", v: value.ciudad, onClear: () => set("ciudad", "") });
     if (value.q)      arr.push({ k: "Buscar", v: `"${value.q}"`, onClear: () => set("q", "") });
     return arr;
@@ -66,7 +69,7 @@ export default function CartillaFilter({ value, onChange, options }: Props) {
 
       {/* Controles */}
       <form
-        className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-5"
+        className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-6"
         onSubmit={(e) => e.preventDefault()}
         role="search"
         aria-label="Filtrar cartilla médica"
@@ -99,6 +102,22 @@ export default function CartillaFilter({ value, onChange, options }: Props) {
             <option value="">Todos</option>
             {tipos.map((t) => (
               <option key={t} value={t}>{t}</option>
+            ))}
+          </select>
+        </label>
+
+        {/* ESPECIALIDAD MÉDICA */}
+        <label className="flex flex-col gap-1">
+          <span className="text-xs text-[#092f57]/70">Especialidad</span>
+          <select
+            className="rounded-xl border border-black/10 bg-white px-3 py-2.5 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#33BAF0] focus:border-transparent hover:border-[#33BAF0]/50 transition"
+            value={value.esp}
+            onChange={(e) => set("esp", e.target.value)}
+            aria-label="Especialidad médica"
+          >
+            <option value="">Todas</option>
+            {especialidades.map((e) => (
+              <option key={e} value={e}>{e}</option>
             ))}
           </select>
         </label>

@@ -14,6 +14,7 @@ type Prestador = {
   nombre: string;
   tipo: string;
   especialidades: string[];
+  especialidadesMedicas: string[];
   plan: string[];
   ciudad: string;
   direccion: string;
@@ -32,6 +33,7 @@ const fetcher = (url: string) => fetch(url).then((r) => r.json());
 type MetaResp = {
   planes: { value: string; label: string }[];
   tipos: { value: string; label: string }[];
+  especialidades: { value: string; label: string }[];
   ciudades: { value: string; label: string }[];
 };
 
@@ -46,6 +48,7 @@ export default function PrestadoresPage() {
   const [filters, setFilters] = useState<Filters>({
     plan: "",
     tipo: "",
+    esp: "",
     ciudad: "",
     q: "",
   });
@@ -65,6 +68,12 @@ export default function PrestadoresPage() {
     return m;
   }, [meta]);
 
+  const espLabelToValue = useMemo(() => {
+    const m = new Map<string, string>();
+    meta?.especialidades?.forEach((e) => m.set(e.label, e.value));
+    return m;
+  }, [meta]);
+
   const ciudadLabelToValue = useMemo(() => {
     const m = new Map<string, string>();
     meta?.ciudades.forEach((c) => m.set(c.label, c.value));
@@ -75,15 +84,17 @@ export default function PrestadoresPage() {
     const p = new URLSearchParams();
     const planValue = filters.plan ? planLabelToValue.get(filters.plan) ?? "" : "";
     const tipoValue = filters.tipo ? tipoLabelToValue.get(filters.tipo) ?? "" : "";
+    const espValue = filters.esp ? espLabelToValue.get(filters.esp) ?? "" : "";
     const ciudadValue = filters.ciudad ? ciudadLabelToValue.get(filters.ciudad) ?? "" : "";
     if (planValue) p.set("plan", planValue);
     if (tipoValue) p.set("tipo", tipoValue);
+    if (espValue) p.set("esp", espValue);
     if (ciudadValue) p.set("ciudad", ciudadValue);
     if (filters.q) p.set("q", filters.q);
     p.set("page", String(page));
     p.set("pageSize", String(PAGE_SIZE));
     return p.toString();
-  }, [filters, page, planLabelToValue, tipoLabelToValue, ciudadLabelToValue]);
+  }, [filters, page, planLabelToValue, tipoLabelToValue, espLabelToValue, ciudadLabelToValue]);
 
   const { data, isLoading } = useSWR<{
     items: Prestador[];
@@ -102,9 +113,10 @@ export default function PrestadoresPage() {
 
   const options = useMemo(
     () => ({
-      plans: meta?.planes.map((p) => p.label) ?? [],
-      tipos: meta?.tipos.map((t) => t.label) ?? [],
-      ciudades: meta?.ciudades.map((c) => c.label) ?? [],
+      plans: meta?.planes?.map((p) => p.label) ?? [],
+      tipos: meta?.tipos?.map((t) => t.label) ?? [],
+      especialidades: meta?.especialidades?.map((e) => e.label) ?? [],
+      ciudades: meta?.ciudades?.map((c) => c.label) ?? [],
     }),
     [meta]
   );
@@ -132,7 +144,7 @@ export default function PrestadoresPage() {
               Cartilla médica
             </h1>
             <p className="mt-3 text-base md:text-lg text-white/90">
-              Buscá por plan, tipo y ciudad. Encontrá el profesional indicado.
+              Buscá por plan, tipo, especialidad y ciudad. Encontrá el prestador indicado.
             </p>
           </div>
         </div>
@@ -170,7 +182,7 @@ export default function PrestadoresPage() {
             <>
               <div className="mb-4 text-sm text-gray-600">
                 {total} resultado{total !== 1 ? "s" : ""}
-                {filters.plan || filters.tipo || filters.ciudad || filters.q
+                {filters.plan || filters.tipo || filters.esp || filters.ciudad || filters.q
                   ? " (filtrado)"
                   : ""}
               </div>
@@ -237,13 +249,13 @@ function PrestadorCard({ prestador: p }: { prestador: Prestador }) {
         )}
       </div>
 
-      {/* Tipo / Profesión */}
+      {/* Tipo / Categoría */}
       <p className="mt-1 text-sm text-gray-500">{p.tipo}</p>
 
-      {/* Especialidades (max 3) */}
-      {p.especialidades.length > 0 && (
+      {/* Especialidades médicas que se atienden (max 4) */}
+      {p.especialidadesMedicas.length > 0 && (
         <div className="mt-2 flex flex-wrap gap-1.5">
-          {p.especialidades.slice(0, 3).map((esp) => (
+          {p.especialidadesMedicas.slice(0, 4).map((esp) => (
             <span
               key={esp}
               className="rounded-md bg-gray-100 px-2 py-0.5 text-[11px] text-gray-600"
@@ -251,9 +263,9 @@ function PrestadorCard({ prestador: p }: { prestador: Prestador }) {
               {esp}
             </span>
           ))}
-          {p.especialidades.length > 3 && (
+          {p.especialidadesMedicas.length > 4 && (
             <span className="text-[11px] text-gray-400">
-              +{p.especialidades.length - 3} más
+              +{p.especialidadesMedicas.length - 4} más
             </span>
           )}
         </div>

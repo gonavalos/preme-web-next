@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-6 pb-28 md:pb-36">
         <div className="max-w-xl lg:max-w-2xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-5">
+          <div className="rise-in inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-5" style={{ animationDelay: "0.1s" }}>
             <Image
               src="/assets/n11v2.png"
               alt=""
@@ -41,19 +41,19 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.1] tracking-tight mb-4">
+          <h1 className="rise-in text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.1] tracking-tight mb-4" style={{ animationDelay: "0.22s" }}>
             Elegí la cobertura médica que tu familia{" "}
             <span className="text-[#33BAF0]">necesita</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white/75 text-base sm:text-lg leading-relaxed mb-7 max-w-md">
+          <p className="rise-in text-white/75 text-base sm:text-lg leading-relaxed mb-7 max-w-md" style={{ animationDelay: "0.36s" }}>
             Un asesor te ayuda a elegir el plan ideal en menos de 2 minutos.
             Sin compromiso.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="rise-in flex flex-col sm:flex-row gap-3" style={{ animationDelay: "0.5s" }}>
             <a
               href={WA_LINK}
               target="_blank"

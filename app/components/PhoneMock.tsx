@@ -134,7 +134,7 @@ export default function PhoneMock() {
             <div className="ps-tile">
               <div
                 className="ps-tile-ic"
-                style={{ background: "#e7f6dc", color: "#68AE26" }}
+                style={{ background: "#fdecec", color: "#E05A4F" }}
               >
                 <svg
                   width="18"
@@ -146,12 +146,11 @@ export default function PhoneMock() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <rect x="3" y="5" width="18" height="16" rx="2" />
-                  <path d="M3 10h18M8 3v4M16 3v4" />
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                 </svg>
               </div>
-              <div className="ps-tile-t">Turnos</div>
-              <div className="ps-tile-s">Próximo: Lun 28</div>
+              <div className="ps-tile-t">ECCO</div>
+              <div className="ps-tile-s ok">24/7 activo</div>
             </div>
             <div className="ps-tile">
               <div
@@ -173,7 +172,7 @@ export default function PhoneMock() {
                 </svg>
               </div>
               <div className="ps-tile-t">Farmacias</div>
-              <div className="ps-tile-s">−50% esta sem.</div>
+              <div className="ps-tile-s ok">50% siempre</div>
             </div>
           </div>
 

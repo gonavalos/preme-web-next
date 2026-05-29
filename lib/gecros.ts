@@ -50,6 +50,8 @@ export type NormalizedPrestador = {
   nombre: string;
   tipo: string;
   especialidades: string[];
+  /** Especialidades médicas que se atienden en la institución (vía oriId). */
+  especialidadesMedicas: string[];
   plan: string[];
   ciudad: string;
   direccion: string;
@@ -125,6 +127,9 @@ function normalizeCartilla(raw: GecrosPrestadorRaw[]): NormalizedPrestador[] {
         nombre: formatName(r.preNom),
         tipo: r.profesion || "Sin clasificar",
         especialidades: especialidad ? [especialidad] : [],
+        // El snapshot (scripts/sync-cartilla.mjs) sí completa este campo vía oriId.
+        // Este cliente en vivo quedó como referencia; la web sirve el snapshot.
+        especialidadesMedicas: [],
         plan: plan ? [plan] : [...ALL_PLANS],
         ciudad: extractCity(r.domicilio),
         direccion: r.domicilio.split(",")[0]?.trim() || r.domicilio,
