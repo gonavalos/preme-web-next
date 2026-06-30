@@ -61,13 +61,16 @@ export default function BenefitsSlider() {
           className="group relative isolate col-span-2 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col justify-end text-white transition-transform duration-300 hover:-translate-y-1"
         >
           <Image
-            src="/assets/hero/home/ecco-ambulancia.jpg"
+            src="/assets/hero/home/ecco-ambulancia.avif"
             alt="Servicio de emergencias ECCO 24/7"
             fill
-            className="-z-20 object-cover transition-transform duration-700 group-hover:scale-105"
+            className="-z-20 object-cover transition-transform duration-700 group-hover:scale-[1.06]"
             sizes="(min-width:768px) 50vw, 100vw"
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#092f57]/95 via-[#092f57]/40 to-[#092f57]/10" />
+          {/* Doble overlay: oscurece la base y agrega un tinte de marca abajo
+              para que el texto blanco quede legible sobre cualquier escena. */}
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#051529] via-[#051529]/55 to-[#051529]/10" />
+          <div className="absolute inset-0 -z-10 mix-blend-multiply bg-[#092f57]/15" />
 
           <span className="inline-flex items-center gap-1.5 self-start bg-[#E05A4F] text-white text-[10px] font-bold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full mb-3">
             Acceso inmediato
