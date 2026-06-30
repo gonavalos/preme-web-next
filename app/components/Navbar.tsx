@@ -47,7 +47,7 @@ export default function Navbar() {
             ["Inicio", "/"],
             ["Planes", "/planes"],
             ["Prestadores", "/prestadores"],
-            ["Coseguros", "/coseguros"],
+            ["Para afiliados", "/afiliados"],
             ["Institucional", "/institucional"],
             ["Contacto", "/contacto"],
           ].map(([label, href]) => (
