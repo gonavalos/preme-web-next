@@ -31,14 +31,24 @@ const channels: Channel[] = [
     color: "#33BAF0", // azul institucional
   },
   {
-    title: "WhatsApp",
-    desc: "Contactanos directamente por mensaje.",
+    title: "Asesor Comercial",
+    desc: "Te ayudamos a elegir tu plan y a afiliarte.",
     action: "Abrir chat",
-    href: "https://wa.me/5493512006002?text=Hola%20PREME%2C%20quisiera%20hacer%20una%20consulta",
-    badge: "+54 9 351 2006002",
+    href: "https://api.whatsapp.com/send?phone=5493512006002&text=Hola%2C%20quiero%20asesoramiento%20sobre%20planes.%20Estuve%20navegando%20en%20la%20web.",
+    badge: "WhatsApp · +54 9 351 2006002",
     icon: FaWhatsapp,
     external: true,
     color: "#25D366", // verde WhatsApp
+  },
+  {
+    title: "Autorizaciones",
+    desc: "A cargo de los prestadores. Si necesitás, te ayudamos con tu gestión.",
+    action: "Escribir",
+    href: "https://api.whatsapp.com/send?phone=5493515503660&text=Hola%2C%20necesito%20ayuda%20con%20una%20autorizaci%C3%B3n.",
+    badge: "WhatsApp · +54 9 3515 50‑3660",
+    icon: FaWhatsapp,
+    external: true,
+    color: "#0D2A53",
   },
   {
     title: "Email",
@@ -105,7 +115,7 @@ export default function ContactChannels() {
       </div>
 
       <p className="mt-5 text-center text-sm text-gray-500">
-        Horario de atención: Lunes a viernes, 9 a 18 h.
+        Horario de atención: Lunes a viernes, 9 a 17 hs.
       </p>
     </>
   );

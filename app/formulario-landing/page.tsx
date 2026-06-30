@@ -510,7 +510,7 @@ export default function PlanesContactoPage() {
           <div className="space-y-6 text-left max-w-xl text-slate-50">
             <span className="inline-flex items-center gap-2 rounded-full bg-sky-500/90 px-3 py-1 text-[11px] font-semibold text-white shadow-md">
               <span className="h-2 w-2 rounded-full bg-white" />
-              Más de 35 años cuidando la salud de familias argentinas.
+              +45 años cuidando la salud de familias argentinas.
             </span>
 
             <div>
@@ -531,7 +531,7 @@ export default function PlanesContactoPage() {
             <ul className="space-y-2 text-[13px] text-slate-100/90">
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-300" />
-                <span>Cartilla de prestadores seleccionados en todo el país.</span>
+                <span>Amplia Cartilla de prestadores.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-300" />
@@ -543,9 +543,6 @@ export default function PlanesContactoPage() {
               </li>
             </ul>
 
-            <div className="text-[11px] text-slate-100/90 pt-1">
-              <span>Landing exclusiva de planes de salud PREME.</span>
-            </div>
           </div>
         </div>
       </section>

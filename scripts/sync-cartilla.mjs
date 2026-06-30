@@ -73,6 +73,24 @@ function formatName(name) {
   return (name ?? "").replace(/^\.+/, "").trim();
 }
 
+// Construye la dirección legible. El formato real de Gecros es
+// "CALLE NUM, PISO. CIUDAD, PROV" — el piso va PEGADO a la ciudad con un
+// punto, no como segmento aparte. Detecto eso y lo etiqueto.
+function formatDireccion(domicilio) {
+  if (!domicilio) return "";
+  const parts = domicilio.split(",").map((s) => s.trim()).filter(Boolean);
+  if (parts.length === 0) return domicilio;
+  const calle = parts[0];
+  const seg = parts[1] ?? "";
+  // "1. CORDOBA" → piso 1 | "PB. CORDOBA" → PB | "1" suelto → piso 1
+  const m = seg.match(/^(\d+|PB)(?:\s*\.|$)/i);
+  if (m) {
+    const v = m[1].toUpperCase();
+    return v === "PB" ? `${calle}, PB` : `${calle}, Piso ${m[1]}`;
+  }
+  return calle;
+}
+
 function titleCase(s) {
   return s
     .toLowerCase()
@@ -99,27 +117,61 @@ function mapTipo(profesion, especialidad) {
   if (has("OPTICA")) return "Ópticas";
   if (has("KINESIOLOGIA") || has("FISIOTERAPIA")) return "Fisioterapia y Kinesiología";
   if (has("SALUD MENTAL")) return "Salud Mental";
-  if (has("OFTALMOLOGIA")) return "Oftalmología";
+  // "Oftalmología" se quita como tipo (Marce: PREME no la usa como categoría).
+  // Los centros oftalmológicos caen a Instituciones y Centros Médicos por la
+  // profesión.
   // "01. INSTITUCIONES Y CENTROS MEDICOS" debe ir antes que "CENTROS MEDICOS"
   // (03), porque contiene esa misma subcadena.
   if (has("INSTITUCIONES")) return "Instituciones y Centros Médicos";
   if (has("CENTROS ESPECIALIZADOS")) return "Centros Especializados";
   if (has("CENTROS MEDICOS")) return "Centros Médicos";
 
-  // Especialidad sin categoría reconocida: usarla tal cual (sin el "NN. ").
-  const espClean = (especialidad ?? "").replace(/^\d+\.\s*/, "").trim();
-  if (espClean) return titleCase(espClean);
-
-  // Sin especialidad útil: caer a la profesión si no es genérica.
+  // Sin código NN ni keyword conocida: la "especialidad" es médica (Alergia,
+  // Cardiología, Oftalmología, etc.), NO una categoría institucional.
+  // No la uso como tipo; caigo a la profesión mapeada a etiqueta canónica.
   const prof = (profesion ?? "").trim();
+  const profUp = prof.toUpperCase();
+  if (profUp.includes("FARMACIA")) return "Farmacias";
+  if (
+    profUp.includes("CLINICA") ||
+    profUp.includes("CLÍNICA") ||
+    profUp.includes("SANATORIO") ||
+    profUp.includes("HOSPITAL")
+  )
+    return "Instituciones y Centros Médicos";
+  if (profUp.includes("OPTICA") || profUp.includes("ÓPTICA")) return "Ópticas";
+  if (profUp.includes("ODONT")) return "Odontología";
+  if (profUp.includes("KINES") || profUp.includes("FISIO"))
+    return "Fisioterapia y Kinesiología";
+  if (profUp.includes("PSICOL") || profUp.includes("PSICÓL")) return "Salud Mental";
+  if (profUp.includes("BIOQUIM") || profUp.includes("BIOQUÍM") || profUp.includes("LABORAT"))
+    return "Laboratorios";
   if (prof && prof !== "Sin Datos") return prof;
   return "Otros prestadores";
 }
 
 const ALL_PLANS = ["Plan Coral", "Plan Integral", "Plan Máximo"];
 
-// Especialidades médicas a ignorar (no son especialidades clínicas reales).
-const ESP_MEDICA_IGNORAR = new Set(["MEDICINA GENERAL", "CLINICA MEDICA", "SIN DATOS", ""]);
+// Especialidades médicas a ignorar en el filtro público (no aplican o no las
+// usa PREME). Listado consensuado con Marce — Análisis web 18/06/2026.
+const ESP_MEDICA_IGNORAR = new Set([
+  "",
+  "SIN DATOS",
+  "SIN ESPECIALIDAD",
+  "MEDICINA GENERAL",
+  "CLINICA MEDICA",
+  // Excluidas explícitamente:
+  "ANGIOLOGIA",
+  "ANESTESIA",
+  "CIRUGIA PLASTICA",
+  "GERIATRIA",
+  "GENETICA",
+  "OFTALMOLOGIA",
+  "PROCTOLOGIA",
+  "QUEMADOS",
+  "TRASPLANTES",
+  "TRAPLANTES", // typo del origen
+]);
 
 // Limpia y normaliza una especialidad médica (PEDIATRIA → "Pediatría" no, sin
 // acentos del origen; solo title case). Devuelve null si no es médica.
@@ -175,7 +227,7 @@ function normalize(raw, espByOri) {
         especialidadesMedicas: espMedicas,
         plan: plan ? [plan] : [...ALL_PLANS],
         ciudad: extractCity(r.domicilio),
-        direccion: r.domicilio?.split(",")[0]?.trim() || r.domicilio || "",
+        direccion: formatDireccion(r.domicilio),
         telefono: r.telefono || "",
         lat: r.geographyLat || null,
         lng: r.geographyLong || null,

@@ -5,15 +5,17 @@
       "headerImageSrc": "/assets/planes/plancoral.png",
       "headerImageAlt": "Plan Joven",
       "nombre": "Plan Joven",
-      "descripcion": "Ideal para menores de 30 años",
+      "descripcion": "Tu primera cobertura médica completa.",
       "beneficios": [
-        "Solo con tu recibo de Sueldo y sin pagar de más",
-        "Tu cobertura en el acto",
-        "Consultas médicas sin límite y médico a domicilio",
-        "100% en anticonceptivos",
-        "Sesiones en psicología, fisioterapia y mucho más",
+        "Ideal para menores de 30 años",
+        "Solo con tu recibo de sueldo, sin pagar de más",
+        "Cobertura activa desde el primer día",
+        "Consultas médicas ilimitadas y médico a domicilio",
+        "100% de cobertura en anticonceptivos",
+        "Psicología, fisioterapia y más beneficios",
         "Cobertura en ortodoncia y prótesis",
-        "Descuentos especiales en ópticas y farmacias"
+        "Descuentos especiales en ópticas y farmacias",
+        "Autorizaciones online simples y rápidas"
       ],
       "color": "#F79630",
       "highlight": "Más popular entre jóvenes",
@@ -53,7 +55,7 @@
         "Sin órdenes y sin derivación",
         "SIN COSEGUROS",
         "50 % de descuento en prótesis y ortodoncia",
-        "Descuentos en implantes odontológicos",
+        "Beneficios especiales en implantes odontológicos",
         "Descuentos especiales en óptica"
       ],
       "color": "#68AE26",

@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaClipboardCheck, FaWhatsapp } from "react-icons/fa";
 
-const WA_LINK = "https://wa.me/5493512006002?text=Hola%2C%20quiero%20asesoramiento%20sobre%20planes";
+const WA_LINK = "https://api.whatsapp.com/send?phone=5493512006002&text=Hola%2C%20quiero%20asesoramiento%20sobre%20planes.%20Estuve%20navegando%20en%20la%20web.";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -47,6 +47,7 @@ export default function Navbar() {
             ["Inicio", "/"],
             ["Planes", "/planes"],
             ["Prestadores", "/prestadores"],
+            ["Coseguros", "/coseguros"],
             ["Institucional", "/institucional"],
             ["Contacto", "/contacto"],
           ].map(([label, href]) => (

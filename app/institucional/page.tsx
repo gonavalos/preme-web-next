@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const values = [
   { title: "Misión", text: "Brindar servicios de salud de calidad con foco en prevención y acompañamiento integral." },
   { title: "Visión", text: "Ser la cobertura preferida por las familias cordobesas por innovación, calidad y compromiso en la atención personalizada. " },
-  { title: "Valores", text: "Ética, calidez humana, excelencia clínica, accesibilidad y transparencia." },
+  { title: "Valores", text: "Cumplimos con nuestro compromiso. Ética, calidez humana, excelencia clínica, accesibilidad y transparencia." },
 ];
 const diferenciales = [
   {
@@ -57,7 +57,7 @@ const diferenciales = [
   {
     icon: FaAward,
     title: "Primera prepaga de Córdoba",
-    text: "Más de 40 años de trayectoria en el cuidado de la salud.",
+    text: "+45 años de trayectoria en el cuidado de la salud.",
   },
   {
     icon: FaHeartbeat,
@@ -116,7 +116,7 @@ export default function InstitucionalPage() {
                 Cuidamos tu salud
               </h1>
               <p className="mt-3 text-white/90">
-                Más de 40 años acompañando a las familias.
+                +45 años acompañando a las familias.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link href="/prestadores" className="rounded-lg bg-[#33BAF0] px-5 py-3 font-semibold text-white">

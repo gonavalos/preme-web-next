@@ -205,7 +205,7 @@ export default function PhoneMock() {
           </svg>
         </div>
         <div>
-          <div className="pb-t">Asesor 24/7</div>
+          <div className="pb-t">Asesor comercial</div>
           <div className="pb-s">Por WhatsApp</div>
         </div>
       </div>

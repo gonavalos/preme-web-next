@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-29T16:51:51.697Z",
-  "total": 326,
+  "generatedAt": "2026-06-30T12:07:28.248Z",
+  "total": 328,
   "prestadores": [
     {
       "id": 6430,
@@ -51,7 +51,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "IRIGOYEN 384",
+      "direccion": "Av. Hipólito Yrigoyen 384, Piso 1",
       "telefono": "0351-4269200",
       "lat": -31.4247721,
       "lng": -64.1869194,
@@ -98,7 +98,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Pedro Simón Laplace 5749",
+      "direccion": "Pedro Simón Laplace 5749, Piso 1",
       "telefono": "0351-4269200",
       "lat": -31.3580388,
       "lng": -64.2426583,
@@ -113,17 +113,15 @@
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA"
       ],
-      "especialidadesMedicas": [
-        "Oftalmologia"
-      ],
+      "especialidadesMedicas": [],
       "plan": [
         "Plan Coral",
         "Plan Integral",
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "DEAN FUNES 473",
-      "telefono": "0351-5701241",
+      "direccion": "Dean Funes 473, Piso 1",
+      "telefono": "0351-4888200",
       "lat": -31.4141767,
       "lng": -64.19040509999999,
       "destacado": true,
@@ -169,6 +167,7 @@
       ],
       "especialidadesMedicas": [
         "Alergia",
+        "Anatomia Patologica",
         "Cardiologia",
         "Cirugia Cardiovascular",
         "Cirugia de Cabeza y Cuello",
@@ -193,7 +192,6 @@
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
-        "Quemados",
         "Reumatologia",
         "Traumatologia y Ortopedia",
         "Urologia"
@@ -204,7 +202,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Deán Funes 429",
+      "direccion": "Deán Funes 429, Piso 1",
       "telefono": "3515631491",
       "lat": -31.414373,
       "lng": -64.1899574,
@@ -224,7 +222,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AV. VELEZ SARSFIELD 562",
+      "direccion": "AV. VELEZ SARSFIELD 562, Piso 1",
       "telefono": "0351-4267700",
       "lat": -31.4216178,
       "lng": -64.1896021,
@@ -308,7 +306,6 @@
         "Endocrinologia Pediatrica",
         "Gastroenterologia",
         "Gastroenterologia Pediatrica",
-        "Genetica",
         "Ginecologia",
         "Hematologia",
         "Hemodinamia",
@@ -325,7 +322,6 @@
         "Neurologia",
         "Neurologia Infantil",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -340,8 +336,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "RONDEAU 455",
-      "telefono": "4467000",
+      "direccion": "RONDEAU 455, Piso 1",
+      "telefono": "351-2017666",
       "lat": -31.4238362,
       "lng": -64.1807227,
       "destacado": false,
@@ -391,27 +387,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 13977,
-      "nombre": "AMERICO",
-      "tipo": "Ópticas",
-      "especialidades": [
-        "11. OPTICAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Belgrano 470",
-      "telefono": "0351-4272158",
-      "lat": -31.4207214,
-      "lng": -64.1902143,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 5569,
       "nombre": "ARGENTINA III",
       "tipo": "Farmacias",
@@ -425,7 +400,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "ITUZAINGO 602 0",
+      "direccion": "ITUZAINGO 602 0, Piso 1",
       "telefono": "0351-4605184",
       "lat": -31.4221354,
       "lng": -64.1838475,
@@ -472,28 +447,6 @@
       "telefono": "03576-450370",
       "lat": -31.4204249,
       "lng": -63.0494937,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 12998,
-      "nombre": "BADINO VANESA SOLEDAD",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Arroyito",
-      "direccion": "BELGRANO 1311",
-      "telefono": "03576-451226",
-      "lat": -31.4231875,
-      "lng": -63.05192999999999,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -555,7 +508,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Figueroa Alcorta 44",
+      "direccion": "Figueroa Alcorta 44, Piso 1",
       "telefono": "3517513091",
       "lat": -31.4096878,
       "lng": -64.1935665,
@@ -577,7 +530,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Santiago del Estero 333 2do piso",
+      "direccion": "Santiago del Estero 333 2do piso, Piso 1",
       "telefono": "3517513091",
       "lat": null,
       "lng": null,
@@ -971,7 +924,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Donato Alvarez 7610",
+      "direccion": "Av. Donato Alvarez 7610, Piso 1",
       "telefono": "03543-420559",
       "lat": null,
       "lng": null,
@@ -1006,9 +959,7 @@
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA"
       ],
-      "especialidadesMedicas": [
-        "Oftalmologia"
-      ],
+      "especialidadesMedicas": [],
       "plan": [
         "Plan Coral",
         "Plan Integral",
@@ -1058,7 +1009,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "DEAN FUNES 2869",
+      "direccion": "DEAN FUNES 2869, Piso 1",
       "telefono": "0351-4892624",
       "lat": -31.4049722,
       "lng": -64.2199103,
@@ -1083,7 +1034,6 @@
       ],
       "especialidadesMedicas": [
         "Dermatologia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)"
       ],
       "plan": [
@@ -1113,7 +1063,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AV. CARLOS FEDERICO GAUSS 5639",
+      "direccion": "AV. CARLOS FEDERICO GAUSS 5639, Piso 1",
       "telefono": "03543-442374",
       "lat": -31.3570502,
       "lng": -64.2512692,
@@ -1177,7 +1127,7 @@
       ],
       "ciudad": "La Cumbre",
       "direccion": "25 de Mayo 272",
-      "telefono": "3453652584",
+      "telefono": "3548-572467",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -1329,7 +1279,6 @@
         "Ginecologia",
         "Inmunologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Reumatologia",
@@ -1378,7 +1327,6 @@
         "Cardiologia",
         "Medicina Interna",
         "Obstetricia",
-        "Oftalmologia",
         "Pediatria",
         "Traumatologia y Ortopedia"
       ],
@@ -1446,6 +1394,73 @@
       "telefono": "03543-645771",
       "lat": -31.2562196,
       "lng": -64.2754329,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14106,
+      "nombre": "CENTRO MEDICO ITALMED CERRO",
+      "tipo": "Centros Médicos",
+      "especialidades": [
+        "03. CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
+        "ALERGIA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "FONOAUDIOLOGIA",
+        "GASTROENTEROLOGIA",
+        "GASTROENTEROLOGIA PEDIATRICA",
+        "GINECOLOGIA",
+        "INMUNOLOGIA",
+        "NEONATOLOGIA",
+        "NEUROLOGIA",
+        "NUTRICION",
+        "OBSTETRICIA",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PEDIATRIA",
+        "REUMATOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "UROLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Rafael Núñez 3672, Piso 1",
+      "telefono": "3516531793",
+      "lat": -31.3763734,
+      "lng": -64.2257698,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15118,
+      "nombre": "CENTRO MEDICO ITALMED GÜEMES",
+      "tipo": "Instituciones y Centros Médicos",
+      "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Gral. Güemes 457, Piso 1",
+      "telefono": "0810-2223990",
+      "lat": null,
+      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -1558,7 +1573,7 @@
     {
       "id": 10906,
       "nombre": "CENTRO MEDICO PRIVADO DEL CARMEN",
-      "tipo": "Cardiologia Pediatrica",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "CARDIOLOGIA PEDIATRICA",
         "CLINICA MEDICA",
@@ -1586,7 +1601,6 @@
         "Ginecologia",
         "Medicina Familiar",
         "Medicina Interna",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Psiquiatria",
@@ -1662,7 +1676,6 @@
         "Medicina Interna",
         "Neonatologia",
         "Nutricion",
-        "Oftalmologia",
         "Pediatria",
         "Traumatologia y Ortopedia",
         "Vascular Periferico"
@@ -1727,7 +1740,6 @@
         "Neumonologia",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Psiquiatria",
@@ -1742,7 +1754,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AVELLANEDA 464",
+      "direccion": "AVELLANEDA 464, Piso 1",
       "telefono": "3513849912",
       "lat": -31.4071162,
       "lng": -64.1940644,
@@ -1780,8 +1792,7 @@
         "MEDICINA GENERAL"
       ],
       "especialidadesMedicas": [
-        "Diabetologia",
-        "Oftalmologia"
+        "Diabetologia"
       ],
       "plan": [
         "Plan Coral",
@@ -1886,7 +1897,6 @@
         "Ginecologia",
         "Neonatologia",
         "Obstetricia",
-        "Oftalmologia",
         "Pediatria",
         "Traumatologia y Ortopedia"
       ],
@@ -1923,7 +1933,6 @@
       "especialidadesMedicas": [
         "Cardiologia",
         "Ginecologia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Traumatologia y Ortopedia"
@@ -2014,7 +2023,6 @@
         "Medicina Nuclear",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Reumatologia",
@@ -2028,7 +2036,7 @@
       ],
       "ciudad": "Villa Allende",
       "direccion": "Mendoza 1752",
-      "telefono": "03543-437953",
+      "telefono": "351-2278354",
       "lat": -31.301434,
       "lng": -64.27795929999999,
       "destacado": false,
@@ -2171,7 +2179,6 @@
         "No Usar Oftalmologia",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Traumatologia y Ortopedia",
@@ -2219,13 +2226,11 @@
     {
       "id": 4401,
       "nombre": "CENTRO PRIVADO DE OJOS ROMAGOSA S.A. - V. MARIA",
-      "tipo": "Oftalmología",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "OFTALMOLOGIA"
       ],
-      "especialidadesMedicas": [
-        "Oftalmologia"
-      ],
+      "especialidadesMedicas": [],
       "plan": [
         "Plan Coral",
         "Plan Integral",
@@ -2242,14 +2247,13 @@
     {
       "id": 1126,
       "nombre": "CENTRO PRIVADO DE OJOS-DR. BULACIO",
-      "tipo": "Alergia",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "ALERGIA",
         "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [
         "Medicina Interna",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)"
       ],
       "plan": [
@@ -2306,7 +2310,6 @@
         "Ginecologia",
         "Inmunologia",
         "Obstetricia",
-        "Oftalmologia",
         "Pediatria",
         "Psiquiatria",
         "Traumatologia y Ortopedia",
@@ -2345,7 +2348,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Urquiza 3581 piso dpto B",
+      "direccion": "Urquiza 3581 piso dpto B, Piso 1",
       "telefono": "351 5311978",
       "lat": -31.408809,
       "lng": -64.1931082,
@@ -2435,7 +2438,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Humberto Primo 546",
+      "direccion": "Humberto Primo 546, Piso 1",
       "telefono": "0810-555-0034",
       "lat": null,
       "lng": null,
@@ -2489,13 +2492,10 @@
         "Neurologia",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
-        "Proctologia",
         "Psiquiatria",
         "Reumatologia",
-        "Sin Especialidad",
         "Traumatologia y Ortopedia",
         "Urologia",
         "Vascular Periferico"
@@ -2552,7 +2552,6 @@
         "Ginecologia",
         "Inmunologia",
         "Neurologia",
-        "Oftalmologia",
         "Oncologia",
         "Pediatria",
         "Traumatologia y Ortopedia",
@@ -2586,7 +2585,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Dean Funes 438",
+      "direccion": "Dean Funes 438, Piso 1",
       "telefono": "3516008849",
       "lat": null,
       "lng": null,
@@ -2655,7 +2654,6 @@
         "Infectologia",
         "Neonatologia",
         "Nutricion",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Traumatologia y Ortopedia",
@@ -2736,7 +2734,6 @@
         "Medicina Interna",
         "Medico de Guardia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -2899,7 +2896,6 @@
         "Neurologia",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -3050,7 +3046,6 @@
         "Neurologia",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -3185,11 +3180,9 @@
         "Medicina Interna",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
-        "Proctologia",
         "Traumatologia y Ortopedia",
         "Urologia",
         "Vascular Periferico"
@@ -3261,11 +3254,9 @@
         "Neurologia",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
-        "Proctologia",
         "Psiquiatria",
         "Reumatologia",
         "Traumatologia y Ortopedia",
@@ -3380,7 +3371,6 @@
         "Alergia",
         "Anatomia Patologica",
         "Anestesista",
-        "Angiologia",
         "Cardiologia",
         "Cardiologia Pediatrica",
         "Cirugia Cardiovascular",
@@ -3409,7 +3399,6 @@
         "Neurologia Infantil",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -3426,8 +3415,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Naciones Unidas 984",
-      "telefono": "3513059484",
+      "direccion": "Naciones Unidas 984, Piso 1",
+      "telefono": "0810-1229898",
       "lat": -31.4410134,
       "lng": -64.2079679,
       "destacado": false,
@@ -3477,7 +3466,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av Caraffa 2532",
+      "direccion": "Av Caraffa 2532, Piso 1",
       "telefono": "08101229898",
       "lat": null,
       "lng": null,
@@ -3487,8 +3476,9 @@
     {
       "id": 14115,
       "nombre": "CLINICA PRIVADA VELEZ SARSFIELD - AV. FUERZA AEREA",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
@@ -3530,7 +3520,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Fuerza Aérea 2745",
+      "direccion": "Av. Fuerza Aérea 2745, Piso 1",
       "telefono": "0810 1229898",
       "lat": -31.43147859999999,
       "lng": -64.2246835,
@@ -3579,7 +3569,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Fray Mamerto Esquiú 111",
+      "direccion": "Fray Mamerto Esquiú 111, Piso 1",
       "telefono": "08101229898",
       "lat": null,
       "lng": null,
@@ -3623,7 +3613,6 @@
         "Medicina Interna",
         "Medico de Guardia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -3698,7 +3687,6 @@
         "Cirugia de Cabeza y Cuello",
         "Cirugia General",
         "Cirugia General Pediatrica",
-        "Cirugia Plastica",
         "Dermatologia",
         "Diabetologia Infantil",
         "Endocrinologia",
@@ -3706,7 +3694,6 @@
         "Flebologia",
         "Gastroenterologia",
         "Gastroenterologia Pediatrica",
-        "Genetica",
         "Ginecologia",
         "Hematologia",
         "Infectologia",
@@ -3716,7 +3703,6 @@
         "Neurocirugia Infantil",
         "Neurologia Infantil",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Reumatologia",
@@ -3729,7 +3715,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Bv. Chacabuco 705",
+      "direccion": "Bv. Chacabuco 705, Piso 1",
       "telefono": "3517555444",
       "lat": null,
       "lng": null,
@@ -3776,11 +3762,9 @@
         "Neumonologia Pediatrica",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
-        "Quemados",
         "Reumatologia",
         "Traumatologia y Ortopedia",
         "Urologia",
@@ -3792,7 +3776,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Juan Nepper 6079",
+      "direccion": "Juan Nepper 6079, Piso 1",
       "telefono": "3516207090",
       "lat": -31.3497016,
       "lng": -64.2531948,
@@ -3910,9 +3894,6 @@
       "nombre": "CONSULTORIO MEDICO ATENEO",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
         "CLINICA MEDICA",
@@ -3930,7 +3911,6 @@
         "Ginecologia",
         "Inmunologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Traumatologia y Ortopedia",
@@ -3963,7 +3943,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Recta Martinolli 8102",
+      "direccion": "Recta Martinolli 8102, Piso 1",
       "telefono": "351-5748532",
       "lat": null,
       "lng": null,
@@ -4089,7 +4069,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Monseñor Pablo Cabrera 2626",
+      "direccion": "Monseñor Pablo Cabrera 2626, Piso 1",
       "telefono": "0353-4196421",
       "lat": null,
       "lng": null,
@@ -4186,7 +4166,6 @@
         "Endocrinologia",
         "Ginecologia",
         "Neumonologia",
-        "Oftalmologia",
         "Oncologia",
         "Pediatria",
         "Traumatologia y Ortopedia"
@@ -4343,7 +4322,6 @@
         "Dermatologia",
         "Endocrinologia",
         "Ginecologia",
-        "Oftalmologia",
         "Pediatria",
         "Traumatologia y Ortopedia"
       ],
@@ -4353,8 +4331,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Menendez Pidal 4008",
-      "telefono": "3513149462",
+      "direccion": "Menendez Pidal 4008, Piso 1",
+      "telefono": "351-4149462",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -4363,13 +4341,11 @@
     {
       "id": 13341,
       "nombre": "CONSULTORIOS REYES GIOBELLINA",
-      "tipo": "Oftalmología",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "OFTALMOLOGIA"
       ],
-      "especialidadesMedicas": [
-        "Oftalmologia"
-      ],
+      "especialidadesMedicas": [],
       "plan": [
         "Plan Coral",
         "Plan Integral",
@@ -4425,7 +4401,6 @@
         "Neurologia",
         "Nutricion",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Reumatologia",
@@ -4437,7 +4412,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Rodriguez del Busto 3219",
+      "direccion": "Rodriguez del Busto 3219, Piso 1",
       "telefono": "0351-4825940",
       "lat": -31.3709802,
       "lng": -64.2218766,
@@ -4607,7 +4582,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Juan Lavalleja 49",
+      "direccion": "Juan Lavalleja 49, Piso 1",
       "telefono": "382 5402775",
       "lat": null,
       "lng": null,
@@ -4650,7 +4625,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "WhatsApp 11 31818668-Totas las localidades",
+      "direccion": "WhatsApp 11 31818668-Totas las localidades, Piso 1",
       "telefono": "08108883226",
       "lat": -31.421567,
       "lng": -64.18280450000002,
@@ -4714,7 +4689,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Nazaret 3335",
+      "direccion": "Nazaret 3335, Piso 1",
       "telefono": "351 7058301",
       "lat": null,
       "lng": null,
@@ -4785,7 +4760,7 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14224,
+      "id": 15117,
       "nombre": "FARMACIA AZUL",
       "tipo": "Farmacias",
       "especialidades": [
@@ -4798,8 +4773,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Maria",
-      "direccion": "SAN JUAN 1255",
-      "telefono": "0353-4537774",
+      "direccion": "San Juan 1255",
+      "telefono": "3536578990",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -4966,7 +4941,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Colón 745",
+      "direccion": "Av. Colón 745, Piso 1",
       "telefono": "4243808/4243814",
       "lat": -31.4107121,
       "lng": -64.1934064,
@@ -4987,7 +4962,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "24 DE SETIEMBRE 802",
+      "direccion": "24 DE SETIEMBRE 802, Piso 1",
       "telefono": "4210039/4245565",
       "lat": -31.4154627,
       "lng": -64.1718499,
@@ -5008,7 +4983,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Tucumán 496 PB esq. Humberto Primo 0",
+      "direccion": "Tucumán 496 PB esq. Humberto Primo 0, Piso 1",
       "telefono": "0351–4243807",
       "lat": -26.8082848,
       "lng": -65.2175903,
@@ -5050,7 +5025,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Chacabuco 787",
+      "direccion": "Chacabuco 787, Piso 1",
       "telefono": "03551-4488331",
       "lat": -31.4265477,
       "lng": -64.18385239999999,
@@ -5071,7 +5046,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Libertad 2077 y E. Loza 0",
+      "direccion": "Libertad 2077 y E. Loza 0, Piso 1",
       "telefono": "0351–4339390",
       "lat": -31.4055995,
       "lng": -64.1579131,
@@ -5092,7 +5067,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Roma 557",
+      "direccion": "Roma 557, Piso 1",
       "telefono": "0351–4510293",
       "lat": -31.4097457,
       "lng": -64.16470290000001,
@@ -5163,27 +5138,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 15071,
-      "nombre": "FARMACIA LIDER - B° AMEGHINO",
-      "tipo": "Farmacias",
-      "especialidades": [
-        "09. FARMACIAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Av Fuerza Aérea 3015",
-      "telefono": "08108881414",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14683,
       "nombre": "FARMACIA LIDER S.A. - AV COLON II",
       "tipo": "Farmacias",
@@ -5197,7 +5151,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av Colón 1027",
+      "direccion": "Av Colón 1027, Piso 1",
       "telefono": "3514027227",
       "lat": null,
       "lng": null,
@@ -5218,7 +5172,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av Colon 820",
+      "direccion": "Av Colon 820, Piso 1",
       "telefono": "351 6722244",
       "lat": -31.4102268,
       "lng": -64.19406169999999,
@@ -5239,7 +5193,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Santa Rosa 1565",
+      "direccion": "Santa Rosa 1565, Piso 1",
       "telefono": "351 6114350",
       "lat": -31.40647659999999,
       "lng": -64.203882,
@@ -5281,7 +5235,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Rafael Nuñez 4220",
+      "direccion": "Rafael Nuñez 4220, Piso 1",
       "telefono": "351 6958586",
       "lat": -31.369344,
       "lng": -64.2320101,
@@ -5302,7 +5256,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "ONCATIVO 1366",
+      "direccion": "ONCATIVO 1366, Piso 1",
       "telefono": "351 6113307",
       "lat": -31.40948,
       "lng": -64.1666784,
@@ -5323,7 +5277,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Pablo Richieri 3310",
+      "direccion": "Pablo Richieri 3310, Piso 1",
       "telefono": "351 5429978",
       "lat": -31.4511767,
       "lng": -64.17634799999999,
@@ -5344,7 +5298,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Laprida 41",
+      "direccion": "Laprida 41, Piso 1",
       "telefono": "351 6114312",
       "lat": -31.42422019999999,
       "lng": -64.188169,
@@ -5365,7 +5319,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "O´Higgins 5845",
+      "direccion": "O´Higgins 5845, Piso 1",
       "telefono": "351 4037281",
       "lat": -31.4804055,
       "lng": -64.1683765,
@@ -5386,7 +5340,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "José María E. Zanón 9107 local 2",
+      "direccion": "José María E. Zanón 9107 local 2, Piso 1",
       "telefono": "0351-8529455",
       "lat": null,
       "lng": null,
@@ -5428,7 +5382,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Belgrano 66",
+      "direccion": "Belgrano 66, Piso 1",
       "telefono": "351 4029924",
       "lat": -31.415525,
       "lng": -64.1886423,
@@ -5449,7 +5403,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Gral Paz 258",
+      "direccion": "Gral Paz 258, Piso 1",
       "telefono": "351 5400181",
       "lat": -31.4123286,
       "lng": -64.185214,
@@ -5470,7 +5424,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Humberto Primo 208",
+      "direccion": "Humberto Primo 208, Piso 1",
       "telefono": "351 4031285",
       "lat": -31.409268,
       "lng": -64.1844629,
@@ -5491,7 +5445,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Jujuy 520",
+      "direccion": "Jujuy 520, Piso 1",
       "telefono": "351 6112178",
       "lat": -31.4080669,
       "lng": -64.1881664,
@@ -5512,7 +5466,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Santa Rosa 794",
+      "direccion": "Santa Rosa 794, Piso 1",
       "telefono": "351 4027227",
       "lat": -31.4094091,
       "lng": -64.1933428,
@@ -5535,6 +5489,27 @@
       "ciudad": "Mendiolaza",
       "direccion": "Ruta E53 Km 12 local 1 y 2",
       "telefono": "0351-6111230",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15071,
+      "nombre": "FARMACIA LIDER S.A.- B° AMEGHINO",
+      "tipo": "Farmacias",
+      "especialidades": [
+        "09. FARMACIAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Av Fuerza Aérea 3015, Piso 1",
+      "telefono": "08108881414",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -5701,7 +5676,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Chacabuco 502",
+      "direccion": "Chacabuco 502, Piso 1",
       "telefono": "3515087603",
       "lat": null,
       "lng": null,
@@ -5764,31 +5739,10 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "CNEL.J.J.DIAZ 387",
+      "direccion": "CNEL.J.J.DIAZ 387, Piso 1",
       "telefono": "0351-4610849",
       "lat": -31.4460199,
       "lng": -64.1927195,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14935,
-      "nombre": "FARMACIA SANTA MARIA",
-      "tipo": "Farmacias",
-      "especialidades": [
-        "09. FARMACIAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Colonia Caroya",
-      "direccion": "Av San Martin 3895",
-      "telefono": "3525-613292",
-      "lat": null,
-      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -5929,7 +5883,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av Velez Sarsfield 562-4to piso Inst OULTON",
+      "direccion": "Av Velez Sarsfield 562-4to piso Inst OULTON, Piso 1",
       "telefono": "0351 3030 722",
       "lat": null,
       "lng": null,
@@ -5949,8 +5903,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "9 DE JULIO 941",
-      "telefono": "0351 3030 722",
+      "direccion": "9 DE JULIO 941, Piso 1",
+      "telefono": "WP 351 3030722",
       "lat": -31.4113833,
       "lng": -64.19633619999999,
       "destacado": false,
@@ -5969,7 +5923,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Evangelista Torricelli 5615 B°Villa Belgrano",
+      "direccion": "Evangelista Torricelli 5615 B°Villa Belgrano, Piso 1",
       "telefono": "0351 3030 722",
       "lat": null,
       "lng": null,
@@ -6009,7 +5963,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Monseñor Pablo Cabrera 4013",
+      "direccion": "Monseñor Pablo Cabrera 4013, Piso 1",
       "telefono": "351 3030 722",
       "lat": null,
       "lng": null,
@@ -6029,7 +5983,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Bv Bonciolini local 1 Manantiales II",
+      "direccion": "Bv Bonciolini local 1 Manantiales II, Piso 1",
       "telefono": "351 3030 722",
       "lat": null,
       "lng": null,
@@ -6081,7 +6035,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Miguel Potel Junot 6121",
+      "direccion": "Miguel Potel Junot 6121, Piso 1",
       "telefono": "3515556641",
       "lat": null,
       "lng": null,
@@ -6124,7 +6078,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "TOLEDO 1812 0",
+      "direccion": "TOLEDO 1812 0, Piso 1",
       "telefono": "0351-4701539",
       "lat": -31.5556585,
       "lng": -64.0064846,
@@ -6163,12 +6117,10 @@
         "Dermatologia",
         "Endocrinologia",
         "Gastroenterologia",
-        "Geriatria",
         "Ginecologia",
         "Medicina Del Trabajo",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Traumatologia y Ortopedia",
@@ -6249,55 +6201,10 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Belgrano 66",
+      "direccion": "Belgrano 66, Piso 1",
       "telefono": "3515728931",
       "lat": null,
       "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14106,
-      "nombre": "HOSPITAL ITALIANO CERRO DE LAS ROSAS",
-      "tipo": "Centros Médicos",
-      "especialidades": [
-        "03. CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GASTROENTEROLOGIA PEDIATRICA",
-        "GINECOLOGIA",
-        "INMUNOLOGIA",
-        "NEONATOLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Rafael Núñez 3672",
-      "telefono": "3516531793",
-      "lat": -31.3763734,
-      "lng": -64.2257698,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -6360,9 +6267,9 @@
         "Dermatologia",
         "Diabetologia",
         "Endocrinologia",
+        "Flebologia",
         "Gastroenterologia",
         "Gastroenterologia Pediatrica",
-        "Genetica",
         "Ginecologia",
         "Hematologia",
         "Hemodinamia",
@@ -6379,7 +6286,6 @@
         "Neurologia",
         "Neurologia Infantil",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -6396,7 +6302,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "ROMA 550",
+      "direccion": "ROMA 550, Piso 1",
       "telefono": "0351-4106540",
       "lat": -31.4091615,
       "lng": -64.1644601,
@@ -6454,7 +6360,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. 24 de Septiembre 1006",
+      "direccion": "Av. 24 de Septiembre 1006, Piso 1",
       "telefono": "",
       "lat": -31.4148511,
       "lng": -64.16938,
@@ -6475,7 +6381,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Hugo Wast 1803 esq. Luis de Tejeda 0",
+      "direccion": "Hugo Wast 1803 esq. Luis de Tejeda 0, Piso 1",
       "telefono": "0351-4338183",
       "lat": -31.3647207,
       "lng": -64.23835509999999,
@@ -6496,7 +6402,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Vélez Sarsfield 566",
+      "direccion": "Av. Vélez Sarsfield 566, Piso 1",
       "telefono": "0351-4261071/72",
       "lat": -31.421837,
       "lng": -64.189543,
@@ -6517,7 +6423,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Hiperconstrucción loc. 435",
+      "direccion": "Hiperconstrucción loc. 435, Piso 1",
       "telefono": "0351-4779505",
       "lat": -31.3621087,
       "lng": -64.2183586,
@@ -6538,7 +6444,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Naciones Unidas 346",
+      "direccion": "Naciones Unidas 346, Piso 1",
       "telefono": "0351-4688281",
       "lat": -31.4422604,
       "lng": -64.2006055,
@@ -6559,7 +6465,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Elías Yofre 1050 loc. 7 y 8 Paseo del Jockey",
+      "direccion": "Elías Yofre 1050 loc. 7 y 8 Paseo del Jockey, Piso 1",
       "telefono": "0351-4334311",
       "lat": -31.4506512,
       "lng": -64.1804162,
@@ -6580,7 +6486,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Vélez Sarsfield 361 Patio Olmos loc. 319",
+      "direccion": "Av. Vélez Sarsfield 361 Patio Olmos loc. 319, Piso 1",
       "telefono": "0351-4261070",
       "lat": -31.4199094,
       "lng": -64.18829219999999,
@@ -6601,7 +6507,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "B° Rogelio Martinez - Av. Richieri 2200 0",
+      "direccion": "B° Rogelio Martinez - Av. Richieri 2200 0, Piso 1",
       "telefono": "0351-4476500",
       "lat": -31.4366548,
       "lng": -64.177415,
@@ -6622,7 +6528,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Fuerza Aérea 2944",
+      "direccion": "Av. Fuerza Aérea 2944, Piso 1",
       "telefono": "0351-4651515",
       "lat": -31.4311208,
       "lng": -64.2280919,
@@ -6643,7 +6549,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Sargento Cabral 1374",
+      "direccion": "Sargento Cabral 1374, Piso 1",
       "telefono": "0351-4119294",
       "lat": -31.42395819999999,
       "lng": -64.1507526,
@@ -6664,7 +6570,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Colón 801",
+      "direccion": "Av. Colón 801, Piso 1",
       "telefono": "0351-4255656",
       "lat": -31.4105041,
       "lng": -64.19396809999999,
@@ -6797,7 +6703,6 @@
         "Neurologia",
         "Neurologia Infantil",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -6812,7 +6717,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "SANTA ROSA 748",
+      "direccion": "SANTA ROSA 748, Piso 1",
       "telefono": "0810 444 2242",
       "lat": -31.4094373,
       "lng": -64.1929062,
@@ -6863,7 +6768,6 @@
         "Ginecologia",
         "Neumonologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Reumatologia",
@@ -6898,7 +6802,6 @@
         "Anatomia Patologica",
         "Cardiologia",
         "Cirugia General",
-        "Cirugia Plastica",
         "Dermatologia",
         "Diabetologia",
         "Endocrinologia",
@@ -6921,7 +6824,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Cólón 2057",
+      "direccion": "Av. Cólón 2057, Piso 1",
       "telefono": "3513460800",
       "lat": null,
       "lng": null,
@@ -6976,7 +6879,7 @@
     {
       "id": 14035,
       "nombre": "INSTITUTO OFTALMOLOGICO DE CORDOBA",
-      "tipo": "Oftalmología",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "OFTALMOLOGIA"
       ],
@@ -6985,7 +6888,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Chacabuco 879",
+      "direccion": "Chacabuco 879, Piso 1",
       "telefono": "0351-5707090",
       "lat": -31.4276905,
       "lng": -64.1842039,
@@ -7009,7 +6912,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Duarte Quirós 5244",
+      "direccion": "Duarte Quirós 5244, Piso 1",
       "telefono": "0351-4843999",
       "lat": -31.3969827,
       "lng": -64.2497382,
@@ -7033,7 +6936,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Carlos Gauss 5639",
+      "direccion": "Av. Carlos Gauss 5639, Piso 1",
       "telefono": "3513455853",
       "lat": null,
       "lng": null,
@@ -7054,7 +6957,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "TRISTAN MALBRAN 4224",
+      "direccion": "TRISTAN MALBRAN 4224, Piso 1",
       "telefono": "0351-4848094",
       "lat": -31.3724474,
       "lng": -64.23628,
@@ -7097,7 +7000,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "BV GUZMAN 65",
+      "direccion": "BV GUZMAN 65, Piso 1",
       "telefono": "5890589",
       "lat": -31.3496201,
       "lng": -64.2520832,
@@ -7118,7 +7021,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Dean Funes 266",
+      "direccion": "Dean Funes 266, Piso 1",
       "telefono": "5890589",
       "lat": null,
       "lng": null,
@@ -7139,7 +7042,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Juan B. Justo 3651",
+      "direccion": "Juan B. Justo 3651, Piso 1",
       "telefono": "5890589",
       "lat": -31.3824323,
       "lng": -64.1761697,
@@ -7160,7 +7063,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Rogelio Martinez 2649",
+      "direccion": "Av. Rogelio Martinez 2649, Piso 1",
       "telefono": "351-5890589",
       "lat": null,
       "lng": null,
@@ -7181,7 +7084,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Valparaiso 4301",
+      "direccion": "Av. Valparaiso 4301, Piso 1",
       "telefono": "3515890589",
       "lat": null,
       "lng": null,
@@ -7298,27 +7201,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14215,
-      "nombre": "LABORATORIOS BIOCON S.A.",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Tristan Narvaja 2303",
-      "telefono": "3515076517",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 13456,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
@@ -7332,10 +7214,31 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "SAN JOSE DE CALASANZ 258",
+      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
       "telefono": "0351-507 6517",
       "lat": -31.4153778,
       "lng": -64.1972385,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14215,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "especialidades": [
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Tristan Narvaja 2303, Piso 1",
+      "telefono": "3515076517",
+      "lat": null,
+      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -7362,6 +7265,27 @@
       "ordenPrioridad": 9999
     },
     {
+      "id": 14935,
+      "nombre": "LONDERO DE ARGUELLO",
+      "tipo": "Farmacias",
+      "especialidades": [
+        "09. FARMACIAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Colonia Caroya",
+      "direccion": "Av San Martin 3895",
+      "telefono": "03525-465860",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
       "id": 15077,
       "nombre": "MACCHIONE FERNANDO",
       "tipo": "Salud Mental",
@@ -7376,7 +7300,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Diag. Eugenio Garzón 437",
+      "direccion": "Diag. Eugenio Garzón 437, Piso 1",
       "telefono": "3513986020",
       "lat": null,
       "lng": null,
@@ -7461,7 +7385,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Baigorri 747",
+      "direccion": "Baigorri 747, Piso 1",
       "telefono": "0351-4409063",
       "lat": -31.3923562,
       "lng": -64.1850039,
@@ -7482,7 +7406,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "FRAGUEIRO 2400",
+      "direccion": "FRAGUEIRO 2400, Piso 1",
       "telefono": "0351-4718155",
       "lat": -31.3874809,
       "lng": -64.1837137,
@@ -7503,7 +7427,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Rafael Núñez 4406",
+      "direccion": "Av. Rafael Núñez 4406, Piso 1",
       "telefono": "0351-4338290",
       "lat": -31.3669592,
       "lng": -64.2339987,
@@ -7598,8 +7522,30 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Sarachaga 54",
+      "direccion": "Sarachaga 54, Piso 1",
       "telefono": "351-3272768",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15116,
+      "nombre": "OLIVERA MARIA LAURA",
+      "tipo": "Fisioterapia y Kinesiología",
+      "especialidades": [
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "PSICOLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Emilio Olmos 15 Dpto 3k, Piso 1",
+      "telefono": "351-3398899",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -7723,6 +7669,111 @@
       "ordenPrioridad": 9999
     },
     {
+      "id": 13977,
+      "nombre": "OPTICA AMERICO",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Duarte Quirós 231, Piso 1",
+      "telefono": "351-8574480",
+      "lat": -31.4207214,
+      "lng": -64.1902143,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13979,
+      "nombre": "OPTICA SANTA CARA",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "La Rioja 289, Piso 1",
+      "telefono": "351-5385135",
+      "lat": -31.4103518,
+      "lng": -64.1860143,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13980,
+      "nombre": "OPTICA SOLER - DEAN FUNES 1",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Deán Funes 280, Piso 1",
+      "telefono": "351 6525 289",
+      "lat": -31.4148551,
+      "lng": -64.1877622,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14100,
+      "nombre": "OPTICA SOLER - DEAN FUNES 2",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Deán Funes 517, Piso 1",
+      "telefono": "351 6525 289",
+      "lat": -31.4140381,
+      "lng": -64.1909635,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15074,
+      "nombre": "OPTICA SOLER-SAN JERONIMO",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "San Jeronimo 2738, Piso 1",
+      "telefono": "351 6525 289",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
       "id": 5535,
       "nombre": "PLAZA LAVALLE",
       "tipo": "Farmacias",
@@ -7736,7 +7787,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "SAN JERONIMO 3163",
+      "direccion": "SAN JERONIMO 3163, Piso 1",
       "telefono": "0351-4558830",
       "lat": -31.4237093,
       "lng": -64.1434987,
@@ -7778,7 +7829,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Laplace (loc. 4 Complejo Village) 5890",
+      "direccion": "Av. Laplace (loc. 4 Complejo Village) 5890, Piso 1",
       "telefono": "03543-448882",
       "lat": -31.3602719,
       "lng": -64.2464534,
@@ -7799,7 +7850,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AV.RAFAEL NUÑEZ 3686",
+      "direccion": "AV.RAFAEL NUÑEZ 3686, Piso 1",
       "telefono": "0351-4818380",
       "lat": -31.37639029999999,
       "lng": -64.2259394,
@@ -7820,7 +7871,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Emilio Lamarca 4135",
+      "direccion": "Emilio Lamarca 4135, Piso 1",
       "telefono": "351 5425478",
       "lat": -31.382252,
       "lng": -64.2432014,
@@ -7841,7 +7892,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Duarte Quirós (Nvo Ctro Shopping) 1400",
+      "direccion": "Duarte Quirós (Nvo Ctro Shopping) 1400, Piso 1",
       "telefono": "0351–4828101",
       "lat": -31.4130363,
       "lng": -64.2045522,
@@ -7862,7 +7913,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Recta Martinoli 6137",
+      "direccion": "Recta Martinoli 6137, Piso 1",
       "telefono": "03543-448880",
       "lat": -31.3497258,
       "lng": -64.2524497,
@@ -7969,7 +8020,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Sarachaga 34",
+      "direccion": "Sarachaga 34, Piso 1",
       "telefono": "3516659126",
       "lat": null,
       "lng": null,
@@ -8101,7 +8152,6 @@
         "Medicina Interna",
         "Neumonologia",
         "Nutricion",
-        "Oftalmologia",
         "Pediatria",
         "Traumatologia y Ortopedia",
         "Urologia",
@@ -8134,7 +8184,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AV. O'HIGGINS 2645",
+      "direccion": "AV. O'HIGGINS 2645, Piso 1",
       "telefono": "0351-4641006",
       "lat": -31.4414553,
       "lng": -64.1686012,
@@ -8154,7 +8204,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Paraná 560",
+      "direccion": "Paraná 560, Piso 1",
       "telefono": "0351-4475400",
       "lat": -31.424599,
       "lng": -64.1803781,
@@ -8174,7 +8224,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Chacabuco 566",
+      "direccion": "Chacabuco 566, Piso 1",
       "telefono": "0351-5699911 /2",
       "lat": -31.42400319999999,
       "lng": -64.1832467,
@@ -8194,7 +8244,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Rondeau 467",
+      "direccion": "Rondeau 467, Piso 1",
       "telefono": "0351-4467000",
       "lat": -31.4237765,
       "lng": -64.1804102,
@@ -8265,7 +8315,6 @@
         "Neurocirugia",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -8354,7 +8403,6 @@
         "Neurocirugia Infantil",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -8368,7 +8416,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "GENERAL DEHEZA 542",
+      "direccion": "GENERAL DEHEZA 542, Piso 1",
       "telefono": "3512002323",
       "lat": -31.4090773,
       "lng": -64.16348959999999,
@@ -8441,7 +8489,6 @@
         "Infectologia",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
         "Traumatologia y Ortopedia",
@@ -8511,7 +8558,6 @@
         "Neurocirugia",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Oncologia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -8582,10 +8628,8 @@
         "Neurocirugia",
         "Neurologia",
         "Obstetricia",
-        "Oftalmologia",
         "Otorrinolaringologia (O.R.L.)",
         "Reumatologia",
-        "Sin Especialidad",
         "Traumatologia y Ortopedia",
         "Vascular Periferico"
       ],
@@ -8613,8 +8657,7 @@
       ],
       "especialidadesMedicas": [
         "Otorrinolaringologia (O.R.L.)",
-        "Psiquiatria",
-        "Sin Especialidad"
+        "Psiquiatria"
       ],
       "plan": [
         "Plan Coral",
@@ -8622,7 +8665,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AV. SAGRADA FAMILIA  ESQ.  NAZARET 0",
+      "direccion": "AV. SAGRADA FAMILIA  ESQ.  NAZARET 0, Piso 1",
       "telefono": "351 570 4429",
       "lat": -31.3895031,
       "lng": -64.23216529999999,
@@ -8643,7 +8686,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "27 de Abril 664 1 B",
+      "direccion": "27 de Abril 664 1 B, Piso 1",
       "telefono": "351 570 4429",
       "lat": -31.4144597,
       "lng": -64.19337690000002,
@@ -8664,7 +8707,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Valparaíso 4301",
+      "direccion": "Av. Valparaíso 4301, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8685,7 +8728,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Bedoya 695",
+      "direccion": "Bedoya 695, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8706,7 +8749,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Caraffa 2392",
+      "direccion": "Av. Caraffa 2392, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8727,7 +8770,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Gandhi 193",
+      "direccion": "Av. Gandhi 193, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8769,7 +8812,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Mz 25 Lote 14 L2",
+      "direccion": "Mz 25 Lote 14 L2, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8790,7 +8833,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Virgen de la Merced 2780",
+      "direccion": "Virgen de la Merced 2780, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8811,7 +8854,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Congreso 5476",
+      "direccion": "Congreso 5476, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8832,7 +8875,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Renault 1916",
+      "direccion": "Av. Renault 1916, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8874,7 +8917,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Fuerza Aérea 3735",
+      "direccion": "Av. Fuerza Aérea 3735, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8895,7 +8938,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Leandro Alem 1570",
+      "direccion": "Av. Leandro Alem 1570, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8916,7 +8959,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Defensa 1753",
+      "direccion": "Defensa 1753, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8937,7 +8980,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Naciones Unidas 927",
+      "direccion": "Naciones Unidas 927, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -8979,7 +9022,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Vélez Sarsfield 4101",
+      "direccion": "Av. Vélez Sarsfield 4101, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9000,7 +9043,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Leartes 2484",
+      "direccion": "Leartes 2484, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9021,7 +9064,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Vélez Sarsfield 3426",
+      "direccion": "Av. Vélez Sarsfield 3426, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9042,7 +9085,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Rosales 5395",
+      "direccion": "Rosales 5395, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9063,7 +9106,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Bv. Illia 417",
+      "direccion": "Bv. Illia 417, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9084,7 +9127,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Fuerza Aérea 4730",
+      "direccion": "Av. Fuerza Aérea 4730, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9105,7 +9148,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Carlos Gauss 5904",
+      "direccion": "Av. Carlos Gauss 5904, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9168,7 +9211,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Fuerza Aérea 2804",
+      "direccion": "Av. Fuerza Aérea 2804, Piso 1",
       "telefono": "3513284848",
       "lat": null,
       "lng": null,
@@ -9197,27 +9240,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 13979,
-      "nombre": "SANTA CARA",
-      "tipo": "Ópticas",
-      "especialidades": [
-        "11. OPTICAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "La Rioja 289 289",
-      "telefono": "3515385135",
-      "lat": -31.4103518,
-      "lng": -64.1860143,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 10378,
       "nombre": "SARDOY GIORGI, ROMINA GABRIELA",
       "tipo": "Fisioterapia y Kinesiología",
@@ -9231,7 +9253,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Duarte Quirós 2686",
+      "direccion": "Duarte Quirós 2686, Piso 1",
       "telefono": "0351-152540904",
       "lat": -31.4083629,
       "lng": -64.2190609,
@@ -9260,48 +9282,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 13980,
-      "nombre": "SOLER - CALLE DEAN FUNES 1",
-      "tipo": "Ópticas",
-      "especialidades": [
-        "11. OPTICAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Deán Funes 280",
-      "telefono": "351 6525 289",
-      "lat": -31.4148551,
-      "lng": -64.1877622,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14100,
-      "nombre": "SOLER - CALLE DEAN FUNES 2",
-      "tipo": "Ópticas",
-      "especialidades": [
-        "11. OPTICAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Deán Funes 517",
-      "telefono": "351 6525 289",
-      "lat": -31.4140381,
-      "lng": -64.1909635,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 12511,
       "nombre": "SUTIAGA FARMACIA SINDICAL",
       "tipo": "Farmacias",
@@ -9315,7 +9295,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Deán Funes 444",
+      "direccion": "Deán Funes 444, Piso 1",
       "telefono": "0351-4238354",
       "lat": -31.4141582,
       "lng": -64.1898995,
@@ -9421,7 +9401,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Av. Colón 2133",
+      "direccion": "Av. Colón 2133, Piso 1",
       "telefono": "2302 521065-106",
       "lat": null,
       "lng": null,

@@ -11,7 +11,7 @@ const logos: Logo[] = [
   { name: "Sanatorio Allende", src: "/assets/prestadores/sanatorio-allende.png" },
   { name: "Clínica Romagosa", src: "/assets/prestadores/romagosa.png" },
   { name: "Oulton", src: "/assets/prestadores/oulton.png" },
-  { name: "Hospital Privado", src: "/assets/prestadores/hospital-privado.png" },
+  { name: "Hospital Italiano de Córdoba", src: "/assets/prestadores/hospital-italiano.png" },
   { name: "Sanatorio del Salvador", src: "/assets/prestadores/salvador.png" },
   { name: "Conci Carpinella", src: "/assets/prestadores/conci.png" },
   { name: "Clínica y Maternidad del Sol", src: "/assets/prestadores/clinica-del-sol.png" },
@@ -32,14 +32,14 @@ const stats = [
 function LogoChip({ name, src, text }: Logo) {
   return (
     <div className="flex-none mx-3 sm:mx-4">
-      <div className="flex h-20 w-44 items-center justify-center rounded-xl bg-white px-5 py-4 shadow-[0_4px_20px_rgba(9,47,87,0.06)] ring-1 ring-black/[0.04] transition-transform duration-300 hover:-translate-y-0.5">
+      <div className="flex h-20 w-44 items-center justify-center rounded-xl bg-white px-3 py-2.5 shadow-[0_4px_20px_rgba(9,47,87,0.06)] ring-1 ring-black/[0.04] transition-transform duration-300 hover:-translate-y-0.5">
         {src ? (
           <Image
             src={src}
             alt={name}
-            width={160}
-            height={56}
-            className="h-full w-auto max-w-[140px] object-contain"
+            width={170}
+            height={60}
+            className="max-h-full w-auto max-w-[160px] object-contain"
           />
         ) : (
           <span className="whitespace-pre-line text-center text-base font-extrabold leading-tight tracking-tight text-[#092f57]">

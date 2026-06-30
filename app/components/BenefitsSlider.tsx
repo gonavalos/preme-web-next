@@ -61,20 +61,23 @@ export default function BenefitsSlider() {
           className="group relative isolate col-span-2 md:col-span-3 overflow-hidden rounded-[22px] p-6 flex flex-col justify-end text-white transition-transform duration-300 hover:-translate-y-1"
         >
           <Image
-            src="/assets/hero/home/AdobeStock_602896949.jpeg"
-            alt=""
+            src="/assets/hero/home/ecco-ambulancia.jpg"
+            alt="Servicio de emergencias ECCO 24/7"
             fill
             className="-z-20 object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(min-width:768px) 50vw, 100vw"
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#092f57]/90 via-[#092f57]/10 to-transparent" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#092f57]/95 via-[#092f57]/40 to-[#092f57]/10" />
 
-          <span className="text-[10px] font-bold text-white/80 tracking-[0.2em] uppercase mb-2">
-            Emergencias
+          <span className="inline-flex items-center gap-1.5 self-start bg-[#E05A4F] text-white text-[10px] font-bold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full mb-3">
+            Acceso inmediato
           </span>
-          <h3 className="text-xl font-bold leading-tight tracking-tight text-balance">
-            ECCO 24/7 en el acto
+          <h3 className="text-xl md:text-2xl font-extrabold leading-tight tracking-tight text-balance">
+            ECCO 24/7
           </h3>
+          <p className="mt-1.5 text-sm text-white/85 leading-snug">
+            Consultas virtuales y atención domiciliaria.
+          </p>
         </Link>
 
         {/* Asistencia al Viajero (3x1) — cobertura exclusiva */}
