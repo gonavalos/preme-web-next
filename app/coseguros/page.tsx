@@ -1,5 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -18,38 +16,28 @@ type Documento = {
   publishedAt: string;
 };
 
-function fileMTime(rel: string): string {
-  const abs = path.join(process.cwd(), "public", rel.replace(/^\//, ""));
-  try {
-    const t = fs.statSync(abs).mtime;
-    return t.toLocaleDateString("es-AR", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-    });
-  } catch {
-    return "—";
-  }
-}
+// Fecha de publicación de los PDFs actuales. Editar al subir una nueva
+// tanda de coseguros, junto con los archivos en public/coseguros/.
+const PUBLICADO = "30 de junio de 2026";
 
 const documentos: Documento[] = [
   {
     plan: "Plan Coral",
     alcance: "Coseguros vigentes",
     archivo: "/coseguros/coseguros-plan-coral.pdf",
-    publishedAt: fileMTime("/coseguros/coseguros-plan-coral.pdf"),
+    publishedAt: PUBLICADO,
   },
   {
     plan: "Plan Integral",
     alcance: "Coseguros vigentes. Aplica también a Plan Joven Integral.",
     archivo: "/coseguros/coseguros-plan-integral.pdf",
-    publishedAt: fileMTime("/coseguros/coseguros-plan-integral.pdf"),
+    publishedAt: PUBLICADO,
   },
   {
     plan: "Plan Máximo",
     alcance: "Coseguros vigentes. Aplica también a Plan Joven Máximo.",
     archivo: "/coseguros/coseguros-plan-maximo.pdf",
-    publishedAt: fileMTime("/coseguros/coseguros-plan-maximo.pdf"),
+    publishedAt: PUBLICADO,
   },
 ];
 
