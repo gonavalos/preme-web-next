@@ -7,6 +7,9 @@ import Image from "next/image";
 import { FaClipboardCheck, FaWhatsapp } from "react-icons/fa";
 
 const WA_LINK = "https://api.whatsapp.com/send?phone=5493512006002&text=Hola%2C%20quiero%20asesoramiento%20sobre%20planes.%20Estuve%20navegando%20en%20la%20web.";
+// Portal externo (aún sin certificado SSL, por eso http). Cuando lo migren
+// a https se cambia acá y listo.
+const AUTORIZACIONES_URL = "http://autorizaciones.preme.com.ar";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,16 +66,18 @@ export default function Navbar() {
 
         {/* CTAs (derecha) */}
         <div className="hidden md:flex items-center md:gap-3 lg:gap-3 xl:gap-4">
-          {/* Autorizaciones */}
-          <Link
-            href="/autorizaciones"
+          {/* Autorizaciones — portal externo (Gecros) */}
+          <a
+            href={AUTORIZACIONES_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-xl border border-[#092f57]/15 text-[#092f57]/70 md:h-10 lg:h-11 xl:h-12 md:px-3 lg:px-4 xl:px-5 hover:border-[#092f57]/30 hover:text-[#092f57] transition-all duration-200"
           >
             <FaClipboardCheck className="text-sm lg:text-base" />
             <span className="font-semibold md:text-[12px] lg:text-[12px] xl:text-[13px]">
               Autorizaciones
             </span>
-          </Link>
+          </a>
 
           {/* CTA principal — Hablar con un asesor */}
           <a
@@ -111,6 +116,7 @@ export default function Navbar() {
               ["Inicio", "/"],
               ["Planes", "/planes"],
               ["Prestadores", "/prestadores"],
+              ["Para afiliados", "/afiliados"],
               ["Institucional", "/institucional"],
               ["Contacto", "/contacto"],
             ].map(([label, href]) => (
@@ -123,6 +129,18 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+
+            {/* Autorizaciones — portal externo */}
+            <a
+              href={AUTORIZACIONES_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 border border-[#092f57]/15 text-[#092f57] px-4 py-3 rounded-xl font-semibold"
+            >
+              <FaClipboardCheck />
+              Autorizaciones
+            </a>
 
             <a
               href={WA_LINK}
