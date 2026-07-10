@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Nuestra misión es cuidar a las familias argentinas con excelencia médica y calidez humana.",
     url: "/institucional",
-    images: [{ url: "/assets/hero/institucionalv2.png" }],
+    images: [{ url: "/assets/hero/institucionalv2.avif" }],
   },
 };
 
@@ -97,7 +97,7 @@ export default function InstitucionalPage() {
       {/* HERO */}
       <section className="relative w-full h-[52vh] md:h-[60vh]">
         <Image
-          src="/assets/hero/institucional/v2.png"
+          src="/assets/hero/institucional/v2.avif"
           alt="Equipo médico de PREME"
           fill
   priority

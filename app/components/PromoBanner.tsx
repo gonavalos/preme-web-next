@@ -5,7 +5,7 @@ export default function PromoBanner() {
     <section className="py-12 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
       <div
         className="relative rounded-[2rem] overflow-hidden h-[380px] sm:h-[420px] flex items-center bg-fixed bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/hero/home/promo.png')" }}
+        style={{ backgroundImage: "url('/assets/hero/home/promo.avif')" }}
       >
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-[#051b33]/80" />

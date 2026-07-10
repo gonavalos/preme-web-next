@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative isolate w-full h-[80vh] lg:h-[88vh] flex items-end overflow-hidden">
       {/* Background image */}
       <Image
-        src="/assets/nuevas/hero.png"
+        src="/assets/nuevas/hero.avif"
         alt=""
         fill
         priority

@@ -4,7 +4,7 @@ export default function FinalCTA() {
   return (
     <section
       className="relative py-24 md:py-32 overflow-hidden bg-[#092f57] bg-fixed bg-cover bg-center"
-      style={{ backgroundImage: "url('/assets/hero/insti5.png')" }}
+      style={{ backgroundImage: "url('/assets/hero/insti5.avif')" }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#092f57]/75" />

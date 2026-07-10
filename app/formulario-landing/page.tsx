@@ -479,7 +479,7 @@ export default function PlanesContactoPage() {
         {/* Imagen de fondo del hero */}
         <div className="absolute inset-0">
           <Image
-            src="/assets/landing/vaa4.png"
+            src="/assets/landing/vaa4.avif"
             alt="Madre joven y su hija disfrutando juntas en casa, afiliadas a PREME"
             fill
             priority

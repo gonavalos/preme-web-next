@@ -25,7 +25,7 @@ type Prestador = {
   ordenPrioridad: number;
 };
 
-const HERO_SRC = "/assets/hero/cartillav2.png";
+const HERO_SRC = "/assets/hero/cartillav2.avif";
 const PAGE_SIZE = 24;
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());

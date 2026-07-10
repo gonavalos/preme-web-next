@@ -14,7 +14,7 @@ export default function ContactoPage() {
       {/* HERO */}
       <section className="relative w-full h-[40vh] sm:h-[48vh] md:h-[56vh]">
         <Image
-          src="/assets/hero/contacto.png"
+          src="/assets/hero/contacto.avif"
           alt="Contacto PREME"
           fill
           priority

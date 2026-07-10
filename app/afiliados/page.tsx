@@ -87,7 +87,7 @@ export default function AfiliadosPage() {
         {/* HERO con imagen */}
         <section className="relative w-full h-[52vh] md:h-[58vh] min-h-[420px] overflow-hidden">
           <Image
-            src="/assets/hero/afiliados.jpg"
+            src="/assets/hero/afiliados.avif"
             alt=""
             fill
             priority
