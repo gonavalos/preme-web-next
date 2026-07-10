@@ -39,6 +39,25 @@ const DESTACADOS = {
 };
 const DEFAULT_DEST = { destacado: false, orden: 9999 };
 
+// Overrides manuales de dirección: Gecros trae algunos datos con errores de
+// carga (número + piso pegados, etc.). Corrección puntual por preId. Aplicar
+// SOLO cuando el origen no se puede corregir a corto plazo.
+//   Marce · corrección julio 2026: Bengio venía "Urquiza 3581 piso dpto B"
+const DIRECCION_OVERRIDES = {
+  // CENTRO UROLOGICO PROFESOR BENGIO SA
+  //   Gecros: "URQUIZA 3581 piso dpto B" (unieron 358 con piso 1)
+  //   Real:   "Urquiza 358, Piso 1 dpto B"
+  //   Nota: preId a confirmar tras primer sync — se resuelve por nombre abajo.
+};
+
+// Overrides por match de nombre (fallback si no tenemos preId).
+const DIRECCION_OVERRIDES_POR_NOMBRE = [
+  {
+    nombreMatch: /BENGIO/i,
+    direccion: "Urquiza 358, Piso 1 dpto B",
+  },
+];
+
 // ── Normalización ────────────────────────────────────────────────
 function mapPlan(planNom) {
   const p = (planNom ?? "").toUpperCase();
@@ -301,6 +320,27 @@ async function main() {
   console.log(`  ${espByOri.size} instituciones (oriId) con especialidades médicas`);
 
   const prestadores = normalize(raw, espByOri);
+
+  // Aplicar overrides manuales de dirección
+  let overridesAplicados = 0;
+  for (const p of prestadores) {
+    if (DIRECCION_OVERRIDES[p.id]) {
+      p.direccion = DIRECCION_OVERRIDES[p.id];
+      overridesAplicados++;
+      continue;
+    }
+    for (const { nombreMatch, direccion } of DIRECCION_OVERRIDES_POR_NOMBRE) {
+      if (nombreMatch.test(p.nombre)) {
+        p.direccion = direccion;
+        overridesAplicados++;
+        break;
+      }
+    }
+  }
+  if (overridesAplicados > 0) {
+    console.log(`  ${overridesAplicados} override(s) de dirección aplicados`);
+  }
+
   prestadores.sort((a, b) => {
     if (a.destacado !== b.destacado) return a.destacado ? -1 : 1;
     if (a.ordenPrioridad !== b.ordenPrioridad) return a.ordenPrioridad - b.ordenPrioridad;

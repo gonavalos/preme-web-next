@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-30T12:07:28.248Z",
-  "total": 328,
+  "generatedAt": "2026-07-10T15:04:20.656Z",
+  "total": 329,
   "prestadores": [
     {
       "id": 6430,
@@ -2348,7 +2348,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Urquiza 3581 piso dpto B, Piso 1",
+      "direccion": "Urquiza 358, Piso 1 dpto B",
       "telefono": "351 5311978",
       "lat": -31.408809,
       "lng": -64.1931082,
@@ -3459,7 +3459,25 @@
         "UROLOGIA",
         "VASCULAR PERIFERICO"
       ],
-      "especialidadesMedicas": [],
+      "especialidadesMedicas": [
+        "Anatomia Patologica",
+        "Cardiologia",
+        "Cardiologia Pediatrica",
+        "Cirugia General",
+        "Dermatologia",
+        "Diabetologia",
+        "Endocrinologia",
+        "Ginecologia",
+        "Hematologia",
+        "Medicina Interna",
+        "Neonatologia",
+        "Obstetricia",
+        "Otorrinolaringologia (O.R.L.)",
+        "Pediatria",
+        "Trasplante",
+        "Traumatologia y Ortopedia",
+        "Urologia"
+      ],
       "plan": [
         "Plan Coral",
         "Plan Integral",
@@ -4671,6 +4689,58 @@
       "telefono": "03543-435333",
       "lat": -31.2965846,
       "lng": -64.29267759999999,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13292,
+      "nombre": "ETICA CENTRO MEDICO",
+      "tipo": "Instituciones y Centros Médicos",
+      "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "03. CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "08. SALUD MENTAL",
+        "ALERGIA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA",
+        "INMUNOLOGIA",
+        "MEDICINA INTERNA",
+        "NUTRICION",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PEDIATRIA",
+        "PSICOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "VASCULAR PERIFERICO"
+      ],
+      "especialidadesMedicas": [
+        "Alergia",
+        "Cardiologia",
+        "Cirugia General",
+        "Dermatologia",
+        "Ginecologia",
+        "Medicina Interna",
+        "Neumonologia",
+        "Neurologia",
+        "Nutricion",
+        "Otorrinolaringologia (O.R.L.)",
+        "Pediatria",
+        "Vascular Periferico"
+      ],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Unquillo",
+      "direccion": "Av. San Martín 4715",
+      "telefono": "3513651783",
+      "lat": -31.2283089,
+      "lng": -64.3181717,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -5911,6 +5981,26 @@
       "ordenPrioridad": 9999
     },
     {
+      "id": 14939,
+      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
+      "tipo": "Laboratorios",
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Máximo"
+      ],
+      "ciudad": "Villa Carlos Paz",
+      "direccion": "Tucumán 98",
+      "telefono": "3541 223718",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
       "id": 15064,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
@@ -5985,26 +6075,6 @@
       "ciudad": "Cordoba",
       "direccion": "Bv Bonciolini local 1 Manantiales II, Piso 1",
       "telefono": "351 3030 722",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14939,
-      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Máximo"
-      ],
-      "ciudad": "Villa Carlos Paz",
-      "direccion": "Tucumán 98",
-      "telefono": "3541 223718",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -6957,7 +7027,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "TRISTAN MALBRAN 4224, Piso 1",
+      "direccion": "Tristan Malbran 4224, Piso 1",
       "telefono": "0351-4848094",
       "lat": -31.3724474,
       "lng": -64.23628,
@@ -7532,9 +7602,9 @@
     {
       "id": 15116,
       "nombre": "OLIVERA MARIA LAURA",
-      "tipo": "Fisioterapia y Kinesiología",
+      "tipo": "Salud Mental",
       "especialidades": [
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "08. SALUD MENTAL",
         "PSICOLOGIA"
       ],
       "especialidadesMedicas": [],
