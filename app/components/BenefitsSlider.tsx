@@ -139,22 +139,22 @@ export default function BenefitsSlider() {
           </p>
         </Link>
 
-        {/* Wellness — purple (2x1) */}
+        {/* Beneficios — purple (2x1) */}
         <Link
-          href="/planes"
+          href="/beneficios"
           className="group col-span-2 md:col-span-2 overflow-hidden rounded-[22px] p-6 flex flex-col bg-[#864D8D] text-white transition-transform duration-300 hover:-translate-y-1"
         >
           <div className="text-[34px] font-medium leading-none tracking-tight [font-family:Georgia,serif] mb-auto opacity-95">
             +15
           </div>
           <span className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-85 mb-1.5">
-            Wellness
+            Beneficios
           </span>
           <h3 className="text-lg font-bold leading-tight tracking-tight">
-            Gimnasios y ópticas
+            Red de beneficios
           </h3>
           <p className="mt-1.5 text-xs text-white/80 leading-snug line-clamp-2">
-            Descuentos asociados.
+            Convenios exclusivos para afiliados.
           </p>
         </Link>
       </div>

@@ -23,18 +23,27 @@ export default function Hero() {
       {/* Overlay — opacidad uniforme, sin gradient */}
       <div className="pointer-events-none absolute inset-0 bg-black/40" />
 
+      {/* Cocarda "1° prepaga de Córdoba" — sello visual arriba a la izquierda */}
+      <div
+        className="rise-in absolute z-20 top-24 left-4 sm:top-28 sm:left-6 md:top-32 md:left-10 flex flex-col items-center"
+        style={{ animationDelay: "0.05s" }}
+      >
+        <Image
+          src="/assets/n11v2.png"
+          alt="1° prepaga de Córdoba"
+          width={140}
+          height={190}
+          priority
+          className="h-24 sm:h-28 md:h-32 lg:h-36 w-auto drop-shadow-[0_6px_24px_rgba(0,0,0,0.5)]"
+        />
+      </div>
+
       {/* Content — anclado abajo */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-6 pb-28 md:pb-36">
         <div className="max-w-xl lg:max-w-2xl">
-          {/* Badge */}
+          {/* Badge (texto complementario, la cocarda visual está arriba) */}
           <div className="rise-in inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-5" style={{ animationDelay: "0.1s" }}>
-            <Image
-              src="/assets/n11v2.png"
-              alt=""
-              width={20}
-              height={30}
-              className="h-5 w-auto opacity-90"
-            />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#33BAF0]" />
             <span className="text-white/90 text-xs font-semibold tracking-wide">
               1° prepaga de Córdoba
             </span>

@@ -34,6 +34,7 @@
         "Consultas médicas ilimitadas y médico a domicilio",
         "Farmacias con descuentos desde el 50%",
         "Descuentos especiales en ortodoncia y prótesis",
+        "Descuentos especiales en óptica",
         "Emergencias 24/7",
         "Co-seguros en ambulatorio",
         "Sin co-seguro en prestador específico"
@@ -56,7 +57,7 @@
         "SIN COSEGUROS",
         "50 % de descuento en prótesis y ortodoncia",
         "Beneficios especiales en implantes odontológicos",
-        "Descuentos especiales en óptica"
+        "1 lente (cristal + armazón) al año por afiliado sin límite de edad"
       ],
       "color": "#68AE26",
       "highlight": "Más elegido por familias",
@@ -75,7 +76,8 @@
         "Plan Abierto con reintegros fuera de cartilla",
         "Sin órdenes y sin derivación",
         "SIN COSEGUROS",
-        "Ecografía 4D en embarazos"
+        "Ecografía 4D en embarazos",
+        "1 lente (cristal + armazón) al año por afiliado sin límite de edad"
       ],
       "color": "#864D8D",
       "highlight": "Premium",

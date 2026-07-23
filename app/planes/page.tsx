@@ -507,7 +507,7 @@ export default function PlanesPage() {
 
               <div className="mt-7 flex flex-wrap gap-3">
                 <a
-                  href="/contacto"
+                  href={`/formulario-landing?plan=${encodeURIComponent(current?.title || "")}`}
                   className="rounded-lg px-5 py-3 text-white font-semibold"
                   style={{ backgroundColor: current?.cta || "#33BAF0" }}
                 >
