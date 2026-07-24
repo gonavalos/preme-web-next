@@ -23,18 +23,19 @@ export default function Hero() {
       {/* Overlay — opacidad uniforme, sin gradient */}
       <div className="pointer-events-none absolute inset-0 bg-black/40" />
 
-      {/* Cocarda "1° prepaga de Córdoba" — sello visual arriba a la izquierda */}
+      {/* Cocarda "1° prepaga de Córdoba" — sello visual arriba a la derecha
+          (no colisiona con el H1 que va anclado abajo a la izquierda). */}
       <div
-        className="rise-in absolute z-20 top-24 left-4 sm:top-28 sm:left-6 md:top-32 md:left-10 flex flex-col items-center"
+        className="rise-in absolute z-20 top-20 right-4 sm:top-24 sm:right-6 md:top-28 md:right-10 flex flex-col items-center pointer-events-none"
         style={{ animationDelay: "0.05s" }}
       >
         <Image
-          src="/assets/n11v2.png"
+          src="/assets/n11v2.webp"
           alt="1° prepaga de Córdoba"
-          width={140}
-          height={190}
+          width={200}
+          height={200}
           priority
-          className="h-24 sm:h-28 md:h-32 lg:h-36 w-auto drop-shadow-[0_6px_24px_rgba(0,0,0,0.5)]"
+          className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto drop-shadow-[0_6px_24px_rgba(0,0,0,0.5)]"
         />
       </div>
 

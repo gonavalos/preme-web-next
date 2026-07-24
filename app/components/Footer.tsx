@@ -98,7 +98,7 @@ export default function Footer() {
           {/* Col 3: Medalla — alineada con logo */}
           <div className="hidden xl:flex flex-none w-[120px] pt-1 justify-center">
             <Image
-              src="/assets/n11v2.png"
+              src="/assets/n11v2.webp"
               alt="1° prepaga de CBA — +40 años de trayectoria"
               width={100}
               height={150}

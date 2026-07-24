@@ -2,7 +2,7 @@
   "Plan": [
     {
       "id": 1,
-      "headerImageSrc": "/assets/planes/plancoral.png",
+      "headerImageSrc": "/assets/planes/plancoral.avif",
       "headerImageAlt": "Plan Joven",
       "nombre": "Plan Joven",
       "descripcion": "Tu primera cobertura médica completa.",
@@ -23,7 +23,7 @@
     },
     {
       "id": 2,
-      "headerImageSrc": "/assets/nuevas/plancoral.png",
+      "headerImageSrc": "/assets/nuevas/plancoral.avif",
       "headerImageAlt": "Plan Coral",
       "nombre": "Plan Coral",
       "descripcion": "Cobertura completa a un costo muy accesible",
@@ -45,7 +45,7 @@
     },
     {
       "id": 3,
-      "headerImageSrc": "/assets/nuevas/planintegral.png",
+      "headerImageSrc": "/assets/nuevas/planintegral.avif",
       "headerImageAlt": "Plan Integral",
       "nombre": "Plan Integral",
       "descripcion": "El equilibrio perfecto",
@@ -65,7 +65,7 @@
     },
     {
       "id": 4,
-      "headerImageSrc": "/assets/nuevas/planmaximook.png",
+      "headerImageSrc": "/assets/nuevas/planmaximook.avif",
       "headerImageAlt": "Plan Máximo",
       "nombre": "Plan Máximo",
       "descripcion": "La cobertura más completa",

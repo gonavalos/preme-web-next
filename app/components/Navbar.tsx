@@ -45,19 +45,19 @@ export default function Navbar() {
         </Link>
 
         {/* Links (tablet/desktop) */}
-        <nav className="hidden md:flex items-center md:gap-5 lg:gap-6 xl:gap-8">
+        <nav className="hidden md:flex items-center md:gap-4 lg:gap-6 xl:gap-8">
           {[
             ["Inicio", "/"],
             ["Planes", "/planes"],
             ["Prestadores", "/prestadores"],
-            ["Para afiliados", "/afiliados"],
+            ["Afiliados", "/afiliados"],
             ["Institucional", "/institucional"],
             ["Contacto", "/contacto"],
           ].map(([label, href]) => (
             <Link
               key={href}
               href={href}
-              className="font-medium text-[#092f57] hover:text-[#33BAF0] transition-colors md:text-[13px] lg:text-[14px] xl:text-[15px]"
+              className="whitespace-nowrap font-medium text-[#092f57] hover:text-[#33BAF0] transition-colors md:text-[13px] lg:text-[14px] xl:text-[15px]"
             >
               {label}
             </Link>
