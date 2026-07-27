@@ -10,6 +10,16 @@ const nextConfig: NextConfig = {
     //   { protocol: "https", hostname: "tu-cdn.com" }
     // ],
   },
+  async redirects() {
+    return [
+      // Link viejo del footer + posibles enlaces externos.
+      {
+        source: "/privacidad",
+        destination: "/politica-de-privacidad",
+        permanent: true,
+      },
+    ];
+  },
   // Si tu blog usa ISR:
   // experimental: { typedRoutes: true },
 };

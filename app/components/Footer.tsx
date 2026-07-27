@@ -88,7 +88,7 @@ export default function Footer() {
                 </h4>
                 <ul className="space-y-2 text-white/90">
                   <li><Link href="/terminos" className="hover:text-[#33BAF0]">Términos y Condiciones</Link></li>
-                  <li><Link href="/privacidad" className="hover:text-[#33BAF0]">Política de Privacidad</Link></li>
+                  <li><Link href="/politica-de-privacidad" className="hover:text-[#33BAF0]">Política de Privacidad</Link></li>
                   <li><Link href="/trabaja-con-nosotros" className="hover:text-[#33BAF0]">Trabajá con nosotros</Link></li>
                 </ul>
               </div>

@@ -7,6 +7,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/planes`,  changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/prestadores`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/institucional`, changeFrequency: "yearly", priority: 0.7 },
-    { url: `${base}/contacto`, changeFrequency: "yearly", priority: 0.7 }
+    { url: `${base}/contacto`, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${base}/beneficios`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/afiliados`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/politica-de-privacidad`, changeFrequency: "yearly", priority: 0.3 }
   ];
 }
