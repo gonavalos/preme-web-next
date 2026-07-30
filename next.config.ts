@@ -18,6 +18,12 @@ const nextConfig: NextConfig = {
         destination: "/politica-de-privacidad",
         permanent: true,
       },
+      // Página vieja de empleo → canónica nueva (la que linkea el footer).
+      {
+        source: "/institucional/trabaja",
+        destination: "/trabaja-con-nosotros",
+        permanent: true,
+      },
     ];
   },
   // Si tu blog usa ISR:

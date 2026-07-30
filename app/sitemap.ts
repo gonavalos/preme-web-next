@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contacto`, changeFrequency: "yearly", priority: 0.7 },
     { url: `${base}/beneficios`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/afiliados`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/politica-de-privacidad`, changeFrequency: "yearly", priority: 0.3 }
+    { url: `${base}/politica-de-privacidad`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/terminos`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/trabaja-con-nosotros`, changeFrequency: "monthly", priority: 0.5 }
   ];
 }
