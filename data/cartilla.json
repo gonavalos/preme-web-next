@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T15:04:20.656Z",
+  "generatedAt": "2026-07-30T13:58:12.499Z",
   "total": 329,
   "prestadores": [
     {
@@ -133,7 +133,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -256,7 +255,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -336,7 +334,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "RONDEAU 455, Piso 1",
+      "direccion": "Rondeau 455, Piso 1",
       "telefono": "351-2017666",
       "lat": -31.4238362,
       "lng": -64.1807227,
@@ -706,7 +704,7 @@
       ],
       "ciudad": "Rio Ceballos",
       "direccion": "Juan XXIII 57 P.B.",
-      "telefono": "03543-15641340",
+      "telefono": "3543-641340",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -801,7 +799,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Jesus Maria",
-      "direccion": "ESPAÑA 475",
+      "direccion": "España 475",
       "telefono": "03525-607800",
       "lat": -30.9802157,
       "lng": -64.0917927,
@@ -833,9 +831,9 @@
     {
       "id": 12712,
       "nombre": "CEMO S.A.- CENTRO MODELO DE OTORRINOLARINGOLOGÍA",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Cirugia General",
@@ -858,9 +856,9 @@
     {
       "id": 14802,
       "nombre": "CENIC",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
         "BIOQUIMICOS",
@@ -886,57 +884,11 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14606,
-      "nombre": "CENTRO ARGÜELLO PRIVADO",
+      "id": 14032,
+      "nombre": "CENTRO DE ATENCION JESUS MARIA - SANATORIO CAROYA",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
-      ],
-      "especialidadesMedicas": [
-        "Diabetologia",
-        "Ginecologia"
-      ],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Av. Donato Alvarez 7610, Piso 1",
-      "telefono": "03543-420559",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14032,
-      "nombre": "CENTRO DE ATENCION JESUS MARIA - SANATORIO CAROYA",
-      "tipo": "Centros Médicos",
-      "especialidades": [
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -1022,7 +974,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "CLINICA MEDICA",
@@ -1042,7 +993,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Colonia Tirolesa",
-      "direccion": "AV. ARTURO ILLIA 2646",
+      "direccion": "Av Arturo Illia 2646",
       "telefono": "3516412705",
       "lat": -31.2595671,
       "lng": -64.0747798,
@@ -1102,7 +1053,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
@@ -1139,7 +1089,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
@@ -1198,7 +1147,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "ALERGIA",
         "CARDIOLOGIA",
         "CLINICA MEDICA",
@@ -1248,7 +1196,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -1301,9 +1248,9 @@
     {
       "id": 12755,
       "nombre": "CENTRO MEDICO DE LA FAMILIA",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
@@ -1346,9 +1293,9 @@
     {
       "id": 12882,
       "nombre": "CENTRO MEDICO EL TALAR",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -1400,9 +1347,9 @@
     {
       "id": 14106,
       "nombre": "CENTRO MEDICO ITALMED CERRO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "ALERGIA",
@@ -1495,9 +1442,9 @@
     {
       "id": 13454,
       "nombre": "CENTRO MEDICO PRIVADO - AMBULATORIO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
@@ -1537,9 +1484,9 @@
     {
       "id": 15053,
       "nombre": "CENTRO MEDICO PRIVADO \"DR. RICARDO A. GARCIA\"",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CARDIOLOGIA",
@@ -1571,61 +1518,11 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 10906,
-      "nombre": "CENTRO MEDICO PRIVADO DEL CARMEN",
-      "tipo": "Instituciones y Centros Médicos",
-      "especialidades": [
-        "CARDIOLOGIA PEDIATRICA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "MEDICINA GENERAL",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "PSIQUIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
-      ],
-      "especialidadesMedicas": [
-        "Cardiologia",
-        "Cardiologia Pediatrica",
-        "Cirugia General",
-        "Dermatologia",
-        "Endocrinologia",
-        "Gastroenterologia",
-        "Ginecologia",
-        "Medicina Familiar",
-        "Medicina Interna",
-        "Otorrinolaringologia (O.R.L.)",
-        "Pediatria",
-        "Psiquiatria",
-        "Traumatologia y Ortopedia",
-        "Vascular Periferico"
-      ],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Villa Allende",
-      "direccion": "ELPIDIO GONZALEZ 61",
-      "telefono": "03543-430796",
-      "lat": -31.294808,
-      "lng": -64.29938899999999,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 12904,
       "nombre": "CENTRO MEDICO PRIVADO DR. CANTONI",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "BIOQUIMICOS",
@@ -1654,9 +1551,9 @@
     {
       "id": 13495,
       "nombre": "CENTRO MEDICO PRIVADO EMERCO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
@@ -1696,9 +1593,9 @@
     {
       "id": 9486,
       "nombre": "CENTRO MEDICO PRIVADO SAN ANDRES SRL",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
@@ -1764,9 +1661,9 @@
     {
       "id": 14403,
       "nombre": "CENTRO MEDICO RENACER",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1785,9 +1682,9 @@
     {
       "id": 12591,
       "nombre": "CENTRO MEDICO SALDAN",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CLINICA MEDICA",
         "MEDICINA GENERAL"
       ],
@@ -1874,9 +1771,9 @@
     {
       "id": 1111,
       "nombre": "CENTRO MEDICO SANTA TERESITA",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -1947,27 +1844,6 @@
       "telefono": "03543-431758",
       "lat": -31.2942233,
       "lng": -64.2966972,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 15082,
-      "nombre": "CENTRO MEDICOP PRIVADO DR RICARDO GARCIA-AMBUL",
-      "tipo": "Centros Médicos",
-      "especialidades": [
-        "03. CENTROS MEDICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Jesus Maria",
-      "direccion": "Sarmiento 251",
-      "telefono": "03525-606001",
-      "lat": null,
-      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -2087,9 +1963,9 @@
     {
       "id": 14113,
       "nombre": "CENTRO PERIFERICO SANATORIO PRIVADO PUNILLA I",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
@@ -2216,7 +2092,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "CASTRO BARROS 179 0",
+      "direccion": "Castro Barros 179",
       "telefono": "03576-423880",
       "lat": -31.4204738,
       "lng": -63.04620790000001,
@@ -2225,9 +2101,10 @@
     },
     {
       "id": 4401,
-      "nombre": "CENTRO PRIVADO DE OJOS ROMAGOSA S.A. - V. MARIA",
+      "nombre": "CENTRO PRIVADO DE OJOS ROMAGOSA S.A.",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [],
@@ -2237,7 +2114,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Maria",
-      "direccion": "9 DE JULIO 283",
+      "direccion": "9 de Julio 283",
       "telefono": "0353-4530971",
       "lat": -32.4129449,
       "lng": -63.23988019999999,
@@ -2249,6 +2126,7 @@
       "nombre": "CENTRO PRIVADO DE OJOS-DR. BULACIO",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "ALERGIA",
         "OFTALMOLOGIA"
       ],
@@ -2262,7 +2140,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Jesus Maria",
-      "direccion": "J.F.KENNEDY 229",
+      "direccion": "J.F.Kennedy 229",
       "telefono": "03525-421222",
       "lat": -30.9815529,
       "lng": -64.09579959999999,
@@ -2275,7 +2153,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -2334,7 +2211,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "UROLOGIA"
       ],
       "especialidadesMedicas": [
@@ -2506,68 +2382,10 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Maria",
-      "direccion": "CHILE 67",
+      "direccion": "Chile 67",
       "telefono": "0353-4537171",
       "lat": -32.4085783,
       "lng": -63.2409153,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 13191,
-      "nombre": "CLÍNICA LA FAMILIA DE COOP. POZO DEL MOLLE",
-      "tipo": "Instituciones y Centros Médicos",
-      "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "ONCOLOGIA",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
-        "VASCULAR PERIFERICO"
-      ],
-      "especialidadesMedicas": [
-        "Alergia",
-        "Cardiologia",
-        "Cirugia General",
-        "Diabetologia",
-        "Endocrinologia",
-        "Gastroenterologia",
-        "Ginecologia",
-        "Inmunologia",
-        "Neurologia",
-        "Oncologia",
-        "Pediatria",
-        "Traumatologia y Ortopedia",
-        "Urologia",
-        "Vascular Periferico"
-      ],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Pozo del Molle",
-      "direccion": "Clementino Mauro 155",
-      "telefono": "0353-4868",
-      "lat": -32.016234,
-      "lng": -62.9129027,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -2612,7 +2430,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "MITRE 129",
+      "direccion": "Mitre129",
       "telefono": "03576-421770",
       "lat": -31.4229454,
       "lng": -63.0515775,
@@ -2665,7 +2483,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa del Totoral",
-      "direccion": "PRESIDENTE PERON 970",
+      "direccion": "Presidente Perón 970",
       "telefono": "03524-470059",
       "lat": -30.70425599999999,
       "lng": -64.0714158,
@@ -2675,9 +2493,9 @@
     {
       "id": 14103,
       "nombre": "CLINICA PRIVADA CAVISACATE - V. MARIA DEL RIO SECO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "CIRUGIA GENERAL",
         "PEDIATRIA"
@@ -2770,7 +2588,7 @@
         "Plan Máximo"
       ],
       "ciudad": "La Francia",
-      "direccion": "VELEZ SARSFIELD 145",
+      "direccion": "Velez Sarsfield 145",
       "telefono": "03564-471625",
       "lat": -31.4063192,
       "lng": -62.6332529,
@@ -2840,8 +2658,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Maria",
-      "direccion": "CORRIENTES 744",
-      "telefono": "",
+      "direccion": "Corrientes 744",
+      "telefono": "353-4646500",
       "lat": -32.4143903,
       "lng": -63.2459276,
       "destacado": false,
@@ -2909,7 +2727,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Allende",
-      "direccion": "SAAVEDRA 362",
+      "direccion": "Saavedra 362",
       "telefono": "03543-434378",
       "lat": -31.2941551,
       "lng": -64.29445059999999,
@@ -2964,7 +2782,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Dean Funes",
-      "direccion": "SAENZ PEÑA 261",
+      "direccion": "Saenz Peña 261",
       "telefono": "03521-420018",
       "lat": -30.4262284,
       "lng": -64.3510922,
@@ -2974,9 +2792,9 @@
     {
       "id": 12952,
       "nombre": "CLINICA PRIVADA DEL NIÑO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -3061,7 +2879,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Jesus Maria",
-      "direccion": "DR. ANIBAL VIALE 790",
+      "direccion": "Dr. Anibal Viale 790",
       "telefono": "03525-420302",
       "lat": -30.979503,
       "lng": -64.103647,
@@ -3088,7 +2906,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Pilar",
-      "direccion": "25 DE MAYO 646",
+      "direccion": "25 de Mayo 646",
       "telefono": "03572-479986",
       "lat": -31.6782103,
       "lng": -63.88129430000001,
@@ -3098,9 +2916,9 @@
     {
       "id": 6300,
       "nombre": "CLINICA PRIVADA S.R.L. (VILLA DOLORES)",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "OFTALMOLOGIA"
@@ -3133,7 +2951,7 @@
         "Plan Máximo"
       ],
       "ciudad": "La Tordilla",
-      "direccion": "AV. LIBERTADOR 1004",
+      "direccion": "Av.Libertador 1004",
       "telefono": "03576-496118",
       "lat": -31.2377418,
       "lng": -63.0601313,
@@ -3193,7 +3011,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Jesus Maria",
-      "direccion": "ITALIA 639",
+      "direccion": "Italia 639",
       "telefono": "03525-421204",
       "lat": -30.9815209,
       "lng": -64.0937376,
@@ -3202,7 +3020,7 @@
     },
     {
       "id": 11557,
-      "nombre": "CLINICA PRIVADA SANTA MARIA (ALTA GRACIA)",
+      "nombre": "CLINICA PRIVADA SANTA MARIA",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
@@ -3269,7 +3087,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Alta Gracia",
-      "direccion": "BELISARIO ROLDAN 40",
+      "direccion": "Belisario Roldan 40",
       "telefono": "03547-421093",
       "lat": -31.6572463,
       "lng": -64.43278939999999,
@@ -3292,7 +3110,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Rio Primero",
-      "direccion": "SAN MARTIN 303",
+      "direccion": "San Martin 303",
       "telefono": "03574-420183",
       "lat": -31.3289816,
       "lng": -63.6202734,
@@ -3313,7 +3131,7 @@
         "Plan Máximo"
       ],
       "ciudad": "El Tio",
-      "direccion": "25 DE MAYO 766",
+      "direccion": "25 de Mayo 766",
       "telefono": "03576-491080",
       "lat": -31.384529,
       "lng": -62.8284538,
@@ -3326,7 +3144,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -3497,7 +3314,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -3551,7 +3367,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "ALERGIA",
@@ -3743,9 +3558,9 @@
     {
       "id": 3953,
       "nombre": "CONSULTORIO DE LA RECTA",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "BIOQUIMICOS",
@@ -3804,9 +3619,9 @@
     {
       "id": 14034,
       "nombre": "CONSULTORIO DR. NICOLAS BRUNO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [],
@@ -3904,46 +3719,6 @@
       "telefono": "3517703012",
       "lat": -31.28817889999999,
       "lng": -64.2950934,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 10760,
-      "nombre": "CONSULTORIO MEDICO ATENEO",
-      "tipo": "Instituciones y Centros Médicos",
-      "especialidades": [
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "NUTRICION",
-        "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
-      ],
-      "especialidadesMedicas": [
-        "Alergia",
-        "Cardiologia",
-        "Dermatologia",
-        "Gastroenterologia",
-        "Ginecologia",
-        "Inmunologia",
-        "Obstetricia",
-        "Otorrinolaringologia (O.R.L.)",
-        "Pediatria",
-        "Traumatologia y Ortopedia",
-        "Vascular Periferico"
-      ],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Villa Allende",
-      "direccion": "PELLEGRINI 27",
-      "telefono": "03543-434494",
-      "lat": -31.2879804,
-      "lng": -64.29605730000002,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -4154,9 +3929,9 @@
     {
       "id": 13270,
       "nombre": "CONSULTORIOS DE LA MERCED",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
@@ -4204,9 +3979,9 @@
     {
       "id": 12592,
       "nombre": "CONSULTORIOS MÉDICOS DRA. VIEL",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
@@ -4350,7 +4125,7 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "Menendez Pidal 4008, Piso 1",
-      "telefono": "351-4149462",
+      "telefono": "351-3149462",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -4380,9 +4155,9 @@
     {
       "id": 11844,
       "nombre": "CORDOBA MEDICAL CENTER",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -4698,7 +4473,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "ALERGIA",
@@ -6086,7 +5860,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
@@ -6284,7 +6057,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -6372,7 +6144,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "ROMA 550, Piso 1",
+      "direccion": "Roma 550, Piso 1",
       "telefono": "0351-4106540",
       "lat": -31.4091615,
       "lng": -64.1644601,
@@ -6714,9 +6486,9 @@
     {
       "id": 3792,
       "nombre": "INSTITUTO CONCI CARPINELLA S.R.L.",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -6797,9 +6569,9 @@
     {
       "id": 13732,
       "nombre": "INSTITUTO DE ESPECIALIDADES MEDICAS PRIVADO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -6860,9 +6632,9 @@
     {
       "id": 14290,
       "nombre": "INSTITUTO MEDICO DAMIC",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "OFTALMOLOGIA"
@@ -6895,7 +6667,7 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "Av. Cólón 2057, Piso 1",
-      "telefono": "3513460800",
+      "telefono": "351-3763513",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -6951,6 +6723,7 @@
       "nombre": "INSTITUTO OFTALMOLOGICO DE CORDOBA",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [],
@@ -7553,7 +7326,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "08. SALUD MENTAL"
       ],
@@ -7735,6 +7507,111 @@
       "telefono": "03543-472020",
       "lat": -31.13431809999999,
       "lng": -64.2962113,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15129,
+      "nombre": "OPTICA ALTAVISTA-B° ARGUELLO",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Donato Alvarez 8714, Piso 1",
+      "telefono": "351-5917870",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15128,
+      "nombre": "OPTICA ALTAVISTA-B° GENERAL PAZ",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Jacinto Ríos 584 Local 4, Piso 1",
+      "telefono": "351-5925672",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15130,
+      "nombre": "OPTICA ALTAVISTA-B° SAN VICENTE",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "San Jerónimo 2932, Piso 1",
+      "telefono": "351-2427241",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15131,
+      "nombre": "OPTICA ALTAVISTA-EMBALSE",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Embalse",
+      "direccion": "Hipolito Yrigoyen 288",
+      "telefono": "3571-542289",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15127,
+      "nombre": "OPTICA ALTAVISTA-VILLA CABRERA",
+      "tipo": "Ópticas",
+      "especialidades": [
+        "11. OPTICAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Av. Emilio Caraffa 2541, Piso 1",
+      "telefono": "351-5952831",
+      "lat": null,
+      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -8146,7 +8023,6 @@
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "03. CENTROS MEDICOS",
         "08. SALUD MENTAL",
         "CARDIOLOGIA PEDIATRICA",
         "DERMATOLOGIA",
@@ -8175,9 +8051,9 @@
     {
       "id": 13337,
       "nombre": "SALVUS CENTRO MEDICO PRIVADO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -8264,9 +8140,9 @@
     {
       "id": 14131,
       "nombre": "SANATORIO ACONCAGUA - CALLE PARANA",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8275,7 +8151,7 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "Paraná 560, Piso 1",
-      "telefono": "0351-4475400",
+      "telefono": "351-20176666",
       "lat": -31.424599,
       "lng": -64.1803781,
       "destacado": false,
@@ -8284,9 +8160,9 @@
     {
       "id": 14130,
       "nombre": "SANATORIO ACONCAGUA - CHACABUCO",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8295,7 +8171,7 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "Chacabuco 566, Piso 1",
-      "telefono": "0351-5699911 /2",
+      "telefono": "351-2017666",
       "lat": -31.42400319999999,
       "lng": -64.1832467,
       "destacado": false,
@@ -8304,9 +8180,9 @@
     {
       "id": 14132,
       "nombre": "SANATORIO ACONCAGUA - RONDEAU",
-      "tipo": "Centros Médicos",
+      "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "03. CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8315,7 +8191,7 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "Rondeau 467, Piso 1",
-      "telefono": "0351-4467000",
+      "telefono": "351-2017666",
       "lat": -31.4237765,
       "lng": -64.1804102,
       "destacado": false,
@@ -8397,7 +8273,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Maria",
-      "direccion": "SAN JUAN 1255",
+      "direccion": "San Juan 1255",
       "telefono": "0353-4527174",
       "lat": -32.4071674,
       "lng": -63.244454,
@@ -8486,7 +8362,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "GENERAL DEHEZA 542, Piso 1",
+      "direccion": "General Deheza 542, Piso 1",
       "telefono": "3512002323",
       "lat": -31.4090773,
       "lng": -64.16348959999999,
@@ -8709,7 +8585,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Carlos Paz",
-      "direccion": "URUGUAY 850",
+      "direccion": "Uruguay 850",
       "telefono": "03541-421001",
       "lat": -31.3649838,
       "lng": -64.544568,
