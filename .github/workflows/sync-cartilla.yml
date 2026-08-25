@@ -1,0 +1,64 @@
+# Sincronización automática de la cartilla de prestadores desde Gecros.
+#
+# Corre todos los días a las 06:00 de Argentina (09:00 UTC). Si Gecros trae
+# cambios, commitea el snapshot nuevo y el push dispara el auto-deploy de
+# Hostinger/Vercel. Si no hay cambios, termina sin tocar nada.
+#
+# Pedido por Gestión PREME (Roxana) el 14/08/2026: "que se actualice
+# automáticamente". Para cambiar la frecuencia, editar el cron de abajo
+# (ej. cada 12 hs: "0 9,21 * * *").
+#
+# También se puede disparar a mano: pestaña Actions → Sync cartilla → Run
+# workflow (o `gh workflow run sync-cartilla.yml`).
+
+name: Sync cartilla
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # 06:00 Argentina, todos los días
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-cartilla
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sincronizar desde Gecros
+        run: node scripts/sync-cartilla.mjs
+
+      - name: Guarda de sanidad (no publicar un snapshot roto)
+        run: |
+          total=$(node -e "console.log(require('./data/cartilla.json').total)")
+          echo "Prestadores en el snapshot: $total"
+          if [ "$total" -lt 300 ]; then
+            echo "::error::El snapshot trae $total prestadores (<300). Gecros pudo responder incompleto. NO se publica."
+            exit 1
+          fi
+
+      - name: Commit y push si hay cambios
+        run: |
+          if git diff --quiet data/cartilla.json; then
+            echo "Sin cambios en la cartilla. Nada que publicar."
+            exit 0
+          fi
+          git config user.name "preme-sync-bot"
+          git config user.email "sync-bot@users.noreply.github.com"
+          git add data/cartilla.json
+          resumen=$(git diff --cached --shortstat data/cartilla.json)
+          git commit -m "data(cartilla): sync automático diario desde Gecros" \
+                     -m "$resumen" \
+                     -m "Workflow: sync-cartilla.yml (06:00 ART)"
+          git push
