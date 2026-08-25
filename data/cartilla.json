@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-25T14:02:11.109Z",
-  "total": 329,
+  "generatedAt": "2026-08-25T17:09:33.481Z",
+  "total": 330,
   "prestadores": [
     {
       "id": 6430,
@@ -733,6 +733,27 @@
       "telefono": "3547463147",
       "lat": null,
       "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 10902,
+      "nombre": "CAPDEVILLA MARIANA XIMENA",
+      "tipo": "Fisioterapia y Kinesiología",
+      "especialidades": [
+        "06. FISIOTERAPIA Y KINESIOLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "MalagueñO  -  Yocsina",
+      "direccion": "M.N.de Ferreyra 288",
+      "telefono": "351 3 862409",
+      "lat": -31.4635517,
+      "lng": -64.35740729999999,
       "destacado": false,
       "ordenPrioridad": 9999
     },
