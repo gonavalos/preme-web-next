@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T13:58:12.499Z",
+  "generatedAt": "2026-08-25T14:02:11.109Z",
   "total": 329,
   "prestadores": [
     {
@@ -181,6 +181,7 @@
         "Hematologia",
         "Hemodinamia",
         "Infectologia",
+        "Medicina Interna",
         "Medico de Guardia",
         "Nefrologia",
         "Neumonologia",
@@ -370,7 +371,10 @@
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
-      "especialidadesMedicas": [],
+      "especialidadesMedicas": [
+        "Ginecologia",
+        "Urologia"
+      ],
       "plan": [
         "Plan Coral",
         "Plan Integral",
@@ -441,7 +445,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "SARMIENTO 915",
+      "direccion": "Sarmiento 915",
       "telefono": "03576-450370",
       "lat": -31.4204249,
       "lng": -63.0494937,
@@ -635,7 +639,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "RIVADAVIA 339",
+      "direccion": "Rivadavia 339",
       "telefono": "03576-15527274",
       "lat": -31.4200889,
       "lng": -63.0498815,
@@ -657,7 +661,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "RIVADAVIA 339",
+      "direccion": "Rivadavia 339",
       "telefono": "03576-15464818",
       "lat": -31.4200889,
       "lng": -63.0498815,
@@ -1040,7 +1044,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Jesus Maria",
-      "direccion": "ESPAÑA 475",
+      "direccion": "España 475",
       "telefono": "03525-607800",
       "lat": -30.9802157,
       "lng": -64.0917927,
@@ -1065,7 +1069,6 @@
       "especialidadesMedicas": [
         "Cardiologia",
         "Cirugia General",
-        "Endocrinologia",
         "Ginecologia",
         "Medicina Familiar",
         "Pediatria"
@@ -1116,7 +1119,9 @@
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
+        "Anatomia Patologica",
         "Cardiologia",
+        "Cirugia de Torax",
         "Cirugia General",
         "Ginecologia",
         "Infectologia",
@@ -1320,6 +1325,7 @@
       "especialidadesMedicas": [
         "Anatomia Patologica",
         "Cardiologia",
+        "Cirugia General",
         "Dermatologia",
         "Diabetologia",
         "Endocrinologia",
@@ -1338,7 +1344,7 @@
       ],
       "ciudad": "Mendiolaza",
       "direccion": "Av. Tissera 2060 esq. Los Aromos",
-      "telefono": "03543-645771",
+      "telefono": "351-3073219",
       "lat": -31.2562196,
       "lng": -64.2754329,
       "destacado": false,
@@ -1474,7 +1480,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Jesus Maria",
-      "direccion": "ESPAÑA 402",
+      "direccion": "España 402",
       "telefono": "03525-420410",
       "lat": -30.9792629,
       "lng": -64.0917693,
@@ -1651,7 +1657,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AVELLANEDA 464, Piso 1",
+      "direccion": "Avellaneda 464, Piso 1",
       "telefono": "3513849912",
       "lat": -31.4071162,
       "lng": -64.1940644,
@@ -1997,7 +2003,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "GENERAL PAZ 1044",
+      "direccion": "General Paz 1044",
       "telefono": "03572-452861",
       "lat": -31.4198161,
       "lng": -63.05079120000001,
@@ -2199,7 +2205,7 @@
       ],
       "ciudad": "Unquillo",
       "direccion": "12 de Octubre158",
-      "telefono": "03543-488107",
+      "telefono": "351-2419001",
       "lat": -31.2330333,
       "lng": -64.3196663,
       "destacado": false,
@@ -2294,6 +2300,50 @@
       "ciudad": "Rio Ceballos",
       "direccion": "Bolivia 347",
       "telefono": "3543-600680",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15150,
+      "nombre": "CLINICA DE OJOS MALDONADO BAS PRIVADA SRL",
+      "tipo": "Instituciones y Centros Médicos",
+      "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "OFTALMOLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Achával Rodríguez 544, Piso 1",
+      "telefono": "0351 - 4638989",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15160,
+      "nombre": "CLINICA DE OJOS MALDONADO BAS PRIVADA SRLRECTA MARTINOLLI",
+      "tipo": "Instituciones y Centros Médicos",
+      "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "OFTALMOLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Recta Martinolli 5762, Piso 1",
+      "telefono": "03543-449660/61",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -2803,7 +2853,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "25 DE MAYO 1257",
+      "direccion": "25 de Mayo 1257",
       "telefono": "03576-452313",
       "lat": -31.4217418,
       "lng": -63.0514289,
@@ -2910,30 +2960,6 @@
       "telefono": "03572-479986",
       "lat": -31.6782103,
       "lng": -63.88129430000001,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 6300,
-      "nombre": "CLINICA PRIVADA S.R.L. (VILLA DOLORES)",
-      "tipo": "Instituciones y Centros Médicos",
-      "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "OFTALMOLOGIA"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Villa Dolores",
-      "direccion": "SARMIENTO 151",
-      "telefono": "03544-421122",
-      "lat": -31.9464978,
-      "lng": -65.18968559999999,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -3362,54 +3388,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 15051,
-      "nombre": "CLINICA PRIVADA VELEZ SARSFIELD - ESTE",
-      "tipo": "Instituciones y Centros Médicos",
-      "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "INFECTOLOGIA",
-        "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
-        "VASCULAR PERIFERICO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Fray Mamerto Esquiú 111, Piso 1",
-      "telefono": "08101229898",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 12955,
       "nombre": "CLINICA REGIONAL ARROYITO SRL",
       "tipo": "Instituciones y Centros Médicos",
@@ -3521,6 +3499,7 @@
         "Cirugia General",
         "Cirugia General Pediatrica",
         "Dermatologia",
+        "Diabetologia",
         "Diabetologia Infantil",
         "Endocrinologia",
         "Endocrinologia Pediatrica",
@@ -3535,6 +3514,7 @@
         "Neumonologia Pediatrica",
         "Neurocirugia Infantil",
         "Neurologia Infantil",
+        "Nutricion",
         "Obstetricia",
         "Otorrinolaringologia (O.R.L.)",
         "Pediatria",
@@ -4071,6 +4051,7 @@
       "especialidadesMedicas": [
         "Cardiologia",
         "Ginecologia",
+        "Medicina Familiar",
         "Obstetricia",
         "Traumatologia y Ortopedia"
       ],
@@ -4227,7 +4208,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "J. A. VOCOS 149",
+      "direccion": "J. A. Vocos 149",
       "telefono": "03576-425574",
       "lat": -31.4221925,
       "lng": -63.05316909999999,
@@ -4397,7 +4378,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Villa Carlos Paz",
-      "direccion": "PUNILLA 64",
+      "direccion": "Punilla 64",
       "telefono": "03541-420891",
       "lat": -31.4248117,
       "lng": -64.5018298,
@@ -4659,7 +4640,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Alta Gracia",
-      "direccion": "ESPAÑA ESQUINA RAFAEL LOZADA 0",
+      "direccion": "España Esq. Rafael Lozada",
       "telefono": "03547-430195",
       "lat": -31.66003649999999,
       "lng": -64.43361999999999,
@@ -4764,7 +4745,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "SARMIENTO 971",
+      "direccion": "Sarmiento 971",
       "telefono": "",
       "lat": -31.4204249,
       "lng": -63.0494937,
@@ -5604,7 +5585,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "BARTOLOME MITRE 230",
+      "direccion": "Bartolomé Mitre 230",
       "telefono": "03576-423083",
       "lat": -31.4151608,
       "lng": -63.0541334,
@@ -5625,7 +5606,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "DALLE MURA 1230",
+      "direccion": "Dalle Mura 1230",
       "telefono": "03576-422327",
       "lat": -31.4246452,
       "lng": -63.04932999999999,
@@ -5646,7 +5627,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "25 DE MAYO 1102",
+      "direccion": "25 de Mayo 1102",
       "telefono": "03576-451180",
       "lat": -31.4217853,
       "lng": -63.05059929999999,
@@ -5708,7 +5689,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "RIVADAVIA 118",
+      "direccion": "Rivadavia 118",
       "telefono": "03576-15525780",
       "lat": -31.4223904,
       "lng": -63.0492089,
@@ -5998,7 +5979,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "RIVADAVIA 118",
+      "direccion": "Rivadavia 118",
       "telefono": "03576-425030",
       "lat": -31.4223904,
       "lng": -63.0492089,
@@ -6020,7 +6001,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "M. MORENO 943",
+      "direccion": "M. Moreno 943",
       "telefono": "03576-425030",
       "lat": -31.4177327,
       "lng": -63.0515407,
@@ -6559,7 +6540,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "SANTA ROSA 748, Piso 1",
+      "direccion": "Santa Rosa 748, Piso 1",
       "telefono": "0810 444 2242",
       "lat": -31.4094373,
       "lng": -64.1929062,
@@ -7292,7 +7273,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "SARMIENTO 798",
+      "direccion": "Sarmiento 798",
       "telefono": "03576-451166",
       "lat": -31.4199173,
       "lng": -63.0473721,
@@ -7407,7 +7388,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "MARIANO MORENO 742",
+      "direccion": "Mariano Moreno 742",
       "telefono": "03576-423077",
       "lat": -31.4176896,
       "lng": -63.0513811,
@@ -7429,7 +7410,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "SARMIENTO 798",
+      "direccion": "Sarmiento 798",
       "telefono": "03576-451166",
       "lat": -31.4199173,
       "lng": -63.0473721,
@@ -7450,7 +7431,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Alta Gracia",
-      "direccion": "BELGRANO 199",
+      "direccion": "Belgrano 199",
       "telefono": "03547-421031",
       "lat": -31.6577854,
       "lng": -64.4313162,
@@ -8010,7 +7991,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Arroyito",
-      "direccion": "JOSE A. VOCOS 117",
+      "direccion": "José A. Vocos 117",
       "telefono": "03576-425069",
       "lat": -31.4221925,
       "lng": -63.05316909999999,
@@ -8033,6 +8014,7 @@
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
+        "Neumonologia Pediatrica",
         "Pediatria"
       ],
       "plan": [
@@ -8611,7 +8593,7 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "AV. SAGRADA FAMILIA  ESQ.  NAZARET 0, Piso 1",
+      "direccion": "Av. Sagrada Familia  Esq.  Nazaret 0, Piso 1",
       "telefono": "351 570 4429",
       "lat": -31.3895031,
       "lng": -64.23216529999999,
