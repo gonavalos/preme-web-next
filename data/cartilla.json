@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T14:06:29.397Z",
+  "generatedAt": "2026-08-30T14:12:35.707Z",
   "total": 330,
   "prestadores": [
     {
@@ -1221,10 +1221,6 @@
       "nombre": "CENTRO MEDICO DE ESPEC. Y DIAG. PRIVADO - CEMEDI",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
@@ -1241,7 +1237,11 @@
         "NEONATOLOGIA",
         "NEUROLOGIA",
         "NUTRICION",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PEDIATRIA",
+        "PSICOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -3640,27 +3640,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14644,
-      "nombre": "CONSULTORIO DRA ANDERSON CAROLINA",
-      "tipo": "Odontología",
-      "especialidades": [
-        "10. ODONTOLOGIA"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "San Agustin",
-      "direccion": "Uruguay 358",
-      "telefono": "3547614600",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 15075,
       "nombre": "CONSULTORIO DRA ANDERSON CAROLINA",
       "tipo": "Odontología",
@@ -3695,6 +3674,27 @@
         "Plan Máximo"
       ],
       "ciudad": "DespeñAderos",
+      "direccion": "Uruguay 358",
+      "telefono": "3547614600",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14644,
+      "nombre": "CONSULTORIO DRA ANDERSON CAROLINA",
+      "tipo": "Odontología",
+      "especialidades": [
+        "10. ODONTOLOGIA"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "San Agustin",
       "direccion": "Uruguay 358",
       "telefono": "3547614600",
       "lat": null,
@@ -5173,27 +5173,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14318,
-      "nombre": "FARMACIA LIDER S.A. - B° VILLA WARCALDE",
-      "tipo": "Farmacias",
-      "especialidades": [
-        "09. FARMACIAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "José María E. Zanón 9107 local 2, Piso 1",
-      "telefono": "0351-8529455",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14682,
       "nombre": "FARMACIA LIDER S.A. - B° VILLA WARCALDE",
       "tipo": "Farmacias",
@@ -5209,6 +5188,27 @@
       "ciudad": "Saldan",
       "direccion": "Enrique Bodereau 9852 Local 1",
       "telefono": "3514031285",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14318,
+      "nombre": "FARMACIA LIDER S.A. - B° VILLA WARCALDE",
+      "tipo": "Farmacias",
+      "especialidades": [
+        "09. FARMACIAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "José María E. Zanón 9107 local 2, Piso 1",
+      "telefono": "0351-8529455",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -5737,26 +5737,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 6376,
-      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "9 DE JULIO 941, Piso 1",
-      "telefono": "WP 351 3030722",
-      "lat": -31.4113833,
-      "lng": -64.19633619999999,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14939,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
@@ -5853,6 +5833,26 @@
       "telefono": "351 3030 722",
       "lat": null,
       "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 6376,
+      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
+      "tipo": "Laboratorios",
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "9 DE JULIO 941, Piso 1",
+      "telefono": "WP 351 3030722",
+      "lat": -31.4113833,
+      "lng": -64.19633619999999,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -6573,6 +6573,14 @@
       "nombre": "INSTITUTO DE ESPECIALIDADES MEDICAS PRIVADO",
       "tipo": "Instituciones y Centros Médicos",
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "08. SALUD MENTAL",
+        "ALERGIA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
         "CIRUGIA GENERAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
@@ -6590,15 +6598,7 @@
         "PEDIATRIA",
         "PSICOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA"
+        "UROLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -7046,27 +7046,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14215,
-      "nombre": "LABORATORIOS BIOCON S.A.",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Tristan Narvaja 2303, Piso 1",
-      "telefono": "3515076517",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 13456,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
@@ -7084,6 +7063,27 @@
       "telefono": "0351-507 6517",
       "lat": -31.4153778,
       "lng": -64.1972385,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14215,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "especialidades": [
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Tristan Narvaja 2303, Piso 1",
+      "telefono": "3515076517",
+      "lat": null,
+      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -7462,11 +7462,8 @@
     {
       "id": 13846,
       "nombre": "OMED MEDICINA PRIVADA S.R.L.",
-      "tipo": "Instituciones y Centros Médicos",
+      "tipo": "Fisioterapia y Kinesiología",
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
@@ -7483,7 +7480,10 @@
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
-        "PSICOLOGIA"
+        "PSICOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
