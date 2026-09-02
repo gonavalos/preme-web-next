@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-01T13:51:00.900Z",
-  "total": 330,
+  "generatedAt": "2026-09-02T13:08:32.357Z",
+  "total": 331,
   "prestadores": [
     {
       "id": 6430,
@@ -357,8 +357,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Alta Gracia",
-      "direccion": "Av.Dalinger 288",
-      "telefono": "3547-508584",
+      "direccion": "Av.Dalinger 292",
+      "telefono": "3547-548657",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -588,7 +588,8 @@
       "nombre": "BONCIOLINI KARINA",
       "tipo": "Laboratorios",
       "especialidades": [
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -598,7 +599,7 @@
       ],
       "ciudad": "Alta Gracia",
       "direccion": "Av.Brochero esq.14",
-      "telefono": "3547-481156",
+      "telefono": "3547-451600",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -665,27 +666,6 @@
       "telefono": "03576-15464818",
       "lat": -31.4200889,
       "lng": -63.0498815,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14841,
-      "nombre": "BUTASSI ANDREA",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "DespeñAderos",
-      "direccion": "Arenales 468",
-      "telefono": "3547-467068",
-      "lat": null,
-      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -773,7 +753,7 @@
       ],
       "ciudad": "Alta Gracia",
       "direccion": "Carignani 180",
-      "telefono": "3547-522798",
+      "telefono": "11-33198137",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -784,7 +764,8 @@
       "nombre": "CASSUTTI GONZALO",
       "tipo": "Laboratorios",
       "especialidades": [
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -794,7 +775,7 @@
       ],
       "ciudad": "Alta Gracia",
       "direccion": "Belisario Roldan 67",
-      "telefono": "3547-423349",
+      "telefono": "3547-599207",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -4521,6 +4502,28 @@
       "ordenPrioridad": 9999
     },
     {
+      "id": 11769,
+      "nombre": "EVANGELISTA MARCOS",
+      "tipo": "Laboratorios",
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Alta Gracia",
+      "direccion": "Brasil esq. Almada 2088",
+      "telefono": "3547-641391",
+      "lat": -31.6570318,
+      "lng": -64.4301734,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
       "id": 14209,
       "nombre": "FALCON NOELIA MARICEL",
       "tipo": "Salud Mental",
@@ -5714,6 +5717,28 @@
       "telefono": "03576-15525780",
       "lat": -31.4223904,
       "lng": -63.0492089,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13027,
+      "nombre": "FERRI MARCOS",
+      "tipo": "Laboratorios",
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "DespeñAderos",
+      "direccion": "V.Sarsfield 671",
+      "telefono": "351-2131821",
+      "lat": -31.1763314,
+      "lng": -64.3060081,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -7174,8 +7199,8 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 9691,
-      "nombre": "MARTINEZ DE BUENO MARIA LUZ",
+      "id": 15247,
+      "nombre": "MARTINEZ FERNANDO",
       "tipo": "Laboratorios",
       "especialidades": [
         "05. LABORATORIO",
@@ -7188,8 +7213,8 @@
         "Plan Máximo"
       ],
       "ciudad": "Alta Gracia",
-      "direccion": "Olmos 203",
-      "telefono": "27120041571",
+      "direccion": "Narciso Godoy Nuñez 540",
+      "telefono": "3547-595733",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -7748,7 +7773,8 @@
       "nombre": "REARTE GERMAN OSCAR",
       "tipo": "Laboratorios",
       "especialidades": [
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -7758,7 +7784,7 @@
       ],
       "ciudad": "DespeñAderos",
       "direccion": "Vélez Sarsfield 949",
-      "telefono": "054631868",
+      "telefono": "3547-631868",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -7948,7 +7974,7 @@
       ],
       "ciudad": "Alta Gracia",
       "direccion": "Carignani 180",
-      "telefono": "3547-522798",
+      "telefono": "351-5511984",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -9320,7 +9346,8 @@
       "nombre": "VIANO PAULA",
       "tipo": "Laboratorios",
       "especialidades": [
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
