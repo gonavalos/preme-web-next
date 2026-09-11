@@ -226,6 +226,30 @@ function buildEspByOri(raw) {
   return map;
 }
 
+// Prioridad para decidir la categoría de un prestador que trae VARIAS
+// categorías codificadas (ej. una clínica que además tiene laboratorio e
+// imágenes). Gana la de menor índice. Antes se tomaba la primera fila que
+// llegaba de Gecros — orden arbitrario — y 40 instituciones (Romagosa,
+// Allende, Hospital Italiano, Conci...) quedaban como "Laboratorios" o
+// "Diagnóstico por Imágenes".
+const TIPO_PRIORIDAD = [
+  "Urgencias y Emergencias",
+  "Instituciones y Centros Médicos",
+  "Centros Especializados",
+  "Centros Médicos",
+  "Diagnóstico por Imágenes",
+  "Laboratorios",
+  "Fisioterapia y Kinesiología",
+  "Salud Mental",
+  "Odontología",
+  "Ópticas",
+  "Farmacias",
+];
+function tipoRank(tipo) {
+  const i = TIPO_PRIORIDAD.indexOf(tipo);
+  return i === -1 ? TIPO_PRIORIDAD.length : i;
+}
+
 function normalize(raw, espByOri) {
   const grouped = new Map();
   for (const r of raw) {
@@ -236,6 +260,7 @@ function normalize(raw, espByOri) {
 
     const plan = mapPlan(r.planNom);
     const especialidad = r.especialidad?.trim();
+    const tipoFila = mapTipo(r.profesion, r.especialidad);
     const existing = grouped.get(r.preId);
 
     if (existing) {
@@ -244,6 +269,9 @@ function normalize(raw, espByOri) {
       if (especialidad && !existing.especialidades.includes(especialidad)) {
         existing.especialidades.push(especialidad);
       }
+      // La categoría se decide por prioridad entre TODAS las filas, no por
+      // orden de llegada.
+      if (tipoRank(tipoFila) < tipoRank(existing.tipo)) existing.tipo = tipoFila;
     } else {
       const dest = DESTACADOS[r.preId] ?? DEFAULT_DEST;
       const espMedicas = [...(espByOri.get(r.oriId) ?? [])].sort((a, b) =>
@@ -252,7 +280,7 @@ function normalize(raw, espByOri) {
       grouped.set(r.preId, {
         id: r.preId,
         nombre: formatName(r.preNom),
-        tipo: mapTipo(r.profesion, r.especialidad),
+        tipo: tipoFila,
         especialidades: especialidad ? [especialidad] : [],
         especialidadesMedicas: espMedicas,
         plan: plan ? [plan] : [...ALL_PLANS],

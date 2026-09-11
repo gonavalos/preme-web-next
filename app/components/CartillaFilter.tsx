@@ -17,6 +17,8 @@ type Props = {
     plans: string[];
     tipos: string[];
     especialidades: string[];
+    // Cascada: especialidades disponibles según el tipo elegido.
+    especialidadesPorTipo?: Record<string, string[]>;
     ciudades: string[];
   };
 };
@@ -30,10 +32,25 @@ const planClass: Record<string, string> = {
 };
 
 export default function CartillaFilter({ value, onChange, options }: Props) {
-  const { plans, tipos, especialidades, ciudades } = options;
+  const { plans, tipos, especialidades, especialidadesPorTipo, ciudades } = options;
+
+  // Con un tipo elegido, el desplegable de especialidad se acota a las que
+  // realmente existen en ese tipo. Sin tipo, muestra todas.
+  const especialidadesVisibles = useMemo(() => {
+    if (!value.tipo || !especialidadesPorTipo) return especialidades;
+    return especialidadesPorTipo[value.tipo] ?? [];
+  }, [value.tipo, especialidades, especialidadesPorTipo]);
 
   const set = <K extends keyof Filters>(k: K, v: Filters[K]) =>
     onChange({ ...value, [k]: v });
+
+  // Al cambiar el tipo, si la especialidad elegida ya no aplica, se limpia
+  // (evita quedar filtrando por algo que no existe en ese tipo → 0 resultados).
+  const setTipo = (tipo: string) => {
+    const permitidas = tipo && especialidadesPorTipo ? especialidadesPorTipo[tipo] ?? [] : especialidades;
+    const esp = value.esp && permitidas.includes(value.esp) ? value.esp : "";
+    onChange({ ...value, tipo, esp });
+  };
 
   const reset = () => onChange({ plan: "", tipo: "", esp: "", ciudad: "", q: "" });
 
@@ -96,7 +113,7 @@ export default function CartillaFilter({ value, onChange, options }: Props) {
           <select
             className="rounded-xl border border-black/10 bg-white px-3 py-2.5 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#33BAF0] focus:border-transparent hover:border-[#33BAF0]/50 transition"
             value={value.tipo}
-            onChange={(e) => set("tipo", e.target.value)}
+            onChange={(e) => setTipo(e.target.value)}
             aria-label="Tipo de prestador"
           >
             <option value="">Todos</option>
@@ -114,9 +131,12 @@ export default function CartillaFilter({ value, onChange, options }: Props) {
             value={value.esp}
             onChange={(e) => set("esp", e.target.value)}
             aria-label="Especialidad médica"
+            disabled={especialidadesVisibles.length === 0}
           >
-            <option value="">Todas</option>
-            {especialidades.map((e) => (
+            <option value="">
+              {especialidadesVisibles.length === 0 && value.tipo ? "No aplica" : "Todas"}
+            </option>
+            {especialidadesVisibles.map((e) => (
               <option key={e} value={e}>{e}</option>
             ))}
           </select>

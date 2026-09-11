@@ -34,6 +34,7 @@ type MetaResp = {
   planes: { value: string; label: string }[];
   tipos: { value: string; label: string }[];
   especialidades: { value: string; label: string }[];
+  especialidadesPorTipo?: Record<string, string[]>;
   ciudades: { value: string; label: string }[];
 };
 
@@ -116,6 +117,7 @@ export default function PrestadoresPage() {
       plans: meta?.planes?.map((p) => p.label) ?? [],
       tipos: meta?.tipos?.map((t) => t.label) ?? [],
       especialidades: meta?.especialidades?.map((e) => e.label) ?? [],
+      especialidadesPorTipo: meta?.especialidadesPorTipo ?? {},
       ciudades: meta?.ciudades?.map((c) => c.label) ?? [],
     }),
     [meta]

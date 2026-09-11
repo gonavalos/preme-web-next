@@ -30,12 +30,17 @@ export async function GET() {
   const tipoSet = new Set<string>();
   const citySet = new Set<string>();
   const espSet = new Set<string>();
+  // Especialidades disponibles por tipo → el filtro de la UI se acota en
+  // cascada (elegir "Laboratorios" deja solo lo que tiene algún laboratorio).
+  const espPorTipo = new Map<string, Set<string>>();
 
   for (const p of prestadores) {
     p.plan.forEach((pl) => planSet.add(pl));
     tipoSet.add(p.tipo);
     citySet.add(p.ciudad);
     p.especialidadesMedicas.forEach((e) => espSet.add(e));
+    if (!espPorTipo.has(p.tipo)) espPorTipo.set(p.tipo, new Set());
+    p.especialidadesMedicas.forEach((e) => espPorTipo.get(p.tipo)!.add(e));
   }
 
   const planes = Array.from(planSet)
@@ -59,10 +64,18 @@ export async function GET() {
 
   const ciudades = Array.from(citySet).filter(Boolean).sort();
 
+  const especialidadesPorTipo: Record<string, string[]> = {};
+  for (const [tipo, set] of espPorTipo) {
+    especialidadesPorTipo[tipo] = Array.from(set).sort((a, b) =>
+      a.localeCompare(b, "es", { sensitivity: "base" })
+    );
+  }
+
   return NextResponse.json({
     planes,
     tipos: tipos.map((label) => ({ label, value: label })),
     especialidades: especialidades.map((label) => ({ label, value: label })),
+    especialidadesPorTipo,
     ciudades: ciudades.map((label) => ({ label, value: label })),
   });
 }
