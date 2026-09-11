@@ -155,7 +155,8 @@ function mapTipo(profesion, especialidad) {
     profUp.includes("CLINICA") ||
     profUp.includes("CLÍNICA") ||
     profUp.includes("SANATORIO") ||
-    profUp.includes("HOSPITAL")
+    profUp.includes("HOSPITAL") ||
+    profUp.includes("HOSP.") // "Hosp. Publicos Interior/Provincial/Capital"
   )
     return "Instituciones y Centros Médicos";
   if (profUp.includes("OPTICA") || profUp.includes("ÓPTICA")) return "Ópticas";
@@ -226,12 +227,12 @@ function buildEspByOri(raw) {
   return map;
 }
 
-// Prioridad para decidir la categoría de un prestador que trae VARIAS
-// categorías codificadas (ej. una clínica que además tiene laboratorio e
-// imágenes). Gana la de menor índice. Antes se tomaba la primera fila que
-// llegaba de Gecros — orden arbitrario — y 40 instituciones (Romagosa,
-// Allende, Hospital Italiano, Conci...) quedaban como "Laboratorios" o
-// "Diagnóstico por Imágenes".
+// Un prestador puede pertenecer a VARIAS categorías a la vez (Sanatorio
+// Allende es Institución + Laboratorio + Imágenes) y debe aparecer en todos
+// esos filtros: eso va en `tipos[]`. Aparte, `tipo` es la categoría PRINCIPAL
+// que se muestra en la tarjeta, elegida por esta prioridad (antes se tomaba
+// la primera fila que llegaba de Gecros — orden arbitrario — y 40
+// instituciones quedaban etiquetadas "Laboratorios" o "Imágenes").
 const TIPO_PRIORIDAD = [
   "Urgencias y Emergencias",
   "Instituciones y Centros Médicos",
@@ -269,8 +270,8 @@ function normalize(raw, espByOri) {
       if (especialidad && !existing.especialidades.includes(especialidad)) {
         existing.especialidades.push(especialidad);
       }
-      // La categoría se decide por prioridad entre TODAS las filas, no por
-      // orden de llegada.
+      // Acumula todas las categorías; la principal se decide por prioridad.
+      if (!existing.tipos.includes(tipoFila)) existing.tipos.push(tipoFila);
       if (tipoRank(tipoFila) < tipoRank(existing.tipo)) existing.tipo = tipoFila;
     } else {
       const dest = DESTACADOS[r.preId] ?? DEFAULT_DEST;
@@ -281,6 +282,7 @@ function normalize(raw, espByOri) {
         id: r.preId,
         nombre: formatName(r.preNom),
         tipo: tipoFila,
+        tipos: [tipoFila],
         especialidades: especialidad ? [especialidad] : [],
         especialidadesMedicas: espMedicas,
         plan: plan ? [plan] : [...ALL_PLANS],

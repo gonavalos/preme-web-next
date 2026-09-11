@@ -48,7 +48,11 @@ export type GecrosPrestadorRaw = {
 export type NormalizedPrestador = {
   id: number;
   nombre: string;
+  /** Categoría principal (la que se muestra en la tarjeta). */
   tipo: string;
+  /** TODAS las categorías a las que pertenece (una clínica puede ser
+   *  Institución + Laboratorio + Imágenes). El filtro por tipo usa esto. */
+  tipos?: string[];
   especialidades: string[];
   /** Especialidades médicas que se atienden en la institución (vía oriId). */
   especialidadesMedicas: string[];

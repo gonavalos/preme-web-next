@@ -83,7 +83,9 @@ export async function GET(req: NextRequest) {
   // Filter
   const filtered = sorted.filter((p) => {
     if (plan && !p.plan.includes(plan)) return false;
-    if (tipo && p.tipo !== tipo) return false;
+    // Un prestador pertenece a todas sus categorías (tipos[]), no solo a la
+    // principal: Sanatorio Allende sale en Instituciones, Laboratorios e Imágenes.
+    if (tipo && !(p.tipos ?? [p.tipo]).includes(tipo)) return false;
     if (esp && !p.especialidadesMedicas.includes(esp)) return false;
     if (ciudad && p.ciudad !== ciudad) return false;
     if (q) {

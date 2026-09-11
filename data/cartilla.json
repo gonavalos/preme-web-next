@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-09-11T18:48:14.340Z",
+  "generatedAt": "2026-09-11T19:40:17.020Z",
   "total": 331,
   "prestadores": [
     {
       "id": 6430,
       "nombre": "SANATORIO ALLENDE",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
@@ -25,21 +31,21 @@
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
-        "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "QUEMADOS",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "NEFROLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ALERGIA",
         "CARDIOLOGIA",
-        "NEUROCIRUGIA",
-        "ONCOLOGIA",
         "CIRUGIA CARDIOVASCULAR",
         "CIRUGIA DE CABEZA Y CUELLO",
-        "ALERGIA",
+        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "CLINICA MEDICA"
+        "HEMATOLOGIA",
+        "NEFROLOGIA",
+        "NEUROCIRUGIA",
+        "OFTALMOLOGIA",
+        "ONCOLOGIA",
+        "GINECOLOGIA"
       ],
       "especialidadesMedicas": [
         "Endoscopia Diagnostica",
@@ -62,36 +68,41 @@
       "id": 14129,
       "nombre": "SANATORIO ALLENDE CERRO DE LAS ROSAS",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
+        "CIRUGIA GENERAL",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA",
+        "INFECTOLOGIA",
+        "NEFROLOGIA",
         "NEUROLOGIA",
+        "OBSTETRICIA",
         "OFTALMOLOGIA",
         "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "QUEMADOS",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
-        "CARDIOLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CLINICA MEDICA",
-        "ENDOCRINOLOGIA",
-        "HEMATOLOGIA",
-        "INFECTOLOGIA",
-        "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "ALERGIA",
         "ANESTESISTA",
+        "CARDIOLOGIA",
         "CIRUGIA DE CABEZA Y CUELLO",
-        "REUMATOLOGIA",
         "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "OBSTETRICIA",
-        "GINECOLOGIA"
+        "NEUMONOLOGIA",
+        "PEDIATRIA",
+        "REUMATOLOGIA",
+        "CIRUGIA CARDIOVASCULAR",
+        "HEMATOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -109,6 +120,9 @@
       "id": 1136,
       "nombre": "CENTRO PRIVADO DE OJOS ROMAGOSA S.A.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "OFTALMOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS"
@@ -131,6 +145,12 @@
       "id": 1023,
       "nombre": "CLINICA ROMAGOSA S.A",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -140,9 +160,6 @@
         "ONCOLOGIA",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "05. LABORATORIO",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
         "DERMATOLOGIA",
         "ENDOSCOPIA DIAGNOSTICA",
         "HEMODINAMIA",
@@ -156,6 +173,9 @@
         "NEUMONOLOGIA",
         "NEUROCIRUGIA",
         "VASCULAR PERIFERICO",
+        "05. LABORATORIO",
+        "GINECOLOGIA",
+        "HEMATOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CIRUGIA DE CABEZA Y CUELLO",
         "ENDOCRINOLOGIA",
@@ -212,13 +232,16 @@
       "id": 11985,
       "nombre": "OULTON - CTRO. PRIV. TOMOGRAFIA COMPUTADA CBA",
       "tipo": "Diagnóstico por Imágenes",
+      "tipos": [
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [],
       "plan": [
-        "Plan Integral",
-        "Plan Máximo"
+        "Plan Máximo",
+        "Plan Integral"
       ],
       "ciudad": "Cordoba",
       "direccion": "AV. VELEZ SARSFIELD 562, Piso 1",
@@ -232,6 +255,9 @@
       "id": 9103,
       "nombre": "ACETO DE NAVARRO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -253,40 +279,46 @@
       "id": 11987,
       "nombre": "ACONCAGUA SANATORIO PRIVADO - COSEME S.A.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "UROLOGIA",
-        "VASCULAR PERIFERICO",
-        "NEUMONOLOGIA PEDIATRICA",
-        "NEUROCIRUGIA",
-        "NEUROCIRUGIA INFANTIL",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROLOGIA",
-        "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "ENDOCRINOLOGIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
         "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
+        "HEMATOLOGIA",
+        "HEMODINAMIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "HEMATOLOGIA",
-        "HEMODINAMIA",
-        "INFECTOLOGIA",
         "ALERGIA",
         "CARDIOLOGIA",
         "CARDIOLOGIA PEDIATRICA",
         "CIRUGIA DE CABEZA Y CUELLO",
         "CIRUGIA DE TORAX",
-        "CLINICA MEDICA",
+        "INFECTOLOGIA",
         "NEFROLOGIA",
-        "DERMATOLOGIA"
+        "NEUMONOLOGIA",
+        "NEUMONOLOGIA PEDIATRICA",
+        "NEUROCIRUGIA",
+        "NEUROCIRUGIA INFANTIL",
+        "NEUROLOGIA",
+        "NUTRICION",
+        "OFTALMOLOGIA",
+        "ONCOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PEDIATRIA",
+        "REUMATOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "VASCULAR PERIFERICO",
+        "UROLOGIA",
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -330,8 +362,8 @@
         "Vascular Periferico"
       ],
       "plan": [
-        "Plan Integral",
-        "Plan Máximo"
+        "Plan Máximo",
+        "Plan Integral"
       ],
       "ciudad": "Cordoba",
       "direccion": "Rondeau 455, Piso 1",
@@ -345,9 +377,12 @@
       "id": 12772,
       "nombre": "ALEMANNO MARIA BELEN",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -367,6 +402,9 @@
       "id": 15085,
       "nombre": "AME CENTRO MEDICO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -391,6 +429,9 @@
       "id": 5569,
       "nombre": "ARGENTINA III",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -412,6 +453,9 @@
       "id": 13965,
       "nombre": "ARRIETA MARIA ISABEL",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
@@ -433,6 +477,9 @@
       "id": 13001,
       "nombre": "AUBAN CLAUDIA MARCELA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -455,6 +502,9 @@
       "id": 14512,
       "nombre": "BENEFICIOS VII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -476,6 +526,9 @@
       "id": 14482,
       "nombre": "BERGESIO ANA",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "08. SALUD MENTAL",
         "PSICOLOGIA"
@@ -498,6 +551,9 @@
       "id": 12720,
       "nombre": "BIOCOR SALUD S.R.L. I",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -520,9 +576,12 @@
       "id": 14226,
       "nombre": "BIOCOR SALUD S.R.L. II",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -542,6 +601,9 @@
       "id": 14228,
       "nombre": "BIOCOR SALUD S.R.L. OLIVA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -564,6 +626,9 @@
       "id": 14227,
       "nombre": "BIOCOR SALUD S.R.L. RIO IV",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -586,6 +651,9 @@
       "id": 14840,
       "nombre": "BONCIOLINI KARINA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -608,6 +676,9 @@
       "id": 5589,
       "nombre": "BOSCHETTI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -629,6 +700,9 @@
       "id": 13474,
       "nombre": "BROWNLESS NATALIA LYS",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -650,6 +724,9 @@
       "id": 13475,
       "nombre": "BURZIO ANA PAULA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -672,6 +749,10 @@
       "id": 14703,
       "nombre": "C.I.R. CENTRO DE REHABILITACION",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS"
@@ -697,6 +778,9 @@
       "id": 11793,
       "nombre": "CABAL MARIA ELISA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -719,6 +803,9 @@
       "id": 10902,
       "nombre": "CAPDEVILLA MARIANA XIMENA",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
@@ -740,9 +827,12 @@
       "id": 13657,
       "nombre": "CARRANZA NESTOR ABRAHAM",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "BIOQUIMICOS",
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -762,9 +852,12 @@
       "id": 14838,
       "nombre": "CASSUTTI GONZALO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -784,6 +877,11 @@
       "id": 3946,
       "nombre": "CEDIAN S.A.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
         "UROLOGIA",
         "ANATOMIA PATOLOGICA",
@@ -815,6 +913,10 @@
       "id": 14033,
       "nombre": "CEMI CENTRO DE ESPECIALIDADES MEDICAS INTEGRAL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -837,6 +939,9 @@
       "id": 12712,
       "nombre": "CEMO S.A.- CENTRO MODELO DE OTORRINOLARINGOLOGÍA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -862,14 +967,19 @@
       "id": 14802,
       "nombre": "CENIC",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "CLINICA MEDICA",
-        "08. SALUD MENTAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "NUTRICION",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "08. SALUD MENTAL",
         "CARDIOLOGIA"
       ],
       "especialidadesMedicas": [
@@ -892,6 +1002,13 @@
       "id": 14032,
       "nombre": "CENTRO DE ATENCION JESUS MARIA - SANATORIO CAROYA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Salud Mental",
+        "Laboratorios"
+      ],
       "especialidades": [
         "CLINICA MEDICA",
         "DERMATOLOGIA",
@@ -900,9 +1017,10 @@
         "GINECOLOGIA",
         "NEUROLOGIA",
         "OFTALMOLOGIA",
-        "CIRUGIA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
+        "CIRUGIA GENERAL",
+        "PSICOLOGIA",
         "08. SALUD MENTAL",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
@@ -912,7 +1030,6 @@
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
         "05. LABORATORIO",
-        "PSICOLOGIA",
         "ALERGIA",
         "FISIATRIA"
       ],
@@ -934,6 +1051,9 @@
       "id": 14881,
       "nombre": "CENTRO DE OJOS RIO CEBALLOS",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "OFTALMOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS"
@@ -956,6 +1076,9 @@
       "id": 1120,
       "nombre": "CENTRO DE RADIOTERAPIA DEAN FUNES",
       "tipo": "Centros Especializados",
+      "tipos": [
+        "Centros Especializados"
+      ],
       "especialidades": [
         "02. CENTROS ESPECIALIZADOS"
       ],
@@ -977,14 +1100,19 @@
       "id": 13668,
       "nombre": "CENTRO DE REHABILITACION KINESIS",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Salud Mental",
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "08. SALUD MENTAL",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NUTRICION",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "OFTALMOLOGIA",
         "CLINICA MEDICA",
         "DERMATOLOGIA"
       ],
@@ -1009,6 +1137,9 @@
       "id": 11681,
       "nombre": "CENTRO DE RESONANCIA MAGNÉTICA GAUSS",
       "tipo": "Diagnóstico por Imágenes",
+      "tipos": [
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES"
       ],
@@ -1030,9 +1161,13 @@
       "id": 13096,
       "nombre": "CENTRO ECOGRAFICO DR.BOSCACCI",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
+        "ANATOMIA PATOLOGICA",
         "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [
@@ -1056,16 +1191,20 @@
       "id": 14870,
       "nombre": "CENTRO MEDICO 25 DE MAYO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
+        "04. DIAGNOSTICO POR IMAGENES",
         "PEDIATRIA",
+        "CIRUGIA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "CIRUGIA GENERAL",
         "CARDIOLOGIA",
         "MEDICINA GENERAL",
-        "NUTRICION"
+        "NUTRICION",
+        "GINECOLOGIA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -1091,29 +1230,35 @@
       "id": 14649,
       "nombre": "CENTRO MEDICO ARANDU",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "NEONATOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "ALERGIA",
-        "MEDICINA FAMILIAR",
         "ANATOMIA PATOLOGICA",
         "CIRUGIA GENERAL",
         "DERMATOLOGIA",
         "GINECOLOGIA",
         "OFTALMOLOGIA",
+        "NUTRICION",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "GASTROENTEROLOGIA",
+        "NEUROLOGIA",
+        "NEUMONOLOGIA",
+        "PEDIATRIA",
         "08. SALUD MENTAL",
         "CLINICA MEDICA",
         "ENDOCRINOLOGIA",
         "FLEBOLOGIA",
         "FONOAUDIOLOGIA",
         "MEDICINA GENERAL",
-        "NEUMONOLOGIA",
-        "PEDIATRIA",
+        "NEONATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "ALERGIA",
+        "MEDICINA FAMILIAR",
         "CARDIOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PSICOLOGIA",
@@ -1151,6 +1296,9 @@
       "id": 14483,
       "nombre": "CENTRO MEDICO CANO SALUD",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CARDIOLOGIA",
@@ -1160,13 +1308,13 @@
         "NEUROLOGIA",
         "GASTROENTEROLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "FLEBOLOGIA",
-        "INMUNOLOGIA",
         "ALERGIA",
         "CLINICA MEDICA",
         "ENDOCRINOLOGIA",
         "NEUMONOLOGIA",
-        "MEDICINA FAMILIAR"
+        "MEDICINA FAMILIAR",
+        "FLEBOLOGIA",
+        "INMUNOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1200,23 +1348,30 @@
       "id": 11932,
       "nombre": "CENTRO MEDICO DE ESPEC. Y DIAG. PRIVADO - CEMEDI",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
-        "ANATOMIA PATOLOGICA",
-        "DERMATOLOGIA",
-        "NUTRICION",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "CLINICA MEDICA",
-        "PSICOLOGIA",
-        "CARDIOLOGIA",
-        "GINECOLOGIA",
-        "NEUROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "GASTROENTEROLOGIA",
         "NEONATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "PSICOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "DERMATOLOGIA",
+        "NUTRICION",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CLINICA MEDICA",
+        "CARDIOLOGIA",
+        "GINECOLOGIA",
+        "NEUROLOGIA",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
         "BIOQUIMICOS",
@@ -1255,25 +1410,30 @@
       "id": 12755,
       "nombre": "CENTRO MEDICO DE LA FAMILIA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Salud Mental"
+      ],
       "especialidades": [
         "CLINICA MEDICA",
         "PEDIATRIA",
-        "08. SALUD MENTAL",
-        "DERMATOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "ENDOCRINOLOGIA",
-        "OFTALMOLOGIA",
-        "GINECOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "PSICOLOGIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "MEDICINA INTERNA",
         "NUTRICION",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL",
+        "ENDOCRINOLOGIA",
+        "OFTALMOLOGIA",
+        "08. SALUD MENTAL",
+        "DERMATOLOGIA",
         "ANATOMIA PATOLOGICA",
         "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA"
+        "GASTROENTEROLOGIA",
+        "GINECOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1300,12 +1460,18 @@
       "id": 12882,
       "nombre": "CENTRO MEDICO EL TALAR",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "PSIQUIATRIA",
         "CLINICA MEDICA",
-        "PSICOLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "CARDIOLOGIA",
         "ENDOCRINOLOGIA",
@@ -1319,6 +1485,7 @@
         "FONOAUDIOLOGIA",
         "PEDIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "PSICOLOGIA",
         "BIOQUIMICOS",
         "FLEBOLOGIA",
         "NUTRICION"
@@ -1355,29 +1522,34 @@
       "id": 14106,
       "nombre": "CENTRO MEDICO ITALMED CERRO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "ALERGIA",
-        "CARDIOLOGIA",
-        "DERMATOLOGIA",
-        "UROLOGIA",
+        "GASTROENTEROLOGIA PEDIATRICA",
+        "OBSTETRICIA",
+        "OFTALMOLOGIA",
+        "DIABETOLOGIA",
+        "INMUNOLOGIA",
+        "NEONATOLOGIA",
+        "NEUROLOGIA",
+        "GINECOLOGIA",
+        "NUTRICION",
         "ANATOMIA PATOLOGICA",
         "CLINICA MEDICA",
         "ENDOCRINOLOGIA",
         "GASTROENTEROLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "DIABETOLOGIA",
-        "INMUNOLOGIA",
-        "NEONATOLOGIA",
-        "NEUROLOGIA",
+        "UROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "ALERGIA",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
         "REUMATOLOGIA",
-        "GASTROENTEROLOGIA PEDIATRICA",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
         "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "NUTRICION",
         "05. LABORATORIO",
         "PEDIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
@@ -1400,9 +1572,13 @@
       "id": 15118,
       "nombre": "CENTRO MEDICO ITALMED GÜEMES",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1422,15 +1598,20 @@
       "id": 14471,
       "nombre": "CENTRO MEDICO MODELO PRIVADO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Salud Mental"
+      ],
       "especialidades": [
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "REUMATOLOGIA",
+        "CLINICA MEDICA",
+        "NUTRICION",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
-        "PEDIATRIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "CLINICA MEDICA",
-        "REUMATOLOGIA",
-        "NUTRICION"
+        "PEDIATRIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1450,29 +1631,35 @@
       "id": 13454,
       "nombre": "CENTRO MEDICO PRIVADO - AMBULATORIO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Salud Mental",
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Laboratorios"
+      ],
       "especialidades": [
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
         "CIRUGIA GENERAL",
         "OBSTETRICIA",
-        "05. LABORATORIO",
-        "BIOQUIMICOS",
-        "CLINICA MEDICA",
-        "ENDOCRINOLOGIA",
         "DERMATOLOGIA",
         "GASTROENTEROLOGIA",
         "NEUMONOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "CARDIOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PSICOLOGIA",
+        "UROLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NEUROLOGIA",
+        "05. LABORATORIO",
+        "BIOQUIMICOS",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "DIABETOLOGIA",
         "GINECOLOGIA",
-        "OFTALMOLOGIA",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "NEUROLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PSICOLOGIA",
-        "UROLOGIA"
+        "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1492,14 +1679,19 @@
       "id": 15053,
       "nombre": "CENTRO MEDICO PRIVADO \"DR. RICARDO A. GARCIA\"",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Laboratorios",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "CIRUGIA GENERAL",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "05. LABORATORIO",
+        "CLINICA MEDICA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CARDIOLOGIA",
         "GINECOLOGIA",
-        "CLINICA MEDICA",
+        "CIRUGIA GENERAL",
         "DERMATOLOGIA",
         "GASTROENTEROLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
@@ -1528,15 +1720,20 @@
       "id": 12904,
       "nombre": "CENTRO MEDICO PRIVADO DR. CANTONI",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "CIRUGIA GENERAL",
         "CARDIOLOGIA",
         "MEDICINA GENERAL",
-        "PEDIATRIA",
-        "BIOQUIMICOS",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "BIOQUIMICOS",
+        "PEDIATRIA"
       ],
       "especialidadesMedicas": [
         "Ginecologia",
@@ -1559,17 +1756,21 @@
       "id": 13495,
       "nombre": "CENTRO MEDICO PRIVADO EMERCO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
+        "GINECOLOGIA",
+        "OFTALMOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CARDIOLOGIA",
         "PEDIATRIA",
         "ANATOMIA PATOLOGICA",
         "NUTRICION",
-        "GINECOLOGIA",
         "05. LABORATORIO",
         "CIRUGIA GENERAL",
-        "MEDICINA INTERNA",
-        "OFTALMOLOGIA"
+        "MEDICINA INTERNA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -1601,18 +1802,21 @@
       "id": 9486,
       "nombre": "CENTRO MEDICO PRIVADO SAN ANDRES SRL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "CARDIOLOGIA",
-        "MEDICINA GENERAL",
-        "08. SALUD MENTAL",
-        "ENDOCRINOLOGIA",
-        "NUTRICION",
         "BIOQUIMICOS",
         "CIRUGIA GENERAL",
         "CLINICA MEDICA",
         "INMUNOLOGIA",
         "PSIQUIATRIA",
+        "05. LABORATORIO",
+        "CARDIOLOGIA",
+        "MEDICINA GENERAL",
         "GINECOLOGIA",
         "NEUROCIRUGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
@@ -1622,6 +1826,9 @@
         "MEDICINA INTERNA",
         "NEUROLOGIA",
         "UROLOGIA",
+        "08. SALUD MENTAL",
+        "ENDOCRINOLOGIA",
+        "NUTRICION",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "NEUMONOLOGIA",
@@ -1669,6 +1876,9 @@
       "id": 14403,
       "nombre": "CENTRO MEDICO RENACER",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -1690,6 +1900,9 @@
       "id": 12591,
       "nombre": "CENTRO MEDICO SALDAN",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "MEDICINA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
@@ -1715,6 +1928,13 @@
       "id": 1095,
       "nombre": "CENTRO MEDICO SALSIPUEDES",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
@@ -1723,24 +1943,24 @@
         "UROLOGIA",
         "PEDIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "CIRUGIA GENERAL",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
         "08. SALUD MENTAL",
         "BIOQUIMICOS",
         "INMUNOLOGIA",
         "OBSTETRICIA",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ENDOCRINOLOGIA",
-        "CLINICA MEDICA",
         "GINECOLOGIA",
         "OFTALMOLOGIA",
         "PSICOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "ENDOCRINOLOGIA",
         "HEMATOLOGIA",
         "NEFROLOGIA",
         "NEUROLOGIA",
         "NUTRICION",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO"
+        "CIRUGIA GENERAL",
+        "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1779,16 +1999,22 @@
       "id": 1111,
       "nombre": "CENTRO MEDICO SANTA TERESITA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "NUTRICION",
-        "PEDIATRIA",
         "ANATOMIA PATOLOGICA",
         "CLINICA MEDICA",
         "GASTROENTEROLOGIA",
+        "05. LABORATORIO",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "NUTRICION",
+        "PEDIATRIA",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
         "GINECOLOGIA",
@@ -1821,18 +2047,24 @@
       "id": 11107,
       "nombre": "CENTRO MEDICO VILLA ALLENDE-DR.NIEVAS",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos",
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "NUTRICION",
         "08. SALUD MENTAL",
         "PSICOLOGIA",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "GINECOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -1858,21 +2090,21 @@
       "id": 6347,
       "nombre": "CENTRO MODELO DE ESPECIALIDADES MEDICAS",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
         "CLINICA MEDICA",
         "GINECOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "OFTALMOLOGIA",
-        "DERMATOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GASTROENTEROLOGIA PEDIATRICA",
-        "NEUMONOLOGIA PEDIATRICA",
-        "NEUROLOGIA",
-        "REUMATOLOGIA",
-        "UROLOGIA",
+        "ALERGIA",
+        "FONOAUDIOLOGIA",
+        "NEUROCIRUGIA",
+        "NUTRICION",
+        "PEDIATRIA",
         "BIOQUIMICOS",
         "ENDOCRINOLOGIA",
         "FLEBOLOGIA",
@@ -1880,16 +2112,22 @@
         "NEUMONOLOGIA",
         "OBSTETRICIA",
         "PSICOLOGIA",
-        "ALERGIA",
-        "FONOAUDIOLOGIA",
-        "NEUROCIRUGIA",
-        "NUTRICION",
-        "PEDIATRIA",
+        "CIRUGIA GENERAL",
+        "OFTALMOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
-        "CIRUGIA GENERAL PEDIATRICA"
+        "CIRUGIA GENERAL PEDIATRICA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
+        "GASTROENTEROLOGIA",
+        "GASTROENTEROLOGIA PEDIATRICA",
+        "NEUMONOLOGIA PEDIATRICA",
+        "NEUROLOGIA",
+        "REUMATOLOGIA",
+        "UROLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1929,6 +2167,9 @@
       "id": 14222,
       "nombre": "CENTRO MUTUALISTA H.IRIGOYEN",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -1950,6 +2191,9 @@
       "id": 14246,
       "nombre": "CENTRO ODONTOLOGICO UNIDET JESUS MARIA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -1971,6 +2215,10 @@
       "id": 14113,
       "nombre": "CENTRO PERIFERICO SANATORIO PRIVADO PUNILLA I",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Salud Mental",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "08. SALUD MENTAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS"
@@ -1993,6 +2241,10 @@
       "id": 12958,
       "nombre": "CENTRO PRIV DE DIAGNOSTICO POR IMAGENES ARROYITO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES",
         "OFTALMOLOGIA"
@@ -2015,38 +2267,45 @@
       "id": 10509,
       "nombre": "CENTRO PRIVADO CONSULTORIOS MEDICOS VILLA ALLENDE",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Salud Mental"
+      ],
       "especialidades": [
         "GINECOLOGIA",
         "NUTRICION",
         "PSICOLOGIA",
         "UROLOGIA",
-        "MEDICINA FAMILIAR",
-        "NEUROCIRUGIA",
-        "CARDIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "NEONATOLOGIA",
-        "NEUMONOLOGIA",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "CIRUGIA GENERAL",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "FLEBOLOGIA",
-        "NEFROLOGIA",
-        "OFTALMOLOGIA",
         "ENDOCRINOLOGIA",
         "FONOAUDIOLOGIA",
         "NEUMONOLOGIA PEDIATRICA",
         "OBSTETRICIA",
         "PEDIATRIA",
         "PSIQUIATRIA",
+        "MEDICINA FAMILIAR",
+        "NEUROCIRUGIA",
         "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "FLEBOLOGIA",
+        "NEFROLOGIA",
+        "OFTALMOLOGIA",
+        "CARDIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CIRUGIA GENERAL",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "08. SALUD MENTAL",
+        "ALERGIA",
+        "ANATOMIA PATOLOGICA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "NEONATOLOGIA",
+        "NEUMONOLOGIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -2084,11 +2343,15 @@
       "id": 12957,
       "nombre": "CENTRO PRIVADO DE DIAGNOSTICO LESCANO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES",
         "GINECOLOGIA",
-        "DERMATOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "DERMATOLOGIA",
         "OBSTETRICIA"
       ],
       "especialidadesMedicas": [],
@@ -2109,9 +2372,12 @@
       "id": 4401,
       "nombre": "CENTRO PRIVADO DE OJOS ROMAGOSA S.A.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -2131,6 +2397,9 @@
       "id": 1126,
       "nombre": "CENTRO PRIVADO DE OJOS-DR. BULACIO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA",
@@ -2158,7 +2427,20 @@
       "id": 13342,
       "nombre": "CENTRO PRIVADO SALUD S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
+        "04. DIAGNOSTICO POR IMAGENES",
+        "ALERGIA",
+        "ANATOMIA PATOLOGICA",
+        "CLINICA MEDICA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CARDIOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
@@ -2166,17 +2448,11 @@
         "ENDOCRINOLOGIA",
         "FONOAUDIOLOGIA",
         "PEDIATRIA",
+        "FLEBOLOGIA",
+        "PSIQUIATRIA",
         "DERMATOLOGIA",
         "INMUNOLOGIA",
         "OFTALMOLOGIA",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "CARDIOLOGIA",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CLINICA MEDICA",
-        "FLEBOLOGIA",
-        "PSIQUIATRIA",
         "CIRUGIA GENERAL",
         "GINECOLOGIA",
         "NUTRICION",
@@ -2216,6 +2492,9 @@
       "id": 11439,
       "nombre": "CENTRO UROLOGICO PROFESOR BENGIO SA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "UROLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS"
@@ -2242,6 +2521,9 @@
       "id": 13260,
       "nombre": "CHIALVA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -2263,6 +2545,9 @@
       "id": 14370,
       "nombre": "CHIGGIA DE CHIGGIA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -2284,11 +2569,16 @@
       "id": 15114,
       "nombre": "CIREN CENTRO INTEGRAL DE REHABILITACION NEUROLOG",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Salud Mental"
+      ],
       "especialidades": [
-        "08. SALUD MENTAL",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "FONOAUDIOLOGIA"
+        "FONOAUDIOLOGIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [
         "Traumatologia y Ortopedia"
@@ -2310,6 +2600,9 @@
       "id": 15150,
       "nombre": "CLINICA DE OJOS MALDONADO BAS PRIVADA SRL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA"
@@ -2332,9 +2625,12 @@
       "id": 15160,
       "nombre": "CLINICA DE OJOS MALDONADO BAS PRIVADA SRLRECTA MARTINOLLI",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
-        "OFTALMOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -2354,6 +2650,9 @@
       "id": 14376,
       "nombre": "CLINICA DE OJOS REYES-GIOBELLINA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA"
@@ -2376,23 +2675,28 @@
       "id": 5196,
       "nombre": "CLINICA FUSAVIM PRIVADA S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
-        "INFECTOLOGIA",
-        "ONCOLOGIA",
-        "VASCULAR PERIFERICO",
-        "GASTROENTEROLOGIA",
         "NEUROCIRUGIA",
+        "GASTROENTEROLOGIA",
+        "NEUROLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "CIRUGIA DE TORAX",
         "CIRUGIA GENERAL",
         "CIRUGIA GENERAL PEDIATRICA",
         "GINECOLOGIA",
         "NUTRICION",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "NEUROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "CARDIOLOGIA",
         "UROLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "INFECTOLOGIA",
+        "ONCOLOGIA",
+        "VASCULAR PERIFERICO",
         "05. LABORATORIO",
         "CIRUGIA CARDIOVASCULAR",
         "CLINICA MEDICA",
@@ -2443,6 +2747,9 @@
       "id": 14239,
       "nombre": "CLINICA ODONTOLOGICA ODONTOMED",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -2464,14 +2771,17 @@
       "id": 12956,
       "nombre": "CLINICA PRIVADA ARROYITO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "MEDICINA GENERAL",
         "VASCULAR PERIFERICO",
-        "CARDIOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "ANESTESISTA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "CARDIOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -2491,25 +2801,30 @@
       "id": 9044,
       "nombre": "CLINICA PRIVADA CAVISACATE - TOTORAL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NUTRICION",
+        "OFTALMOLOGIA",
         "ANATOMIA PATOLOGICA",
         "PEDIATRIA",
-        "04. DIAGNOSTICO POR IMAGENES",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
+        "FONOAUDIOLOGIA",
         "GINECOLOGIA",
         "NEFROLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "UROLOGIA",
         "CLINICA MEDICA",
         "GASTROENTEROLOGIA",
-        "CARDIOLOGIA",
-        "DERMATOLOGIA",
-        "FONOAUDIOLOGIA",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA"
+        "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -2544,6 +2859,10 @@
       "id": 14103,
       "nombre": "CLINICA PRIVADA CAVISACATE - V. MARIA DEL RIO SECO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
@@ -2568,22 +2887,29 @@
       "id": 12930,
       "nombre": "CLINICA PRIVADA CENTRAL OSPIA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
         "MEDICINA GENERAL",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
         "OBSTETRICIA",
-        "OFTALMOLOGIA",
         "PEDIATRIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "DERMATOLOGIA",
-        "GINECOLOGIA"
+        "GINECOLOGIA",
+        "DERMATOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -2624,6 +2950,10 @@
       "id": 12960,
       "nombre": "CLINICA PRIVADA CORDOBA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "MEDICINA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
@@ -2647,8 +2977,12 @@
       "id": 10254,
       "nombre": "CLINICA PRIVADA DE ESPECIALIDADES DE V. MARIA SRL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "FONOAUDIOLOGIA",
         "05. LABORATORIO",
         "NEUROLOGIA",
         "OFTALMOLOGIA",
@@ -2656,11 +2990,12 @@
         "DERMATOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "GINECOLOGIA",
-        "CLINICA MEDICA",
+        "FONOAUDIOLOGIA",
         "OBSTETRICIA",
         "PEDIATRIA",
+        "CLINICA MEDICA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CIRUGIA GENERAL",
         "ENDOCRINOLOGIA"
@@ -2714,12 +3049,22 @@
       "id": 1018,
       "nombre": "CLINICA PRIVADA DE LA CIUDAD",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "CARDIOLOGIA",
         "DERMATOLOGIA",
         "INMUNOLOGIA",
         "NEUROLOGIA",
+        "PEDIATRIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ENDOCRINOLOGIA",
+        "OBSTETRICIA",
+        "VASCULAR PERIFERICO",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "ALERGIA",
@@ -2727,20 +3072,15 @@
         "NEFROLOGIA",
         "NEUMONOLOGIA",
         "NUTRICION",
-        "PEDIATRIA",
-        "CIRUGIA GENERAL",
-        "GINECOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "ENDOCRINOLOGIA",
-        "OBSTETRICIA",
-        "VASCULAR PERIFERICO",
         "ANATOMIA PATOLOGICA",
         "CLINICA MEDICA",
         "GASTROENTEROLOGIA",
         "INFECTOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
+        "CIRUGIA GENERAL",
+        "GINECOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "DIABETOLOGIA",
         "FONOAUDIOLOGIA",
         "OFTALMOLOGIA"
@@ -2782,25 +3122,32 @@
       "id": 10360,
       "nombre": "CLINICA PRIVADA DEAN FUNES S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Salud Mental",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "CARDIOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "GINECOLOGIA",
-        "NEFROLOGIA",
-        "CIRUGIA GENERAL",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "ANATOMIA PATOLOGICA",
         "FONOAUDIOLOGIA",
         "ONCOLOGIA",
         "PEDIATRIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
+        "NEFROLOGIA",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
         "BIOQUIMICOS",
         "MEDICINA GENERAL",
+        "CIRUGIA GENERAL",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PSICOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CARDIOLOGIA",
         "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [
@@ -2835,6 +3182,9 @@
       "id": 12952,
       "nombre": "CLINICA PRIVADA DEL NIÑO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -2856,23 +3206,24 @@
       "id": 1007,
       "nombre": "CLINICA PRIVADA JESUS MARIA DR. ANIBAL VIALE",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Salud Mental",
+        "Laboratorios",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "NEUROCIRUGIA",
-        "OBSTETRICIA",
-        "ONCOLOGIA",
-        "DIABETOLOGIA",
-        "NEFROLOGIA",
-        "NUTRICION",
-        "ANATOMIA PATOLOGICA",
-        "ENDOCRINOLOGIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "GASTROENTEROLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "REUMATOLOGIA",
         "UROLOGIA",
+        "DIABETOLOGIA",
+        "NEFROLOGIA",
+        "NUTRICION",
+        "ANATOMIA PATOLOGICA",
+        "ENDOCRINOLOGIA",
         "HEMATOLOGIA",
         "NEUMONOLOGIA",
         "PEDIATRIA",
@@ -2881,6 +3232,12 @@
         "ANESTESISTA",
         "DERMATOLOGIA",
         "FONOAUDIOLOGIA",
+        "05. LABORATORIO",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "NEUROCIRUGIA",
+        "OBSTETRICIA",
+        "ONCOLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "CIRUGIA GENERAL",
         "GINECOLOGIA",
@@ -2932,6 +3289,12 @@
       "id": 1086,
       "nombre": "CLINICA PRIVADA PASTEUR",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Salud Mental",
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "08. SALUD MENTAL",
@@ -2959,6 +3322,9 @@
       "id": 12963,
       "nombre": "CLINICA PRIVADA SAGRADO CORAZON",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -2980,9 +3346,20 @@
       "id": 1058,
       "nombre": "CLINICA PRIVADA SAN ISIDRO S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "ALERGIA",
+        "INFECTOLOGIA",
+        "MEDICINA INTERNA",
+        "NEUROCIRUGIA",
+        "UROLOGIA",
         "ANATOMIA PATOLOGICA",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
@@ -2993,11 +3370,6 @@
         "CIRUGIA GENERAL",
         "HEMATOLOGIA",
         "NEFROLOGIA",
-        "ALERGIA",
-        "INFECTOLOGIA",
-        "MEDICINA INTERNA",
-        "NEUROCIRUGIA",
-        "UROLOGIA",
         "05. LABORATORIO",
         "GINECOLOGIA",
         "NUTRICION",
@@ -3043,26 +3415,31 @@
       "id": 11557,
       "nombre": "CLINICA PRIVADA SANTA MARIA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "ANATOMIA PATOLOGICA",
-        "FLEBOLOGIA",
-        "INFECTOLOGIA",
-        "NEUROLOGIA",
-        "REUMATOLOGIA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "NEUROCIRUGIA",
-        "UROLOGIA",
         "05. LABORATORIO",
         "CIRUGIA DE TORAX",
         "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
         "NEFROLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "ANATOMIA PATOLOGICA",
+        "FLEBOLOGIA",
+        "INFECTOLOGIA",
+        "NEUROLOGIA",
+        "REUMATOLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "GINECOLOGIA",
         "NEUMONOLOGIA",
         "PEDIATRIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "NEUROCIRUGIA",
+        "UROLOGIA",
         "NUTRICION",
         "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
@@ -3119,6 +3496,10 @@
       "id": 12965,
       "nombre": "CLINICA PRIVADA SANTO DOMINGO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "CIRUGIA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
@@ -3142,6 +3523,9 @@
       "id": 12959,
       "nombre": "CLINICA PRIVADA SVRIZ",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -3163,6 +3547,12 @@
       "id": 12672,
       "nombre": "CLINICA PRIVADA VELEZ SARSFIELD",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología",
+        "Laboratorios"
+      ],
       "especialidades": [
         "CIRUGIA DE CABEZA Y CUELLO",
         "HEMATOLOGIA",
@@ -3181,22 +3571,22 @@
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "MEDICINA NUCLEAR",
+        "ONCOLOGIA",
+        "UROLOGIA",
         "DIABETOLOGIA",
         "FONOAUDIOLOGIA",
         "NEUROLOGIA INFANTIL",
         "PEDIATRIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ANATOMIA PATOLOGICA",
         "CIRUGIA DE TORAX",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
         "GASTROENTEROLOGIA",
         "NEFROLOGIA",
-        "MEDICINA NUCLEAR",
-        "ONCOLOGIA",
-        "UROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "ANATOMIA PATOLOGICA",
         "05. LABORATORIO",
         "ALERGIA",
         "CIRUGIA CARDIOVASCULAR",
@@ -3262,32 +3652,38 @@
       "id": 14676,
       "nombre": "CLINICA PRIVADA VELEZ SARSFIELD  - NORTE",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
+        "CIRUGIA CARDIOVASCULAR",
+        "MEDICINA GENERAL",
+        "NEUMONOLOGIA",
+        "NEUROCIRUGIA",
+        "ONCOLOGIA",
         "CIRUGIA DE TORAX",
         "INFECTOLOGIA",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "GINECOLOGIA",
+        "NUTRICION",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL PEDIATRICA",
         "DERMATOLOGIA",
         "GASTROENTEROLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "CLINICA MEDICA",
-        "NEONATOLOGIA",
-        "PEDIATRIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CIRUGIA GENERAL",
         "DIABETOLOGIA",
         "UROLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
-        "MEDICINA GENERAL",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "ONCOLOGIA",
-        "GINECOLOGIA",
-        "NUTRICION",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CLINICA MEDICA",
+        "NEONATOLOGIA",
+        "PEDIATRIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "ANATOMIA PATOLOGICA",
@@ -3330,6 +3726,12 @@
       "id": 14115,
       "nombre": "CLINICA PRIVADA VELEZ SARSFIELD - AV. FUERZA AEREA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES",
         "FLEBOLOGIA",
@@ -3337,8 +3739,6 @@
         "OBSTETRICIA",
         "OFTALMOLOGIA",
         "REUMATOLOGIA",
-        "ANATOMIA PATOLOGICA",
-        "NEUROLOGIA",
         "05. LABORATORIO",
         "CIRUGIA DE CABEZA Y CUELLO",
         "FONOAUDIOLOGIA",
@@ -3346,13 +3746,9 @@
         "GINECOLOGIA",
         "MEDICINA INTERNA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "ALERGIA",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "ENDOCRINOLOGIA",
-        "ONCOLOGIA",
-        "UROLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "ANATOMIA PATOLOGICA",
+        "NEUROLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CIRUGIA GENERAL",
         "MEDICINA NUCLEAR",
@@ -3363,7 +3759,13 @@
         "DIABETOLOGIA",
         "HEMATOLOGIA",
         "NEUMONOLOGIA",
-        "VASCULAR PERIFERICO"
+        "VASCULAR PERIFERICO",
+        "ALERGIA",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "ONCOLOGIA",
+        "UROLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -3383,21 +3785,26 @@
       "id": 12955,
       "nombre": "CLINICA REGIONAL ARROYITO SRL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES",
         "CARDIOLOGIA",
         "GINECOLOGIA",
         "MEDICINA GENERAL",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "ONCOLOGIA",
         "ANESTESISTA",
         "INFECTOLOGIA",
         "PEDIATRIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "UROLOGIA",
-        "MEDICINA INTERNA",
+        "ONCOLOGIA",
         "05. LABORATORIO",
-        "ANATOMIA PATOLOGICA"
+        "ANATOMIA PATOLOGICA",
+        "MEDICINA INTERNA",
+        "UROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3438,45 +3845,51 @@
       "id": 14524,
       "nombre": "CLINICA Y MATERNIDAD DEL SOL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
-        "ALERGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA INFANTIL",
-        "ENDOCRINOLOGIA PEDIATRICA",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
-        "CIRUGIA GENERAL PEDIATRICA",
         "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
+        "CARDIOLOGIA PEDIATRICA",
         "CIRUGIA CARDIOVASCULAR",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "CIRUGIA GENERAL PEDIATRICA",
+        "CLINICA MEDICA",
+        "DIABETOLOGIA INFANTIL",
+        "ENDOCRINOLOGIA",
+        "ENDOCRINOLOGIA PEDIATRICA",
         "FLEBOLOGIA",
+        "FONOAUDIOLOGIA",
+        "GASTROENTEROLOGIA",
         "GASTROENTEROLOGIA PEDIATRICA",
         "GENETICA",
         "GINECOLOGIA",
+        "INFECTOLOGIA",
         "NEFROLOGIA PEDIATRICA",
         "NEONATOLOGIA",
-        "NEUMONOLOGIA PEDIATRICA",
-        "NUTRICION",
-        "OBSTETRICIA",
+        "NEUROCIRUGIA INFANTIL",
+        "UROLOGIA PEDIATRICA",
         "VASCULAR PERIFERICO",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA PEDIATRICA",
-        "INFECTOLOGIA",
+        "ALERGIA",
+        "DERMATOLOGIA",
+        "CIRUGIA GENERAL",
+        "NEUMONOLOGIA PEDIATRICA",
+        "NUTRICION",
+        "OBSTETRICIA",
         "NEUROLOGIA INFANTIL",
-        "NEUROCIRUGIA INFANTIL",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "CARDIOLOGIA PEDIATRICA",
-        "CLINICA MEDICA",
-        "GASTROENTEROLOGIA"
+        "PEDIATRIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3513,8 +3926,8 @@
         "Urologia Pediatrica"
       ],
       "plan": [
-        "Plan Máximo",
-        "Plan Integral"
+        "Plan Integral",
+        "Plan Máximo"
       ],
       "ciudad": "Cordoba",
       "direccion": "Bv. Chacabuco 705, Piso 1",
@@ -3528,21 +3941,26 @@
       "id": 3953,
       "nombre": "CONSULTORIO DE LA RECTA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
         "UROLOGIA",
         "DERMATOLOGIA",
         "CARDIOLOGIA PEDIATRICA",
         "CLINICA MEDICA",
         "GINECOLOGIA",
+        "NEFROLOGIA",
+        "NUTRICION",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "NEFROLOGIA",
-        "NUTRICION",
         "FLEBOLOGIA",
         "OBSTETRICIA",
         "PEDIATRIA"
@@ -3589,6 +4007,9 @@
       "id": 14034,
       "nombre": "CONSULTORIO DR. NICOLAS BRUNO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CLINICA MEDICA"
@@ -3611,6 +4032,9 @@
       "id": 15075,
       "nombre": "CONSULTORIO DRA ANDERSON CAROLINA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3632,6 +4056,9 @@
       "id": 15076,
       "nombre": "CONSULTORIO DRA ANDERSON CAROLINA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3653,6 +4080,9 @@
       "id": 14644,
       "nombre": "CONSULTORIO DRA ANDERSON CAROLINA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3674,6 +4104,9 @@
       "id": 14013,
       "nombre": "CONSULTORIO DRA. MORESI MARIA-VILLA ALLENDE",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3695,6 +4128,9 @@
       "id": 14241,
       "nombre": "CONSULTORIO OD. AMESTEGUI PAULA  - CON PREVIA DERIVACION DE ODONTOMED",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3716,6 +4152,9 @@
       "id": 14248,
       "nombre": "CONSULTORIO OD. DELVO FEDERICO -VILLA MARIA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3737,6 +4176,9 @@
       "id": 14315,
       "nombre": "CONSULTORIO OD. MORESI MARIA-LA CALERA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3758,6 +4200,9 @@
       "id": 14313,
       "nombre": "CONSULTORIO OD. MORESI MARIA-MENDIOLAZA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3779,6 +4224,9 @@
       "id": 14316,
       "nombre": "CONSULTORIO OD. MORESI MARIA-SALDAN",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3800,6 +4248,9 @@
       "id": 14312,
       "nombre": "CONSULTORIO OD. MORESI MARIA-VILLA ALLENDE",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3821,6 +4272,9 @@
       "id": 14240,
       "nombre": "CONSULTORIO OD. RAMIREZ JUAN PABLO - CON PREVIA DERIVACION DE ODONTOMED",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -3842,6 +4296,9 @@
       "id": 13420,
       "nombre": "CONSULTORIO RADIOLOGICO PRIVADO HORACIO ALDO VERA",
       "tipo": "Diagnóstico por Imágenes",
+      "tipos": [
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES"
       ],
@@ -3863,22 +4320,25 @@
       "id": 14380,
       "nombre": "CONSULTORIOS CLINICA PRIVADA SANTA MARIA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
+        "ALERGIA",
+        "DIABETOLOGIA",
+        "FLEBOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CARDIOLOGIA",
         "NEFROLOGIA",
+        "GINECOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "UROLOGIA",
+        "NUTRICION",
         "CIRUGIA GENERAL",
         "CLINICA MEDICA",
         "OFTALMOLOGIA",
         "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "GINECOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
-        "NUTRICION",
-        "ALERGIA",
-        "DIABETOLOGIA",
-        "FLEBOLOGIA",
         "NEUROLOGIA"
       ],
       "especialidadesMedicas": [],
@@ -3899,19 +4359,25 @@
       "id": 13270,
       "nombre": "CONSULTORIOS DE LA MERCED",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Salud Mental"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "DERMATOLOGIA",
-        "CARDIOLOGIA",
-        "GINECOLOGIA",
-        "OFTALMOLOGIA",
-        "PSICOLOGIA",
-        "PSIQUIATRIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "NEUROLOGIA INFANTIL",
         "ONCOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "CARDIOLOGIA",
+        "GINECOLOGIA",
+        "OFTALMOLOGIA",
+        "PSICOLOGIA",
+        "PSIQUIATRIA",
         "ANATOMIA PATOLOGICA",
         "FONOAUDIOLOGIA",
         "NUTRICION",
@@ -3949,17 +4415,23 @@
       "id": 12592,
       "nombre": "CONSULTORIOS MÉDICOS DRA. VIEL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "OBSTETRICIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
         "DERMATOLOGIA",
         "FONOAUDIOLOGIA",
-        "ANATOMIA PATOLOGICA",
-        "OBSTETRICIA",
         "04. DIAGNOSTICO POR IMAGENES",
-        "GINECOLOGIA",
-        "ENDOCRINOLOGIA",
         "CIRUGIA DE TORAX"
       ],
       "especialidadesMedicas": [
@@ -3985,6 +4457,10 @@
       "id": 14474,
       "nombre": "CONSULTORIOS MEDICOS PRIVADO ALTA GRACIA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
@@ -4011,29 +4487,35 @@
       "id": 13311,
       "nombre": "CONSULTORIOS MEDICOS PRIVADOS TABLADA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
-        "CARDIOLOGIA",
-        "GINECOLOGIA",
-        "NEFROLOGIA",
-        "PSICOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PSIQUIATRIA",
+        "REUMATOLOGIA",
+        "UROLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "DIABETOLOGIA",
+        "NEUROLOGIA",
+        "OFTALMOLOGIA",
+        "05. LABORATORIO",
+        "ANATOMIA PATOLOGICA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "08. SALUD MENTAL",
         "BIOQUIMICOS",
         "CLINICA MEDICA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "05. LABORATORIO",
-        "ANATOMIA PATOLOGICA",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "DIABETOLOGIA",
-        "NEUROLOGIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PSIQUIATRIA",
-        "REUMATOLOGIA",
-        "UROLOGIA",
+        "CARDIOLOGIA",
         "ENDOCRINOLOGIA",
         "NEUMONOLOGIA",
         "NUTRICION",
+        "GINECOLOGIA",
+        "NEFROLOGIA",
+        "PSICOLOGIA",
         "DERMATOLOGIA",
         "FLEBOLOGIA"
       ],
@@ -4061,12 +4543,14 @@
       "id": 14612,
       "nombre": "CONSULTORIOS MEDICOS URCA S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
         "DERMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "GINECOLOGIA",
         "ALERGIA",
         "FLEBOLOGIA",
         "FONOAUDIOLOGIA",
@@ -4075,8 +4559,9 @@
         "OFTALMOLOGIA",
         "PEDIATRIA",
         "ENDOCRINOLOGIA",
+        "CLINICA MEDICA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "CLINICA MEDICA"
+        "GINECOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -4105,6 +4590,9 @@
       "id": 13341,
       "nombre": "CONSULTORIOS REYES GIOBELLINA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "OFTALMOLOGIA"
       ],
@@ -4126,27 +4614,33 @@
       "id": 11844,
       "nombre": "CORDOBA MEDICAL CENTER",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "ENDOCRINOLOGIA",
-        "OFTALMOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
+        "ALERGIA",
+        "OBSTETRICIA",
+        "PEDIATRIA",
         "ANATOMIA PATOLOGICA",
         "CLINICA MEDICA",
         "INMUNOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "UROLOGIA",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "CARDIOLOGIA",
-        "05. LABORATORIO",
-        "ALERGIA",
-        "OBSTETRICIA",
-        "PEDIATRIA",
-        "DERMATOLOGIA",
+        "NEUROLOGIA",
+        "NUTRICION",
+        "ENDOCRINOLOGIA",
+        "OFTALMOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CIRUGIA GENERAL",
-        "NEUROLOGIA",
-        "NUTRICION",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
         "ENDOCRINOLOGIA PEDIATRICA",
         "FLEBOLOGIA",
         "GINECOLOGIA",
@@ -4186,6 +4680,9 @@
       "id": 9639,
       "nombre": "CORTESE FABIANA BEATRIZ",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -4208,6 +4705,9 @@
       "id": 5417,
       "nombre": "DANIOTTI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4229,6 +4729,9 @@
       "id": 14051,
       "nombre": "DANIOTTI III",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4250,6 +4753,9 @@
       "id": 14052,
       "nombre": "DANIOTTI IV",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4271,6 +4777,9 @@
       "id": 14053,
       "nombre": "DANIOTTI VI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4292,6 +4801,9 @@
       "id": 5419,
       "nombre": "DEL CONDOR",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4313,6 +4825,9 @@
       "id": 14369,
       "nombre": "DEL RIO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4334,6 +4849,9 @@
       "id": 15115,
       "nombre": "DIAZ CARREÑO ZOE MAGALI",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "PSICOLOGIA",
         "08. SALUD MENTAL"
@@ -4356,6 +4874,9 @@
       "id": 5209,
       "nombre": "DIPIERI DE CAMARA SILVIA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -4378,6 +4899,9 @@
       "id": 13316,
       "nombre": "ECCO S.A.",
       "tipo": "Urgencias y Emergencias",
+      "tipos": [
+        "Urgencias y Emergencias"
+      ],
       "especialidades": [
         "12. URGENICAS Y EMERGENCIAS"
       ],
@@ -4399,6 +4923,9 @@
       "id": 5622,
       "nombre": "ERGUETA -RIO CEBALLOS-",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4420,6 +4947,9 @@
       "id": 14054,
       "nombre": "ERGUETA -VILLA ALLENDE-",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4441,16 +4971,17 @@
       "id": 13292,
       "nombre": "ETICA CENTRO MEDICO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Salud Mental"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CARDIOLOGIA",
         "MEDICINA INTERNA",
         "PSICOLOGIA",
-        "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "VASCULAR PERIFERICO",
         "08. SALUD MENTAL",
         "ALERGIA",
         "ANATOMIA PATOLOGICA",
@@ -4459,6 +4990,10 @@
         "CLINICA MEDICA",
         "NUTRICION",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "VASCULAR PERIFERICO",
         "PEDIATRIA"
       ],
       "especialidadesMedicas": [
@@ -4492,9 +5027,12 @@
       "id": 11769,
       "nombre": "EVANGELISTA MARCOS",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -4514,6 +5052,9 @@
       "id": 14209,
       "nombre": "FALCON NOELIA MARICEL",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "08. SALUD MENTAL",
         "PSICOLOGIA"
@@ -4536,6 +5077,9 @@
       "id": 14338,
       "nombre": "FARMACIA  CV FARMA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4557,6 +5101,9 @@
       "id": 14216,
       "nombre": "FARMACIA  MODERNA II",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4578,6 +5125,9 @@
       "id": 11850,
       "nombre": "FARMACIA ARRIETA BAZAN",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4599,6 +5149,9 @@
       "id": 15117,
       "nombre": "FARMACIA AZUL",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4620,6 +5173,9 @@
       "id": 14223,
       "nombre": "FARMACIA DE LA CLINICA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4641,6 +5197,9 @@
       "id": 10868,
       "nombre": "FARMACIA DEL PUEBLO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4662,6 +5221,9 @@
       "id": 14225,
       "nombre": "FARMACIA DEL SUBNIVEL",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4683,6 +5245,9 @@
       "id": 11098,
       "nombre": "FARMACIA FERNANDEZ",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4704,6 +5269,9 @@
       "id": 10807,
       "nombre": "FARMACIA FIOLONE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4725,6 +5293,9 @@
       "id": 13011,
       "nombre": "FARMACIA GARRONE I",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4746,6 +5317,9 @@
       "id": 13012,
       "nombre": "FARMACIA GARRONE II",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4767,6 +5341,9 @@
       "id": 14074,
       "nombre": "FARMACIA GENERAL PAZ -  AV COLON",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4788,6 +5365,9 @@
       "id": 10894,
       "nombre": "FARMACIA GENERAL PAZ - 24 DE SEPTIEMBRE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4809,6 +5389,9 @@
       "id": 14075,
       "nombre": "FARMACIA GENERAL PAZ - CALLE TUCUMAN",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4830,6 +5413,9 @@
       "id": 14079,
       "nombre": "FARMACIA GENERAL PAZ - LA FALDA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4851,6 +5437,9 @@
       "id": 14078,
       "nombre": "FARMACIA GENERAL PAZ - NUEVA CORDOBA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4872,6 +5461,9 @@
       "id": 14077,
       "nombre": "FARMACIA GENERAL PAZ - PUEYRREDON",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4893,6 +5485,9 @@
       "id": 14076,
       "nombre": "FARMACIA GENERAL PAZ - ROMA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4914,6 +5509,9 @@
       "id": 10878,
       "nombre": "FARMACIA GERVILLA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4935,6 +5533,9 @@
       "id": 14716,
       "nombre": "FARMACIA GRACIELA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4956,6 +5557,9 @@
       "id": 14231,
       "nombre": "FARMACIA GRAMIGNA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4977,6 +5581,9 @@
       "id": 14683,
       "nombre": "FARMACIA LIDER S.A. - AV COLON II",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -4998,6 +5605,9 @@
       "id": 14083,
       "nombre": "FARMACIA LIDER S.A. - AV. COLON",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5019,6 +5629,9 @@
       "id": 14082,
       "nombre": "FARMACIA LIDER S.A. - B° ALBERDI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5040,6 +5653,9 @@
       "id": 15070,
       "nombre": "FARMACIA LIDER S.A. - B° ARGUELLO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5061,6 +5677,9 @@
       "id": 14088,
       "nombre": "FARMACIA LIDER S.A. - B° CERRO DE LAS ROSAS",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5082,6 +5701,9 @@
       "id": 11612,
       "nombre": "FARMACIA LIDER S.A. - B° GRAL PAZ",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5103,6 +5725,9 @@
       "id": 14091,
       "nombre": "FARMACIA LIDER S.A. - B° JARDIN ESPINOSA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5124,6 +5749,9 @@
       "id": 14089,
       "nombre": "FARMACIA LIDER S.A. - B° NUEVA CORDOBA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5145,6 +5773,9 @@
       "id": 14090,
       "nombre": "FARMACIA LIDER S.A. - B° VILLA SAN CARLOS",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5163,30 +5794,12 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14318,
-      "nombre": "FARMACIA LIDER S.A. - B° VILLA WARCALDE",
-      "tipo": "Farmacias",
-      "especialidades": [
-        "09. FARMACIAS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "José María E. Zanón 9107 local 2, Piso 1",
-      "telefono": "0351-8529455",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14682,
       "nombre": "FARMACIA LIDER S.A. - B° VILLA WARCALDE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5205,9 +5818,36 @@
       "ordenPrioridad": 9999
     },
     {
+      "id": 14318,
+      "nombre": "FARMACIA LIDER S.A. - B° VILLA WARCALDE",
+      "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
+      "especialidades": [
+        "09. FARMACIAS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "José María E. Zanón 9107 local 2, Piso 1",
+      "telefono": "0351-8529455",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
       "id": 14084,
       "nombre": "FARMACIA LIDER S.A. - CALLE BELGRANO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5229,6 +5869,9 @@
       "id": 14085,
       "nombre": "FARMACIA LIDER S.A. - CALLE GRAL PAZ",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5250,6 +5893,9 @@
       "id": 14092,
       "nombre": "FARMACIA LIDER S.A. - CALLE HUMBERTO PRIMO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5271,6 +5917,9 @@
       "id": 14086,
       "nombre": "FARMACIA LIDER S.A. - CALLE JUJUY",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5292,6 +5941,9 @@
       "id": 14087,
       "nombre": "FARMACIA LIDER S.A. - CALLE SANTA ROSA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5313,6 +5965,9 @@
       "id": 14319,
       "nombre": "FARMACIA LIDER S.A. - COMPLEJO ALTOS DEL TALAR",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5334,6 +5989,9 @@
       "id": 15071,
       "nombre": "FARMACIA LIDER S.A.- B° AMEGHINO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5355,6 +6013,9 @@
       "id": 14230,
       "nombre": "FARMACIA LOPEZ BLANGINO 1",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5376,6 +6037,9 @@
       "id": 14229,
       "nombre": "FARMACIA LOPEZ BLANGINO 2",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5397,6 +6061,9 @@
       "id": 14221,
       "nombre": "FARMACIA MARAÑON",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5418,6 +6085,9 @@
       "id": 14220,
       "nombre": "FARMACIA MARCELINO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5439,6 +6109,9 @@
       "id": 11228,
       "nombre": "FARMACIA MAZZOLA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5460,6 +6133,9 @@
       "id": 6317,
       "nombre": "FARMACIA MILOVICH I",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5481,6 +6157,9 @@
       "id": 14217,
       "nombre": "FARMACIA MODERNA I",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5502,6 +6181,9 @@
       "id": 14208,
       "nombre": "FARMACIA MODERNA V",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5523,6 +6205,9 @@
       "id": 14218,
       "nombre": "FARMACIA MODERNA VII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5544,6 +6229,9 @@
       "id": 14219,
       "nombre": "FARMACIA MODERNA VIII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5565,6 +6253,9 @@
       "id": 11203,
       "nombre": "FARMACIA OCTUBRE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5586,6 +6277,9 @@
       "id": 13016,
       "nombre": "FARMACIA SILVANA CIANCIA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5607,6 +6301,9 @@
       "id": 13013,
       "nombre": "FARMACIA VIVIANA ROMERO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5628,6 +6325,9 @@
       "id": 13014,
       "nombre": "FARMACIA VIVIANA ROMERO II",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5649,6 +6349,9 @@
       "id": 13015,
       "nombre": "FARMACIA VIVIANA ROMERO III",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5670,6 +6373,9 @@
       "id": 14192,
       "nombre": "FARMACIA ZANELLO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [],
       "especialidadesMedicas": [],
       "plan": [
@@ -5689,6 +6395,9 @@
       "id": 13003,
       "nombre": "FERNANDEZ LUCIANO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -5711,9 +6420,12 @@
       "id": 13027,
       "nombre": "FERRI MARCOS",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -5733,6 +6445,9 @@
       "id": 14938,
       "nombre": "FUNDACION P PROGR DE LA MEDICINA -EN INST OULTON 4TO PISO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -5749,32 +6464,15 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14939,
-      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Laboratorios",
-      "especialidades": [
-        "BIOQUIMICOS",
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Máximo"
-      ],
-      "ciudad": "Villa Carlos Paz",
-      "direccion": "Tucumán 98",
-      "telefono": "3541 223718",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 15064,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "BIOQUIMICOS",
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -5792,6 +6490,9 @@
       "id": 15065,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -5812,6 +6513,9 @@
       "id": 15066,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -5832,9 +6536,12 @@
       "id": 15067,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -5849,9 +6556,36 @@
       "ordenPrioridad": 9999
     },
     {
+      "id": 14939,
+      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Máximo"
+      ],
+      "ciudad": "Villa Carlos Paz",
+      "direccion": "Tucumán 98",
+      "telefono": "3541 223718",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
       "id": 6376,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -5872,15 +6606,21 @@
       "id": 15057,
       "nombre": "FUNES ESPACIO DE SALUD S.A.S",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Salud Mental"
+      ],
       "especialidades": [
-        "GINECOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CARDIOLOGIA",
         "NEUROLOGIA",
         "OFTALMOLOGIA",
-        "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "NUTRICION",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "GINECOLOGIA",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
         "FONOAUDIOLOGIA"
@@ -5903,9 +6643,12 @@
       "id": 14505,
       "nombre": "FURLAN MONICA GRACIELA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -5925,6 +6668,9 @@
       "id": 5491,
       "nombre": "GARCIA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -5946,26 +6692,32 @@
       "id": 11417,
       "nombre": "GENTIUM CENTRO MEDICO PRIVADO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Diagnóstico por Imágenes",
+        "Salud Mental"
+      ],
       "especialidades": [
         "CARDIOLOGIA",
         "UROLOGIA",
         "CLINICA MEDICA",
         "MEDICINA FAMILIAR",
-        "08. SALUD MENTAL",
-        "ALERGIA",
-        "NUTRICION",
-        "PSICOLOGIA",
         "05. LABORATORIO",
         "DERMATOLOGIA",
         "GINECOLOGIA",
-        "ANATOMIA PATOLOGICA",
-        "OFTALMOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "BIOQUIMICOS",
         "FLEBOLOGIA",
-        "PEDIATRIA"
+        "PEDIATRIA",
+        "ANATOMIA PATOLOGICA",
+        "OFTALMOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "08. SALUD MENTAL",
+        "ALERGIA",
+        "NUTRICION",
+        "PSICOLOGIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -6000,6 +6752,9 @@
       "id": 12996,
       "nombre": "GRANERO ZORRILLA SEBASTIAN",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -6022,6 +6777,9 @@
       "id": 12988,
       "nombre": "HEVIA MIRTA LUISA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -6044,11 +6802,14 @@
       "id": 14691,
       "nombre": "HOLOGRAMAS CENTRO INTEGRAL DE PSICOLOGIA",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
+        "08. SALUD MENTAL",
         "PSICOLOGIA",
         "FONOAUDIOLOGIA",
-        "PSIQUIATRIA",
-        "08. SALUD MENTAL"
+        "PSIQUIATRIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6068,6 +6829,12 @@
       "id": 5207,
       "nombre": "HOSPITAL ITALIANO DE CORDOBA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "ANATOMIA PATOLOGICA",
         "INMUNOLOGIA",
@@ -6075,16 +6842,6 @@
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
-        "05. LABORATORIO",
-        "DIABETOLOGIA",
-        "HEMODINAMIA",
-        "NEONATOLOGIA",
-        "NUTRICION",
-        "PEDIATRIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "CARDIOLOGIA",
         "ALERGIA",
         "CIRUGIA DE TORAX",
         "ENDOCRINOLOGIA",
@@ -6096,16 +6853,26 @@
         "INFECTOLOGIA",
         "NEUROCIRUGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "05. LABORATORIO",
+        "DIABETOLOGIA",
+        "HEMODINAMIA",
+        "NEONATOLOGIA",
+        "NUTRICION",
+        "PEDIATRIA",
+        "CIRUGIA CARDIOVASCULAR",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "ONCOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CARDIOLOGIA",
         "CIRUGIA DE CABEZA Y CUELLO",
         "GINECOLOGIA",
         "HEMATOLOGIA",
         "NEUMONOLOGIA",
         "OFTALMOLOGIA",
-        "VASCULAR PERIFERICO",
-        "CIRUGIA CARDIOVASCULAR",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "ONCOLOGIA"
+        "VASCULAR PERIFERICO"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -6165,22 +6932,28 @@
       "id": 14720,
       "nombre": "HOSPITAL MUNICIPAL NOETINGER",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
         "GINECOLOGIA",
         "NEUROLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
+        "ALERGIA",
+        "FONOAUDIOLOGIA",
+        "OFTALMOLOGIA",
         "DERMATOLOGIA",
         "UROLOGIA",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "05. LABORATORIO",
-        "ALERGIA",
-        "FONOAUDIOLOGIA",
-        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "PEDIATRIA"
       ],
@@ -6202,6 +6975,9 @@
       "id": 14056,
       "nombre": "HP FARMA 24 DE SEPTIEMBRE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6223,6 +6999,9 @@
       "id": 14057,
       "nombre": "HP FARMA CERRO DE LAS ROSAS",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6244,6 +7023,9 @@
       "id": 14059,
       "nombre": "HP FARMA DEL INSTITUTO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6265,6 +7047,9 @@
       "id": 14060,
       "nombre": "HP FARMA HIPER LIBERTAD RODRIGUEZ DEL BUSTO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6286,6 +7071,9 @@
       "id": 14061,
       "nombre": "HP FARMA HOSPITAL PRIVADO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6307,6 +7095,9 @@
       "id": 14062,
       "nombre": "HP FARMA PASEO DEL JOCKEY",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6328,6 +7119,9 @@
       "id": 14063,
       "nombre": "HP FARMA PATIO OLMOS",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6349,6 +7143,9 @@
       "id": 14064,
       "nombre": "HP FARMA RAÚL FERREYRA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6370,6 +7167,9 @@
       "id": 14065,
       "nombre": "HP FARMA RUTA 20",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6391,6 +7191,9 @@
       "id": 14066,
       "nombre": "HP FARMA SAN VICENTE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6412,6 +7215,9 @@
       "id": 14058,
       "nombre": "HP FARMA SANTA ROSA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6433,6 +7239,9 @@
       "id": 9129,
       "nombre": "HP FARMA VILLA ALLENDE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6454,6 +7263,9 @@
       "id": 11226,
       "nombre": "IMAGENES PRIVADA VILLA MARIA S.A EN FORMACION",
       "tipo": "Diagnóstico por Imágenes",
+      "tipos": [
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "04. DIAGNOSTICO POR IMAGENES"
       ],
@@ -6475,6 +7287,9 @@
       "id": 15084,
       "nombre": "INBIOCOR-SANCHEZ LEONARDO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -6497,20 +7312,14 @@
       "id": 3792,
       "nombre": "INSTITUTO CONCI CARPINELLA S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología",
+        "Salud Mental",
+        "Laboratorios"
+      ],
       "especialidades": [
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "05. LABORATORIO",
-        "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "NEUROLOGIA INFANTIL",
-        "VASCULAR PERIFERICO",
-        "GASTROENTEROLOGIA",
-        "MEDICINA INTERNA",
-        "REUMATOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "ALERGIA",
         "NEUMONOLOGIA",
@@ -6518,10 +7327,23 @@
         "OFTALMOLOGIA",
         "PEDIATRIA",
         "PSICOLOGIA",
-        "FONOAUDIOLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
+        "GASTROENTEROLOGIA",
+        "MEDICINA INTERNA",
+        "REUMATOLOGIA",
+        "FONOAUDIOLOGIA",
+        "05. LABORATORIO",
+        "CIRUGIA CARDIOVASCULAR",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "NEUROLOGIA INFANTIL",
+        "VASCULAR PERIFERICO",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA PEDIATRICA",
         "DERMATOLOGIA",
@@ -6578,20 +7400,19 @@
       "id": 13732,
       "nombre": "INSTITUTO DE ESPECIALIDADES MEDICAS PRIVADO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CIRUGIA GENERAL",
         "GINECOLOGIA",
         "INMUNOLOGIA",
         "PSICOLOGIA",
-        "ANATOMIA PATOLOGICA",
-        "GASTROENTEROLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "CARDIOLOGIA",
-        "DERMATOLOGIA",
-        "OFTALMOLOGIA",
-        "UROLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "CLINICA MEDICA",
         "ENDOCRINOLOGIA",
@@ -6600,6 +7421,14 @@
         "ALERGIA",
         "NEUMONOLOGIA",
         "NUTRICION",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
+        "OFTALMOLOGIA",
+        "UROLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "GASTROENTEROLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
@@ -6641,10 +7470,15 @@
       "id": 14290,
       "nombre": "INSTITUTO MEDICO DAMIC",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA",
         "05. LABORATORIO",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [
@@ -6684,23 +7518,29 @@
       "id": 14678,
       "nombre": "INSTITUTO MOSSE",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "GINECOLOGIA",
-        "MEDICINA INTERNA",
-        "NEFROLOGIA",
-        "NUTRICION",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "05. LABORATORIO",
-        "PEDIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
+        "DIABETOLOGIA",
+        "MEDICINA GENERAL",
+        "05. LABORATORIO",
+        "PEDIATRIA",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
         "BIOQUIMICOS",
-        "DIABETOLOGIA",
-        "MEDICINA GENERAL",
+        "GINECOLOGIA",
+        "MEDICINA INTERNA",
+        "NEFROLOGIA",
+        "NUTRICION",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "CARDIOLOGIA",
@@ -6729,6 +7569,9 @@
       "id": 14035,
       "nombre": "INSTITUTO OFTALMOLOGICO DE CORDOBA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "OFTALMOLOGIA"
@@ -6749,6 +7592,9 @@
       "id": 14193,
       "nombre": "INSTITUTO PRIVADO DE RADIOTERAPIA ONCOLOGIA S.A.",
       "tipo": "Centros Especializados",
+      "tipos": [
+        "Centros Especializados"
+      ],
       "especialidades": [
         "02. CENTROS ESPECIALIZADOS"
       ],
@@ -6773,6 +7619,9 @@
       "id": 14232,
       "nombre": "INSTITUTO TRAUMATOLOGICO DE CORDOBA S.A.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS"
@@ -6797,6 +7646,9 @@
       "id": 5551,
       "nombre": "JACOBO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -6818,6 +7670,9 @@
       "id": 15083,
       "nombre": "LABORATIOS LAURET-PERUFFO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -6840,6 +7695,9 @@
       "id": 13841,
       "nombre": "LABORATORIO CASTILLO - CHIDIAK S.R.L. I",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -6861,6 +7719,9 @@
       "id": 14214,
       "nombre": "LABORATORIO CASTILLO - CHIDIAK S.R.L. II",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -6882,6 +7743,9 @@
       "id": 14119,
       "nombre": "LABORATORIO CASTILLO - CHIDIAK S.R.L. III",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -6903,6 +7767,9 @@
       "id": 14883,
       "nombre": "LABORATORIO CASTILLO - CHIDIAK S.R.L. IV",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -6924,6 +7791,9 @@
       "id": 14884,
       "nombre": "LABORATORIO CASTILLO - CHIDIAK S.R.L. V",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -6945,9 +7815,12 @@
       "id": 15073,
       "nombre": "LABORATORIO CL. PRIV. JESUS MARIA DR. ANIBAL VIALE",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6967,9 +7840,12 @@
       "id": 14880,
       "nombre": "LABORATORIO LAURET - PERUFFO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6989,6 +7865,9 @@
       "id": 14879,
       "nombre": "LABORATORIO LAURET - PERUFFO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -7011,6 +7890,9 @@
       "id": 14517,
       "nombre": "LABORATORIO MALDONADO GRACIELA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -7033,6 +7915,9 @@
       "id": 14719,
       "nombre": "LABORATORIO OGSTON SRL",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -7054,6 +7939,9 @@
       "id": 14215,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -7075,6 +7963,9 @@
       "id": 13456,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -7096,6 +7987,10 @@
       "id": 13419,
       "nombre": "LABORATORIOS BIOCON S.A.-LAB DR.DANIELE",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -7118,6 +8013,9 @@
       "id": 14935,
       "nombre": "LONDERO DE ARGUELLO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7139,6 +8037,9 @@
       "id": 15077,
       "nombre": "MACCHIONE FERNANDO",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "PSICOLOGIA",
         "08. SALUD MENTAL"
@@ -7161,6 +8062,9 @@
       "id": 11645,
       "nombre": "MARCHETTI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7182,6 +8086,9 @@
       "id": 15247,
       "nombre": "MARTINEZ FERNANDO",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -7204,6 +8111,9 @@
       "id": 5319,
       "nombre": "MATTALIA MARIELA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -7225,6 +8135,9 @@
       "id": 14080,
       "nombre": "MUNDIAL - CALLE BAIGORRI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7246,6 +8159,9 @@
       "id": 5566,
       "nombre": "MUNDIAL - CALLE FRAGUEIRO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7267,6 +8183,9 @@
       "id": 14081,
       "nombre": "MUNDIAL - CERRO DE LAS ROSAS",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7288,9 +8207,12 @@
       "id": 13000,
       "nombre": "NAVARRETE SOFIA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "BIOQUIMICOS",
-        "05. LABORATORIO"
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -7310,6 +8232,9 @@
       "id": 14283,
       "nombre": "NAZER PAOLA",
       "tipo": "Odontología",
+      "tipos": [
+        "Odontología"
+      ],
       "especialidades": [
         "10. ODONTOLOGIA"
       ],
@@ -7331,6 +8256,11 @@
       "id": 14746,
       "nombre": "NENS CONSULTORIOS PEDIATRICOS",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "08. SALUD MENTAL",
@@ -7359,6 +8289,9 @@
       "id": 14608,
       "nombre": "OCHOVA BUSTAMANTE ROXANA ANABEL",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "PSICOLOGIA",
         "08. SALUD MENTAL"
@@ -7381,6 +8314,9 @@
       "id": 15116,
       "nombre": "OLIVERA MARIA LAURA",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "PSICOLOGIA",
         "08. SALUD MENTAL"
@@ -7403,6 +8339,9 @@
       "id": 9107,
       "nombre": "OLOCCO",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7424,6 +8363,9 @@
       "id": 12991,
       "nombre": "OLOCCO MARIA INES",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "BIOQUIMICOS",
         "05. LABORATORIO"
@@ -7446,6 +8388,9 @@
       "id": 5637,
       "nombre": "OLSINA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7467,24 +8412,31 @@
       "id": 13846,
       "nombre": "OMED MEDICINA PRIVADA S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Salud Mental"
+      ],
       "especialidades": [
+        "FONOAUDIOLOGIA",
+        "MEDICINA FAMILIAR",
+        "GINECOLOGIA",
+        "NUTRICION",
+        "OFTALMOLOGIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PSICOLOGIA",
-        "FONOAUDIOLOGIA",
-        "MEDICINA FAMILIAR",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "GINECOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "MEDICINA INTERNA",
         "ENDOCRINOLOGIA",
         "PEDIATRIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "MEDICINA INTERNA",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA"
@@ -7520,6 +8472,9 @@
       "id": 15129,
       "nombre": "OPTICA ALTAVISTA-B° ARGUELLO",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7541,6 +8496,9 @@
       "id": 15128,
       "nombre": "OPTICA ALTAVISTA-B° GENERAL PAZ",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7562,6 +8520,9 @@
       "id": 15130,
       "nombre": "OPTICA ALTAVISTA-B° SAN VICENTE",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7583,6 +8544,9 @@
       "id": 15131,
       "nombre": "OPTICA ALTAVISTA-EMBALSE",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7604,6 +8568,9 @@
       "id": 15127,
       "nombre": "OPTICA ALTAVISTA-VILLA CABRERA",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7625,6 +8592,9 @@
       "id": 13977,
       "nombre": "OPTICA AMERICO",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7646,6 +8616,9 @@
       "id": 13979,
       "nombre": "OPTICA SANTA CARA",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7667,6 +8640,9 @@
       "id": 13980,
       "nombre": "OPTICA SOLER - DEAN FUNES 1",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7688,6 +8664,9 @@
       "id": 14100,
       "nombre": "OPTICA SOLER - DEAN FUNES 2",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7709,6 +8688,9 @@
       "id": 15074,
       "nombre": "OPTICA SOLER-SAN JERONIMO",
       "tipo": "Ópticas",
+      "tipos": [
+        "Ópticas"
+      ],
       "especialidades": [
         "11. OPTICAS"
       ],
@@ -7730,6 +8712,9 @@
       "id": 5535,
       "nombre": "PLAZA LAVALLE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7751,6 +8736,9 @@
       "id": 9961,
       "nombre": "REARTE GERMAN OSCAR",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -7773,6 +8761,9 @@
       "id": 14094,
       "nombre": "RED GENERAL PAZ S.A. - AV. LAPLACE",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7794,6 +8785,9 @@
       "id": 13324,
       "nombre": "RED GENERAL PAZ S.A. - B° CERRO DE LAS ROSAS",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7815,6 +8809,9 @@
       "id": 14096,
       "nombre": "RED GENERAL PAZ S.A. - B° URCA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7836,6 +8833,9 @@
       "id": 14093,
       "nombre": "RED GENERAL PAZ S.A. - NVO CENTRO SHOPPING",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7857,6 +8857,9 @@
       "id": 14095,
       "nombre": "RED GENERAL PAZ S.A. - RECTA MARTINOLI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7878,6 +8881,9 @@
       "id": 14367,
       "nombre": "RED GENERAL PAZ S.A.-VILLA ALLENDE-FARMACIA RED REAL",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -7899,6 +8905,9 @@
       "id": 14038,
       "nombre": "REGIONAL URGENCIAS",
       "tipo": "Urgencias y Emergencias",
+      "tipos": [
+        "Urgencias y Emergencias"
+      ],
       "especialidades": [
         "12. URGENICAS Y EMERGENCIAS"
       ],
@@ -7920,6 +8929,9 @@
       "id": 14709,
       "nombre": "RINERO NOELIA DEL VALLE",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
@@ -7941,9 +8953,12 @@
       "id": 9962,
       "nombre": "RIVOLTA SUSANA ELVIRA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -7963,6 +8978,9 @@
       "id": 14679,
       "nombre": "RODRIGUEZ MARIA CONSTANZA",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "08. SALUD MENTAL",
         "PSICOLOGIA"
@@ -7985,6 +9003,9 @@
       "id": 9686,
       "nombre": "ROLDAN ADRIANA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -8007,6 +9028,9 @@
       "id": 13087,
       "nombre": "SABINO SERGIO",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
@@ -8028,11 +9052,15 @@
       "id": 14637,
       "nombre": "SALUD PEDIATRICA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Salud Mental"
+      ],
       "especialidades": [
-        "NUTRICION",
-        "DERMATOLOGIA",
         "CARDIOLOGIA PEDIATRICA",
         "FONOAUDIOLOGIA",
+        "NUTRICION",
+        "DERMATOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "PSICOLOGIA",
         "08. SALUD MENTAL",
@@ -8060,18 +9088,19 @@
       "id": 13337,
       "nombre": "SALVUS CENTRO MEDICO PRIVADO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Salud Mental",
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
-        "FLEBOLOGIA",
         "08. SALUD MENTAL",
         "CLINICA MEDICA",
         "ENDOCRINOLOGIA",
         "FONOAUDIOLOGIA",
         "PEDIATRIA",
-        "NUTRICION",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "MEDICINA INTERNA",
-        "NEUMONOLOGIA PEDIATRICA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "REUMATOLOGIA",
         "UROLOGIA",
         "ANATOMIA PATOLOGICA",
@@ -8084,6 +9113,12 @@
         "DIABETOLOGIA",
         "NEUMONOLOGIA",
         "PSICOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "MEDICINA INTERNA",
+        "NEUMONOLOGIA PEDIATRICA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "FLEBOLOGIA",
+        "NUTRICION",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
         "GASTROENTEROLOGIA",
@@ -8128,6 +9163,9 @@
       "id": 5564,
       "nombre": "SAN CARLOS SUD",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8149,13 +9187,16 @@
       "id": 14131,
       "nombre": "SANATORIO ACONCAGUA - CALLE PARANA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
-        "Plan Máximo",
-        "Plan Integral"
+        "Plan Integral",
+        "Plan Máximo"
       ],
       "ciudad": "Cordoba",
       "direccion": "Paraná 560, Piso 1",
@@ -8169,6 +9210,9 @@
       "id": 14130,
       "nombre": "SANATORIO ACONCAGUA - CHACABUCO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -8189,6 +9233,9 @@
       "id": 14132,
       "nombre": "SANATORIO ACONCAGUA - RONDEAU",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
@@ -8209,6 +9256,11 @@
       "id": 1114,
       "nombre": "SANATORIO CRUZ AZUL",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "ANESTESISTA",
         "CARDIOLOGIA",
@@ -8223,20 +9275,20 @@
         "GINECOLOGIA",
         "NUTRICION",
         "UROLOGIA",
-        "BIOQUIMICOS",
-        "GASTROENTEROLOGIA",
-        "HEMATOLOGIA",
+        "OFTALMOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "MEDICINA INTERNA",
         "NEFROLOGIA",
         "NEUROLOGIA",
-        "OFTALMOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "CIRUGIA GENERAL",
         "DIABETOLOGIA",
         "ENDOCRINOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "BIOQUIMICOS",
+        "GASTROENTEROLOGIA",
+        "HEMATOLOGIA",
         "ALERGIA",
         "ANATOMIA PATOLOGICA",
         "FONOAUDIOLOGIA",
@@ -8292,6 +9344,12 @@
       "id": 995,
       "nombre": "SANATORIO DEL SALVADOR PRIVADO S.A",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes",
+        "Laboratorios",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
@@ -8381,11 +9439,15 @@
       "id": 12961,
       "nombre": "SANATORIO PRIVADO BRUERA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
+      ],
       "especialidades": [
-        "MEDICINA GENERAL",
-        "OFTALMOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES"
+        "04. DIAGNOSTICO POR IMAGENES",
+        "MEDICINA GENERAL",
+        "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8405,25 +9467,32 @@
       "id": 1044,
       "nombre": "SANATORIO PRIVADO CAROYA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Laboratorios",
+        "Salud Mental",
+        "Diagnóstico por Imágenes",
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "ALERGIA",
         "CLINICA MEDICA",
         "INFECTOLOGIA",
         "PSICOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "NEUROCIRUGIA",
-        "PEDIATRIA",
-        "05. LABORATORIO",
-        "CARDIOLOGIA",
-        "FONOAUDIOLOGIA",
-        "OBSTETRICIA",
-        "PSIQUIATRIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CIRUGIA GENERAL",
         "MEDICINA GENERAL",
         "NEFROLOGIA",
         "UROLOGIA",
+        "CARDIOLOGIA",
+        "FONOAUDIOLOGIA",
+        "OBSTETRICIA",
+        "PSIQUIATRIA",
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "ANATOMIA PATOLOGICA",
+        "NEUROCIRUGIA",
+        "PEDIATRIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "GASTROENTEROLOGIA",
@@ -8465,19 +9534,13 @@
       "id": 9571,
       "nombre": "SANATORIO PRIVADO DEL INTERIOR S.R.L",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
+      ],
       "especialidades": [
-        "05. LABORATORIO",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CLINICA MEDICA",
-        "OBSTETRICIA",
         "04. DIAGNOSTICO POR IMAGENES",
-        "CIRUGIA GENERAL",
-        "DERMATOLOGIA",
-        "NUTRICION",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
         "NEUMONOLOGIA",
         "NEUROCIRUGIA",
         "ONCOLOGIA",
@@ -8489,6 +9552,17 @@
         "GINECOLOGIA",
         "INFECTOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "CLINICA MEDICA",
+        "OBSTETRICIA",
+        "CIRUGIA GENERAL",
+        "DERMATOLOGIA",
+        "NUTRICION",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "UROLOGIA",
+        "05. LABORATORIO",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
+        "CIRUGIA CARDIOVASCULAR",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "BIOQUIMICOS",
         "ENDOCRINOLOGIA"
@@ -8535,7 +9609,24 @@
       "id": 5396,
       "nombre": "SANATORIO PRIVADO PUNILLA",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Salud Mental",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
+      ],
       "especialidades": [
+        "UROLOGIA",
+        "HEMODINAMIA",
+        "NEFROLOGIA",
+        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "HEMATOLOGIA",
         "08. SALUD MENTAL",
         "DERMATOLOGIA",
         "INFECTOLOGIA",
@@ -8543,23 +9634,13 @@
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
         "ALERGIA",
         "CLINICA MEDICA",
         "FONOAUDIOLOGIA",
         "NEUROCIRUGIA",
         "ONCOLOGIA",
-        "CARDIOLOGIA",
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "CIRUGIA GENERAL",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "HEMATOLOGIA",
-        "HEMODINAMIA",
-        "NEFROLOGIA",
-        "OFTALMOLOGIA",
         "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
         "ANESTESISTA",
         "CIRUGIA CARDIOVASCULAR",
         "GASTROENTEROLOGIA",
@@ -8602,6 +9683,10 @@
       "id": 6375,
       "nombre": "SANATORIO PROFESOR LEON MORRA S.A. - BAJO PALERMO",
       "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos",
+        "Salud Mental"
+      ],
       "especialidades": [
         "PSICOLOGIA",
         "PSIQUIATRIA",
@@ -8628,6 +9713,9 @@
       "id": 14107,
       "nombre": "SANATORIO PROFESOR LEON MORRA S.A. - CENTRO",
       "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
       "especialidades": [
         "08. SALUD MENTAL"
       ],
@@ -8649,6 +9737,9 @@
       "id": 14361,
       "nombre": "SANCHEZ ANTONIOLLI 19",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8670,6 +9761,9 @@
       "id": 14363,
       "nombre": "SANCHEZ ANTONIOLLI 21",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8691,6 +9785,9 @@
       "id": 14365,
       "nombre": "SANCHEZ ANTONIOLLI 23",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8712,6 +9809,9 @@
       "id": 14366,
       "nombre": "SANCHEZ ANTONIOLLI 24",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8733,6 +9833,9 @@
       "id": 15072,
       "nombre": "SANCHEZ ANTONIOLLI 32",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8754,6 +9857,9 @@
       "id": 15063,
       "nombre": "SANCHEZ ANTONIOLLI 33",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8775,6 +9881,9 @@
       "id": 15062,
       "nombre": "SANCHEZ ANTONIOLLI 34",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8796,6 +9905,9 @@
       "id": 14343,
       "nombre": "SANCHEZ ANTONIOLLI I",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8817,6 +9929,9 @@
       "id": 14344,
       "nombre": "SANCHEZ ANTONIOLLI II",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8838,6 +9953,9 @@
       "id": 14345,
       "nombre": "SANCHEZ ANTONIOLLI III",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8859,6 +9977,9 @@
       "id": 14346,
       "nombre": "SANCHEZ ANTONIOLLI IV",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8880,6 +10001,9 @@
       "id": 14351,
       "nombre": "SANCHEZ ANTONIOLLI IX",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8901,6 +10025,9 @@
       "id": 14347,
       "nombre": "SANCHEZ ANTONIOLLI V",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8922,6 +10049,9 @@
       "id": 14348,
       "nombre": "SANCHEZ ANTONIOLLI VI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8943,6 +10073,9 @@
       "id": 14349,
       "nombre": "SANCHEZ ANTONIOLLI VII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8964,6 +10097,9 @@
       "id": 14350,
       "nombre": "SANCHEZ ANTONIOLLI VIII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -8985,6 +10121,9 @@
       "id": 14352,
       "nombre": "SANCHEZ ANTONIOLLI X",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9006,6 +10145,9 @@
       "id": 14353,
       "nombre": "SANCHEZ ANTONIOLLI XI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9027,6 +10169,9 @@
       "id": 14355,
       "nombre": "SANCHEZ ANTONIOLLI XII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9048,6 +10193,9 @@
       "id": 14356,
       "nombre": "SANCHEZ ANTONIOLLI XIV",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9069,6 +10217,9 @@
       "id": 14357,
       "nombre": "SANCHEZ ANTONIOLLI XV",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9090,6 +10241,9 @@
       "id": 14358,
       "nombre": "SANCHEZ ANTONIOLLI XVI",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9111,6 +10265,9 @@
       "id": 14359,
       "nombre": "SANCHEZ ANTONIOLLI XVII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9132,6 +10289,9 @@
       "id": 14360,
       "nombre": "SANCHEZ ANTONIOLLI XVIII",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9153,6 +10313,9 @@
       "id": 14362,
       "nombre": "SANCHEZ ANTONIOLLI XX",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9174,6 +10337,9 @@
       "id": 14364,
       "nombre": "SANCHEZ CARESTIA",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9195,6 +10361,9 @@
       "id": 10378,
       "nombre": "SARDOY GIORGI, ROMINA GABRIELA",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
@@ -9216,6 +10385,9 @@
       "id": 14609,
       "nombre": "SATIVA SALUD ACTIVA",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología"
+      ],
       "especialidades": [
         "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
@@ -9237,6 +10409,9 @@
       "id": 12511,
       "nombre": "SUTIAGA FARMACIA SINDICAL",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9258,9 +10433,13 @@
       "id": 14476,
       "nombre": "TERAPIA INTEGRALES",
       "tipo": "Fisioterapia y Kinesiología",
+      "tipos": [
+        "Fisioterapia y Kinesiología",
+        "Salud Mental"
+      ],
       "especialidades": [
-        "08. SALUD MENTAL",
-        "06. FISIOTERAPIA Y KINESIOLOGIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -9280,6 +10459,9 @@
       "id": 13647,
       "nombre": "URIZA LUCIANA VERONICA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],
@@ -9301,6 +10483,9 @@
       "id": 14368,
       "nombre": "VERONICA GIL LOPEZ",
       "tipo": "Farmacias",
+      "tipos": [
+        "Farmacias"
+      ],
       "especialidades": [
         "09. FARMACIAS"
       ],
@@ -9322,6 +10507,9 @@
       "id": 14839,
       "nombre": "VIANO PAULA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO",
         "BIOQUIMICOS"
@@ -9344,6 +10532,9 @@
       "id": 14340,
       "nombre": "VICENTE MARÍA PAULA",
       "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
       "especialidades": [
         "05. LABORATORIO"
       ],

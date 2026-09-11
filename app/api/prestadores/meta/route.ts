@@ -36,11 +36,14 @@ export async function GET() {
 
   for (const p of prestadores) {
     p.plan.forEach((pl) => planSet.add(pl));
-    tipoSet.add(p.tipo);
     citySet.add(p.ciudad);
     p.especialidadesMedicas.forEach((e) => espSet.add(e));
-    if (!espPorTipo.has(p.tipo)) espPorTipo.set(p.tipo, new Set());
-    p.especialidadesMedicas.forEach((e) => espPorTipo.get(p.tipo)!.add(e));
+    // Todas las categorías del prestador cuentan (no solo la principal).
+    for (const t of p.tipos ?? [p.tipo]) {
+      tipoSet.add(t);
+      if (!espPorTipo.has(t)) espPorTipo.set(t, new Set());
+      p.especialidadesMedicas.forEach((e) => espPorTipo.get(t)!.add(e));
+    }
   }
 
   const planes = Array.from(planSet)
