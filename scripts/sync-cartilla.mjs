@@ -182,14 +182,25 @@ const ESP_MEDICA_IGNORAR = new Set([
   // Excluidas explícitamente:
   "ANGIOLOGIA",
   "ANESTESIA",
+  "ANESTESISTA", // denominación real en el padrón de médicos (la pactada era "Anestesia")
   "CIRUGIA PLASTICA",
   "GERIATRIA",
   "GENETICA",
   "OFTALMOLOGIA",
+  "NO USAR OFTALMOLOGIA", // entrada basura de la taxonomía de Gecros
   "PROCTOLOGIA",
   "QUEMADOS",
   "TRASPLANTES",
   "TRAPLANTES", // typo del origen
+  "TRASPLANTE", // denominación real (singular) en el padrón de médicos
+  // Pedido de Gestión (Roxana, mail 08/07/2026): especialidades del padrón de
+  // médicos que no corresponden al despliegue público de la cartilla.
+  "MEDICINA DEL DEPORTE",
+  "MEDICINA DEL TRABAJO",
+  "MEDICINA LEGAL",
+  "MEDICO DE GUARDIA",
+  "RESIDENTE",
+  "GIMNASIA PREPARTO",
 ]);
 
 // Limpia y normaliza una especialidad médica (PEDIATRIA → "Pediatría" no, sin
