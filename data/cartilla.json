@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T14:01:11.299Z",
+  "generatedAt": "2026-09-18T13:17:59.949Z",
   "total": 331,
   "prestadores": [
     {
@@ -7936,30 +7936,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 13456,
-      "nombre": "LABORATORIOS BIOCON S.A.",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
-      "telefono": "0351-507 6517",
-      "lat": -31.4153778,
-      "lng": -64.1972385,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14215,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
@@ -7980,6 +7956,30 @@
       "telefono": "3515076517",
       "lat": null,
       "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13456,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
+      "telefono": "0351-507 6517",
+      "lat": -31.4153778,
+      "lng": -64.1972385,
       "destacado": false,
       "ordenPrioridad": 9999
     },
