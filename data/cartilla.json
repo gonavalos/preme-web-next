@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T15:33:05.568Z",
+  "generatedAt": "2026-09-22T13:49:10.183Z",
   "total": 331,
   "prestadores": [
     {
@@ -6625,7 +6625,9 @@
         "NUTRICION",
         "OFTALMOLOGIA"
       ],
-      "especialidadesMedicas": [],
+      "especialidadesMedicas": [
+        "Neumonologia"
+      ],
       "plan": [
         "Plan Coral",
         "Plan Integral",
