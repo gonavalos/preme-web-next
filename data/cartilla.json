@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-22T13:49:10.183Z",
-  "total": 331,
+  "generatedAt": "2026-09-24T13:56:51.775Z",
+  "total": 332,
   "prestadores": [
     {
       "id": 6430,
@@ -393,6 +393,30 @@
       "ciudad": "Alta Gracia",
       "direccion": "Av.Dalinger 292",
       "telefono": "3547-548657",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14628,
+      "nombre": "ALVAREZ SILVIA ADRIANA",
+      "tipo": "Salud Mental",
+      "tipos": [
+        "Salud Mental"
+      ],
+      "especialidades": [
+        "08. SALUD MENTAL"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Alta Gracia",
+      "direccion": "Dean Funes 56",
+      "telefono": "3515318080",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -3464,6 +3488,7 @@
         "Gastroenterologia",
         "Ginecologia",
         "Infectologia",
+        "Inmunologia",
         "Neonatologia",
         "Neumonologia",
         "Neurocirugia",
