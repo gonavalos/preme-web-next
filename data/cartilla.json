@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T16:00:19.948Z",
+  "generatedAt": "2026-10-09T15:42:31.179Z",
   "total": 332,
   "prestadores": [
     {
@@ -1125,20 +1125,20 @@
       "nombre": "CENTRO DE REHABILITACION KINESIS",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Salud Mental",
         "Instituciones y Centros Médicos",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
         "NUTRICION",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA"
       ],
       "especialidadesMedicas": [
         "Dermatologia",
@@ -6489,30 +6489,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 6376,
-      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Instituciones y Centros Médicos",
-      "tipos": [
-        "Laboratorios",
-        "Instituciones y Centros Médicos"
-      ],
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "9 DE JULIO 941, Piso 1",
-      "telefono": "WP 351 3030722",
-      "lat": -31.4113833,
-      "lng": -64.19633619999999,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14939,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
@@ -6624,6 +6600,30 @@
       "telefono": "351 3030 722",
       "lat": null,
       "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 6376,
+      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
+      "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Laboratorios",
+        "Instituciones y Centros Médicos"
+      ],
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "9 DE JULIO 941, Piso 1",
+      "telefono": "WP 351 3030722",
+      "lat": -31.4113833,
+      "lng": -64.19633619999999,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -7964,30 +7964,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 13456,
-      "nombre": "LABORATORIOS BIOCON S.A.",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
-      "telefono": "0351-507 6517",
-      "lat": -31.4153778,
-      "lng": -64.1972385,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14215,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
@@ -8008,6 +7984,30 @@
       "telefono": "3515076517",
       "lat": null,
       "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13456,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
+      "telefono": "0351-507 6517",
+      "lat": -31.4153778,
+      "lng": -64.1972385,
       "destacado": false,
       "ordenPrioridad": 9999
     },
