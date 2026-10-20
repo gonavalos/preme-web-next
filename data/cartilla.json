@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T16:05:04.202Z",
+  "generatedAt": "2026-10-20T14:00:56.075Z",
   "total": 336,
   "prestadores": [
     {
@@ -1134,15 +1134,15 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "NUTRICION"
+        "NUTRICION",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
         "Dermatologia",
@@ -2701,30 +2701,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 15387,
-      "nombre": "CLINICA DE OJOS REYES GIOBELLINA",
-      "tipo": "Instituciones y Centros Médicos",
-      "tipos": [
-        "Instituciones y Centros Médicos"
-      ],
-      "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Juan Sarachaga 768, Piso 1",
-      "telefono": "08105550034",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 13341,
       "nombre": "CLINICA DE OJOS REYES GIOBELLINA",
       "tipo": "Instituciones y Centros Médicos",
@@ -2745,6 +2721,30 @@
       "telefono": "08105550034",
       "lat": -31.2877109,
       "lng": -64.2935005,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15387,
+      "nombre": "CLINICA DE OJOS REYES GIOBELLINA",
+      "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
+      "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Juan Sarachaga 768, Piso 1",
+      "telefono": "08105550034",
+      "lat": null,
+      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -8087,30 +8087,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14215,
-      "nombre": "LABORATORIOS BIOCON S.A.",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Tristan Narvaja 2303, Piso 1",
-      "telefono": "3515076517",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 13456,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
@@ -8131,6 +8107,30 @@
       "telefono": "0351-507 6517",
       "lat": -31.4153778,
       "lng": -64.1972385,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14215,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Tristan Narvaja 2303, Piso 1",
+      "telefono": "3515076517",
+      "lat": null,
+      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
