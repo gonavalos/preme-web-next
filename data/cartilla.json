@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T14:16:23.443Z",
+  "generatedAt": "2026-10-23T13:59:31.877Z",
   "total": 336,
   "prestadores": [
     {
@@ -1134,15 +1134,15 @@
         "Salud Mental"
       ],
       "especialidades": [
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "NUTRICION"
       ],
       "especialidadesMedicas": [
         "Dermatologia",
@@ -8087,30 +8087,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 13456,
-      "nombre": "LABORATORIOS BIOCON S.A.",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
-      "telefono": "0351-507 6517",
-      "lat": -31.4153778,
-      "lng": -64.1972385,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14215,
       "nombre": "LABORATORIOS BIOCON S.A.",
       "tipo": "Laboratorios",
@@ -8131,6 +8107,30 @@
       "telefono": "3515076517",
       "lat": null,
       "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 13456,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
+      "telefono": "0351-507 6517",
+      "lat": -31.4153778,
+      "lng": -64.1972385,
       "destacado": false,
       "ordenPrioridad": 9999
     },
