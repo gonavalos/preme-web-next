@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T15:39:23.731Z",
+  "generatedAt": "2026-10-29T15:46:20.679Z",
   "total": 336,
   "prestadores": [
     {
@@ -6592,29 +6592,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 14939,
-      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Máximo"
-      ],
-      "ciudad": "Villa Carlos Paz",
-      "direccion": "Tucumán 98",
-      "telefono": "3541 223718",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 15064,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
@@ -6701,6 +6678,29 @@
       "ciudad": "Cordoba",
       "direccion": "Bv Bonciolini local 1 Manantiales II, Piso 1",
       "telefono": "351 3030 722",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 14939,
+      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Máximo"
+      ],
+      "ciudad": "Villa Carlos Paz",
+      "direccion": "Tucumán 98",
+      "telefono": "3541 223718",
       "lat": null,
       "lng": null,
       "destacado": false,
