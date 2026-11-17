@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T19:08:27.883Z",
+  "generatedAt": "2026-11-17T18:01:45.236Z",
   "total": 334,
   "prestadores": [
     {
@@ -6648,8 +6648,20 @@
         "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [
+        "Anatomia Patologica",
         "Cardiologia",
-        "Neumonologia"
+        "Cirugia General",
+        "Dermatologia",
+        "Endocrinologia",
+        "Gastroenterologia",
+        "Ginecologia",
+        "Neumonologia",
+        "Neurologia",
+        "Otorrinolaringologia (O.R.L.)",
+        "Pediatria",
+        "Reumatologia",
+        "Traumatologia y Ortopedia",
+        "Urologia"
       ],
       "plan": [
         "Plan Coral",
