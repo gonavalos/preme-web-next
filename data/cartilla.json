@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T17:27:07.178Z",
+  "generatedAt": "2026-11-21T16:31:43.453Z",
   "total": 334,
   "prestadores": [
     {
@@ -13,39 +13,39 @@
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
-        "ANESTESISTA",
-        "CARDIOLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
+        "OBSTETRICIA",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "QUEMADOS",
         "GASTROENTEROLOGIA",
         "GINECOLOGIA",
         "HEMATOLOGIA",
         "INFECTOLOGIA",
         "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
         "NEUROLOGIA",
         "NEUROLOGIA INFANTIL",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "ANESTESISTA",
+        "CARDIOLOGIA",
+        "CIRUGIA CARDIOVASCULAR",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "CIRUGIA DE TORAX",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "ALERGIA",
         "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "QUEMADOS",
         "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "NEUMONOLOGIA",
+        "NEUROCIRUGIA",
+        "CIRUGIA GENERAL",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "FONOAUDIOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
         "Endoscopia Diagnostica",
@@ -74,35 +74,35 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "ALERGIA",
-        "ANESTESISTA",
-        "CARDIOLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "INFECTOLOGIA",
-        "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROLOGIA",
+        "UROLOGIA",
         "OBSTETRICIA",
         "OFTALMOLOGIA",
         "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "QUEMADOS",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "CIRUGIA DE TORAX",
+        "CIRUGIA GENERAL",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "GINECOLOGIA",
+        "NEUROLOGIA",
+        "ANESTESISTA",
+        "CIRUGIA CARDIOVASCULAR",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "INFECTOLOGIA",
+        "NEFROLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
+        "ALERGIA",
+        "CARDIOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "NEUMONOLOGIA",
+        "PEDIATRIA",
+        "HEMATOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -124,8 +124,8 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -146,43 +146,43 @@
       "nombre": "CLINICA ROMAGOSA S.A",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
+        "DIABETOLOGIA",
+        "FLEBOLOGIA",
         "ALERGIA",
         "CARDIOLOGIA",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
         "ENDOSCOPIA DIAGNOSTICA",
-        "FLEBOLOGIA",
+        "HEMODINAMIA",
+        "UROLOGIA",
+        "ONCOLOGIA",
+        "REUMATOLOGIA",
+        "CLINICA MEDICA",
         "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "HEMODINAMIA",
         "INFECTOLOGIA",
-        "NEFROLOGIA",
         "NEUMONOLOGIA",
         "NEUROCIRUGIA",
+        "VASCULAR PERIFERICO",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
+        "GINECOLOGIA",
+        "HEMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "ENDOCRINOLOGIA",
+        "NEFROLOGIA",
         "NEUROLOGIA",
         "NUTRICION",
-        "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
-        "VASCULAR PERIFERICO"
+        "OTORRINOLARINGOLOGIA (O.R.L.)"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -280,13 +280,12 @@
       "nombre": "ACONCAGUA SANATORIO PRIVADO - COSEME S.A.",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -295,7 +294,6 @@
         "CARDIOLOGIA PEDIATRICA",
         "CIRUGIA DE CABEZA Y CUELLO",
         "CIRUGIA DE TORAX",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
         "ENDOCRINOLOGIA",
         "FONOAUDIOLOGIA",
@@ -307,7 +305,6 @@
         "NEFROLOGIA",
         "NEUMONOLOGIA",
         "NEUMONOLOGIA PEDIATRICA",
-        "NEUROCIRUGIA",
         "NEUROCIRUGIA INFANTIL",
         "NEUROLOGIA",
         "NUTRICION",
@@ -318,7 +315,10 @@
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
-        "VASCULAR PERIFERICO"
+        "VASCULAR PERIFERICO",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CLINICA MEDICA",
+        "NEUROCIRUGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -509,8 +509,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -633,8 +633,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -683,8 +683,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -756,8 +756,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -778,12 +778,12 @@
       "nombre": "C.I.R. CENTRO DE REHABILITACION",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Reumatologia",
@@ -884,8 +884,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -911,13 +911,13 @@
         "Laboratorios"
       ],
       "especialidades": [
+        "NEUROLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
-        "ANATOMIA PATOLOGICA",
         "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "NEUROLOGIA",
         "UROLOGIA"
       ],
       "especialidadesMedicas": [
@@ -1001,14 +1001,14 @@
         "Salud Mental"
       ],
       "especialidades": [
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
-        "08. SALUD MENTAL",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
         "NUTRICION",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "BIOQUIMICOS",
+        "CLINICA MEDICA",
+        "08. SALUD MENTAL",
+        "CARDIOLOGIA"
       ],
       "especialidadesMedicas": [
         "Cardiologia"
@@ -1033,33 +1033,33 @@
       "tipos": [
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Laboratorios"
       ],
       "especialidades": [
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "NEUROLOGIA",
+        "OFTALMOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA",
+        "INMUNOLOGIA",
+        "OBSTETRICIA",
+        "PEDIATRIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "UROLOGIA",
         "08. SALUD MENTAL",
-        "ALERGIA",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FISIATRIA",
-        "GINECOLOGIA",
-        "INMUNOLOGIA",
-        "NEUROLOGIA",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "PEDIATRIA",
+        "05. LABORATORIO",
         "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "ALERGIA",
+        "FISIATRIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1083,8 +1083,8 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1130,19 +1130,19 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "08. SALUD MENTAL",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NUTRICION",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "OFTALMOLOGIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA"
       ],
       "especialidadesMedicas": [
         "Dermatologia",
@@ -1190,13 +1190,13 @@
       "nombre": "CENTRO ECOGRAFICO DR.BOSCACCI",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Diagnóstico por Imágenes",
-        "Instituciones y Centros Médicos"
+        "Instituciones y Centros Médicos",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "04. DIAGNOSTICO POR IMAGENES",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA"
+        "CARDIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -1220,19 +1220,19 @@
       "nombre": "CENTRO MEDICO 25 DE MAYO",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes"
+        "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "CARDIOLOGIA",
         "CIRUGIA GENERAL",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
+        "PEDIATRIA",
+        "CARDIOLOGIA",
         "MEDICINA GENERAL",
         "NUTRICION",
-        "PEDIATRIA"
+        "GINECOLOGIA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -1261,35 +1261,35 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
+        "Salud Mental",
         "Diagnóstico por Imágenes",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
+        "NUTRICION",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
+        "GINECOLOGIA",
+        "OFTALMOLOGIA",
+        "08. SALUD MENTAL",
+        "CLINICA MEDICA",
         "ENDOCRINOLOGIA",
         "FLEBOLOGIA",
         "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "MEDICINA FAMILIAR",
         "MEDICINA GENERAL",
-        "NEONATOLOGIA",
         "NEUMONOLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "ALERGIA",
+        "MEDICINA FAMILIAR",
+        "NEONATOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "GASTROENTEROLOGIA",
+        "NEUROLOGIA",
+        "CARDIOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PSICOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
@@ -1330,20 +1330,20 @@
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "ALERGIA",
         "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "INMUNOLOGIA",
-        "MEDICINA FAMILIAR",
         "MEDICINA INTERNA",
         "NEFROLOGIA",
-        "NEUMONOLOGIA",
         "NEUROLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "MEDICINA FAMILIAR",
+        "GASTROENTEROLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "ALERGIA",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "NEUMONOLOGIA",
+        "FLEBOLOGIA",
+        "INMUNOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1380,32 +1380,32 @@
       "tipos": [
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
+        "Laboratorios",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
         "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "NEONATOLOGIA",
         "NEUROLOGIA",
+        "PSICOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "DERMATOLOGIA",
         "NUTRICION",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CLINICA MEDICA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GASTROENTEROLOGIA",
+        "NEONATOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "BIOQUIMICOS",
+        "CIRUGIA GENERAL",
+        "PEDIATRIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -1445,24 +1445,24 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
+        "CLINICA MEDICA",
+        "PEDIATRIA",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
         "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
+        "OFTALMOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "MEDICINA INTERNA",
         "NUTRICION",
-        "OFTALMOLOGIA",
-        "PEDIATRIA",
         "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "08. SALUD MENTAL",
+        "DERMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "ANATOMIA PATOLOGICA",
+        "FONOAUDIOLOGIA",
+        "GASTROENTEROLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1491,33 +1491,33 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Laboratorios",
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
+        "CLINICA MEDICA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "PSIQUIATRIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
         "FONOAUDIOLOGIA",
+        "PEDIATRIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CARDIOLOGIA",
+        "ENDOCRINOLOGIA",
         "GINECOLOGIA",
         "MEDICINA GENERAL",
-        "NUTRICION",
         "OFTALMOLOGIA",
-        "PEDIATRIA",
         "PSICOLOGIA",
-        "PSIQUIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "BIOQUIMICOS",
+        "FLEBOLOGIA",
+        "NUTRICION"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -1557,31 +1557,31 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
         "GASTROENTEROLOGIA PEDIATRICA",
-        "GINECOLOGIA",
+        "OBSTETRICIA",
+        "OFTALMOLOGIA",
+        "DIABETOLOGIA",
         "INMUNOLOGIA",
         "NEONATOLOGIA",
         "NEUROLOGIA",
+        "FONOAUDIOLOGIA",
+        "GINECOLOGIA",
         "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
+        "DERMATOLOGIA",
         "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "ALERGIA",
+        "CARDIOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "GASTROENTEROLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "UROLOGIA",
+        "05. LABORATORIO",
+        "PEDIATRIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1633,14 +1633,14 @@
         "Salud Mental"
       ],
       "especialidades": [
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "REUMATOLOGIA",
+        "NUTRICION",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
-        "CLINICA MEDICA",
-        "NUTRICION",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
-        "REUMATOLOGIA"
+        "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1661,34 +1661,34 @@
       "nombre": "CENTRO MEDICO PRIVADO - AMBULATORIO",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Salud Mental",
         "Instituciones y Centros Médicos",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROLOGIA",
         "OBSTETRICIA",
-        "OFTALMOLOGIA",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
+        "GASTROENTEROLOGIA",
+        "NEUMONOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NEUROLOGIA",
+        "05. LABORATORIO",
+        "BIOQUIMICOS",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "DIABETOLOGIA",
+        "GINECOLOGIA",
+        "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -1710,19 +1710,19 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "05. LABORATORIO",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CARDIOLOGIA",
+        "GINECOLOGIA",
+        "CIRUGIA GENERAL",
         "DERMATOLOGIA",
         "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
@@ -1750,18 +1750,18 @@
       "nombre": "CENTRO MEDICO PRIVADO DR. CANTONI",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Laboratorios",
+        "Instituciones y Centros Médicos",
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
+        "CARDIOLOGIA",
+        "MEDICINA GENERAL",
+        "CIRUGIA GENERAL",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
         "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "MEDICINA GENERAL",
         "PEDIATRIA"
       ],
       "especialidadesMedicas": [
@@ -1790,16 +1790,16 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "05. LABORATORIO",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "GINECOLOGIA",
-        "MEDICINA INTERNA",
         "NUTRICION",
+        "GINECOLOGIA",
         "OFTALMOLOGIA",
-        "PEDIATRIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CARDIOLOGIA",
+        "PEDIATRIA",
+        "05. LABORATORIO",
+        "CIRUGIA GENERAL",
+        "MEDICINA INTERNA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -1832,38 +1832,38 @@
       "nombre": "CENTRO MEDICO PRIVADO SAN ANDRES SRL",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Instituciones y Centros Médicos",
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
         "CARDIOLOGIA",
+        "MEDICINA GENERAL",
+        "BIOQUIMICOS",
         "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
         "INMUNOLOGIA",
-        "MEDICINA GENERAL",
-        "MEDICINA INTERNA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
         "PSIQUIATRIA",
+        "08. SALUD MENTAL",
+        "ENDOCRINOLOGIA",
+        "NUTRICION",
+        "ANATOMIA PATOLOGICA",
+        "DERMATOLOGIA",
+        "MEDICINA INTERNA",
+        "NEUROLOGIA",
+        "UROLOGIA",
+        "GINECOLOGIA",
+        "NEUROCIRUGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NEUMONOLOGIA",
+        "OFTALMOLOGIA",
+        "PEDIATRIA",
+        "PSICOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -1933,9 +1933,9 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
+        "MEDICINA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "CLINICA MEDICA",
-        "MEDICINA GENERAL"
+        "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [
         "Diabetologia"
@@ -1958,37 +1958,37 @@
       "nombre": "CENTRO MEDICO SALSIPUEDES",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Salud Mental",
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
+        "08. SALUD MENTAL",
+        "BIOQUIMICOS",
+        "INMUNOLOGIA",
+        "OBSTETRICIA",
+        "PEDIATRIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "GINECOLOGIA",
+        "OFTALMOLOGIA",
+        "PSICOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
         "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
         "HEMATOLOGIA",
-        "INMUNOLOGIA",
         "NEFROLOGIA",
         "NEUROLOGIA",
         "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
+        "CLINICA MEDICA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA"
       ],
       "especialidadesMedicas": [
@@ -2030,22 +2030,22 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ANATOMIA PATOLOGICA",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
         "MEDICINA INTERNA",
+        "ANATOMIA PATOLOGICA",
+        "CLINICA MEDICA",
+        "GASTROENTEROLOGIA",
+        "05. LABORATORIO",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
         "NUTRICION",
         "PEDIATRIA"
       ],
@@ -2078,22 +2078,22 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Laboratorios"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
         "BIOQUIMICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "GINECOLOGIA",
         "CARDIOLOGIA",
         "CLINICA MEDICA",
-        "GINECOLOGIA",
-        "NUTRICION",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "08. SALUD MENTAL",
         "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "05. LABORATORIO",
+        "NUTRICION"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -2126,35 +2126,35 @@
         "Salud Mental"
       ],
       "especialidades": [
+        "CLINICA MEDICA",
+        "GINECOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "ALERGIA",
+        "FONOAUDIOLOGIA",
+        "NEUROCIRUGIA",
+        "NUTRICION",
+        "PEDIATRIA",
+        "CIRUGIA GENERAL",
+        "OFTALMOLOGIA",
+        "BIOQUIMICOS",
+        "ENDOCRINOLOGIA",
+        "FLEBOLOGIA",
+        "HEMATOLOGIA",
+        "NEUMONOLOGIA",
+        "OBSTETRICIA",
+        "PSICOLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CIRUGIA GENERAL PEDIATRICA",
-        "CLINICA MEDICA",
+        "ANATOMIA PATOLOGICA",
+        "CARDIOLOGIA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
         "GASTROENTEROLOGIA PEDIATRICA",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "NEUMONOLOGIA",
         "NEUMONOLOGIA PEDIATRICA",
-        "NEUROCIRUGIA",
         "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
         "REUMATOLOGIA",
         "UROLOGIA"
       ],
@@ -2299,42 +2299,42 @@
       "tipos": [
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
+        "Salud Mental",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
+        "NUTRICION",
+        "PSICOLOGIA",
+        "UROLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "CARDIOLOGIA",
+        "MEDICINA FAMILIAR",
+        "NEUROCIRUGIA",
         "08. SALUD MENTAL",
         "ALERGIA",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "MEDICINA FAMILIAR",
-        "NEFROLOGIA",
         "NEONATOLOGIA",
         "NEUMONOLOGIA",
-        "NEUMONOLOGIA PEDIATRICA",
-        "NEUROCIRUGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "PSIQUIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "05. LABORATORIO",
+        "BIOQUIMICOS",
+        "ENDOCRINOLOGIA",
+        "FONOAUDIOLOGIA",
+        "NEUMONOLOGIA PEDIATRICA",
+        "OBSTETRICIA",
+        "PEDIATRIA",
+        "PSIQUIATRIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "FLEBOLOGIA",
+        "NEFROLOGIA",
+        "OFTALMOLOGIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -2379,8 +2379,8 @@
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "DERMATOLOGIA",
         "GINECOLOGIA",
+        "DERMATOLOGIA",
         "OBSTETRICIA"
       ],
       "especialidadesMedicas": [],
@@ -2430,8 +2430,8 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -2456,8 +2456,8 @@
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "ALERGIA",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "ALERGIA"
       ],
       "especialidadesMedicas": [
         "Diabetologia",
@@ -2482,35 +2482,35 @@
       "nombre": "CENTRO PRIVADO SALUD S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Fisioterapia y Kinesiología",
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
+        "CARDIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
         "ALERGIA",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "DERMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "BIOQUIMICOS",
         "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
         "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "INMUNOLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
         "PEDIATRIA",
-        "PSICOLOGIA",
+        "FLEBOLOGIA",
         "PSIQUIATRIA",
+        "DERMATOLOGIA",
+        "INMUNOLOGIA",
+        "OFTALMOLOGIA",
+        "CIRUGIA GENERAL",
+        "GINECOLOGIA",
+        "NUTRICION",
+        "PSICOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
@@ -2624,14 +2624,14 @@
       "nombre": "CIREN CENTRO INTEGRAL DE REHABILITACION NEUROLOG",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Fisioterapia y Kinesiología",
         "Salud Mental",
-        "Instituciones y Centros Médicos"
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "FONOAUDIOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
@@ -2683,8 +2683,8 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "OFTALMOLOGIA"
+        "OFTALMOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -2695,6 +2695,30 @@
       "ciudad": "Cordoba",
       "direccion": "Recta Martinolli 5762, Piso 1",
       "telefono": "03543-449660/61",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15387,
+      "nombre": "CLINICA DE OJOS REYES GIOBELLINA",
+      "tipo": "Instituciones y Centros Médicos",
+      "tipos": [
+        "Instituciones y Centros Médicos"
+      ],
+      "especialidades": [
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Juan Sarachaga 768, Piso 1",
+      "telefono": "08105550034",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -2721,30 +2745,6 @@
       "telefono": "08105550034",
       "lat": -31.2877109,
       "lng": -64.2935005,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 15387,
-      "nombre": "CLINICA DE OJOS REYES GIOBELLINA",
-      "tipo": "Instituciones y Centros Médicos",
-      "tipos": [
-        "Instituciones y Centros Médicos"
-      ],
-      "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Juan Sarachaga 768, Piso 1",
-      "telefono": "08105550034",
-      "lat": null,
-      "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -2778,31 +2778,31 @@
       "nombre": "CLINICA FUSAVIM PRIVADA S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "CARDIOLOGIA",
+        "UROLOGIA",
+        "05. LABORATORIO",
         "CIRUGIA CARDIOVASCULAR",
+        "CLINICA MEDICA",
+        "NEUMONOLOGIA",
+        "PEDIATRIA",
         "CIRUGIA DE TORAX",
         "CIRUGIA GENERAL",
         "CIRUGIA GENERAL PEDIATRICA",
-        "CLINICA MEDICA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "INFECTOLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NEUROLOGIA",
         "NUTRICION",
-        "ONCOLOGIA",
-        "PEDIATRIA",
+        "NEUROLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GASTROENTEROLOGIA",
+        "NEUROCIRUGIA",
+        "INFECTOLOGIA",
+        "ONCOLOGIA",
         "VASCULAR PERIFERICO"
       ],
       "especialidadesMedicas": [
@@ -2877,13 +2877,13 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "ANESTESISTA",
-        "CARDIOLOGIA",
         "MEDICINA GENERAL",
+        "VASCULAR PERIFERICO",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "VASCULAR PERIFERICO"
+        "CARDIOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ANESTESISTA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -2905,28 +2905,28 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "NEFROLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NUTRICION",
+        "OFTALMOLOGIA",
+        "CLINICA MEDICA",
+        "GASTROENTEROLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "PEDIATRIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "GINECOLOGIA",
+        "NEFROLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "UROLOGIA",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
+        "FONOAUDIOLOGIA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -2962,12 +2962,12 @@
       "nombre": "CLINICA PRIVADA CAVISACATE - V. MARIA DEL RIO SECO",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
-        "Laboratorios"
+        "Laboratorios",
+        "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "CIRUGIA GENERAL",
         "PEDIATRIA"
       ],
@@ -2993,25 +2993,25 @@
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "DERMATOLOGIA",
-        "GINECOLOGIA",
         "MEDICINA GENERAL",
         "OBSTETRICIA",
         "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "GINECOLOGIA",
+        "DERMATOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3057,9 +3057,9 @@
         "Diagnóstico por Imágenes"
       ],
       "especialidades": [
+        "MEDICINA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "MEDICINA GENERAL"
+        "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -3080,27 +3080,27 @@
       "nombre": "CLINICA PRIVADA DE ESPECIALIDADES DE V. MARIA SRL",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Laboratorios",
+        "Instituciones y Centros Médicos",
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
         "NEUROLOGIA",
-        "OBSTETRICIA",
         "OFTALMOLOGIA",
+        "DERMATOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
+        "FONOAUDIOLOGIA",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "OBSTETRICIA",
         "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
+        "ENDOCRINOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3157,35 +3157,35 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "DIABETOLOGIA",
+        "FONOAUDIOLOGIA",
+        "OFTALMOLOGIA",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
         "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "INFECTOLOGIA",
-        "INMUNOLOGIA",
         "NEFROLOGIA",
         "NEUMONOLOGIA",
-        "NEUROLOGIA",
         "NUTRICION",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ENDOCRINOLOGIA",
         "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "VASCULAR PERIFERICO",
         "PEDIATRIA",
+        "ANATOMIA PATOLOGICA",
+        "CLINICA MEDICA",
+        "GASTROENTEROLOGIA",
+        "INFECTOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
-        "VASCULAR PERIFERICO"
+        "CIRUGIA GENERAL",
+        "GINECOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "BIOQUIMICOS",
+        "CARDIOLOGIA",
+        "DERMATOLOGIA",
+        "INMUNOLOGIA",
+        "NEUROLOGIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -3226,31 +3226,31 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
+        "FONOAUDIOLOGIA",
+        "ONCOLOGIA",
+        "PEDIATRIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "MEDICINA GENERAL",
-        "NEFROLOGIA",
-        "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "PSICOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "MEDICINA GENERAL",
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "BIOQUIMICOS",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
+        "NEFROLOGIA",
+        "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -3366,34 +3366,34 @@
       "nombre": "CLINICA PRIVADA SAN ISIDRO S.R.L.",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
+        "GINECOLOGIA",
+        "NUTRICION",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CIRUGIA GENERAL",
+        "HEMATOLOGIA",
+        "NEFROLOGIA",
         "ALERGIA",
+        "INFECTOLOGIA",
+        "MEDICINA INTERNA",
+        "NEUROCIRUGIA",
+        "UROLOGIA",
         "ANATOMIA PATOLOGICA",
         "BIOQUIMICOS",
         "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "INFECTOLOGIA",
-        "MEDICINA INTERNA",
-        "NEFROLOGIA",
-        "NEUROCIRUGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
         "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -3435,40 +3435,40 @@
       "nombre": "CLINICA PRIVADA SANTA MARIA",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "FLEBOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "INFECTOLOGIA",
-        "MEDICINA GENERAL",
-        "NEFROLOGIA",
         "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NEUROLOGIA",
+        "PEDIATRIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "NUTRICION",
-        "OFTALMOLOGIA",
         "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "NEUROCIRUGIA",
         "UROLOGIA",
+        "05. LABORATORIO",
+        "CIRUGIA DE TORAX",
+        "FONOAUDIOLOGIA",
+        "GASTROENTEROLOGIA",
+        "NEFROLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "FLEBOLOGIA",
+        "INFECTOLOGIA",
+        "NEUROLOGIA",
+        "REUMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ALERGIA",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL",
+        "DIABETOLOGIA",
+        "MEDICINA GENERAL",
+        "OFTALMOLOGIA",
         "VASCULAR PERIFERICO"
       ],
       "especialidadesMedicas": [
@@ -3521,9 +3521,9 @@
         "Diagnóstico por Imágenes"
       ],
       "especialidades": [
+        "CIRUGIA GENERAL",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "CIRUGIA GENERAL"
+        "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -3570,49 +3570,49 @@
       "tipos": [
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
+        "NEUROLOGIA",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "CARDIOLOGIA",
         "CARDIOLOGIA PEDIATRICA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA DE TORAX",
         "CIRUGIA GENERAL",
-        "CIRUGIA GENERAL PEDIATRICA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "HEMODIALISIS",
         "INFECTOLOGIA",
         "MEDICINA INTERNA",
-        "MEDICINA NUCLEAR",
-        "NEFROLOGIA",
-        "NEONATOLOGIA",
-        "NEUMONOLOGIA",
         "NEUMONOLOGIA PEDIATRICA",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "HEMATOLOGIA",
+        "HEMODIALISIS",
+        "NEUMONOLOGIA",
         "NEUROCIRUGIA",
-        "NEUROLOGIA",
-        "NEUROLOGIA INFANTIL",
         "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "DIABETOLOGIA",
+        "FONOAUDIOLOGIA",
+        "NEUROLOGIA INFANTIL",
         "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "CIRUGIA DE TORAX",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "GASTROENTEROLOGIA",
+        "NEFROLOGIA",
+        "MEDICINA NUCLEAR",
+        "ONCOLOGIA",
+        "UROLOGIA",
+        "05. LABORATORIO",
+        "ALERGIA",
+        "CIRUGIA CARDIOVASCULAR",
+        "CIRUGIA GENERAL PEDIATRICA",
+        "ENDOCRINOLOGIA",
+        "NEONATOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3674,41 +3674,41 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
         "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
+        "MEDICINA GENERAL",
+        "NEUMONOLOGIA",
         "CIRUGIA GENERAL PEDIATRICA",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
         "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "INFECTOLOGIA",
-        "MEDICINA GENERAL",
-        "NEONATOLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
         "NUTRICION",
-        "OFTALMOLOGIA",
+        "NEUROCIRUGIA",
         "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CLINICA MEDICA",
+        "NEONATOLOGIA",
         "PEDIATRIA",
+        "INFECTOLOGIA",
+        "OFTALMOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "CIRUGIA DE TORAX",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
+        "DIABETOLOGIA",
         "UROLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
+        "ANATOMIA PATOLOGICA",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "ENDOCRINOLOGIA",
         "VASCULAR PERIFERICO"
       ],
       "especialidadesMedicas": [
@@ -3748,44 +3748,44 @@
       "nombre": "CLINICA PRIVADA VELEZ SARSFIELD - AV. FUERZA AEREA",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
         "Laboratorios",
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
         "FLEBOLOGIA",
+        "NEUROCIRUGIA",
+        "OBSTETRICIA",
+        "OFTALMOLOGIA",
+        "REUMATOLOGIA",
+        "CIRUGIA GENERAL",
+        "MEDICINA NUCLEAR",
+        "NUTRICION",
+        "PEDIATRIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ANATOMIA PATOLOGICA",
+        "NEUROLOGIA",
+        "05. LABORATORIO",
+        "CIRUGIA DE CABEZA Y CUELLO",
         "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "HEMATOLOGIA",
         "MEDICINA INTERNA",
-        "MEDICINA NUCLEAR",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "ALERGIA",
+        "CARDIOLOGIA",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "ONCOLOGIA",
         "UROLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "DERMATOLOGIA",
+        "DIABETOLOGIA",
+        "HEMATOLOGIA",
+        "NEUMONOLOGIA",
         "VASCULAR PERIFERICO"
       ],
       "especialidadesMedicas": [],
@@ -3812,20 +3812,20 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "ANATOMIA PATOLOGICA",
         "ANESTESISTA",
+        "INFECTOLOGIA",
+        "PEDIATRIA",
         "CARDIOLOGIA",
         "GINECOLOGIA",
-        "INFECTOLOGIA",
         "MEDICINA GENERAL",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "04. DIAGNOSTICO POR IMAGENES",
         "MEDICINA INTERNA",
         "ONCOLOGIA",
-        "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "05. LABORATORIO",
+        "ANATOMIA PATOLOGICA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3907,34 +3907,34 @@
         "CARDIOLOGIA PEDIATRICA",
         "CIRUGIA CARDIOVASCULAR",
         "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
-        "CIRUGIA GENERAL PEDIATRICA",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
         "DIABETOLOGIA INFANTIL",
+        "CIRUGIA GENERAL",
+        "CIRUGIA GENERAL PEDIATRICA",
+        "INFECTOLOGIA",
+        "NEONATOLOGIA",
+        "NEUROCIRUGIA INFANTIL",
+        "GASTROENTEROLOGIA PEDIATRICA",
+        "GENETICA",
+        "GINECOLOGIA",
         "ENDOCRINOLOGIA",
         "ENDOCRINOLOGIA PEDIATRICA",
         "FLEBOLOGIA",
         "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
-        "GASTROENTEROLOGIA PEDIATRICA",
-        "GENETICA",
-        "GINECOLOGIA",
-        "INFECTOLOGIA",
         "NEFROLOGIA PEDIATRICA",
-        "NEONATOLOGIA",
-        "NEUMONOLOGIA PEDIATRICA",
-        "NEUROCIRUGIA INFANTIL",
         "NEUROLOGIA INFANTIL",
         "NUTRICION",
         "OBSTETRICIA",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA PEDIATRICA",
-        "VASCULAR PERIFERICO"
+        "VASCULAR PERIFERICO",
+        "NEUMONOLOGIA PEDIATRICA",
+        "PEDIATRIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -3992,23 +3992,23 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CARDIOLOGIA PEDIATRICA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
         "FLEBOLOGIA",
-        "GINECOLOGIA",
+        "OBSTETRICIA",
+        "PEDIATRIA",
+        "DERMATOLOGIA",
+        "UROLOGIA",
         "NEFROLOGIA",
         "NUTRICION",
-        "OBSTETRICIA",
+        "BIOQUIMICOS",
+        "CARDIOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "CARDIOLOGIA PEDIATRICA",
+        "CLINICA MEDICA",
+        "GINECOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -4370,21 +4370,21 @@
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "ALERGIA",
         "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
+        "NEFROLOGIA",
+        "GINECOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "UROLOGIA",
+        "NUTRICION",
+        "ALERGIA",
         "DIABETOLOGIA",
         "FLEBOLOGIA",
-        "GINECOLOGIA",
-        "NEFROLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
         "ONCOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "CIRUGIA GENERAL",
+        "CLINICA MEDICA",
+        "OFTALMOLOGIA",
+        "NEUROLOGIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -4405,31 +4405,31 @@
       "nombre": "CONSULTORIOS DE LA MERCED",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Fisioterapia y Kinesiología",
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Fisioterapia y Kinesiología",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "FONOAUDIOLOGIA",
+        "CARDIOLOGIA",
         "GINECOLOGIA",
-        "NEUROLOGIA INFANTIL",
-        "NUTRICION",
         "OFTALMOLOGIA",
-        "ONCOLOGIA",
-        "PEDIATRIA",
         "PSICOLOGIA",
         "PSIQUIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "NEUROLOGIA INFANTIL",
+        "ONCOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "ANATOMIA PATOLOGICA",
+        "FONOAUDIOLOGIA",
+        "NUTRICION",
+        "PEDIATRIA",
+        "08. SALUD MENTAL",
+        "CIRUGIA GENERAL",
+        "CLINICA MEDICA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -4461,23 +4461,23 @@
       "nombre": "CONSULTORIOS MÉDICOS DRA. VIEL",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
+        "Instituciones y Centros Médicos",
         "Laboratorios",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
         "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "CIRUGIA DE TORAX",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
         "FONOAUDIOLOGIA",
         "GINECOLOGIA",
-        "OBSTETRICIA"
+        "ENDOCRINOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "OBSTETRICIA",
+        "CIRUGIA DE TORAX"
       ],
       "especialidadesMedicas": [
         "Cirugia General",
@@ -4507,12 +4507,12 @@
         "Laboratorios"
       ],
       "especialidades": [
+        "CLINICA MEDICA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
+        "OFTALMOLOGIA",
         "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "NUTRICION",
-        "OFTALMOLOGIA"
+        "NUTRICION"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -4533,36 +4533,36 @@
       "nombre": "CONSULTORIOS MEDICOS PRIVADOS TABLADA",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Laboratorios",
+        "Instituciones y Centros Médicos",
         "Fisioterapia y Kinesiología",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "GINECOLOGIA",
-        "NEFROLOGIA",
-        "NEUMONOLOGIA",
         "NEUROLOGIA",
-        "NUTRICION",
         "OFTALMOLOGIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PSICOLOGIA",
         "PSIQUIATRIA",
         "REUMATOLOGIA",
+        "UROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "08. SALUD MENTAL",
+        "BIOQUIMICOS",
+        "CLINICA MEDICA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "ENDOCRINOLOGIA",
+        "NEUMONOLOGIA",
+        "NUTRICION",
+        "CARDIOLOGIA",
+        "GINECOLOGIA",
+        "NEFROLOGIA",
+        "PSICOLOGIA",
+        "DERMATOLOGIA",
+        "FLEBOLOGIA"
       ],
       "especialidadesMedicas": [
         "Cardiologia",
@@ -4592,21 +4592,21 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "ALERGIA",
         "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "MEDICINA GENERAL",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
         "NUTRICION",
         "OFTALMOLOGIA",
         "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "CLINICA MEDICA",
+        "ALERGIA",
+        "FLEBOLOGIA",
+        "FONOAUDIOLOGIA",
+        "MEDICINA GENERAL",
+        "GINECOLOGIA",
+        "ENDOCRINOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -4636,36 +4636,36 @@
       "nombre": "CORDOBA MEDICAL CENTER",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Laboratorios",
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "ALERGIA",
+        "OBSTETRICIA",
+        "PEDIATRIA",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "DERMATOLOGIA",
+        "INMUNOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "UROLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CARDIOLOGIA",
         "ENDOCRINOLOGIA",
+        "OFTALMOLOGIA",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "CIRUGIA GENERAL",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "DERMATOLOGIA",
+        "NEUROLOGIA",
+        "NUTRICION",
         "ENDOCRINOLOGIA PEDIATRICA",
         "FLEBOLOGIA",
         "GINECOLOGIA",
-        "INMUNOLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "REUMATOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -4900,8 +4900,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -4994,27 +4994,27 @@
       "nombre": "ETICA CENTRO MEDICO",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Salud Mental",
         "Instituciones y Centros Médicos",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "08. SALUD MENTAL",
         "ALERGIA",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
         "INMUNOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CARDIOLOGIA",
         "MEDICINA INTERNA",
+        "PSICOLOGIA",
         "NUTRICION",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
-        "PSICOLOGIA",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "GINECOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "VASCULAR PERIFERICO"
       ],
@@ -6421,8 +6421,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6446,8 +6446,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6486,31 +6486,7 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 6376,
-      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Instituciones y Centros Médicos",
-      "tipos": [
-        "Laboratorios",
-        "Instituciones y Centros Médicos"
-      ],
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "9 DE JULIO 941, Piso 1",
-      "telefono": "WP 351 3030722",
-      "lat": -31.4113833,
-      "lng": -64.19633619999999,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14939,
+      "id": 15066,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
       "tipos": [
@@ -6524,9 +6500,32 @@
       "plan": [
         "Plan Máximo"
       ],
-      "ciudad": "Villa Carlos Paz",
-      "direccion": "Tucumán 98",
-      "telefono": "3541 223718",
+      "ciudad": "Cordoba",
+      "direccion": "Monseñor Pablo Cabrera 4013, Piso 1",
+      "telefono": "351 3030 722",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15067,
+      "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Bv Bonciolini local 1 Manantiales II, Piso 1",
+      "telefono": "351 3030 722",
       "lat": null,
       "lng": null,
       "destacado": false,
@@ -6579,7 +6578,7 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 15066,
+      "id": 14939,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
       "tipo": "Laboratorios",
       "tipos": [
@@ -6593,20 +6592,21 @@
       "plan": [
         "Plan Máximo"
       ],
-      "ciudad": "Cordoba",
-      "direccion": "Monseñor Pablo Cabrera 4013, Piso 1",
-      "telefono": "351 3030 722",
+      "ciudad": "Villa Carlos Paz",
+      "direccion": "Tucumán 98",
+      "telefono": "3541 223718",
       "lat": null,
       "lng": null,
       "destacado": false,
       "ordenPrioridad": 9999
     },
     {
-      "id": 15067,
+      "id": 6376,
       "nombre": "FUNDACION PARA EL PROGRESO DE LA MEDICINA",
-      "tipo": "Laboratorios",
+      "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Laboratorios"
+        "Laboratorios",
+        "Instituciones y Centros Médicos"
       ],
       "especialidades": [
         "05. LABORATORIO",
@@ -6617,10 +6617,10 @@
         "Plan Máximo"
       ],
       "ciudad": "Cordoba",
-      "direccion": "Bv Bonciolini local 1 Manantiales II, Piso 1",
-      "telefono": "351 3030 722",
-      "lat": null,
-      "lng": null,
+      "direccion": "9 DE JULIO 941, Piso 1",
+      "telefono": "WP 351 3030722",
+      "lat": -31.4113833,
+      "lng": -64.19633619999999,
       "destacado": false,
       "ordenPrioridad": 9999
     },
@@ -6630,22 +6630,22 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Fisioterapia y Kinesiología",
+        "Diagnóstico por Imágenes",
         "Salud Mental"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
+        "CARDIOLOGIA",
+        "NEUROLOGIA",
+        "OFTALMOLOGIA",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "NUTRICION",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "GINECOLOGIA",
         "08. SALUD MENTAL",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA"
+        "FONOAUDIOLOGIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -6684,8 +6684,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6731,29 +6731,29 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Salud Mental"
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
+        "DERMATOLOGIA",
+        "GINECOLOGIA",
         "05. LABORATORIO",
+        "CLINICA MEDICA",
+        "MEDICINA FAMILIAR",
         "08. SALUD MENTAL",
         "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "FLEBOLOGIA",
-        "GINECOLOGIA",
-        "MEDICINA FAMILIAR",
         "NUTRICION",
-        "OFTALMOLOGIA",
-        "PEDIATRIA",
         "PSICOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "OFTALMOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "BIOQUIMICOS",
+        "FLEBOLOGIA",
+        "PEDIATRIA",
+        "CARDIOLOGIA",
         "UROLOGIA"
       ],
       "especialidadesMedicas": [
@@ -6886,10 +6886,10 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "08. SALUD MENTAL",
         "FONOAUDIOLOGIA",
         "PSICOLOGIA",
-        "PSIQUIATRIA"
+        "PSIQUIATRIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -6911,48 +6911,48 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Laboratorios",
+        "Diagnóstico por Imágenes",
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "HEMODINAMIA",
-        "INFECTOLOGIA",
         "INMUNOLOGIA",
-        "NEFROLOGIA",
-        "NEONATOLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
         "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
         "UROLOGIA",
-        "VASCULAR PERIFERICO"
+        "05. LABORATORIO",
+        "DIABETOLOGIA",
+        "HEMODINAMIA",
+        "NEONATOLOGIA",
+        "NUTRICION",
+        "PEDIATRIA",
+        "CIRUGIA CARDIOVASCULAR",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "ALERGIA",
+        "CIRUGIA DE TORAX",
+        "ENDOCRINOLOGIA",
+        "NEFROLOGIA",
+        "OBSTETRICIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CARDIOLOGIA",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "GINECOLOGIA",
+        "HEMATOLOGIA",
+        "NEUMONOLOGIA",
+        "OFTALMOLOGIA",
+        "VASCULAR PERIFERICO",
+        "ONCOLOGIA",
+        "CIRUGIA GENERAL",
+        "FONOAUDIOLOGIA",
+        "GASTROENTEROLOGIA",
+        "INFECTOLOGIA",
+        "NEUROCIRUGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -7015,28 +7015,28 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Laboratorios",
+        "Diagnóstico por Imágenes",
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
+        "GINECOLOGIA",
+        "NEUROLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
+        "ALERGIA",
+        "FONOAUDIOLOGIA",
+        "OFTALMOLOGIA",
+        "DERMATOLOGIA",
+        "UROLOGIA",
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
-        "NEUROLOGIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "PEDIATRIA"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -7396,41 +7396,41 @@
       "tipos": [
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
         "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
         "CARDIOLOGIA PEDIATRICA",
-        "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
         "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
         "GINECOLOGIA",
         "INMUNOLOGIA",
-        "MEDICINA INTERNA",
-        "NEUMONOLOGIA",
         "NEUROLOGIA",
-        "NEUROLOGIA INFANTIL",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "FONOAUDIOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "08. SALUD MENTAL",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL",
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "GASTROENTEROLOGIA",
+        "MEDICINA INTERNA",
+        "REUMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "ALERGIA",
+        "NEUMONOLOGIA",
         "NUTRICION",
         "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
         "PSICOLOGIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "05. LABORATORIO",
+        "CIRUGIA CARDIOVASCULAR",
+        "CIRUGIA DE CABEZA Y CUELLO",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "NEUROLOGIA INFANTIL",
         "VASCULAR PERIFERICO"
       ],
       "especialidadesMedicas": [
@@ -7484,38 +7484,38 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
         "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
+        "OFTALMOLOGIA",
+        "UROLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "CIRUGIA GENERAL",
         "GINECOLOGIA",
         "INMUNOLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "PSICOLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "GASTROENTEROLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "NEUROCIRUGIA",
+        "PEDIATRIA",
+        "ALERGIA",
+        "NEUMONOLOGIA",
+        "NUTRICION",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "FONOAUDIOLOGIA",
+        "OBSTETRICIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -7554,14 +7554,14 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
-        "Laboratorios"
+        "Laboratorios",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
+        "OFTALMOLOGIA",
         "05. LABORATORIO",
-        "OFTALMOLOGIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -7601,32 +7601,32 @@
       "nombre": "INSTITUTO MOSSE",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Salud Mental"
+        "Instituciones y Centros Médicos",
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
+        "PEDIATRIA",
         "GINECOLOGIA",
-        "MEDICINA GENERAL",
         "MEDICINA INTERNA",
         "NEFROLOGIA",
         "NUTRICION",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
+        "08. SALUD MENTAL",
+        "ANATOMIA PATOLOGICA",
+        "BIOQUIMICOS",
+        "DIABETOLOGIA",
+        "MEDICINA GENERAL",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "CLINICA MEDICA",
+        "DERMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -7706,8 +7706,8 @@
         "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "TRAUMATOLOGIA Y ORTOPEDIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Traumatologia y Ortopedia"
@@ -7902,8 +7902,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -7927,8 +7927,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8046,12 +8046,12 @@
       "nombre": "LABORATORIOS BIOCON S.A.-LAB DR.DANIELE",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Laboratorios",
-        "Instituciones y Centros Médicos"
+        "Instituciones y Centros Médicos",
+        "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8099,8 +8099,8 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "08. SALUD MENTAL",
-        "PSICOLOGIA"
+        "PSICOLOGIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8269,8 +8269,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8316,13 +8316,13 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
-        "Salud Mental"
+        "Salud Mental",
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "08. SALUD MENTAL"
+        "08. SALUD MENTAL",
+        "04. DIAGNOSTICO POR IMAGENES"
       ],
       "especialidadesMedicas": [
         "Alergia Infantil",
@@ -8351,8 +8351,8 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "08. SALUD MENTAL",
-        "PSICOLOGIA"
+        "PSICOLOGIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8376,8 +8376,8 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "08. SALUD MENTAL",
-        "PSICOLOGIA"
+        "PSICOLOGIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8425,8 +8425,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -8472,32 +8472,32 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
+        "Fisioterapia y Kinesiología",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "ENDOCRINOLOGIA",
         "FONOAUDIOLOGIA",
-        "GINECOLOGIA",
         "MEDICINA FAMILIAR",
-        "MEDICINA INTERNA",
+        "CARDIOLOGIA",
+        "CIRUGIA GENERAL",
+        "GINECOLOGIA",
         "NUTRICION",
         "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "ENDOCRINOLOGIA",
         "PEDIATRIA",
-        "PSICOLOGIA"
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "PSICOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "MEDICINA INTERNA",
+        "05. LABORATORIO",
+        "08. SALUD MENTAL",
+        "ANATOMIA PATOLOGICA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -9040,8 +9040,8 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "08. SALUD MENTAL",
-        "PSICOLOGIA"
+        "PSICOLOGIA",
+        "08. SALUD MENTAL"
       ],
       "especialidadesMedicas": [],
       "plan": [
@@ -9115,14 +9115,14 @@
         "Salud Mental"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "08. SALUD MENTAL",
         "CARDIOLOGIA PEDIATRICA",
-        "DERMATOLOGIA",
         "FONOAUDIOLOGIA",
         "NUTRICION",
-        "PEDIATRIA",
+        "DERMATOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "PSICOLOGIA",
+        "08. SALUD MENTAL",
+        "PEDIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
@@ -9150,40 +9150,40 @@
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ANATOMIA PATOLOGICA",
         "BIOQUIMICOS",
+        "DIABETOLOGIA",
+        "NEUMONOLOGIA",
+        "PSICOLOGIA",
+        "FLEBOLOGIA",
+        "NUTRICION",
+        "08. SALUD MENTAL",
+        "CLINICA MEDICA",
+        "ENDOCRINOLOGIA",
+        "FONOAUDIOLOGIA",
+        "PEDIATRIA",
+        "ANATOMIA PATOLOGICA",
+        "DERMATOLOGIA",
+        "OFTALMOLOGIA",
+        "REUMATOLOGIA",
+        "UROLOGIA",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
+        "MEDICINA INTERNA",
+        "NEUMONOLOGIA PEDIATRICA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "CARDIOLOGIA",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "FONOAUDIOLOGIA",
         "GASTROENTEROLOGIA",
         "GINECOLOGIA",
         "INMUNOLOGIA",
-        "MEDICINA INTERNA",
-        "NEUMONOLOGIA",
-        "NEUMONOLOGIA PEDIATRICA",
         "NEUROLOGIA",
-        "NUTRICION",
-        "OFTALMOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "REUMATOLOGIA",
-        "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "TRAUMATOLOGIA Y ORTOPEDIA"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -9321,42 +9321,42 @@
         "Fisioterapia y Kinesiología"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
         "ANESTESISTA",
-        "BIOQUIMICOS",
         "CARDIOLOGIA",
         "CIRUGIA CARDIOVASCULAR",
         "CIRUGIA DE CABEZA Y CUELLO",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
         "DERMATOLOGIA",
-        "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
-        "HEMATOLOGIA",
-        "INFECTOLOGIA",
         "INMUNOLOGIA",
+        "NEUROCIRUGIA",
+        "VASCULAR PERIFERICO",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "GINECOLOGIA",
+        "NUTRICION",
+        "UROLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "MEDICINA INTERNA",
         "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
         "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
         "OFTALMOLOGIA",
-        "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
-        "QUEMADOS",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA",
-        "VASCULAR PERIFERICO"
+        "CIRUGIA GENERAL",
+        "DIABETOLOGIA",
+        "ENDOCRINOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "BIOQUIMICOS",
+        "GASTROENTEROLOGIA",
+        "HEMATOLOGIA",
+        "ALERGIA",
+        "ANATOMIA PATOLOGICA",
+        "FONOAUDIOLOGIA",
+        "INFECTOLOGIA",
+        "NEUMONOLOGIA",
+        "OBSTETRICIA",
+        "ONCOLOGIA",
+        "PEDIATRIA",
+        "QUEMADOS"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -9404,13 +9404,12 @@
       "nombre": "SANATORIO DEL SALVADOR PRIVADO S.A",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
         "Laboratorios",
-        "Fisioterapia y Kinesiología"
+        "Fisioterapia y Kinesiología",
+        "Instituciones y Centros Médicos"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
         "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
@@ -9425,7 +9424,6 @@
         "CLINICA MEDICA",
         "DERMATOLOGIA",
         "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
         "GASTROENTEROLOGIA",
         "GINECOLOGIA",
         "HEMODINAMIA",
@@ -9433,7 +9431,6 @@
         "NEFROLOGIA",
         "NEONATOLOGIA",
         "NEUMONOLOGIA",
-        "NEUMONOLOGIA PEDIATRICA",
         "NEUROLOGIA",
         "OBSTETRICIA",
         "OFTALMOLOGIA",
@@ -9442,7 +9439,10 @@
         "PEDIATRIA",
         "REUMATOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "NEUMONOLOGIA PEDIATRICA",
+        "ENDOCRINOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -9483,8 +9483,8 @@
         "Vascular Periferico"
       ],
       "plan": [
-        "Plan Integral",
-        "Plan Máximo"
+        "Plan Máximo",
+        "Plan Integral"
       ],
       "ciudad": "Cordoba",
       "direccion": "General Deheza 542, Piso 1",
@@ -9529,35 +9529,35 @@
       "tipos": [
         "Instituciones y Centros Médicos",
         "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Laboratorios"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
-        "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
         "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "CARDIOLOGIA",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "FONOAUDIOLOGIA",
+        "INFECTOLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "06. FISIOTERAPIA Y KINESIOLOGIA",
         "GASTROENTEROLOGIA",
         "GINECOLOGIA",
-        "INFECTOLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "CIRUGIA GENERAL",
         "MEDICINA GENERAL",
         "NEFROLOGIA",
-        "NEUROCIRUGIA",
-        "OBSTETRICIA",
+        "UROLOGIA",
         "OFTALMOLOGIA",
-        "PEDIATRIA",
-        "PSICOLOGIA",
-        "PSIQUIATRIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "PSICOLOGIA",
+        "CARDIOLOGIA",
+        "FONOAUDIOLOGIA",
+        "OBSTETRICIA",
+        "PSIQUIATRIA",
+        "08. SALUD MENTAL",
+        "ANATOMIA PATOLOGICA",
+        "NEUROCIRUGIA",
+        "PEDIATRIA",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -9595,37 +9595,37 @@
       "nombre": "SANATORIO PRIVADO DEL INTERIOR S.R.L",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
+        "Laboratorios",
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
-        "Laboratorios"
+        "Diagnóstico por Imágenes"
       ],
       "especialidades": [
-        "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
         "05. LABORATORIO",
         "ANATOMIA PATOLOGICA",
-        "BIOQUIMICOS",
         "CARDIOLOGIA",
         "CIRUGIA CARDIOVASCULAR",
-        "CIRUGIA DE TORAX",
-        "CIRUGIA GENERAL",
         "CLINICA MEDICA",
-        "DERMATOLOGIA",
+        "OBSTETRICIA",
+        "CIRUGIA DE TORAX",
         "DIABETOLOGIA",
-        "ENDOCRINOLOGIA",
-        "GINECOLOGIA",
-        "INFECTOLOGIA",
         "NEFROLOGIA",
+        "NEUROLOGIA",
+        "04. DIAGNOSTICO POR IMAGENES",
         "NEUMONOLOGIA",
         "NEUROCIRUGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
         "ONCOLOGIA",
-        "OTORRINOLARINGOLOGIA (O.R.L.)",
         "PEDIATRIA",
+        "GINECOLOGIA",
+        "INFECTOLOGIA",
+        "OTORRINOLARINGOLOGIA (O.R.L.)",
+        "CIRUGIA GENERAL",
+        "DERMATOLOGIA",
+        "NUTRICION",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "01. INSTITUCIONES Y CENTROS MEDICOS",
+        "BIOQUIMICOS",
+        "ENDOCRINOLOGIA"
       ],
       "especialidadesMedicas": [
         "Alergia",
@@ -9671,47 +9671,47 @@
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
         "Instituciones y Centros Médicos",
-        "Diagnóstico por Imágenes",
-        "Laboratorios",
         "Fisioterapia y Kinesiología",
-        "Salud Mental"
+        "Salud Mental",
+        "Diagnóstico por Imágenes",
+        "Laboratorios"
       ],
       "especialidades": [
         "01. INSTITUCIONES Y CENTROS MEDICOS",
-        "04. DIAGNOSTICO POR IMAGENES",
-        "05. LABORATORIO",
         "06. FISIOTERAPIA Y KINESIOLOGIA",
-        "08. SALUD MENTAL",
-        "ALERGIA",
-        "ANATOMIA PATOLOGICA",
-        "ANESTESISTA",
-        "CARDIOLOGIA",
-        "CIRUGIA CARDIOVASCULAR",
         "CIRUGIA GENERAL",
-        "CLINICA MEDICA",
-        "DERMATOLOGIA",
         "DIABETOLOGIA",
         "ENDOCRINOLOGIA",
-        "FLEBOLOGIA",
-        "FONOAUDIOLOGIA",
-        "GASTROENTEROLOGIA",
-        "GINECOLOGIA",
         "HEMATOLOGIA",
         "HEMODINAMIA",
-        "INFECTOLOGIA",
         "NEFROLOGIA",
-        "NEUMONOLOGIA",
-        "NEUROCIRUGIA",
-        "NEUROLOGIA",
-        "NUTRICION",
-        "OBSTETRICIA",
         "OFTALMOLOGIA",
-        "ONCOLOGIA",
+        "CARDIOLOGIA",
+        "08. SALUD MENTAL",
+        "DERMATOLOGIA",
+        "INFECTOLOGIA",
+        "OBSTETRICIA",
         "OTORRINOLARINGOLOGIA (O.R.L.)",
-        "PEDIATRIA",
         "REUMATOLOGIA",
+        "ALERGIA",
+        "CLINICA MEDICA",
+        "FONOAUDIOLOGIA",
+        "NEUROCIRUGIA",
+        "ONCOLOGIA",
         "TRAUMATOLOGIA Y ORTOPEDIA",
-        "UROLOGIA"
+        "UROLOGIA",
+        "ANATOMIA PATOLOGICA",
+        "ANESTESISTA",
+        "CIRUGIA CARDIOVASCULAR",
+        "GASTROENTEROLOGIA",
+        "PEDIATRIA",
+        "04. DIAGNOSTICO POR IMAGENES",
+        "05. LABORATORIO",
+        "FLEBOLOGIA",
+        "GINECOLOGIA",
+        "NEUMONOLOGIA",
+        "NEUROLOGIA",
+        "NUTRICION"
       ],
       "especialidadesMedicas": [
         "Anatomia Patologica",
@@ -9744,12 +9744,12 @@
       "nombre": "SANATORIO PROFESOR LEON MORRA S.A. - BAJO PALERMO",
       "tipo": "Instituciones y Centros Médicos",
       "tipos": [
-        "Salud Mental",
-        "Instituciones y Centros Médicos"
+        "Instituciones y Centros Médicos",
+        "Salud Mental"
       ],
       "especialidades": [
-        "08. SALUD MENTAL",
         "PSICOLOGIA",
+        "08. SALUD MENTAL",
         "PSIQUIATRIA"
       ],
       "especialidadesMedicas": [
@@ -10571,8 +10571,8 @@
         "Laboratorios"
       ],
       "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
+        "BIOQUIMICOS",
+        "05. LABORATORIO"
       ],
       "especialidadesMedicas": [],
       "plan": [
