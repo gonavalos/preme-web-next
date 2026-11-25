@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T19:51:01.407Z",
-  "total": 334,
+  "generatedAt": "2026-11-25T18:55:39.635Z",
+  "total": 332,
   "prestadores": [
     {
       "id": 6430,
@@ -576,56 +576,6 @@
       "ordenPrioridad": 9999
     },
     {
-      "id": 12720,
-      "nombre": "BIOCOR SALUD S.R.L. I",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Figueroa Alcorta 44, Piso 1",
-      "telefono": "3517513091",
-      "lat": -31.4096878,
-      "lng": -64.1935665,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14226,
-      "nombre": "BIOCOR SALUD S.R.L. II",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Cordoba",
-      "direccion": "Santiago del Estero 333 2do piso, Piso 1",
-      "telefono": "3517513091",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
       "id": 14228,
       "nombre": "BIOCOR SALUD S.R.L. OLIVA",
       "tipo": "Laboratorios",
@@ -644,31 +594,6 @@
       ],
       "ciudad": "Oliva",
       "direccion": "Sarmiento 250",
-      "telefono": "3517513091",
-      "lat": null,
-      "lng": null,
-      "destacado": false,
-      "ordenPrioridad": 9999
-    },
-    {
-      "id": 14227,
-      "nombre": "BIOCOR SALUD S.R.L. RIO IV",
-      "tipo": "Laboratorios",
-      "tipos": [
-        "Laboratorios"
-      ],
-      "especialidades": [
-        "05. LABORATORIO",
-        "BIOQUIMICOS"
-      ],
-      "especialidadesMedicas": [],
-      "plan": [
-        "Plan Coral",
-        "Plan Integral",
-        "Plan Máximo"
-      ],
-      "ciudad": "Rio Cuarto",
-      "direccion": "25 de Mayo 754",
       "telefono": "3517513091",
       "lat": null,
       "lng": null,
@@ -8011,7 +7936,7 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "SAN JOSE DE CALASANZ 258, Piso 1",
-      "telefono": "0351-507 6517",
+      "telefono": "3515524304",
       "lat": -31.4153778,
       "lng": -64.1972385,
       "destacado": false,
@@ -8035,7 +7960,32 @@
       ],
       "ciudad": "Cordoba",
       "direccion": "Tristan Narvaja 2303, Piso 1",
-      "telefono": "3515076517",
+      "telefono": "3515524304",
+      "lat": null,
+      "lng": null,
+      "destacado": false,
+      "ordenPrioridad": 9999
+    },
+    {
+      "id": 15491,
+      "nombre": "LABORATORIOS BIOCON S.A.",
+      "tipo": "Laboratorios",
+      "tipos": [
+        "Laboratorios"
+      ],
+      "especialidades": [
+        "05. LABORATORIO",
+        "BIOQUIMICOS"
+      ],
+      "especialidadesMedicas": [],
+      "plan": [
+        "Plan Coral",
+        "Plan Integral",
+        "Plan Máximo"
+      ],
+      "ciudad": "Cordoba",
+      "direccion": "Vélez Sarsfield 694, Piso 1",
+      "telefono": "3515524304",
       "lat": null,
       "lng": null,
       "destacado": false,
